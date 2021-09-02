@@ -1,5 +1,5 @@
 import styles from './style.module.css';
-import Icon from '../../../../Utils/Icon';
+import Icon from '@/Utils/Icon';
 
 const Brand = () => {
   return (

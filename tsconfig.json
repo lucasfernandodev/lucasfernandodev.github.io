@@ -20,7 +20,7 @@
       "@/Molecules/*": ["components/UI/Molecules/*"],
       "@/Organisms/*": ["components/UI/Organisms/*"],
       "@/Templates/*": ["components/UI/Atoms/Templates/*"],
-      "@/Utils/*": ["Utils/*"],
+      "@/Utils/*": ["components/Utils/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

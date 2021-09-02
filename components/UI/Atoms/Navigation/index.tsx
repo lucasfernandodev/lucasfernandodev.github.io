@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
-import Link from "../../../../Utils/Link";
-import Icon from "../../../../Utils/Icon";
+import Link from "@/Utils/Link";
+import Icon from "@/Utils/Icon";
 
 type NavigationProps = {
   show?: boolean;
