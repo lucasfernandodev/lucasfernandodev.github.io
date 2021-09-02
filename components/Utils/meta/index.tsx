@@ -1,32 +1,26 @@
 import NextHead from "next/head";
 import { NextSeo } from "next-seo";
+import router, { useRouter } from "next/router";
 type HeadProps = {
   title: string;
 };
 
 const Head: React.FC<HeadProps> = ({ title }) => {
+  const router = useRouter();
+  const path = router.asPath !== "/" ? router.asPath : null;
+  console.log(router);
   const description =
     "Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim.";
 
   return (
-    /* <title>
-        Lucas Fernando - Portfolio simples contendo um pouco da meu trabalho e
-        da minha historia.
-      </title>
-      <meta
-        name="title"
-        content="Lucas Fernando - Portfolio simples contendo um pouco da meu trabalho e da minha historia."
-      />
-
-      <meta
-        name="description"
-        content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim."
-      /> */
     <>
       <NextSeo
         title={title}
         description={description}
+        canonical={`https://${process.env.VERCEL_URL}`}
         openGraph={{
+          type: "website",
+          url: `https://${process.env.VERCEL_URL}${path !== null ? path : ""}`,
           title: title,
           description: description,
           images: [
@@ -39,8 +33,9 @@ const Head: React.FC<HeadProps> = ({ title }) => {
           ],
         }}
       />
+      
       <NextHead>
-      <link rel="shortcut icon" href="SEO/favicon.svg" type="image/png" />
+        <link rel="shortcut icon" href="SEO/favicon.svg" type="image/png" />
         <meta
           name="keywords"
           content="HTML, CSS, JavaScript, Lucas Fernando, Portfolio"
@@ -49,32 +44,6 @@ const Head: React.FC<HeadProps> = ({ title }) => {
         <meta name="author" content="Lucas Fernando" />
       </NextHead>
     </>
-
-    /* <meta
-        name="keywords"
-        content="HTML, CSS, JavaScript, Lucas Fernando, Portfolio"
-      ></meta>
-      /*
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="author" content="Lucas Fernando" />
-  
-
-      <meta property="og:title" content={title} />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:description"
-        content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim."
-      />
-      <meta property="og:image" content="" key="ogimage" />
-
-      <meta property="og:site_name" content={title} />
-
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content={title} />
-      <meta
-        name="twitter:description"
-        content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim."
-      /> */
   );
 };
 
