@@ -1,6 +1,6 @@
 import NextHead from "next/head";
-import {useRouter} from 'next/router';
-import og_image from '../../../public/SEO/og_home.png';
+import { useRouter } from "next/router";
+import og_image from "../../../public/SEO/og_home.png";
 type HeadProps = {
   title: string;
 };
@@ -29,12 +29,16 @@ const Head: React.FC<HeadProps> = ({ title }) => {
         property="og:description"
         content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim."
       />
-      <meta property="og:image" content={og_image.src}/>
-      <meta property="og:site_name" content={title}/>
+      <meta property="og:image" content={og_image.src} key="ogimage" />
+
+      <meta property="og:site_name" content={title} />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim." />
+      <meta
+        name="twitter:description"
+        content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim."
+      />
     </NextHead>
   );
 };
