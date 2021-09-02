@@ -28,16 +28,13 @@ const Head: React.FC<HeadProps> = ({ title }) => {
         property="og:description"
         content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim."
       />
-      <meta
-        property="og:image"
-        content="SEO/og_home.png"
-      />
+      <meta property="og:image" content="./SEO/og_home.png"/>
       <meta property="og:site_name" content={title}/>
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content="Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim." />
-      <meta name="SEO/og_home.png" />
+      <meta name="./SEO/og_home.png" />
     </NextHead>
   );
 };
