@@ -31,7 +31,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
           description: description,
           images: [
             {
-              url: `${process.env.VERCEL_URL}/SEO/og_home.png`,
+              url: `https://${process.env.VERCEL_URL}/SEO/og_home.png`,
               width: 800,
               height: 600,
               alt: "Lucas Fernando - Portfolio",
