@@ -1,0 +1,19 @@
+:root{
+
+  --color-dark:#131314;
+  --color-dark-paper: #171717;
+
+  --red: #ff7979;
+  --green: #20bf6b;
+  --blue: #2d98da;
+
+
+  --color-primary: #5352ed;
+  --color-secondary: #70a1ff;
+
+  --color-title: #ede7f6;
+  --color-text: #ededfdaa;
+  --color-text-light: #ddd;
+
+  --color-gradient: linear-gradient(to right, #5352ed,#70a1ff);
+}

@@ -1,0 +1,9 @@
+.logo{
+  height: 36px;
+  width: 36px;
+  stroke: var(--color-title);
+}
+
+.logo circle{
+  fill: var(--color-title);
+}

@@ -1,0 +1,121 @@
+.toSend {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.toSend .list {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.toSend .list h2 {
+  font-size: 2rem;
+  display: block;
+  max-width: 420px;
+  word-wrap: break-word;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+}
+
+
+.list p {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
+}
+
+.list h2 + p{
+  margin: 18px 0;
+  color: var(--color-text);
+  opacity: 0.9;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 445px;
+}
+
+.list .icon{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  font-size: 20px;
+}
+
+.list .icon svg{
+  stroke: var(--color-secondary);
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+  margin-left: 16px;
+}
+
+.toSend .projects {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+.projects h2 {
+  font-size: 1.2rem;
+  color: #888;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+
+.projects ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+}
+
+.projects ul li{
+  width: 250px;
+
+  height: 50px;
+
+}
+
+.projects ul li a{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  padding-left: 16px;
+  border-radius: 4px;
+  background: var(--color-gradient);
+  transition: .3s ease-in-out;
+}
+
+.projects ul li a:hover{
+  filter: brightness(0.7);
+}
+
+.projects ul li a svg{
+  stroke-width: 1.6;
+  margin-right: 6px;
+}
+
+.projects ul li a span{
+  margin-left: 6px;
+  letter-spacing: 0.07rem;
+}

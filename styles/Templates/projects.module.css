@@ -1,0 +1,80 @@
+.projects{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+
+.projects .static, .projects .text{
+  width: 50%;
+}
+
+.projects .static{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.card{
+  height: auto;
+  min-height: 100px;
+  width: 540px;
+  border-radius: 8px;
+  background: var(--color-gradient);
+  padding: 32px;
+  transition: 0.2s linear;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
+
+.card-header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.card-header svg{
+  stroke-width: 1.7;
+}
+
+.card-header h3, .card-header svg{
+  color: var(--color-text-light);
+  stroke: var(--color-text-light);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-body{
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-footer a{
+  color: var(--color-text-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.card-footer a:hover{
+  text-decoration: underline;
+}
+
+.text h2{
+  font-size: 2rem;
+  display: block;
+  max-width: 420px;
+  word-wrap: break-word;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+  
+}

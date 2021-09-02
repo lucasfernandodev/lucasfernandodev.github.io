@@ -1,0 +1,24 @@
+.paragraph{
+  margin: 18px 0;
+  color: var(--color-text);
+  opacity: 0.9;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 445px;
+}
+
+.paragraph span{
+  font-weight: 500;
+  color: #ddd;
+}
+
+.paragraph a{
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+}
+
+.paragraph a:hover{
+  text-decoration: underline;
+}
