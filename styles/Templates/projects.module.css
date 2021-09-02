@@ -28,6 +28,21 @@
   transition: 0.2s linear;
 }
 
+@media (max-width: 1200px){
+  .card{
+    width: calc(100% - 24px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 924px){
+  .card{
+    padding: 24px 32px;
+  }
+}
+
+
+
 .card:hover{
   transform: translateY(-5px);
 }
@@ -77,4 +92,23 @@
   font-weight: 500;
   letter-spacing: 0.07rem;
   
+}
+
+@media (max-width: 768px){
+  .projects{
+    flex-direction: column;
+    padding: 75px 0;
+  }
+  .projects .static, .projects .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text h2{
+    max-width: calc(100% - 12px);
+  }
 }

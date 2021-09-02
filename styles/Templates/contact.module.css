@@ -6,6 +6,7 @@
   width: 100%;
 }
 
+
 .toSend .list {
   width: 60%;
   display: flex;
@@ -118,4 +119,34 @@
 .projects ul li a span{
   margin-left: 6px;
   letter-spacing: 0.07rem;
+}
+
+@media (max-width: 768px){
+  .toSend{
+    flex-direction: column;
+    padding: 75px 0;
+  }
+  .toSend .list, .toSend .projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .toSend .projects{
+    padding-top: 24px;
+  }
+
+  .toSend .list h2 {
+    text-align: center;
+    width: 100%;
+    max-width: calc(100% - 24px);
+  }
+
+  .list h2 + p{
+    margin: 18px auto;
+    text-align: center;
+    max-width: calc(100% - 24px);
+  }
 }

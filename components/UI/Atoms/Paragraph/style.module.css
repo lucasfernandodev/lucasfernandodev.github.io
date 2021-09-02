@@ -22,3 +22,10 @@
 .paragraph a:hover{
   text-decoration: underline;
 }
+
+@media (max-width: 768px){
+  .paragraph{
+    max-width: calc(100% - 24px);
+    margin: 18px auto;
+  }
+}
