@@ -1,31 +1,32 @@
 import NextHead from "next/head";
 import { NextSeo } from "next-seo";
-import router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 type HeadProps = {
   title: string;
 };
 
 const Head: React.FC<HeadProps> = ({ title }) => {
+
   const router = useRouter();
   const path = router.asPath !== "/" ? router.asPath : null;
-  console.log(router);
-  const description =
-    "Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim.";
+
+  
+  const description = "Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim.";
 
   return (
     <>
       <NextSeo
         title={title}
         description={description}
-        canonical={`https://${process.env.VERCEL_URL}`}
+        canonical={`https://lucasfernandodev.vercel.app`}
         openGraph={{
           type: "website",
-          url: `https://${process.env.VERCEL_URL}${path !== null ? path : ""}`,
+          url: `https://lucasfernandodev.vercel.app${path !== null ? path : ""}`,
           title: title,
           description: description,
           images: [
             {
-              url: `https://${process.env.VERCEL_URL}/SEO/og_home.png`,
+              url: `https://lucasfernandodev.vercel.app/SEO/og_home.png`,
               width: 800,
               height: 600,
               alt: "Lucas Fernando - Portfolio",
@@ -33,7 +34,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
           ],
         }}
       />
-      
+
       <NextHead>
         <link rel="shortcut icon" href="SEO/favicon.svg" type="image/png" />
         <meta
