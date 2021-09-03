@@ -7,6 +7,6 @@
 
 ### 🔗 Na web
 
-[CodePen](https://codepen.io/lucasfernandodev)
-[LinkedIn](https://www.linkedin.com/in/frontlucasfernandodev/)
-[Instagram](https://www.instagram.com/lucasfernandodev/)
+- [CodePen](https://codepen.io/lucasfernandodev)
+- [LinkedIn](https://www.linkedin.com/in/frontlucasfernandodev/)
+- [Instagram](https://www.instagram.com/lucasfernandodev/)
