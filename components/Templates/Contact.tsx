@@ -1,9 +1,10 @@
 import contact from "../../styles/Templates/contact.module.css";
-
 import Layout from "@/Organisms/Layout";
 import Link from "@/Utils/Link";
 import Icon from "@/Utils/Icon";
 import Paragraph from "@/Atoms/Paragraph";
+
+
 const ContactTemplate = () => {
   return (
     <Layout>
@@ -15,7 +16,7 @@ const ContactTemplate = () => {
             algo juntos.
           </Paragraph>
 
-          <Link href="/" className={contact.icon}>
+          <Link href="mailto:lucasfernando.dev@gmail.com" className={contact.icon}>
             lucasfernando.dev@gmail.com
             <Icon icon="arrowRight" />
           </Link>
@@ -24,22 +25,22 @@ const ContactTemplate = () => {
           <p>
             <ul>
               <li>
-                <Link href="/">
+                <Link href="https://github.com/lucasfernandodev">
                   <Icon icon="github" /> | <span>Github</span>
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="https://www.linkedin.com/in/frontlucasfernandodev/">
                   <Icon icon="linkedin" /> | <span>LinkedIn</span>
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="https://www.instagram.com/lucasfernandodev/">
                   <Icon icon="instagram" /> | <span>Instagram</span>
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="https://codepen.io/lucasfernandodev">
                   <Icon icon="codepen" /> | <span>CodePen</span>
                 </Link>
               </li>

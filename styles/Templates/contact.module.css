@@ -56,7 +56,12 @@
   width: 20px;
   height: 20px;
   stroke-width: 2;
-  margin-left: 16px;
+  margin-left: 6px;
+  transition: 0.25s ease-in-out;
+}
+
+.list .icon:hover svg{
+  transform: translateX(16px);
 }
 
 .toSend .projects {
