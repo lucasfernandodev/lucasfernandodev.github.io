@@ -11,7 +11,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
   const path = router.asPath !== "/" ? router.asPath : null;
 
   
-  const description = "Meu portfolio pessoal, contendo alguns dos meus projetos um puco de conhecimento sombre mim.";
+  const description = "Meu portfolio pessoal um Agrupador de links para meus projetos.";
 
   return (
     <>
