@@ -1,9 +1,11 @@
-![Thumbnail - Portfolio Lucas Fernando](./public/SEO/og_home.png);
 # Portfolio
+
+![Thumbnail - Portfolio Lucas Fernando](./public/SEO/og_home.png)
+
 
 🪐 Meu portfolio pessoal, um Agrupador de links para meus projetos.
 
-### Na web
+### 🔗 Na web
 
 [CodePen](https://codepen.io/lucasfernandodev)
 [LinkedIn](https://www.linkedin.com/in/frontlucasfernandodev/)
