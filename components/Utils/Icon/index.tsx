@@ -1,4 +1,5 @@
 import {iconProvider} from './iconProvider';
+
 type IconProp = {
   icon: string;
   className?: string | undefined;

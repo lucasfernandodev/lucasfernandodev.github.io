@@ -13,19 +13,14 @@ const ProjectsTemplate = () => {
           <h2>Projetos</h2>
 
           <Paragraph>
-            Para acompanhar os projetos e tecnologias aos quais estou
-            interagindo e desenvolvendo, visite meu
-            <Link href="https://github.com/lucasfernandodev"> github, </Link>
-            <Link href="https://codepen.io/lucasfernandodev"> codepen </Link>
-              e
-            <Link href="https://www.frontendmentor.io/profile/lucasfernandodev"> frontend mentor</Link>
-            .
+            Dê uma olhada nos meus trabalhos recentes abaixou ou acesse minhas redes sociais e veja com 
+            quais projetos ou tecnologias estou trabalhando no momento.
           </Paragraph>
 
           <Paragraph>
-            Acesse também meu
+            Acesse também meu 
             <Link href="https://www.linkedin.com/in/frontlucasfernandodev/"> linkedIn</Link>
-            ,estou sempre adicionando novidades sobre o que estou estudando ou
+            , estou sempre atualizando com novidades sobre o que estou estudando ou
             desenvolvendo.
           </Paragraph>
         </div>
@@ -63,7 +58,7 @@ const ProjectsTemplate = () => {
               <Icon icon="frontendMentor" />
             </div>
             <div className={projects["card-body"]}>
-              To sempre codando novos desafios do frontendMentor.
+              Frontend Mentor é um plataforma para ganhar experiencia desenvolvendo Projetos reais.
             </div>
             <div className={projects["card-footer"]}>
               <Link href="https://www.frontendmentor.io/profile/lucasfernandodev">
