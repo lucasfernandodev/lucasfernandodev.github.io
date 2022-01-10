@@ -26,6 +26,23 @@
   background: var(--color-gradient);
   padding: 32px;
   transition: 0.2s linear;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card__icon{
+  height: 100%;
+  width: 64px;
+  min-height: 100px;
+  padding-top: 4px;
+}
+
+.card__main{
+  height: 100%;
+  width: calc(100% - 96px);
+  min-width: 320px;
+  min-height: 100px;
 }
 
 @media (max-width: 1200px){
@@ -67,10 +84,9 @@
 
 .card-body{
   color: var(--color-text-light);
-  margin-bottom: 16px;
 
-  font-size: 14px;
-  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  /* font-family: 'Roboto Mono', monospace; */
 }
 
 .card-footer a{
