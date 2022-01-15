@@ -1,5 +1,5 @@
 import projects from "../../styles/Templates/projects.module.css";
-
+import Image from "next/image";
 import Layout from "@/Organisms/Layout";
 import Icon from "@/Utils/Icon";
 import Link from "@/Utils/Link";
@@ -22,9 +22,9 @@ const ProjectsTemplate = () => {
 
         <div className={projects.static}>
 
-        <div className={projects.card}>
+          <div className={projects.card}>
             <div className={projects.card__icon}>
-              <Icon icon="rocket" width="34px" height="34px"/>
+              <Icon icon="rocket" width="34px" height="34px" />
             </div>
             <div className={projects.card__main}>
               <div className={projects["card-header"]}>
@@ -37,7 +37,7 @@ const ProjectsTemplate = () => {
             </div>
           </div>
 
-          
+
           <div className={projects.card}>
             <div className={projects.card__icon}>
               <Icon icon="quality" width="34px" height="34px" />
@@ -47,13 +47,13 @@ const ProjectsTemplate = () => {
                 <h3>Qualidade</h3>
               </div>
               <div className={projects["card-body"]}>
-               Foco sempre na qualidade do código utilizando sempre as melhore
+                Foco sempre na qualidade do código utilizando sempre as melhore
                 praticas do mercado.
               </div>
             </div>
           </div>
 
-         
+
 
           <div className={projects.card}>
             <div className={projects.card__icon}>
@@ -74,7 +74,56 @@ const ProjectsTemplate = () => {
       </div>
 
       <div className={projects.projects__cards}>
-        casa
+
+
+        <div className={projects.cardPreview}>
+          <div className={projects.cardPreview__header}>
+
+            <Link href="/" className={projects.cardPreview__button}>
+              <Image src="/websites/baseApparel.png" width={400} height={220} alt="My Image" layout="responsive" />
+            </Link>
+          </div>
+          <div className={projects.cardPreview__info}>
+            <h3>Base Apparel</h3>
+          </div>
+        </div>
+
+        <div className={projects.cardPreview}>
+          <div className={projects.cardPreview__header}>
+
+            <Link href="/" className={projects.cardPreview__button}>
+              <Image src="/websites/huddle.png" width={400} height={220} alt="My Image" layout="responsive" />
+            </Link>
+          </div>
+          <div className={projects.cardPreview__info}>
+            <h3>Huddle</h3>
+          </div>
+        </div>
+
+        <div className={projects.cardPreview}>
+          <div className={projects.cardPreview__header}>
+
+            <Link href="/" className={projects.cardPreview__button}>
+              <Image src="/websites/faq.png" width={400} height={220} alt="My Image" layout="responsive" />
+            </Link>
+          </div>
+          <div className={projects.cardPreview__info}>
+            <h3>Faq - Personal Website Portfolio</h3>
+          </div>
+        </div>
+
+        <div className={projects.cardPreview}>
+          <div className={projects.cardPreview__header}>
+
+            <Link href="/" className={projects.cardPreview__button}>
+              <Image src="/websites/learn.png" width={400} height={220} alt="My Image" layout="responsive" />
+            </Link>
+          </div>
+          <div className={projects.cardPreview__info}>
+            <h3>Learn</h3>
+          </div>
+        </div>
+
       </div>
     </Layout>
   );
