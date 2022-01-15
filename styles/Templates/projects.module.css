@@ -23,7 +23,7 @@
   min-height: 100px;
   width: 540px;
   border-radius: 8px;
-  background: var(--color-gradient);
+  background: var(--color-primary);
   padding: 32px;
   transition: 0.2s linear;
   display: flex;
@@ -40,7 +40,7 @@
 
 .card__main{
   height: 100%;
-  width: calc(100% - 96px);
+  width: calc(100% - 64px);
   min-width: 320px;
   min-height: 100px;
 }
@@ -86,7 +86,7 @@
   color: var(--color-text-light);
 
   font-size: 16px;
-  /* font-family: 'Roboto Mono', monospace; */
+  letter-spacing: 0.062rem;
 }
 
 .card-footer a{

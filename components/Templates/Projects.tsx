@@ -11,12 +11,13 @@ const ProjectsTemplate = () => {
       <div className={projects.projects}>
         <div className={projects.text}>
           <h2>O que eu faço?</h2>
-
           <Paragraph>
-            Trabalho com o desenvolvimento de websites, portais, lojas virtuais,
-            blogs e hotsites. Desenvolvendo sites
-            fiéis aos designs, integrando qualidade, velocidade e experiencia, buscando fortalecer os laços entre a marca e os
-            usuários.
+            Eu trabalho com o desenvolvimento front-end de websites, portais, lojas virtuais e
+            blogs.
+          </Paragraph>
+          <Paragraph>
+             Desenvolvendo sites
+            fiéis aos designs, integrando qualidade, velocidade e experiencia.
           </Paragraph>
         </div>
 

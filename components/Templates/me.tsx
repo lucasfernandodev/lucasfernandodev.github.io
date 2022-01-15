@@ -20,7 +20,7 @@ const MeTemplate = () => {
           <div className={me.tech}>
           
             <div className={me.card_tech}>
-              <Image src="/imagens/html5.svg" alt="html5" width={100} height={40} layout="responsive" />
+              <Image src="/imagens/html5.svg"  alt="html5" width={100} height={40} layout="responsive" />
             </div>
             <div className={me.card_tech}>
               <Image src="/imagens/js.svg" alt="js" width={100} height={40} layout="responsive" />
