@@ -128,3 +128,11 @@
     max-width: calc(100% - 12px);
   }
 }
+
+.projects__cards{
+  width: calc(100% + 42px);
+  height: 100vh;
+  background: #171717;
+  display: flex;
+  margin-left: -42px;
+}

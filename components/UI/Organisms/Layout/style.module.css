@@ -34,6 +34,8 @@
 .main{
   width: calc(100vw - 65px);
   padding-left: 42px;
+  min-height: 100vh;
+  overflow: auto;
 }
 
 @media (max-width: 790px){

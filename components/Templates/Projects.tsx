@@ -14,9 +14,8 @@ const ProjectsTemplate = () => {
 
           <Paragraph>
             Trabalho com o desenvolvimento de websites, portais, lojas virtuais,
-            blogs e hotsites para multiplataformas. desenvolvendo sempre sites
-            fiéis aos designs, com um bom CEO integrando qualidade, experiencia
-            e velocidade buscando fortalecer os laços entre a marca e os
+            blogs e hotsites. Desenvolvendo sites
+            fiéis aos designs, integrando qualidade, velocidade e experiencia, buscando fortalecer os laços entre a marca e os
             usuários.
           </Paragraph>
         </div>
@@ -65,13 +64,17 @@ const ProjectsTemplate = () => {
                 <h3>Experiência</h3>
               </div>
               <div className={projects["card-body"]}>
-                Para transmitir uma melhor experiência ao usuário,
-                desenvolvo sites fiéis ao design, com acessibilidade sendo responsivos e rápidos para garantir uma melhor
-                navegação do usuário.
+                A experiência do usuário é sempre importante,
+                procuro garantir sites fiéis ao design, acessibilidade e responsividade. Para garantir uma melhor
+                experiência do usuário.
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={projects.projects__cards}>
+        casa
       </div>
     </Layout>
   );
