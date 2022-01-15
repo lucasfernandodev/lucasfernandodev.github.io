@@ -8,13 +8,13 @@ const MeTemplate = () => {
     <Layout>
       <section className={me.section}>
         <div className={me.me__text}>
-          <h2>Sobre mim?</h2>
+          <h2>Sobre mim</h2>
           <Paragraph>
-            Olá, meu nome é Lucas Fernando e sou desenvolvedor front-end. Apaixonado por programação e tecnologia, sempre tentando resolver bugs..
+            Olá, meu nome é Lucas Fernando e sou desenvolvedor front-end. Apaixonado por programação e tecnologia, procurando projetos interessantes..
           </Paragraph>
 
           <Paragraph>
-            Minhas Tecnologias:
+            Tecnologias que estou usando:
           </Paragraph>
           
           <div className={me.tech}>
