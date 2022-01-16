@@ -45,6 +45,7 @@
   min-height: 100px;
 }
 
+
 @media (max-width: 1200px){
   .card{
     width: calc(100% - 24px);
@@ -57,8 +58,6 @@
     padding: 24px 32px;
   }
 }
-
-
 
 .card:hover{
   transform: translateY(-5px);
@@ -174,4 +173,49 @@
   justify-content: center;
   align-items: center;
   padding-top: 14px;
+}
+
+@media (max-width: 550px){
+  .projects{
+    padding: 65px 0;
+  }
+
+  .projects .text h2{
+    margin: 32px 0;
+  }
+
+  .projects .text p{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .card{
+    padding: 24px;
+  }
+  
+  .card__icon{
+    height: 100%;
+    width: 64px;
+    min-height: unset;
+    padding-top: 4px;
+  }
+  
+  .card__main{
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100px;
+  }
+
+  .projects__cards{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .cardPreview__header{
+    height: unset;
+  }
 }

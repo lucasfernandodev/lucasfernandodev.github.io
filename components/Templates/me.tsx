@@ -3,6 +3,7 @@ import Layout from "@/Organisms/Layout";
 import Paragraph from "@/Atoms/Paragraph";
 import Image from 'next/image';
 
+// Calcula a resolução da tela
 let resizeValue: string | null;
 const screen: Record<string, Number> = {
   small: 0,
@@ -42,9 +43,6 @@ if (typeof window !== "undefined") {
 
 
 const MeTemplate = () => {
-
-
-
 
   return (
     <Layout>

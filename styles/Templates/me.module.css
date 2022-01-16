@@ -94,7 +94,9 @@
     flex-wrap: wrap;
     align-items: center;
   }
-
+  .me__text h2{
+    margin: 32px 0;
+  }
   .me__text p{
     display: block;
     width: 100%;
