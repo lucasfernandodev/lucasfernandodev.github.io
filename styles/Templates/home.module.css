@@ -186,3 +186,27 @@
     min-width: 320px;
   }
 }
+
+@media (max-width: 550px){
+  .welcome{
+    padding: 65px 16px;
+    padding-bottom: 0;
+  }
+  .welcome .image{
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .welcome .image svg{
+    max-width: 50%;
+    max-height: 30vh;
+  }
+}
+
+@media (max-width: 360px){
+  .welcome .image svg{
+    max-width: 50%;
+    max-height: 25vh;
+  }
+}
