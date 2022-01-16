@@ -195,6 +195,9 @@
   .welcome .text{
     padding: 0;
   }
+  .welcome .text h2{
+    font-size: 2.3rem;
+  }
   .welcome .image{
     height: auto;
     padding-top: 16px;
@@ -207,7 +210,7 @@
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 365px){
   .welcome .image svg{
     max-width: 50%;
     max-height: 25vh;
