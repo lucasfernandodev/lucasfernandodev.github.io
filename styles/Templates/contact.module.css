@@ -155,3 +155,13 @@
     max-width: calc(100% - 24px);
   }
 }
+
+@media (max-width: 550px){
+  .toSend{
+    padding: 65px 0;
+  }
+
+  .toSend .list h2{
+    margin: 32px 0;
+  }
+}
