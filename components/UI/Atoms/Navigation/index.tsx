@@ -18,18 +18,18 @@ const Navigation: React.FC<NavigationProps> = ({show}) => {
         </li>
 
         <li>
-          <Link href="/me" aria-label="Sobre-mim">
+          <Link href="/me" aria-label="Sobre mim">
             <Icon icon="me"/>
           </Link>
         </li>
 
         <li>
-          <Link href="/projects" aria-label="projects">
+          <Link href="/projects" aria-label="Projects">
             <Icon icon="projects" />
           </Link>
         </li>
         <li>
-          <Link href="/contact" aria-label="contact">
+          <Link href="/contact" aria-label="Contact">
             <Icon icon="contact" />
           </Link>
         </li>
