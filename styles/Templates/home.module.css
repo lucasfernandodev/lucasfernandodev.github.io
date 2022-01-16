@@ -192,6 +192,9 @@
     padding: 65px 16px;
     padding-bottom: 0;
   }
+  .welcome .text{
+    padding: 0;
+  }
   .welcome .image{
     height: auto;
     padding-top: 16px;
