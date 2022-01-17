@@ -19,74 +19,6 @@
   gap: 12px;
 }
 
-.card{
-  height: auto;
-  min-height: 100px;
-  width: 540px;
-  border-radius: 8px;
-  background: var(--color-primary);
-  padding: 32px;
-  transition: 0.2s linear;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.card__icon{
-  height: 100%;
-  width: 64px;
-  min-height: 100px;
-  padding-top: 4px;
-}
-
-.card__main{
-  height: 100%;
-  width: calc(100% - 64px);
-  min-width: 320px;
-  min-height: 100px;
-}
-
-
-.card:hover{
-  transform: translateY(-5px);
-}
-
-.card-header{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 6px;
-}
-
-.card-header svg{
-  stroke-width: 1.7;
-}
-
-.card-header h3, .card-header svg{
-  color: var(--color-text-light);
-  stroke: var(--color-text-light);
-  font-family: 'Roboto Mono', monospace;
-}
-
-.card-body{
-  color: var(--color-text-light);
-
-  font-size: 16px;
-  letter-spacing: 0.062rem;
-}
-
-.card-footer a{
-  color: var(--color-text-light);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-.card-footer a:hover{
-  text-decoration: underline;
-}
-
 .text h2{
   font-size: 2rem;
   display: block;
@@ -96,7 +28,6 @@
   letter-spacing: 0.07rem;
   
 }
-
 
 
 .projects__cards{
@@ -128,24 +59,13 @@
   .projects .static{
     padding-right: 14px;
   }
-  .card{
-    width: 100%;
-    padding: 24px;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  
-  .card__icon{
-    min-height: unset;
-  }
 }
 
 @media (max-width: 960px){
   .projects{
     flex-direction: column;
-    padding: 65px 0;
+    padding: 65px 24px;
     height: auto;
-    margin-left: 0;
     width: 100%;
   }
 
@@ -164,8 +84,8 @@
     max-width: calc(100% - 12px);
   }
 
-  .card{
-    margin: 0;
+  .projects__cards{
+    margin-left: 0;
   }
 }
 
@@ -193,33 +113,10 @@
     padding: 0 16px;
     text-align: center;
   }
-
-  .card{
-    padding: 24px;
-  }
-  
-  .card__icon{
-    height: auto;
-    width: 64px;
-    min-height: unset;
-    padding-top: 4px;
-  }
-  
-  .card__main{
-    height: 100%;
-    width: 100%;
-    min-width: 320px;
-    min-height: 100px;
-  }
 }
 
 @media (max-width: 375px){
   .projects .text p{
     padding: 0;
-  }
-
-  .card__main{
-    min-width: unset;
-    overflow-wrap: break-word;
   }
 }
