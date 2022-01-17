@@ -4,6 +4,36 @@ import Layout from "@/Organisms/Layout";
 import Icon from "@/Utils/Icon";
 import Link from "@/Utils/Link";
 import Paragraph from "@/components/UI/Atoms/Paragraph";
+import CardPreview from "../CardPreview/cardPreview";
+
+interface cardType {
+  link: string;
+  image: string;
+  title: string;
+}
+
+const websites : Array<cardType> = [
+  {
+    title : 'Base Apparel',
+    image: '/websites/baseApparel.png',
+    link: '/',
+  },
+  {
+    title : 'Huddle',
+    image: '/websites/huddle.png',
+    link: '/',
+  },
+  {
+    title : 'Faq - Personal Website Portfolio',
+    image: '/websites/faq.png',
+    link: '/',
+  },
+  {
+    title : 'Learn',
+    image: '/websites/learn.png',
+    link: '/',
+  },
+]
 
 const ProjectsTemplate = () => {
   return (
@@ -73,58 +103,13 @@ const ProjectsTemplate = () => {
           </div>
         </div>
       </div>
-
       <div className={projects.projects__cards}>
-
-
-        <div className={projects.cardPreview}>
-          <div className={projects.cardPreview__header}>
-
-            <Link href="/" className={projects.cardPreview__button}>
-              <Image src="/websites/baseApparel.png" width={400} height={220} alt="My Image" layout="responsive" />
-            </Link>
-          </div>
-          <div className={projects.cardPreview__info}>
-            <h3>Base Apparel</h3>
-          </div>
-        </div>
-
-        <div className={projects.cardPreview}>
-          <div className={projects.cardPreview__header}>
-
-            <Link href="/" className={projects.cardPreview__button}>
-              <Image src="/websites/huddle.png" width={400} height={220} alt="My Image" layout="responsive" />
-            </Link>
-          </div>
-          <div className={projects.cardPreview__info}>
-            <h3>Huddle</h3>
-          </div>
-        </div>
-
-        <div className={projects.cardPreview}>
-          <div className={projects.cardPreview__header}>
-
-            <Link href="/" className={projects.cardPreview__button}>
-              <Image src="/websites/faq.png" width={400} height={220} alt="My Image" layout="responsive" />
-            </Link>
-          </div>
-          <div className={projects.cardPreview__info}>
-            <h3>Faq - Personal Website Portfolio</h3>
-          </div>
-        </div>
-
-        <div className={projects.cardPreview}>
-          <div className={projects.cardPreview__header}>
-
-            <Link href="/" className={projects.cardPreview__button}>
-              <Image src="/websites/learn.png" width={400} height={220} alt="My Image" layout="responsive" />
-            </Link>
-          </div>
-          <div className={projects.cardPreview__info}>
-            <h3>Learn</h3>
-          </div>
-        </div>
-
+    {
+      websites.map((item: cardType) => {
+        
+        return <CardPreview Key={item.title} image={item.image} link={item.link} title={item.title}/>
+      })
+    }
       </div>
     </Layout>
   );
