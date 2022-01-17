@@ -105,9 +105,9 @@ const ProjectsTemplate = () => {
       </div>
       <div className={projects.projects__cards}>
     {
-      websites.map((item: cardType) => {
+      websites.map((item: cardType, index) => {
         
-        return <CardPreview Key={item.title} image={item.image} link={item.link} title={item.title}/>
+        return <CardPreview key={index} image={item.image} link={item.link} title={item.title}/>
       })
     }
       </div>
