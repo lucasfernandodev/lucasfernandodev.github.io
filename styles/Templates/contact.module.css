@@ -126,6 +126,7 @@
   letter-spacing: 0.07rem;
 }
 
+
 @media (max-width: 768px){
   .toSend{
     flex-direction: column;

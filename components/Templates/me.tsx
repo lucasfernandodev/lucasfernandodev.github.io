@@ -7,7 +7,7 @@ import Image from 'next/image';
 let resizeValue: string | null;
 const screen: Record<string, Number> = {
   small: 0,
-  medium: 400,
+  medium: 550,
   large: 800
 };
 

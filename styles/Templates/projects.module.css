@@ -7,6 +7,8 @@
   height: 100%;
 }
 
+
+
 .projects .static, .projects .text{
   width: 50%;
 }
@@ -45,19 +47,29 @@
   min-height: 100px;
 }
 
+/* Add pading e aumenta o height do .projects em dispositivos landscape com telas menores */
+@media (max-height: 589px) and (min-width: 769px) and (max-width: 1199px){
+  .projects{
+    height: auto;
+  }
+  .projects .static{
+    padding: 65px 0;
+  }
+}
 
 @media (max-width: 1200px){
   .card{
-    width: calc(100% - 24px);
+    width: 100%;
+    padding: 24px;
     margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .card__icon{
+    min-height: unset;
   }
 }
 
-@media (max-width: 924px){
-  .card{
-    padding: 24px 32px;
-  }
-}
 
 .card:hover{
   transform: translateY(-5px);
@@ -109,22 +121,35 @@
   
 }
 
-@media (max-width: 768px){
+@media (max-width: 960px){
   .projects{
     flex-direction: column;
-    padding: 75px 0;
+    padding: 75px 24px;
   }
+
   .projects .static, .projects .text{
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
   }
 
   .text h2{
     max-width: calc(100% - 12px);
+  }
+
+  .card{
+    margin: 0;
+  }
+}
+
+/* Add margin 0 ao h2 para centralizar */
+@media (max-width: 768px){
+  .text h2{
+    margin: 32px auto;
+  }
+  .projects{
+    padding: 65px 24px;
   }
 }
 
@@ -175,13 +200,24 @@
   padding-top: 14px;
 }
 
-@media (max-width: 550px){
-  .projects{
+@media (max-width: 960px){
+  .projects__cards{
+    margin-left: 0;
+    width: 100%;
     padding: 65px 0;
   }
+  
+  .cardPreview__header{
+    height: unset;
+  }
+}
+
+
+@media (max-width: 550px){
+
 
   .projects .text h2{
-    margin: 32px 0;
+    margin: 32px auto;
   }
 
   .projects .text p{
@@ -208,14 +244,5 @@
     width: 100%;
     min-width: 320px;
     min-height: 100px;
-  }
-
-  .projects__cards{
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .cardPreview__header{
-    height: unset;
   }
 }

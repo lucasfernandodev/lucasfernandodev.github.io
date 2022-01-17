@@ -53,6 +53,11 @@
 .buttonNavigation{
   display: none;
 }
+@media (max-width: 990px){
+  .main{
+    padding: 0;
+  }
+}
 
 @media (max-width: 768px){
   .header {
