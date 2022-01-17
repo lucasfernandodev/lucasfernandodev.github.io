@@ -8,7 +8,7 @@ type cardType = {
     title: string;
 }
 
-const cardPreview = ({ link, image, title, ...args}: cardType) => {
+const cardPreview = ({ link, image, title, ...args }: cardType) => {
     return (
         <div className={style.card}>
             <div className={style['card-header']}>
