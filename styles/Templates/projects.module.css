@@ -8,7 +8,6 @@
 }
 
 
-
 .projects .static, .projects .text{
   width: 50%;
 }
@@ -45,32 +44,6 @@
   width: calc(100% - 64px);
   min-width: 320px;
   min-height: 100px;
-}
-
-/* Add pading e aumenta o height do .projects em dispositivos landscape com telas menores */
-@media (max-height: 589px) and (min-width: 769px) and (max-width: 1199px){
-  .projects{
-    height: auto;
-  }
-  .projects .static{
-    padding: 65px 0;
-  }
-}
-
-@media (max-width: 1200px){
-  .projects .static{
-    padding-right: 14px;
-  }
-  .card{
-    width: 100%;
-    padding: 24px;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  
-  .card__icon{
-    min-height: unset;
-  }
 }
 
 
@@ -124,11 +97,56 @@
   
 }
 
+
+
+.projects__cards{
+  width: calc(100% + 42px);
+  min-height: 100vh;
+  background: var(--color-dark-paper);
+  display: flex;
+  margin-left: -42px;
+  padding: 82px 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+
+}
+
+/* Add pading e aumenta o height do .projects em dispositivos landscape com telas menores */
+@media (max-height: 589px) and (min-width: 769px) and (max-width: 1199px){
+  .projects{
+    height: auto;
+  }
+  .projects .static{
+    padding: 65px 0;
+  }
+}
+
+@media (max-width: 1200px){
+  .projects .static{
+    padding-right: 14px;
+  }
+  .card{
+    width: 100%;
+    padding: 24px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .card__icon{
+    min-height: unset;
+  }
+}
+
 @media (max-width: 960px){
   .projects{
     flex-direction: column;
-    padding: 75px 24px;
+    padding: 65px 0;
     height: auto;
+    margin-left: 0;
+    width: 100%;
   }
 
   .projects .static, .projects .text{
@@ -158,29 +176,6 @@
   }
   .projects{
     padding: 65px 24px;
-  }
-}
-
-.projects__cards{
-  width: calc(100% + 42px);
-  min-height: 100vh;
-  background: #171717;
-  display: flex;
-  margin-left: -42px;
-  padding: 82px 24px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-
-}
-
-@media (max-width: 960px){
-  .projects__cards{
-    margin-left: 0;
-    width: 100%;
-    padding: 65px 0;
   }
 }
 
