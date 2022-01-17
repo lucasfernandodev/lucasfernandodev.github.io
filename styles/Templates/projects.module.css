@@ -246,3 +246,20 @@
     min-height: 100px;
   }
 }
+
+@media (max-width: 375px){
+  .projects .text p{
+    padding: 0;
+  }
+
+  .card__main{
+    min-width: unset;
+    overflow-wrap: break-word;
+  }
+
+  .cardPreview{
+    width: calc(100% - 48px);
+    margin-bottom: 24px;
+  }
+  
+}

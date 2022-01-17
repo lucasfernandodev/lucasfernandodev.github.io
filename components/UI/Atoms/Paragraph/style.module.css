@@ -29,3 +29,10 @@
     margin: 18px auto;
   }
 }
+
+@media (max-width: 375px){
+  .paragraph{
+    width: 100%;
+    margin: 12px auto;
+  }
+}
