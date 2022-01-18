@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@/infra/*": ["components/infra/*"],
       "@/components/*": ["components/*"],
       "@/Atoms/*": ["components/UI/Atoms/*"],
       "@/Molecules/*": ["components/UI/Molecules/*"],

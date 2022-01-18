@@ -1,9 +1,9 @@
 import projects from "../../styles/Templates/projects.module.css";
 import Layout from "@/Organisms/Layout";
-import Icon from "@/Utils/Icon";
 import Paragraph from "@/components/UI/Atoms/Paragraph";
 import CardPreview from "../CardPreview/cardPreview";
 import CardFeatured from "../CardFeatured/cardFeatured";
+import List from '@/infra/Store/websites/list';
 
 interface cardType {
   link: string;
@@ -11,30 +11,9 @@ interface cardType {
   title: string;
 }
 
-const websites: Array<cardType> = [
-  {
-    title: 'Base Apparel',
-    image: '/websites/baseApparel.png',
-    link: '/',
-  },
-  {
-    title: 'Huddle',
-    image: '/websites/huddle.png',
-    link: '/',
-  },
-  {
-    title: 'Faq - Personal Website Portfolio',
-    image: '/websites/faq.png',
-    link: '/',
-  },
-  {
-    title: 'Learn',
-    image: '/websites/learn.png',
-    link: '/',
-  },
-]
 
 const ProjectsTemplate = () => {
+
   return (
     <Layout>
       <div className={projects.projects}>
@@ -52,27 +31,34 @@ const ProjectsTemplate = () => {
 
         <div className={projects.static}>
 
-          <CardFeatured icon="rocket" title="Velocidade" content="Sempre procuro garantir um site fluido e otimizado utilizando as
-                principais praticas de CEO."/>
+          <CardFeatured
+            icon="rocket"
+            title="Velocidade"
+            content="Sempre procuro garantir um site fluido e otimizado utilizando as principais praticas de CEO."
+          />
 
-          <CardFeatured icon="quality" title="Qualidade" content="Foco sempre na qualidade do código utilizando sempre as melhore
-                praticas do mercado."/>
+          <CardFeatured
+            icon="quality"
+            title="Qualidade"
+            content="Foco sempre na qualidade do código utilizando sempre as melhore praticas do mercado."
+          />
 
-
-          <CardFeatured icon="frontendMentor" title="Experiência" content="A experiência do usuário é sempre importante,
-                procuro garantir sites fiéis ao design, acessibilidade e responsividade. Para garantir uma melhor
-                experiência do usuário."/>
+          <CardFeatured
+            icon="frontendMentor"
+            title="Experiência"
+            content="A experiência do usuário é sempre importante, procuro garantir sites fiéis ao design, acessibilidade e responsividade. Para garantir uma melhor experiência do usuário."
+          />
 
         </div>
       </div>
-      <div className={projects.projects__cards}>
-        {
-          websites.map((item: cardType, index) => {
 
-            return <CardPreview key={index} image={item.image} link={item.link} title={item.title} />
-          })
-        }
-      </div>
+
+      <div className={projects.projects__cards}>{
+        List.map((item: cardType, index) => {
+          return <CardPreview key={index} image={item.image} link={item.link} title={item.title} />
+        })
+      }</div>
+
     </Layout>
   );
 };
