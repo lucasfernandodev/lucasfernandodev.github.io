@@ -2,47 +2,16 @@ import me from "../../styles/Templates/me.module.css";
 import Layout from "@/components/UI/Organisms/Layout";
 import Paragraph from "@/Atoms/Paragraph";
 import Image from 'next/image';
-
-// Calcula a resolução da tela
-let resizeValue: string | null;
-const screen: Record<string, Number> = {
-  small: 0,
-  medium: 550,
-  large: 800
-};
-
-// calculate size
-function resizeHandler(): void {
-
-  // get window width
-  const iw = window.innerWidth;
-
-  // determine named size
-  let size = null;
-  for (let s in screen) {
-    if (iw >= screen[s]) size = s;
-  }
-
-  resizeValue = size;
-}
-
-// observe window resize
-if (typeof window !== "undefined") {
-
-
-
-  window.addEventListener('resize', resizeHandler);
-
-
-
-  // initial call
-  resizeHandler();
-}
-
-
-
+import ResizeScreen from '@/Utils/resizeScreen';
+import { useEffect, useState} from "react";
 
 const MeTemplate = () => {
+
+
+  const [ScreenSize, setScreenSize] = useState(null);
+  useEffect(() => {
+    setScreenSize(ResizeScreen() !== null ? ResizeScreen() : null)
+  }, [])
 
   return (
     <Layout>
@@ -50,13 +19,13 @@ const MeTemplate = () => {
         <div className={me.me__text}>
           <h2>Sobre mim</h2>
           {
-            resizeValue === 'small' ? (
+            ScreenSize === 'small' ? (
               <div className={me.me__image}>
                 <div className={me.me_img}>
                   <Image src="/imagens/lucas.jpeg" width={340} height={350} alt="Lucas Fernando" layout="responsive" />
                 </div>
               </div>
-            ) : null
+            ) : ''
           }
 
           <Paragraph>
@@ -84,14 +53,15 @@ const MeTemplate = () => {
           </div>
 
         </div>
+
         {
-          resizeValue !== 'small' ? (
+          ScreenSize !== 'small' ? (
             <div className={me.me__image}>
               <div className={me.me_img}>
                 <Image src="/imagens/lucas.jpeg" width={340} height={350} alt="Lucas Fernando" layout="responsive" />
               </div>
             </div>
-          ) : null
+          ) : ''
         }
 
       </section>
