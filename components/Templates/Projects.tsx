@@ -1,8 +1,8 @@
 import projects from "../../styles/Templates/projects.module.css";
-import Layout from "@/Organisms/Layout";
+import Layout from "@/components/UI/Organisms/Layout";
 import Paragraph from "@/components/UI/Atoms/Paragraph";
-import CardPreview from "../CardPreview/cardPreview";
-import CardFeatured from "../CardFeatured/cardFeatured";
+import CardPreview from "@/Molecules/CardPreview/cardPreview";
+import CardFeatured from "@/Molecules/CardFeatured/cardFeatured";
 import List from '@/infra/Store/websites/list';
 
 interface cardType {
