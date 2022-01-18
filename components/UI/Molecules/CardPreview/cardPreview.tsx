@@ -12,7 +12,7 @@ const cardPreview = ({ link, image, title, ...args }: cardType) => {
     return (
         <div className={style.card}>
             <div className={style['card-header']}>
-                <Link href={link} className={style['card-wrapper']}>
+                <Link href={link} className={style['card-wrapper']} target="_blank">
                     <Image src={image}
                         width={400}
                         height={220}
