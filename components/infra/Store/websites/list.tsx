@@ -8,22 +8,22 @@ const List: Array<cardType> = [
     {
         title: 'Base Apparel',
         image: '/websites/baseApparel.png',
-        link: '/',
+        link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/base-apparel/',
     },
     {
         title: 'Huddle',
         image: '/websites/huddle.png',
-        link: '/',
+        link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/huddle-single-introductory-section/',
     },
     {
-        title: 'Faq - Personal Website Portfolio',
+        title: 'Card de faq acordion',
         image: '/websites/faq.png',
-        link: '/',
+        link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/faq-accordion-card/',
     },
     {
-        title: 'Learn',
+        title: 'Card de Login',
         image: '/websites/learn.png',
-        link: '/',
+        link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/intro-component-with-signup-form-master/',
     },
 ];
 

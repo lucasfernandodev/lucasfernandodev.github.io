@@ -1,5 +1,5 @@
 import me from "../../styles/Templates/me.module.css";
-import Layout from "@/Organisms/Layout";
+import Layout from "@/components/UI/Organisms/Layout";
 import Paragraph from "@/Atoms/Paragraph";
 import Image from 'next/image';
 

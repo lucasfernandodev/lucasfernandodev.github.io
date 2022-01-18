@@ -1,5 +1,5 @@
 import contact from "../../styles/Templates/contact.module.css";
-import Layout from "@/Organisms/Layout";
+import Layout from "@/components/UI/Organisms/Layout";
 import Link from "@/Utils/Link";
 import Icon from "@/Utils/Icon";
 import Paragraph from "@/Atoms/Paragraph";

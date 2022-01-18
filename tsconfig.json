@@ -19,7 +19,7 @@
       "@/components/*": ["components/*"],
       "@/Atoms/*": ["components/UI/Atoms/*"],
       "@/Molecules/*": ["components/UI/Molecules/*"],
-      "@/Organisms/*": ["components/UI/Organisms/*"],
+      "@/Organisms/*": ["components/UI/Atoms/Organisms/*"],
       "@/Templates/*": ["components/UI/Atoms/Templates/*"],
       "@/Utils/*": ["components/Utils/*"],
     }
