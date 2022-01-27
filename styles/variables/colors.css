@@ -16,5 +16,5 @@
   --color-text: #ededfdaa;
   --color-text-light: #ddd;
 
-  --color-gradient: linear-gradient(to right, #5352ed,#70a1ff);
+  --color-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
