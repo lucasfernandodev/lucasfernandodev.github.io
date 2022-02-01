@@ -23,7 +23,7 @@ const ContactTemplate = () => {
           </Link>
         </div>
         <div className={contact.projects}>
-          <p>
+          <div>
             <ul>
               <li>
                 <Link href="https://github.com/lucasfernandodev">
@@ -46,7 +46,7 @@ const ContactTemplate = () => {
                 </Link>
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </section>
     </Layout>
