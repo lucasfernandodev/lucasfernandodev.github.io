@@ -11,7 +11,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
   const path = router.asPath !== "/" ? router.asPath : null;
 
   
-  const description = "Meu portfolio pessoal um Agrupador de links para meus projetos.";
+  const description = "Olá, meu nome é Lucas Fernando e sou desenvolvedor frontend, e esse é meu portfolio pessoal.";
 
   return (
     <>
@@ -39,7 +39,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
         <link rel="shortcut icon" href="SEO/favicon.svg" type="image/png" />
         <meta
           name="keywords"
-          content="HTML, CSS, JavaScript, Lucas Fernando, Portfolio"
+          content="desenvolvedor, frontend, front-end, HTML, CSS, JavaScript,Reacjs,typescript, Lucas Fernando, Portfolio"
         ></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Lucas Fernando" />
