@@ -19,17 +19,6 @@
   gap: 12px;
 }
 
-.text h2{
-  font-size: 2rem;
-  display: block;
-  max-width: 420px;
-  word-wrap: break-word;
-  font-weight: 500;
-  letter-spacing: 0.07rem;
-  
-}
-
-
 .projects__cards{
   width: calc(100% + 42px);
   min-height: 100vh;

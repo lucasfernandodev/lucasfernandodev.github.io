@@ -34,6 +34,10 @@
   margin-right: 6px;
 }
 
+.welcome .description{
+  font-weight: 500;
+}
+
 .welcome .text h2{
   font-size: 3.8rem;
   max-width: 550px;
@@ -81,7 +85,7 @@
   text-decoration: none;
   margin-top: 24px;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0.5px;
 }
 

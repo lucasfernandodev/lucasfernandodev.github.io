@@ -14,16 +14,6 @@
   flex-direction: column;
 }
 
-.toSend .list h2 {
-  font-size: 2rem;
-  display: block;
-  max-width: 420px;
-  word-wrap: break-word;
-  font-weight: 500;
-  letter-spacing: 0.07rem;
-}
-
-
 .list p {
   font-size: 16px;
   color: #fff;
@@ -103,7 +93,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-weight: 500;
+  font-weight: bold;
   height: 100%;
   width: 100%;
   padding-left: 16px;

@@ -14,17 +14,6 @@
 }
 
 
-.me__text h2 {
-  font-size: 2rem;
-  display: block;
-  max-width: 420px;
-  word-wrap: break-word;
-  font-weight: 500;
-  letter-spacing: 0.07rem;
-}
-
-
-
 .me__text p{
   margin: 18px 0;
   color: var(--color-text);

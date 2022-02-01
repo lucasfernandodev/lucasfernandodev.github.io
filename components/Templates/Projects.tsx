@@ -4,6 +4,7 @@ import Paragraph from "@/components/UI/Atoms/Paragraph";
 import CardPreview from "@/Molecules/CardPreview/cardPreview";
 import CardFeatured from "@/Molecules/CardFeatured/cardFeatured";
 import List from '@/infra/Store/websites/list';
+import Title from "../UI/Atoms/Title";
 
 interface cardType {
   link: string;
@@ -18,14 +19,14 @@ const ProjectsTemplate = () => {
     <Layout>
       <div className={projects.projects}>
         <div className={projects.text}>
-          <h2>O que eu faço?</h2>
+          <Title>O que eu faço?</Title>
           <Paragraph>
-            Eu trabalho com o desenvolvimento front-end de websites, portais, lojas virtuais e
-            blogs.
+            Como desenvolvedor frontend trabalho codando o design,
+             transformando o em sites e aplicações, com foco em trazer a melhor experiência para o usuário.
           </Paragraph>
           <Paragraph>
-            Desenvolvendo sites
-            fiéis aos designs, integrando qualidade, velocidade e experiencia.
+            Sempre Desenvolvo sites
+            fiéis ao design focando em integrar qualidade e velocidade com a experiência do usuário.
           </Paragraph>
         </div>
 
@@ -34,19 +35,20 @@ const ProjectsTemplate = () => {
           <CardFeatured
             icon="rocket"
             title="Velocidade"
-            content="Sempre procuro garantir um site fluido e otimizado utilizando as principais praticas de CEO."
+            content="Procuro sempre desenvolver um site otimizado utilizando as principais práticas do mercado."
           />
 
           <CardFeatured
             icon="quality"
             title="Qualidade"
-            content="Foco sempre na qualidade do código utilizando sempre as melhore praticas do mercado."
+            content="Desenvolvo sempre com foco no código limpo e semântico."
           />
 
           <CardFeatured
             icon="frontendMentor"
             title="Experiência"
-            content="A experiência do usuário é sempre importante, procuro garantir sites fiéis ao design, acessibilidade e responsividade. Para garantir uma melhor experiência do usuário."
+            content="A experiência do usuário é sempre importante, por isso busco desenvolver sites funcionais, fiéis ao design,
+            que tenham acessibilidade e responsividade."
           />
 
         </div>

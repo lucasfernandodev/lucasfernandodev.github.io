@@ -3,7 +3,8 @@ import Layout from "@/components/UI/Organisms/Layout";
 import Paragraph from "@/Atoms/Paragraph";
 import Image from 'next/image';
 import ResizeScreen from '@/Utils/resizeScreen';
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import Title from "../UI/Atoms/Title";
 
 const MeTemplate = () => {
 
@@ -17,7 +18,7 @@ const MeTemplate = () => {
     <Layout>
       <section className={me.section}>
         <div className={me.me__text}>
-          <h2>Sobre mim</h2>
+          <Title>Sobre mim</Title>
           {
             ScreenSize === 'small' ? (
               <div className={me.me__image}>
@@ -29,11 +30,12 @@ const MeTemplate = () => {
           }
 
           <Paragraph>
-            Olá, meu nome é Lucas Fernando e sou desenvolvedor front-end. Apaixonado por programação e tecnologia, procurando projetos interessantes..
+            Olá, meu nome é Lucas Fernando, tenho 21 anos, e sou desenvolvedor front-end.
+            Apaixonado por programação e novas tecnologias.
           </Paragraph>
 
           <Paragraph>
-            Tecnologias que estou usando:
+            Tecnologias que estou usando
           </Paragraph>
 
           {/* Carrocel de imagens de tecnologias */}

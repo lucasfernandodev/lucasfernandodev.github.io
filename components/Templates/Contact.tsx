@@ -3,6 +3,7 @@ import Layout from "@/components/UI/Organisms/Layout";
 import Link from "@/Utils/Link";
 import Icon from "@/Utils/Icon";
 import Paragraph from "@/Atoms/Paragraph";
+import Title from "../UI/Atoms/Title";
 
 
 const ContactTemplate = () => {
@@ -10,7 +11,7 @@ const ContactTemplate = () => {
     <Layout>
       <section className={contact.toSend}>
         <div className={contact.list}>
-          <h2>Vamos conversar sobre o seu projeto?</h2>
+          <Title>Vamos conversar sobre o seu projeto?</Title>
           <Paragraph>
             Me mande um email ou me contate pelas redes sociais e vamos fazer
             algo juntos.

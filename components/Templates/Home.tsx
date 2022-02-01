@@ -9,7 +9,7 @@ const HomeTemplate = () => {
         <div className={home.text}>
           <p>Olá,</p>
           <h2>Meu nome é Lucas Fernando.</h2>
-          <p>Desenvolvedor frontend.</p>
+          <p className={home.description}>Desenvolvedor frontend.</p>
           <Link href="/contact" className={home.button}>
             Entrar em contato
           </Link>
