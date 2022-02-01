@@ -1,9 +1,9 @@
 .paragraph{
-  margin: 18px 0;
+  margin: 0;
   color: var(--color-text);
-  opacity: 0.9;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
+  width: 100%;
   max-width: 445px;
 }
 
@@ -21,18 +21,4 @@
 
 .paragraph a:hover{
   text-decoration: underline;
-}
-
-@media (max-width: 768px){
-  .paragraph{
-    max-width: calc(100% - 24px);
-    margin: 18px auto;
-  }
-}
-
-@media (max-width: 375px){
-  .paragraph{
-    width: 100%;
-    margin: 12px auto;
-  }
 }

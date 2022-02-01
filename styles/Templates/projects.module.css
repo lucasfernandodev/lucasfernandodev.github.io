@@ -12,6 +12,15 @@
   width: 50%;
 }
 
+.projects .content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+  padding-right: 15px;
+}
+
 .projects .static{
   display: flex;
   flex-direction: column;
@@ -85,6 +94,10 @@
   }
   .projects{
     padding: 65px 24px;
+  }
+  .projects .content{
+    margin-top: 0;
+    margin-bottom: 24px;
   }
 }
 

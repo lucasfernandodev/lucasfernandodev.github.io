@@ -6,9 +6,10 @@ type cardType = {
     link: string;
     image: string;
     title: string;
+    techs?: Array<string>
 }
 
-const cardPreview = ({ link, image, title, ...args }: cardType) => {
+const cardPreview = ({ link, image, title,techs = [], ...args }: cardType) => {
     return (
         <div className={style.card}>
             <div className={style['card-header']}>
@@ -25,7 +26,12 @@ const cardPreview = ({ link, image, title, ...args }: cardType) => {
             </div>
 
             <div className={style['card-main']}>
-                <h3 className={style['card-title']}>{title}</h3>
+            <h3 className={style[`card-title`]}><a href={link} target="_blank" rel='noreferrer'>{title}</a></h3>
+            <div className={style[`card-techs`]}>
+                {techs.length > 0 ? techs.map((tech, index) => {
+                    return (<span key={index} className={style[`tech ${tech}`]}>{tech}</span>)
+                }): null}
+                </div>
             </div>
         </div>
     )

@@ -10,6 +10,7 @@ interface cardType {
   link: string;
   image: string;
   title: string;
+  techs?: Array<string>;
 }
 
 
@@ -20,14 +21,16 @@ const ProjectsTemplate = () => {
       <div className={projects.projects}>
         <div className={projects.text}>
           <Title>O que eu faço?</Title>
-          <Paragraph>
-            Como desenvolvedor frontend trabalho codando o design,
-             transformando o em sites e aplicações, com foco em trazer a melhor experiência para o usuário.
-          </Paragraph>
-          <Paragraph>
-            Sempre Desenvolvo sites
-            fiéis ao design focando em integrar qualidade e velocidade com a experiência do usuário.
-          </Paragraph>
+          <div className={projects.content}>
+            <Paragraph>
+              Como desenvolvedor frontend trabalho codando o design,
+              transformando o em sites e aplicações, com foco em trazer a melhor experiência para o usuário.
+            </Paragraph>
+            <Paragraph>
+              Sempre Desenvolvo sites
+              fiéis ao design focando em integrar qualidade e velocidade com a experiência do usuário.
+            </Paragraph>
+          </div>
         </div>
 
         <div className={projects.static}>
@@ -57,7 +60,7 @@ const ProjectsTemplate = () => {
 
       <div className={projects.projects__cards}>{
         List.map((item: cardType, index) => {
-          return <CardPreview key={index} image={item.image} link={item.link} title={item.title} />
+          return <CardPreview key={index} techs={item.techs} image={item.image} link={item.link} title={item.title} />
         })
       }</div>
 

@@ -1,31 +1,8 @@
-import text from './style.module.css';
+import style from './style.module.css';
 
-type TextProps = {
-  marginX?: string | undefined,
-  marginY?: string | undefined
-}
-
-const Paragraph: React.FC<TextProps> = ({children, marginX, marginY}) => {
-
-  const margin = {
-    marginLeft: "none",
-    marginRight: "none",
-    marginTop: "none",
-    marginBottom: "none",
-  }
-
-  if(typeof marginX !== 'undefined' && marginX !== undefined){
-    margin.marginLeft = `${marginX}px`;
-    margin.marginRight = `${marginX}px`;
-  }
-
-  if(typeof marginY !== 'undefined' && marginY !== undefined){
-    margin.marginTop = `${marginY}px`;
-    margin.marginBottom = `${marginY}px`;
-  }
-
+const Paragraph: React.FC = ({children}) => {
   return (
-    <p className={text.paragraph} style={margin}>
+    <p className={style.paragraph}>
       {children}
     </p>
   )

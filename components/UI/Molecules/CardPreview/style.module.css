@@ -1,6 +1,9 @@
 .card{
     width: 390px;
     margin-bottom: 40px;
+    background: #111;
+    padding-bottom: 16px;
+    border-radius: 8px;
 }
 .card-header{
     width: 100%;
@@ -29,6 +32,20 @@
     padding-top: 14px;
 }
 
+.card-techs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+    padding: 0 10px;
+}
+
+.card-techs span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-text);
+}
 
 @media (max-width: 960px){
     .card-header{
@@ -38,7 +55,7 @@
 
 @media (max-width: 550px){
     .card{
-        width: calc(100% - 48px);
+        width: calc(100% - 16px);
         margin-bottom: 24px;
     }
 }
