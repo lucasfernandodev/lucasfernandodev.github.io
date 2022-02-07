@@ -26,11 +26,13 @@ const cardPreview = ({ link, image, title,techs = [], ...args }: cardType) => {
             </div>
 
             <div className={style['card-main']}>
-            <h3 className={style[`card-title`]}><a href={link} target="_blank" rel='noreferrer'>{title}</a></h3>
+            <h3 className={style[`card-title`]}>
+                <a href={link} target="_blank" rel='noreferrer'>{title}</a>
+            </h3>
             <div className={style[`card-techs`]}>
-                {techs.length > 0 ? techs.map((tech, index) => {
-                    return (<span key={index} className={style[`tech ${tech}`]}>{tech}</span>)
-                }): null}
+                {techs.length > 0 && techs.map((tech, index) => {
+                    return <span key={index} className={style[`tech ${tech}`]}>{tech}</span>
+                })}
                 </div>
             </div>
         </div>

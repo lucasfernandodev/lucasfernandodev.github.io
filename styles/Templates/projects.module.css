@@ -93,7 +93,7 @@
     margin: 32px auto;
   }
   .projects{
-    padding: 65px 24px;
+    padding: 65px 12px;
   }
   .projects .content{
     margin-top: 0;
@@ -112,7 +112,7 @@
     display: block;
     width: 100%;
     max-width: 100%;
-    padding: 0 16px;
+    padding: 0 0;
     text-align: center;
   }
 }

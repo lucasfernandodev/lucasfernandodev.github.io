@@ -24,12 +24,12 @@ const Navigation: React.FC<NavigationProps> = ({show}) => {
         </li>
 
         <li>
-          <Link href="/projects" aria-label="Projects">
+          <Link href="/projects" aria-label="Projetos">
             <Icon icon="projects" />
           </Link>
         </li>
         <li>
-          <Link href="/contact" aria-label="Contact">
+          <Link href="/contact" aria-label="Contato">
             <Icon icon="contact" />
           </Link>
         </li>

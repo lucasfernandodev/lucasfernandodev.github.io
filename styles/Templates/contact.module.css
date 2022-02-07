@@ -1,4 +1,4 @@
-.toSend {
+.section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,21 +7,21 @@
 }
 
 
-.toSend .list {
+.section .apresentation {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.list p {
+.apresentation p {
   font-size: 16px;
   color: #fff;
   letter-spacing: 0.7px;
   margin-bottom: 8px;
 }
 
-.list h2 + p{
+.apresentation h2 + p{
   margin: 18px 0;
   color: var(--color-text);
   opacity: 0.9;
@@ -30,7 +30,7 @@
   max-width: 445px;
 }
 
-.list .icon{
+.apresentation .icon{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@
   font-size: 20px;
 }
 
-.list .icon svg{
+.apresentation .icon svg{
   stroke: var(--color-secondary);
   width: 20px;
   height: 20px;
@@ -50,11 +50,11 @@
   transition: 0.25s ease-in-out;
 }
 
-.list .icon:hover svg{
+.apresentation .icon:hover svg{
   transform: translateX(16px);
 }
 
-.toSend .projects {
+.section .projects {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -118,11 +118,11 @@
 
 
 @media (max-width: 768px){
-  .toSend{
+  .section{
     flex-direction: column;
     padding: 75px 0;
   }
-  .toSend .list, .toSend .projects{
+  .section .apresentation, .section .projects{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -130,17 +130,17 @@
     align-items: center;
     justify-content: center;
   }
-  .toSend .projects{
+  .section .projects{
     padding-top: 24px;
   }
 
-  .toSend .list h2 {
+  .section .apresentation h2 {
     text-align: center;
     width: 100%;
     max-width: calc(100% - 24px);
   }
 
-  .list h2 + p{
+  .apresentation h2 + p{
     margin: 18px auto;
     text-align: center;
     max-width: calc(100% - 24px);
@@ -148,11 +148,11 @@
 }
 
 @media (max-width: 550px){
-  .toSend{
+  .section{
     padding: 65px 0;
   }
 
-  .toSend .list h2{
+  .section .apresentation h2{
     margin: 32px 0;
   }
 }

@@ -23,11 +23,11 @@ const ProjectsTemplate = () => {
           <Title>O que eu faço?</Title>
           <div className={projects.content}>
             <Paragraph>
-              Como desenvolvedor frontend trabalho codando o design,
+              Como desenvolvedor front-end trabalho codando o design,
               transformando o em sites e aplicações, com foco em trazer a melhor experiência para o usuário.
             </Paragraph>
             <Paragraph>
-              Sempre Desenvolvo sites
+              Sempre desenvolvo sites
               fiéis ao design focando em integrar qualidade e velocidade com a experiência do usuário.
             </Paragraph>
           </div>
@@ -44,13 +44,13 @@ const ProjectsTemplate = () => {
           <CardFeatured
             icon="quality"
             title="Qualidade"
-            content="Desenvolvo sempre com foco no código limpo e semântico."
+            content="Para garantir a qualidade da aplicação, desenvolvo sempre com foco no código limpo e semântico."
           />
 
           <CardFeatured
             icon="frontendMentor"
             title="Experiência"
-            content="A experiência do usuário é sempre importante, por isso busco desenvolver sites funcionais, fiéis ao design,
+            content="A experiência do usuário é sempre importante se um site deseja se manter e crescer, por isso busco desenvolver sites funcionais, fiéis ao design,
             que tenham acessibilidade e responsividade."
           />
 

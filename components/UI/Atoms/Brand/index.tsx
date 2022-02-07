@@ -3,7 +3,7 @@ import Icon from '@/Utils/Icon';
 
 const Brand = () => {
   return (
-    <div>
+    <div aria-label='brand'>
       <Icon icon="logo" className={styles.logo} />
     </div>
   );

@@ -4,7 +4,7 @@ import Head from "@/Utils/meta";
 const Projects: NextPage = () => {
   return (
     <>
-      <Head title="Projetos | Lucas Fernando - Portfolio simples contendo um pouco da meu trabalho e da minha historia." />
+      <Head title="Projetos | Lucas Fernando · Devenvolvedor frontend" />
       <ProjectsTemplate />
     </>
   );

@@ -11,22 +11,22 @@ const Head: React.FC<HeadProps> = ({ title }) => {
   const path = router.asPath !== "/" ? router.asPath : null;
 
   
-  const description = "Olá, meu nome é Lucas Fernando e sou desenvolvedor frontend, e esse é meu portfolio pessoal.";
+  const description = "Olá, meu nome é Lucas Fernando e sou desenvolvedor front-end, e esse é meu portfolio.";
 
   return (
     <>
       <NextSeo
         title={title}
         description={description}
-        canonical={`https://lucasfernandodev.vercel.app`}
+        canonical={`https://lucasfernandodev.com.br/`}
         openGraph={{
           type: "website",
-          url: `https://lucasfernandodev.vercel.app${path !== null ? path : ""}`,
+          url: `https://lucasfernandodev.com.br/${path !== null ? path : ""}`,
           title: title,
           description: description,
           images: [
             {
-              url: `https://lucasfernandodev.vercel.app/SEO/og_home.png`,
+              url: `https://lucasfernandodev.com.br/SEO/og_home.png`,
               width: 800,
               height: 600,
               alt: "Lucas Fernando - Portfolio",

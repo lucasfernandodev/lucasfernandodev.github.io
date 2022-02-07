@@ -9,11 +9,11 @@
   --blue: #2d98da;
 
 
-  --color-primary: #5352ed;
+  --color-primary: #1F64BF;
   --color-secondary: #70a1ff;
 
-  --color-title: #ede7f6;
-  --color-text: #ededfdaa;
+  --color-title: #ececed;
+  --color-text: #aaaaaf;
   --color-text-light: #ddd;
 
   --color-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));

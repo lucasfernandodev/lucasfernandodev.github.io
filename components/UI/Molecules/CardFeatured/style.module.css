@@ -3,7 +3,7 @@
   min-height: 100px;
   width: 540px;
   border-radius: 8px;
-  background: var(--color-primary);
+  background: #1F64BF;
   padding: 32px;
   transition: 0.2s linear;
   display: flex;
@@ -40,7 +40,6 @@
 
 
 .card-content {
-  color: var(--color-text-light);
 
   font-size: 16px;
 }
