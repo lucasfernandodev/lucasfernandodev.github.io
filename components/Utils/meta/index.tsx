@@ -39,10 +39,11 @@ const Head: React.FC<HeadProps> = ({ title }) => {
         <link rel="shortcut icon" href="SEO/favicon.svg" type="image/png" />
         <meta
           name="keywords"
-          content="desenvolvedor, frontend, front-end, HTML, CSS, JavaScript,Reacjs,typescript, Lucas Fernando, Portfolio"
+          content="desenvolvedor, frontend, front-end, HTML, CSS, JavaScript,Reacjs,typescript, Lucas Fernando, Portfolio, dev front-end, dev lucas fernando, lucasfernando dev"
         ></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Lucas Fernando" />
+        <meta name="google-site-verification" content="zKJh2tua7iegbZmW4zkKlSlSVoU5QGH0mOMp6H9NYQ8" />
       </NextHead>
     </>
   );
