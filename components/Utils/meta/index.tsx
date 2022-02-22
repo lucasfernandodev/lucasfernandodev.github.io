@@ -1,6 +1,7 @@
 import NextHead from "next/head";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
+
 type HeadProps = {
   title: string;
 };
@@ -11,7 +12,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
   const path = router.asPath !== "/" ? router.asPath : null;
 
   
-  const description = "Olá, meu nome é Lucas Fernando e sou desenvolvedor front-end, e esse é meu portfolio.";
+  const description = "Olá, meu nome é Lucas Fernando, e sou desenvolvedor web voltado para o front-end, e esse é meu portfolio.";
 
   return (
     <>
@@ -26,7 +27,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
           description: description,
           images: [
             {
-              url: `https://lucasfernandodev.com.br/SEO/og_home.png`,
+              url: `https://lucasfernandodev.com.br/SEO/screenshot-lucas-fernando-dev-portifolio.png`,
               width: 800,
               height: 600,
               alt: "Lucas Fernando - Portfolio",
@@ -36,10 +37,10 @@ const Head: React.FC<HeadProps> = ({ title }) => {
       />
 
       <NextHead>
-        <link rel="shortcut icon" href="SEO/favicon.svg" type="image/png" />
+        <link rel="shortcut icon" href="imagens/logo.svg" type="image/svg" />
         <meta
           name="keywords"
-          content="desenvolvedor, frontend, front-end, HTML, CSS, JavaScript,Reacjs,typescript, Lucas Fernando, Portfolio, dev front-end, dev lucas fernando, lucasfernando dev"
+          content="Desenvolvedor, frontend, front-end, HTML, CSS, JavaScript,React.js,typescript, Lucas Fernando, Portfolio, dev front-end, dev Lucas Fernando, Lucas Fernando dev, next.js"
         ></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Lucas Fernando" />

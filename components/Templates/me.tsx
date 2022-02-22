@@ -23,7 +23,7 @@ const MeTemplate = () => {
             ScreenSize === 'small' ? (
               <div className={me.me__image}>
                 <div className={me.me_img}>
-                  <Image src="/imagens/lucas.jpeg" width={340} height={350} alt="Imagem de rosto de Lucas Fernando" layout="responsive" />
+                  <Image src="/imagens/Photo-Lucas-Fernando-Dev.png" width={340} height={350} alt="Imagem de rosto de Lucas Fernando" layout="responsive" />
                 </div>
               </div>
             ) : ''
@@ -62,7 +62,7 @@ const MeTemplate = () => {
           ScreenSize !== 'small' ? (
             <div className={me.me__image}>
               <div className={me.me_img}>
-                <Image src="/imagens/lucas.jpeg" width={340} height={350} alt="Imagem de rosto de Lucas Fernando" layout="responsive" />
+                <Image src="/imagens/Photo-Lucas-Fernando-Dev.png" width={340} height={350} alt="Imagem de rosto de Lucas Fernando" layout="responsive" />
               </div>
             </div>
           ) : ''

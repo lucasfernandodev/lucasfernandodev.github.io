@@ -1,10 +1,7 @@
-import styles from './style.module.css';
-import Icon from '@/Utils/Icon';
-
 const Brand = () => {
   return (
-    <div aria-label='brand'>
-      <Icon icon="logo" className={styles.logo} />
+    <div>
+      <img src="/imagens/logo.svg" alt="Lucas Fernando - Portfolio" />
     </div>
   );
 }
