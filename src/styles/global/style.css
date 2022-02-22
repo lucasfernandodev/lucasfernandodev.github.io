@@ -1,18 +1,14 @@
-@import url(./scrollbar.css);
-
 *{
   padding: 0;
   box-sizing: border-box;
   margin: 0;
 }
 
-:focus{
-  outline: dashed 2px;
-}
 
 html{
   scroll-behavior: smooth;
 }
+
 body{
   height: 100vh;
   width: 100vw;
@@ -23,7 +19,7 @@ body, input, button{
   font-family: 'Asap', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #ede7f6;
+  color: var(--color-title);
   background-color: var(--color-dark);
   
 }
@@ -54,36 +50,11 @@ h4,h5,h6{
 a[href]{
   color: var(--color-secondary);
   text-decoration: none;
+
 }
+
 
 a[href]:hover{
   text-decoration: underline;
 }
 
-/* Acessibilidade */
-
-
-a.skip-to-content-link {
-  background: #F50057;
-  height: 36px;
-  transition: 0.3s;
-  width: 230px;
-  display: block;
-  z-index: 10000;
-  position: fixed;
-  top: -1000000px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-dark);
-  text-decoration: none;
-}
-
-a.skip-to-content-link:focus{
-  outline: dashed 2px var(--color-text);
-  top: 15px;
-}

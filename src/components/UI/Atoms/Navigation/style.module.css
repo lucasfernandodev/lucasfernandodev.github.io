@@ -34,7 +34,6 @@
   position: relative;
 }
 
-
 .navigation ul li a svg{
   stroke-width: 1;
 }
@@ -42,9 +41,6 @@
 .navigation ul li a:hover{
   background: var(--color-dark-paper);
 }
-
-
-/* Link ativo */
 
 
 .navigation ul li a[data-display="true"] svg{
@@ -82,12 +78,11 @@
     top: 0;
     bottom: 0;
     width: 340px;
-    background: #171717;
+    background: var(--color-dark-paper);
     z-index: 5000; 
     display: flex;
     padding-top: 65px;
   }
-
 
 
   .navigation ul{
@@ -95,6 +90,7 @@
     align-items: flex-start;
     padding-left: 12px;
   }
+
   .navigation ul li{
     padding-left: 12px;
   }
@@ -119,7 +115,7 @@
     border-radius: 50%;
   }
 
-  /* Add o nome do icone ao menu */
+  /* Add o nome do ícone ao menu */
   .navigation ul li a::after{
     content: attr(aria-label);
     color: var(--color-title);

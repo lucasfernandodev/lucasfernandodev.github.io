@@ -16,7 +16,7 @@
 
 .apresentation p {
   font-size: 16px;
-  color: #fff;
+  color: var(--color-text);
   letter-spacing: 0.7px;
   margin-bottom: 8px;
 }
@@ -89,7 +89,7 @@
 
 .projects ul li a{
   text-decoration: none;
-  color: #fff;
+  color: var(--color-text);
   display: flex;
   flex-direction: row;
   align-items: center;

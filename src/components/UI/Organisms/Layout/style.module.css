@@ -91,7 +91,7 @@
   }
 
   .buttonNavigation[data-show="true"] svg{
-    stroke: #fff;
+    stroke: var(--color-title);
   }
 
   .main{

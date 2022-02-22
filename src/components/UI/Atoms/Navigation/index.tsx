@@ -1,15 +1,15 @@
-import styles from "./style.module.css";
+import style from "./style.module.css";
 import Link from "src/components/Utils/Link";
 import Icon from "src/components/Utils/Icon";
 
 type NavigationProps = {
-  show?: boolean;
+  visibility?: boolean;
 }
 
-const Navigation: React.FC<NavigationProps> = ({show}) => {
+const Navigation: React.FC<NavigationProps> = ({visibility}) => {
 
   return (
-    <nav className={styles.navigation} data-show={show}>
+    <nav className={style.navigation} data-show={visibility}>
       <ul>
         <li>
           <Link href="/" aria-label="Home">

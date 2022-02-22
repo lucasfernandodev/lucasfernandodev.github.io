@@ -1,0 +1,34 @@
+/* Adiciona outline somente durante o foco da navegação pelo teclado */
+
+*:focus-visible{
+  outline: dashed 2px;
+}
+
+*:focus:not(:focus-visible){
+  outline: unset;
+}
+
+a[href].skip-to-content-link {
+  background: var(--color-link-accessibility);
+  height: 36px;
+  transition: 0.3s;
+  width: 230px;
+  display: block;
+  z-index: 10000;
+  position: fixed;
+  top: -1000000px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+a[href].skip-to-content-link:focus{
+  outline: dashed 2px var(--color-text);
+  top: 15px;
+}

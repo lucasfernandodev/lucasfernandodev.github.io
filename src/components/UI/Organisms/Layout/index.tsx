@@ -8,14 +8,15 @@ import { useState } from 'react';
 
 
 const Layout: React.FC = ({ children }) => {
-  const [navigation, setNavigation] = useState<boolean>(false);
 
-  function handlerNavigation(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-    e.preventDefault();
-    if (navigation === false) {
-      setNavigation(true);
+  const [showMenuNavigation, setShowMenuNavigation] = useState<boolean>(false);
+
+  function handleToggleVisibilityMenu() {
+    
+    if (showMenuNavigation === false) {
+      setShowMenuNavigation(true);
     } else {
-      setNavigation(false)
+      setShowMenuNavigation(false)
     }
   }
 
@@ -23,17 +24,24 @@ const Layout: React.FC = ({ children }) => {
     <div className={styles.content}>
 
       <header className={styles.header}>
-        <button className={styles.buttonNavigation} data-show={navigation} onClick={e => handlerNavigation(e)}>
-          <Icon icon={navigation !== false ? "close" : 'menu'} />
+        <button 
+        className={styles.buttonNavigation} 
+        data-show={showMenuNavigation} 
+        onClick={handleToggleVisibilityMenu}
+        aria-label="Abrir Menu"
+        >
+          <Icon icon={showMenuNavigation !== false ? "close" : 'menu'} />
         </button>
 
         <Brand />
         
         
-        <Navigation show={navigation} />
+        <Navigation visibility={showMenuNavigation} />
 
         <Link href="https://www.linkedin.com/in/lucasfernandodevfront">
-          <a className={styles.link}><Icon icon="linkedin" /></a>
+          <a className={styles.link} aria-label="Link para o meu LinkedIn">
+            <Icon icon="linkedin" />
+          </a>
         </Link>
       </header>
 
