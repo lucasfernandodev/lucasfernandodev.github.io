@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
-import Brand from "@/Atoms/Brand";
-import Navigation from "@/Atoms/Navigation";
-import Icon from "@/Utils/Icon";
+import Brand from "src/components/UI/Atoms/Brand";
+import Navigation from "src/components/UI/Atoms/Navigation";
+import Icon from "src/components/Utils/Icon";
 import Link from 'next/link';
 import { useState } from 'react';
 

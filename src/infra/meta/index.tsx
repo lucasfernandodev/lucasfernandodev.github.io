@@ -27,7 +27,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
           description: description,
           images: [
             {
-              url: `https://lucasfernandodev.com.br/SEO/screenshot-lucas-fernando-dev-portifolio.png`,
+              url: `https://lucasfernandodev.com.br/SEO/screenshot-Lucas-Fernando-dev-portfolio.png`,
               width: 800,
               height: 600,
               alt: "Lucas Fernando - Portfolio",

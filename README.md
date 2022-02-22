@@ -1,6 +1,6 @@
 # Portfolio
 
-![Thumbnail - Portfolio Lucas Fernando](./public/SEO/og_home.png)
+![Thumbnail - Portfolio Lucas Fernando](./public/SEO/screenshot-Lucas-Fernando-dev-portfolio.png);
 
 
 🪐 Meu portfolio pessoal, um Agrupador de links para meus projetos.

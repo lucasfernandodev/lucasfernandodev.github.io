@@ -1,6 +1,6 @@
 import home from "../../styles/Templates/home.module.css";
-import Layout from "@/components/UI/Organisms/Layout";
-import Link from "@/Utils/Link";
+import Layout from "src/components/UI/Organisms/Layout";
+import Link from "src/components/Utils/Link";
 
 const HomeTemplate = () => {
   return (

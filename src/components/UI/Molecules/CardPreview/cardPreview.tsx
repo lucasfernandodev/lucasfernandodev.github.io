@@ -1,4 +1,4 @@
-import Link from "@/Utils/Link";
+import Link from "src/components/Utils/Link";
 import Image from "next/image";
 import style from './style.module.css';
 

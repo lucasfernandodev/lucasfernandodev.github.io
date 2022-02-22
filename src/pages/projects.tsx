@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import ProjectsTemplate from "../components/Templates/Projects";
-import Head from "@/Utils/meta";
+import Head from "@/infra/meta";
 const Projects: NextPage = () => {
   return (
     <>

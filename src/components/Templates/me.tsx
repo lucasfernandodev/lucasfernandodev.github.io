@@ -1,8 +1,8 @@
 import me from "../../styles/Templates/me.module.css";
-import Layout from "@/components/UI/Organisms/Layout";
-import Paragraph from "@/Atoms/Paragraph";
+import Layout from "src/components/UI/Organisms/Layout";
+import Paragraph from "src/components/UI/Atoms/Paragraph";
 import Image from 'next/image';
-import ResizeScreen from '@/Utils/resizeScreen';
+import ResizeScreen from 'src/components/Utils/resizeScreen';
 import { useEffect, useState } from "react";
 import Title from "../UI/Atoms/Title";
 

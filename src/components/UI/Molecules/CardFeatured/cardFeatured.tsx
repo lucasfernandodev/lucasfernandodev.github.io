@@ -1,4 +1,4 @@
-import Icon from "@/Utils/Icon";
+import Icon from "src/components/Utils/Icon";
 import styles from './style.module.css';
 
 type CardFeatured  = {
