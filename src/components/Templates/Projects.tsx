@@ -17,9 +17,11 @@ interface cardType {
 const ProjectsTemplate = () => {
 
   return (
+    <>
+    <a href="#mainContent" className="skip-to-content-link" tabIndex={1}>Pular direto para conteúdo</a>
     <Layout>
       <div className={projects.projects}>
-        <div className={projects.text}>
+        <div className={projects.text} id="mainContent">
           <Title>O que eu faço?</Title>
           <div className={projects.content}>
             <Paragraph>
@@ -65,6 +67,7 @@ const ProjectsTemplate = () => {
       }</div>
 
     </Layout>
+    </>
   );
 };
 

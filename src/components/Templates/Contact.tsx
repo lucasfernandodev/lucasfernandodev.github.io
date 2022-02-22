@@ -8,9 +8,11 @@ import Title from "../UI/Atoms/Title";
 
 const ContactTemplate = () => {
   return (
+   <>
+    <a href="#mainContent" className="skip-to-content-link" tabIndex={1}>Pular direto para conteúdo</a>
     <Layout>
       <section className={contact.section}>
-        <div className={contact.apresentation}>
+        <div className={contact.apresentation} id="mainContent">
           <Title>Vamos conversar sobre o seu projeto?</Title>
           <Paragraph>
             Me mande um email ou me contate pelas redes sociais e vamos fazer
@@ -50,6 +52,7 @@ const ContactTemplate = () => {
         </div>
       </section>
     </Layout>
+   </>
   );
 };
 

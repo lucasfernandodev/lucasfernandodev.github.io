@@ -2,11 +2,13 @@ import home from "../../styles/Templates/home.module.css";
 import Layout from "src/components/UI/Organisms/Layout";
 import Link from "src/components/Utils/Link";
 
-const HomeTemplate = () => {
+const HomeTemplate: React.FunctionComponent = () => {
   return (
+    <>
+    <a href="#mainContent" className="skip-to-content-link" tabIndex={1}>Pular direto para conteúdo</a>
     <Layout>
       <section className={home.welcome}>
-        <div className={home.text}>
+        <div id="mainContent" className={home.text}>
           <p>Olá,</p>
           <h2>Meu nome é Lucas Fernando.</h2>
           <p className={home.description}>Desenvolvedor frontend.</p>
@@ -1785,6 +1787,7 @@ const HomeTemplate = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

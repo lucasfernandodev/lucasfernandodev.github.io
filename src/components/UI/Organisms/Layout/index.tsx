@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 
+
 const Layout: React.FC = ({ children }) => {
   const [navigation, setNavigation] = useState<boolean>(false);
 

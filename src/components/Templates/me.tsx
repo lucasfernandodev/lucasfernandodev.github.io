@@ -16,9 +16,11 @@ const MeTemplate = () => {
   }, [])
 
   return (
+    <>
+    <a href="#mainContent" className="skip-to-content-link" tabIndex={1}>Pular direto para conteúdo</a>
     <Layout>
       <section className={me.section}>
-        <div className={me.me__text}>
+        <div className={me.me__text} id="mainContent">
           <Title>Sobre mim</Title>
 
           { ScreenSize === 'small' && <Avatar /> }
@@ -56,6 +58,7 @@ const MeTemplate = () => {
 
       </section>
     </Layout>
+    </>
   );
 };
 
