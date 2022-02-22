@@ -6,6 +6,7 @@ import ResizeScreen from 'src/components/Utils/resizeScreen';
 import { useEffect, useState } from "react";
 import Title from "../UI/Atoms/Title";
 
+import Avatar from "../UI/Atoms/Avatar";
 const MeTemplate = () => {
 
 
@@ -19,15 +20,8 @@ const MeTemplate = () => {
       <section className={me.section}>
         <div className={me.me__text}>
           <Title>Sobre mim</Title>
-          {
-            ScreenSize === 'small' ? (
-              <div className={me.me__image}>
-                <div className={me.me_img}>
-                  <Image src="/imagens/Photo-Lucas-Fernando-Dev.png" width={340} height={350} alt="Imagem de rosto de Lucas Fernando" layout="responsive" />
-                </div>
-              </div>
-            ) : ''
-          }
+
+          { ScreenSize === 'small' && <Avatar /> }
 
           <Paragraph>
             Olá, meu nome é Lucas Fernando, tenho 21 anos, e sou desenvolvedor front-end.
@@ -58,15 +52,7 @@ const MeTemplate = () => {
         </div>
 
 
-        {
-          ScreenSize !== 'small' ? (
-            <div className={me.me__image}>
-              <div className={me.me_img}>
-                <Image src="/imagens/Photo-Lucas-Fernando-Dev.png" width={340} height={350} alt="Imagem de rosto de Lucas Fernando" layout="responsive" />
-              </div>
-            </div>
-          ) : ''
-        }
+        { ScreenSize !== 'small' && <Avatar /> }
 
       </section>
     </Layout>
