@@ -4,6 +4,7 @@ import Link from "src/components/Utils/Link";
 import Icon from "src/components/Utils/Icon";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
 import Title from "../UI/Atoms/Title";
+import Button from "../UI/Atoms/Button";
 
 
 const ContactTemplate = () => {
@@ -28,24 +29,24 @@ const ContactTemplate = () => {
           <div>
             <ul>
               <li>
-                <Link href="https://github.com/lucasfernandodev">
+                <Button type="All" to="https://github.com/lucasfernandodev">
                   <Icon icon="github" /> | <span>Github</span>
-                </Link>
+                </Button>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/in/frontlucasfernandodev/">
+                <Button type="All" to="https://www.linkedin.com/in/frontlucasfernandodev/">
                   <Icon icon="linkedin" /> | <span>LinkedIn</span>
-                </Link>
+                </Button>
               </li>
               <li>
-                <Link href="https://www.instagram.com/lucasfernandodev/">
+                <Button type="All" to="https://www.instagram.com/lucasfernandodev/">
                   <Icon icon="instagram" /> | <span>Instagram</span>
-                </Link>
+                </Button>
               </li>
               <li>
-                <Link href="https://codepen.io/lucasfernandodev">
-                  <Icon icon="codepen" /> | <span>CodePen</span>
-                </Link>
+                <Button type="All" to="https://codepen.io/lucasfernandodev">
+                  <Icon icon="codepen" /> | <span>Code Pen</span>
+                </Button>
               </li>
             </ul>
           </div>

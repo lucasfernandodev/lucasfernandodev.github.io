@@ -73,24 +73,8 @@
   } 
 }
 
-.welcome .text .button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 46px;
-  color: var(--color-title);
-  width: 200px;
-  border: 0;
-  background: var(--color-primary);
-  text-decoration: none;
+.welcome button{
   margin-top: 24px;
-  border-radius: 4px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
-.welcome .text .button:hover{
-  filter: brightness(0.85);
 }
 
 .welcome .image{

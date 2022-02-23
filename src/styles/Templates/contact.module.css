@@ -87,35 +87,6 @@
 
 }
 
-.projects ul li a{
-  text-decoration: none;
-  color: var(--color-text);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-weight: bold;
-  height: 100%;
-  width: 100%;
-  padding-left: 16px;
-  border-radius: 4px;
-  background: var(--color-gradient);
-  transition: .3s ease-in-out;
-}
-
-.projects ul li a:hover{
-  filter: brightness(0.7);
-}
-
-.projects ul li a svg{
-  stroke-width: 1.6;
-  margin-right: 6px;
-}
-
-.projects ul li a span{
-  margin-left: 6px;
-  letter-spacing: 0.07rem;
-}
-
 
 @media (max-width: 768px){
   .section{

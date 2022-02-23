@@ -1,6 +1,6 @@
 import home from "../../styles/Templates/home.module.css";
 import Layout from "src/components/UI/Organisms/Layout";
-import Link from "src/components/Utils/Link";
+import Button from "../UI/Atoms/Button";
 
 const HomeTemplate: React.FunctionComponent = () => {
   return (
@@ -12,9 +12,8 @@ const HomeTemplate: React.FunctionComponent = () => {
           <p>Olá,</p>
           <h2>Meu nome é Lucas Fernando.</h2>
           <p className={home.description}>Desenvolvedor frontend.</p>
-          <Link href="/contact" className={home.button}>
-            Entrar em contato
-          </Link>
+
+          <Button to="/contact" type="Text">Entrar em contato</Button>
         </div>
 
         <div className={home.image}>
