@@ -1,10 +1,10 @@
-import contact from "../../styles/Templates/contact.module.css";
+import contact from "./style.module.css";
 import Layout from "src/components/UI/Organisms/Layout";
 import Link from "src/components/Utils/Link";
 import Icon from "src/components/Utils/Icon";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
-import Title from "../UI/Atoms/Title";
-import Button from "../UI/Atoms/Button";
+import Title from "../../UI/Atoms/Title";
+import Button from "../../UI/Atoms/Button";
 
 
 const ContactTemplate = () => {
@@ -13,7 +13,7 @@ const ContactTemplate = () => {
     <a href="#mainContent" className="skip-to-content-link" tabIndex={1}>Pular direto para conteúdo</a>
     <Layout>
       <section className={contact.section}>
-        <div className={contact.apresentation} id="mainContent">
+        <div className={contact.presentation} id="mainContent">
           <Title>Vamos conversar sobre o seu projeto?</Title>
           <Paragraph>
             Me mande um email ou me contate pelas redes sociais e vamos fazer

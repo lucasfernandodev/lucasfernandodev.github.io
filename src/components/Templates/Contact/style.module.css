@@ -7,21 +7,21 @@
 }
 
 
-.section .apresentation {
+.section .presentation {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.apresentation p {
+.presentation p {
   font-size: 16px;
   color: var(--color-text);
   letter-spacing: 0.7px;
   margin-bottom: 8px;
 }
 
-.apresentation h2 + p{
+.presentation h2 + p{
   margin: 18px 0;
   color: var(--color-text);
   opacity: 0.9;
@@ -30,7 +30,7 @@
   max-width: 445px;
 }
 
-.apresentation .icon{
+.presentation .icon{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@
   font-size: 20px;
 }
 
-.apresentation .icon svg{
+.presentation .icon svg{
   stroke: var(--color-secondary);
   width: 20px;
   height: 20px;
@@ -50,7 +50,7 @@
   transition: 0.25s ease-in-out;
 }
 
-.apresentation .icon:hover svg{
+.presentation .icon:hover svg{
   transform: translateX(16px);
 }
 
@@ -85,7 +85,7 @@
     flex-direction: column;
     padding: 75px 0;
   }
-  .section .apresentation, .section .projects{
+  .section .presentation, .section .projects{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -97,13 +97,13 @@
     padding-top: 24px;
   }
 
-  .section .apresentation h2 {
+  .section .presentation h2 {
     text-align: center;
     width: 100%;
     max-width: calc(100% - 24px);
   }
 
-  .apresentation h2 + p{
+  .presentation h2 + p{
     margin: 18px auto;
     text-align: center;
     max-width: calc(100% - 24px);
@@ -115,7 +115,7 @@
     padding: 65px 0;
   }
 
-  .section .apresentation h2{
+  .section .presentation h2{
     margin: 32px 0;
   }
 }

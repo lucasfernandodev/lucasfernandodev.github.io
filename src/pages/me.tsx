@@ -1,10 +1,10 @@
 import { NextPage } from "next";
-import MeTemplate from "src/components/Templates/me";
 import Head from "@/infra/meta";
+import MeTemplate from "@/components/Templates/Me";
 const Me: NextPage = () => {
   return (
     <>
-      <Head title="Sobre mim | Lucas Fernando · Devenvolvedor frontend" />
+      <Head title="Sobre mim | Lucas Fernando · Desenvolvedor frontend" />
       <MeTemplate />
     </>
   );

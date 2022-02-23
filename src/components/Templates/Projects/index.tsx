@@ -1,10 +1,10 @@
-import projects from "../../styles/Templates/projects.module.css";
+import projects from "./style.module.css";
 import Layout from "src/components/UI/Organisms/Layout";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
 import CardPreview from "src/components/UI/Molecules/CardPreview/cardPreview";
 import CardFeatured from "src/components/UI/Molecules/CardFeatured/cardFeatured";
 import List from 'src/infra/Store/websites/list';
-import Title from "../UI/Atoms/Title";
+import Title from "../../UI/Atoms/Title";
 
 interface cardType {
   link: string;

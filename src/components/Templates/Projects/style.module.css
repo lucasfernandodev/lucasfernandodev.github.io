@@ -38,12 +38,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 32px;
   justify-content: center;
-
 }
 
-/* Add pading e aumenta o height do .projects em dispositivos landscape com telas menores */
+/* Add padding e aumenta o height do .projects em dispositivos landscape com telas menores */
 @media (max-height: 589px) and (min-width: 769px) and (max-width: 1199px){
   .projects{
     height: auto;

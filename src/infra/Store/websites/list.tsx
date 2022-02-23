@@ -10,13 +10,13 @@ const List: Array<cardType> = [
         title: "E-commerce product page",
         image: "/websites/sneakears.netlify.app_.png",
         link: "https://sneakears.netlify.app/",
-        description: "Uma Pagina de um site de e-commerce.",
+        description: "Uma Pagina de carrinho de um site de e-commerce.",
     },
     {
         title: 'Base Apparel',
         image: '/websites/baseApparel.png',
         link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/base-apparel/',
-        description: "Esse é um site desenvolvido para o desafio do front-end mentor.",
+        description: "Uma pagina para cadastrar e-mails e receber atualizações.",
     },
     {
         title: 'Huddle',
@@ -28,13 +28,13 @@ const List: Array<cardType> = [
         title: 'Card com um FAQ accordion',
         image: '/websites/faq.png',
         link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/faq-accordion-card/',
-        description: "Um FAQ desenvolvido com HTML e CSS a partir do design do Front-end Mentor.",
+        description: "Um FAQ simples desenvolvido para o desafio do Frontend Mentor.",
     },
     {
-        title: 'Pagina de cadastro de e-mail',
+        title: 'Pagina de cadastro',
         image: '/websites/learn.png',
         link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/intro-component-with-signup-form-master/',
-        description: "Uma pagina de cadastrar e-mails",
+        description: "Uma pagina para se cadastrar em um serviço",
     },
 ];
 

@@ -4,7 +4,7 @@ import Head from "@/infra/meta";
 const Contact: NextPage = () => {
   return (
     <>
-      <Head title="Contato | Lucas Fernando · Devenvolvedor frontend" />
+      <Head title="Contato | Lucas Fernando · Desenvolvedor frontend" />
       <ContactTemplate />
     </>
   );

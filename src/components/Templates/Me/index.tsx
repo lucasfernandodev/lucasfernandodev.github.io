@@ -1,12 +1,12 @@
-import me from "../../styles/Templates/me.module.css";
+import me from "./style.module.css";
 import Layout from "src/components/UI/Organisms/Layout";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
 import Image from 'next/image';
 import ResizeScreen from 'src/components/Utils/resizeScreen';
 import { useEffect, useState } from "react";
-import Title from "../UI/Atoms/Title";
+import Title from "@/components/UI/Atoms/Title";
+import Avatar from "@/components/UI/Atoms/Avatar";
 
-import Avatar from "../UI/Atoms/Avatar";
 const MeTemplate = () => {
 
 
