@@ -10,7 +10,7 @@ interface cardType {
   link: string;
   image: string;
   title: string;
-  techs?: Array<string>;
+  description: string;
 }
 
 
@@ -61,8 +61,8 @@ const ProjectsTemplate = () => {
 
 
       <div className={projects.projects__cards}>{
-        List.map((item: cardType, index) => {
-          return <CardPreview key={index} techs={item.techs} image={item.image} link={item.link} title={item.title} />
+        List.map((item: cardType) => {
+          return <CardPreview key={item.title} description={item.description} image={item.image} link={item.link} title={item.title} />
         })
       }</div>
 
