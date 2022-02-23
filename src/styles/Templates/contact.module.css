@@ -80,14 +80,6 @@
   list-style: none;
 }
 
-.projects ul li{
-  width: 250px;
-
-  height: 50px;
-
-}
-
-
 @media (max-width: 768px){
   .section{
     flex-direction: column;
