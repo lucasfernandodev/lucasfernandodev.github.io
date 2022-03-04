@@ -1,0 +1,72 @@
+.errorPage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  gap: 8px;
+}
+
+.image{
+  position: relative;
+  width: 320px;
+  height: 380px;
+  top: -42px;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 420px;
+  gap: 18px
+}
+
+.errorPage h2{
+  margin-bottom: 8px;
+  margin-top: 16px;
+  display: flex;
+}
+@media (max-width: 960px){
+  .errorPage{
+    padding-top: 42px;
+  }
+
+  .image{
+    position: relative;
+    width: 290px;
+    height: 450px;
+    top: 0;
+  }
+
+  .text{
+    max-width: 320px;
+  }
+}
+
+@media(max-width: 680px){
+  .errorPage{
+    padding: 0 15px;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .errorPage h2{
+    text-align: center;
+  }
+
+  .text{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image{
+    position: relative;
+    width: 200px;
+    height: 180px;
+  }
+}
