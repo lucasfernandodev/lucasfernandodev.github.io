@@ -20,7 +20,7 @@ const ProjectsTemplate = () => {
     <>
     <a href="#mainContent" className="skip-to-content-link" tabIndex={1}>Pular direto para conteúdo</a>
     <Layout>
-      <div className={projects.projects}>
+      <section className={projects.projects}>
         <div className={projects.text} id="mainContent">
           <Title>O que eu faço?</Title>
           <div className={projects.content}>
@@ -57,14 +57,14 @@ const ProjectsTemplate = () => {
           />
 
         </div>
-      </div>
+      </section>
 
 
-      <div className={projects.projects__cards}>{
+      <section className={projects.projects__cards}>{
         List.map((item: cardType) => {
           return <CardPreview key={item.title} description={item.description} image={item.image} link={item.link} title={item.title} />
         })
-      }</div>
+      }</section>
 
     </Layout>
     </>

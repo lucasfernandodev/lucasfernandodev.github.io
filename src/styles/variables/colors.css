@@ -1,8 +1,11 @@
 :root{
 
-  --color-dark:#131314;
-  --color-dark-paper: #171717;
+  --color-dark:#121215;
+  --color-dark-paper: #17171d;
   --color-dark-scrollbar: #212121;
+
+  --color-bg-card: #24242f;
+  --color-line: #34343f;
 
   /* --red: #ff7979;
   --green: #20bf6b;
@@ -12,10 +15,23 @@
   --color-primary: #1F64BF;
   --color-secondary: #70a1ff;
 
-  --color-title: #f4f4ff;
-  --color-text: #aaaaaf;
+  --color-title: #efefff;
+  --color-text: #efefffaa;
 
   --color-link-accessibility: #F50057;
 
   --color-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+section{
+  animation: fadeIn 300ms forwards linear;
 }

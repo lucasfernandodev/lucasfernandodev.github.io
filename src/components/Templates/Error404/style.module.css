@@ -31,6 +31,7 @@
   margin-top: 16px;
   display: flex;
 }
+
 @media (max-width: 960px){
   .errorPage{
     padding-top: 42px;
