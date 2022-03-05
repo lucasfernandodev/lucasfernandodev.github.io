@@ -26,12 +26,11 @@ const MeTemplate = () => {
           { ScreenSize === 'small' && <Avatar /> }
 
           <Paragraph>
-            Olá, meu nome é Lucas Fernando, tenho 21 anos, e sou desenvolvedor front-end.
-            Apaixonado por programação, café e novas tecnologias.
+          Olá meu nome é Lucas Fernando, tenho 21 anos, estou morando em Goiás e sou apaixonando por tecnologia.
           </Paragraph>
 
           <Paragraph>
-            Passo a maior parte do meu tempo codando, ou estudando, sempre buscando desafios interessantes para codar.
+          Sou desenvolvedor Front-end, realmente apaixonado por essa área por isso sempre procurei me desenvolver e melhorar, estudando e constantemente resolvendo problemas com programação.
           </Paragraph>
           <Paragraph>
             Tecnologias que estou usando

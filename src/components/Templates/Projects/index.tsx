@@ -30,7 +30,7 @@ const ProjectsTemplate = () => {
             </Paragraph>
             <Paragraph>
               Sempre desenvolvo sites
-              fiéis ao design focando em integrar qualidade e velocidade com a experiência do usuário.
+              fiéis ao design focando em integrar qualidade e velocidade gerando uma melhor experiência para o usuário.
             </Paragraph>
           </div>
         </div>
@@ -52,8 +52,7 @@ const ProjectsTemplate = () => {
           <CardFeatured
             icon="frontendMentor"
             title="Experiência"
-            content="A experiência do usuário é sempre importante se um site deseja se manter e crescer, por isso busco desenvolver sites funcionais, fiéis ao design,
-            que tenham acessibilidade e responsividade."
+            content="Maximizar a experiência do usuário é sempre importante se um site deseja se manter e crescer, por isso foco sempre em desenvolver sites simples, fluidos e intuitivos."
           />
 
         </div>

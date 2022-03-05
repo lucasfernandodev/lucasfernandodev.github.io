@@ -3,12 +3,14 @@
   cursor: pointer;
   width: 100%;
   max-width: 250px;
+  min-width: 200px;
   height: 52px;
   border: 0;
   font-weight: bold;
   letter-spacing: 0.5px;
   border-radius: 4px;
   transition: 250ms ease-in-out;
+  font-size: 15px;
 }
 
 .Button, .Button .link[href]{
