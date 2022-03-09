@@ -10,7 +10,7 @@ const List: Array<cardType> = [
         title: "E-commerce product page",
         image: "/websites/sneakears.netlify.app_.png",
         link: "https://sneakears.netlify.app/",
-        description: "Uma Pagina de carrinho de um site de e-commerce.",
+        description: "Neste projeto eu desenvolvi um site responsivo com galeria de imagem de produtos e função de adicionar ou remover itens do carrinho.",
     },
     {
         title: 'Base Apparel',
@@ -19,10 +19,10 @@ const List: Array<cardType> = [
         description: "Uma pagina para cadastrar e-mails e receber atualizações.",
     },
     {
-        title: 'Huddle',
-        image: '/websites/huddle.png',
-        link: 'https://lucasfernandodev.github.io/frontendmentor/challenges/huddle-single-introductory-section/',
-        description: "Esse é um site desenvolvido para o desafio do front-end mentor.",
+        title: 'Country Search',
+        image: '/websites/country-search.png',
+        link: 'https://frontendmentor-lucasfernandodev.vercel.app/',
+        description: "Essa é uma aplicação de consulta de informações sobre países, como capital, moeda corrente ou suas linguagens usando API.",
     },
     {
         title: 'Card com um FAQ accordion',

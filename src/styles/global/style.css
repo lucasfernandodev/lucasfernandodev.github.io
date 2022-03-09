@@ -58,3 +58,15 @@ a[href]:hover{
   text-decoration: underline;
 }
 
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+section{
+  animation: fadeIn 100ms forwards linear;
+}
