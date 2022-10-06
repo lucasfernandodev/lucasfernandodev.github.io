@@ -1,9 +1,18 @@
-.logo{
-  height: 36px;
-  width: 36px;
-  stroke: var(--color-title);
+.brand{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo circle{
-  fill: var(--color-title);
+.brand a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand a img{
+  width: 32px;
+  height: 32px;
 }
