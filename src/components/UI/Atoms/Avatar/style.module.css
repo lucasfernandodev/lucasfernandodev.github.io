@@ -39,15 +39,6 @@
   filter: grayscale(100%);
 }
 
-.avatar-wrapper:hover{
-  filter: grayscale(0%);
-  transform: scale(1.1) rotate(1deg);
-}
-
-.avatar-wrapper:hover img{
-  filter: grayscale(0%);
-}
-
 .avatar-wrapper img{
   border-radius: 50%;
   overflow: hidden;
