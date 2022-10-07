@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  width: calc(100vw - 65px);
+  width: calc(100vw - 72px);
   padding-left: 42px;
   min-height: 100vh;
   overflow: auto;

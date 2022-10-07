@@ -1,3 +1,6 @@
+.navigation{
+  position: relative;
+}
 .navigation svg{
   width: 26px;
   height: 26px;
@@ -32,47 +35,27 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+
+  font-size: 13px;
+  color: var(--color-text);
 }
 
 .navigation ul li a svg{
-  stroke-width: 1;
+  stroke-width: 1.45;
 }
 
 .navigation ul li a:hover{
   background: var(--color-dark-paper);
+  text-decoration: none;
 }
 
 
 .navigation ul li a[data-display="true"] svg{
   opacity: 1;
+  position: relative;
+  z-index: 10;
+  color: #fff;
 }
-
-.navigation ul li a[data-display="true"]::before{
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: var(--color-gradient);
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border-radius: 50%;
-  animation: pointerAnimation 250ms linear forwards;
-}
-
-@keyframes pointerAnimation{
-  0%{
-    border-radius: 3px;
-    width: 32px;
-  }
-  100%{
-    width: 5px;
-    border-radius: 50%;
-  }
-}
-
-
-
 
 
 @media (max-width: 768px){

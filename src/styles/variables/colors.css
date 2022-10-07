@@ -18,4 +18,5 @@
   --color-link-accessibility: #F50057;
 
   --color-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  --color-gradient-bottom: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
 }
