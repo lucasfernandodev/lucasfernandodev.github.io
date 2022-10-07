@@ -1,0 +1,74 @@
+
+.header{
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 12px 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 65px;
+  border-right: 1px solid var(--color-line);
+}
+
+.header .link{
+  color: var(--color-text);
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+.header .link svg{
+  width: 26px;
+  height: 26px;
+}
+
+.header .link:hover{
+  opacity: 1;
+  color: var(--color-secondary);
+}
+
+.buttonNavigation{
+  display: none;
+}
+@media (max-width: 990px){
+  .main{
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .header {
+    height: 65px;
+    padding: 0 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    border-right: unset;
+    border-bottom: 1px solid var(--color-dark-paper);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--color-dark);
+  }
+  
+  .buttonNavigation{
+    display: block;
+    height: 36px;
+    width: 36px;
+    border: unset;
+    cursor: pointer;
+    position: relative;
+    z-index: 8000;
+    background: transparent;
+    stroke: var(--color-title);
+  }
+
+  .buttonNavigation[data-show="true"] svg{
+    stroke: var(--color-title);
+  }
+}
