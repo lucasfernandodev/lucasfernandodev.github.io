@@ -1,9 +1,10 @@
+import { iconProviderTypes } from "@/components/Utils/Icon/iconProvider";
 import Icon from "src/components/Utils/Icon";
 import styles from './style.module.css';
 
 type CardFeatured  = {
     title: string,
-    icon: string,
+    icon: iconProviderTypes,
     content: string;
 }
 
