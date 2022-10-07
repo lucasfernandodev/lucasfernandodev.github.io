@@ -1,11 +1,11 @@
 import me from "./style.module.css";
-import Layout from "src/components/UI/Organisms/Layout";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
 import Image from 'next/image';
 import ResizeScreen from 'src/components/Utils/resizeScreen';
 import { useEffect, useState } from "react";
 import Title from "@/components/UI/Atoms/Title";
 import Avatar from "@/components/UI/Atoms/Avatar";
+import Layout from "@/infra/Layout";
 
 const MeTemplate = () => {
 

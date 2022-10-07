@@ -1,6 +1,6 @@
 import home from "./style.module.css";
-import Layout from "src/components/UI/Organisms/Layout";
 import Button from "@/components/UI/Atoms/Button";
+import Layout from "@/infra/Layout";
 
 
 const HomeTemplate: React.FunctionComponent = () => {

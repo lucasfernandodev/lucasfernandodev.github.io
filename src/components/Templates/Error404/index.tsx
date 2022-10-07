@@ -1,5 +1,5 @@
 import Button from '@/components/UI/Atoms/Button';
-import Layout from '@/components/UI/Organisms/Layout';
+import Layout from '@/infra/Layout';
 import Image from 'next/image';
 import style from './style.module.css';
 

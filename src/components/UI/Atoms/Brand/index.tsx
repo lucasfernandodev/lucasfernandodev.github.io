@@ -1,4 +1,4 @@
-import Link from '@/components/Utils/Link';
+import Link from '@/infra/Link';
 import style from './style.module.css';
 
 const Brand = () => {

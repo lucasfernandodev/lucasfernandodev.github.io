@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import Link from "src/components/Utils/Link";
+import Link from "@/infra/Link";
 import Icon from "src/components/Utils/Icon";
 
 type NavigationProps = {

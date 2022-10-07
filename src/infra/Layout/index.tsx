@@ -1,7 +1,6 @@
+import Header from '@/components/UI/Organisms/Header';
+import Main from '@/components/UI/Organisms/Main';
 import styles from './style.module.css';
-import Header from '../Header';
-import Main from '../Main';
-
 
 const Layout: React.FC = ({ children }) => {
   return (

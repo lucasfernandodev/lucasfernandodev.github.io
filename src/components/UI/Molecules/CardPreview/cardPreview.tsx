@@ -1,4 +1,4 @@
-import Link from "src/components/Utils/Link";
+import Link from "@/infra/Link";
 import Image from "next/image";
 import style from "./style.module.css";
 import Button from "../../Atoms/Button";

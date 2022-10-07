@@ -1,5 +1,5 @@
 import Icon from '@/components/Utils/Icon';
-import Link from '@/components/Utils/Link';
+import Link from '@/infra/Link';
 import { useState } from 'react';
 import Brand from '../../Atoms/Brand';
 import Navigation from '../../Atoms/Navigation';
@@ -31,10 +31,8 @@ export default function Header() {
 
       <Navigation visibility={showMenuNavigation} />
 
-      <Link href='https://www.linkedin.com/in/lucasfernandodevfront'>
-        <a className={styles.link} aria-label='Link para o meu LinkedIn'>
-          <Icon icon='linkedin' />
-        </a>
+      <Link href='https://www.linkedin.com/in/lucasfernandodevfront' className={styles.link}>
+          <Icon icon='linkedin' aria-label='Link para o meu LinkedIn'/>
       </Link>
     </header>
   );

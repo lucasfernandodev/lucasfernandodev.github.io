@@ -1,10 +1,10 @@
 import contact from "./style.module.css";
-import Layout from "src/components/UI/Organisms/Layout";
-import Link from "src/components/Utils/Link";
+import Link from "@/infra/Link";
 import Icon from "src/components/Utils/Icon";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
 import Title from "../../UI/Atoms/Title";
 import Button from "../../UI/Atoms/Button";
+import Layout from "@/infra/Layout";
 
 
 const ContactTemplate = () => {
