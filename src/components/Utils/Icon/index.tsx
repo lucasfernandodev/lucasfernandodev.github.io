@@ -1,7 +1,7 @@
-import {iconProvider} from './iconProvider';
+import {iconProvider, iconProviderTypes} from './iconProvider';
 
 type IconProp = {
-  icon: string;
+  icon: iconProviderTypes;
   className?: string | undefined;
   width?: number | string;
   height?: number | string;
@@ -24,7 +24,7 @@ const Icon: React.FC<IconProp> = ({ icon, ...arg }) => {
       strokeLinejoin="round"
       {...arg}
     >
-      {iconProvider[icon] ? iconProvider[icon].icon :'error icon'}
+      {iconProvider[icon] ? iconProvider[icon].icon :'icon not found'}
     </svg>
   );
 };

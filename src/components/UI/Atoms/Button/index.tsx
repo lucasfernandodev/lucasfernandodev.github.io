@@ -2,17 +2,21 @@ import Link from "@/components/Utils/Link";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
 import { useRef } from "react";
+import Icon from "@/components/Utils/Icon";
+import { iconProviderTypes } from "@/components/Utils/Icon/iconProvider";
 
 type buttonProps = {
   to?: string;
-  type?: "Text" | "All";
+  type?: "Text" | "All" | 'Icon';
   height?: "sm";
+  icon?: iconProviderTypes,
   onClick?: () => void;
 };
 
 const buttonTypeClasses = {
   Text: "Text",
   All: "All",
+  Icon: 'Icon'
 };
 
 const buttonHeight = {
@@ -24,6 +28,7 @@ const Button: React.FunctionComponent<buttonProps> = ({
   type = "Text",
   height,
   children,
+  icon,
   ...attributes
 }) => {
   const refButton = useRef<HTMLButtonElement>(null);
@@ -51,6 +56,7 @@ const Button: React.FunctionComponent<buttonProps> = ({
       onKeyPress={handleBtnKeyPress}
       {...attributes}
     >
+      {icon && <Icon icon={icon}/>}
       {to && ( <Link className={style.link} href={to}> {children} </Link> )}
       {!to && children}
     </button>

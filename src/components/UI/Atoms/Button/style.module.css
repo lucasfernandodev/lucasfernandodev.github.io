@@ -11,6 +11,26 @@
   border-radius: 4px;
   transition: 250ms ease-in-out;
   font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Button:hover::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  animation: SlideIn 250ms linear forwards;
+  z-index: 2;
+}
+
+@keyframes SlideIn {
+  100%{
+    left: 0px;
+  }
 }
 
 .Button, .Button .link[href]{
@@ -20,13 +40,15 @@
   align-items: center;
 }
 
-.Button:hover{
+/* .Button:hover{
   filter: brightness(0.7);
-}
+} */
 
 .Button .link{
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .height-sm{
@@ -59,4 +81,26 @@
 
 .All span{
   margin-left: 6px;
+}
+
+.Icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-title);
+  background: var(--color-primary);
+  width: 100%;
+  gap: 8px;
+}
+
+.Icon .link{
+  display: inline;
+  min-width: auto;
+  width: auto;
+  height: auto;
+}
+
+.Icon svg{
+  position: relative;
+  z-index: 2;
 }
