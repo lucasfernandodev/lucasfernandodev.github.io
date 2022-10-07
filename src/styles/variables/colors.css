@@ -6,11 +6,13 @@
   --color-dark-paper: #17171d;
 
   --color-bg-card: #24242f;
-  --color-line: #34343f;
+  --color-line: #19191f;
 
 
-  --color-primary: #1F64BF;
-  --color-secondary: #70a1ff;
+  --color-primary: #1ca7ec;
+  --color-secondary: #7bd5f5;
+
+  --color-toAction: #1ca7ec;
 
   --color-title: #efefff;
   --color-text: #efefffaa;
@@ -18,5 +20,4 @@
   --color-link-accessibility: #F50057;
 
   --color-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-  --color-gradient-bottom: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
 }

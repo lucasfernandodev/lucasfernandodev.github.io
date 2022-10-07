@@ -3,26 +3,49 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+}
+
+.avatar::before{
+  content: "";
+  height: calc(100% - 24px);
+  background-color: var(--color-toAction);
+  position: absolute;
+  top: -64px;
+  width: 320px;
+  left: 100px;
+  z-index: -1;
+}
+
+@media (max-width: 550px){
+  .avatar::before{
+    top: -32px;
+    width: 270px;
+  }
 }
 
 .avatar-wrapper{
-  max-width: 300px;
-
-  display: block;
-  height: 300px;
-  border: 8px solid var(--color-primary);
+  width: 320px;
+  height: auto;
+  border: 16px solid var(--color-dark-paper);
   border-radius: 50%;
-  overflow: hidden;
-  filter: grayscale(100%);
-  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: 0.3s linear;
-  padding: 15px;
+  position: relative;
+}
+
+.avatar-wrapper img{
+  filter: grayscale(100%);
 }
 
 .avatar-wrapper:hover{
   filter: grayscale(0%);
   transform: scale(1.1) rotate(1deg);
+}
+
+.avatar-wrapper:hover img{
+  filter: grayscale(0%);
 }
 
 .avatar-wrapper img{

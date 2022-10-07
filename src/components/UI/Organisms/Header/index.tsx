@@ -18,6 +18,10 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
+     
+
+      <Brand />
+
       <button
         className={styles.buttonNavigation}
         data-show={showMenuNavigation}
@@ -27,13 +31,7 @@ export default function Header() {
         <Icon icon={showMenuNavigation !== false ? 'close' : 'menu'} />
       </button>
 
-      <Brand />
-
       <Navigation visibility={showMenuNavigation} />
-
-      <Link href='https://www.linkedin.com/in/lucasfernandodevfront' className={styles.link}>
-          <Icon icon='linkedin' aria-label='Link para o meu LinkedIn'/>
-      </Link>
     </header>
   );
 }

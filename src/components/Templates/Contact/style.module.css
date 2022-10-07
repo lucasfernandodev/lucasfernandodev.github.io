@@ -37,12 +37,12 @@
   align-items: center;
   letter-spacing: 0.05rem;
   font-weight: 500;
-  color: var(--color-secondary);
+  color: var(--color-toAction);
   font-size: 20px;
 }
 
 .presentation .icon svg{
-  stroke: var(--color-secondary);
+  stroke: var(--color-toAction);
   width: 20px;
   height: 20px;
   stroke-width: 2;
@@ -67,6 +67,7 @@
   flex-wrap: wrap;
   gap: 16px;
   list-style: none;
+  color: var(--color-dark-paper);
 }
 
 @media (max-width: 768px){

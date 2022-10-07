@@ -19,7 +19,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--color-primary);
   position: absolute;
   top: 0px;
   left: -100%;
@@ -34,7 +34,7 @@
 }
 
 .Button, .Button .link[href]{
-  color: var(--color-title);
+  color: inherit;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@
 
 .Text{
   justify-content: center;
-  color: var(--color-title);
+  color: var(--color-dark-paper);
   background: var(--color-primary);
 }
 
@@ -69,13 +69,15 @@
   justify-content: center;
 }
 
+
 .All{
   align-items: center;
-  background: var(--color-gradient);
+  background: var(--color-secondary);
   padding-left: 16px;
 }
 
 .All svg{
+  stroke-width: 1.45px;
   margin-right: 6px;
 }
 
@@ -83,12 +85,14 @@
   margin-left: 6px;
 }
 
+
 .Icon{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-title);
-  background: var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+  border: 2px solid var(--color-primary);
   width: 100%;
   gap: 8px;
 }
@@ -98,9 +102,15 @@
   min-width: auto;
   width: auto;
   height: auto;
+  color: var(--color-primary);
 }
 
 .Icon svg{
   position: relative;
   z-index: 2;
+}
+
+.Icon:hover,
+.Icon:hover .link{
+  color: var(--color-dark-paper);
 }

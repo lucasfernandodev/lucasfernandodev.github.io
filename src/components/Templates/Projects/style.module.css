@@ -5,8 +5,34 @@
   flex-wrap: wrap;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
+.icon{
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  color: var(--color-toAction);
+  border-radius: 3px;
+  animation: arrowAnimation 1300ms infinite;
+}
+
+.icon svg{
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes arrowAnimation {
+  0%{
+    bottom: 10px;
+  }
+  50%{
+    bottom: 18px
+  }
+  100%{
+    bottom: 10px
+  }
+}
 
 .projects .static, .projects .text{
   width: 50%;
@@ -31,7 +57,7 @@
 .projects__cards{
   width: calc(100% + 42px);
   min-height: 100vh;
-  background: var(--color-dark-paper);
+  background: var(--color-secondary);
   display: flex;
   margin-left: -42px;
   padding: 82px 24px;

@@ -7,7 +7,7 @@ import { iconProviderTypes } from "@/components/Utils/Icon/iconProvider";
 
 type buttonProps = {
   to?: string;
-  type?: "Text" | "All" | 'Icon';
+  type?: "Text" | "All" | 'Icon' | 'Action';
   height?: "sm";
   icon?: iconProviderTypes,
   onClick?: () => void;
@@ -16,7 +16,8 @@ type buttonProps = {
 const buttonTypeClasses = {
   Text: "Text",
   All: "All",
-  Icon: 'Icon'
+  Icon: 'Icon',
+  Action: 'Action'
 };
 
 const buttonHeight = {

@@ -1,5 +1,7 @@
 .navigation{
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .navigation svg{
   width: 26px;
@@ -35,18 +37,18 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
+  transition: 300ms linear;
   font-size: 13px;
   color: var(--color-text);
 }
 
 .navigation ul li a svg{
   stroke-width: 1.45;
+  transition: 300ms linear;
 }
 
-.navigation ul li a:hover{
-  background: var(--color-dark-paper);
-  text-decoration: none;
+.navigation ul li a:hover svg{
+  opacity: 1;
 }
 
 
@@ -54,7 +56,7 @@
   opacity: 1;
   position: relative;
   z-index: 10;
-  color: #fff;
+  stroke: var(--color-secondary);
 }
 
 
@@ -64,6 +66,7 @@
     top: 0;
     bottom: 0;
     left: -100%;
+    transform: unset;
   }
 
   /* Menu aberto */

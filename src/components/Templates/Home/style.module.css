@@ -8,8 +8,12 @@
   padding-top: 42px;
 }
 
-.welcome .text, .welcome .image{
-  width: 50%;
+.welcome .text{
+  width: 40%;
+}
+
+.welcome .image{
+  width: 60%;
 }
 
 .welcome .text p{
@@ -80,11 +84,17 @@
 .welcome .image{
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
   align-items: flex-start;
   justify-content: flex-end;
   padding-right: 42px;
-  min-width: 320px;
+  height: 300px;
+}
+
+.welcome img{
+  height: auto;
+  object-fit: cover;
+  height: 280px;
+  width: auto;
 }
 
 @media (max-width: 870px){

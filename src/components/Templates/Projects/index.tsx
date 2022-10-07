@@ -5,6 +5,7 @@ import CardFeatured from "src/components/UI/Molecules/CardFeatured/cardFeatured"
 import List from 'src/infra/Store/websites/list';
 import Title from "../../UI/Atoms/Title";
 import Layout from "@/infra/Layout";
+import Icon from "@/components/Utils/Icon";
 
 interface cardType {
   link: string;
@@ -55,6 +56,9 @@ const ProjectsTemplate = () => {
             content="Maximizar a experiência do usuário é sempre importante se um site deseja se manter e crescer, por isso foco sempre em desenvolver sites simples, fluidos e intuitivos."
           />
 
+        </div>
+        <div className={projects.icon}>
+          <Icon icon="arrowDown"/>
         </div>
       </section>
 
