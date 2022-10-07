@@ -61,17 +61,6 @@
   flex-wrap: wrap;
 }
 
-
-.projects h2 {
-  font-size: 1.2rem;
-  color: #888;
-  text-transform: capitalize;
-  letter-spacing: 1.2px;
-  font-weight: 400;
-  margin-bottom: 40px;
-}
-
-
 .projects ul{
   display: flex;
   flex-direction: column;
