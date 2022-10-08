@@ -4,7 +4,7 @@ import Image from "next/image";
 const Avatar = () => {
   return (
     <div className={style.avatar}>
-      <div className={style['avatar-wrapper']}>
+      <div className={style.wrapper}>
         <Image
           src="/imagens/Photo-Lucas-Fernando-Dev.png"
           width={340}

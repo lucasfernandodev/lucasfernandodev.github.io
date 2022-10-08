@@ -1,5 +1,13 @@
 .content{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  --header-mobile-height: 72px;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  grid-template-areas: 'header content';
+}
+
+@media (max-width: 795px){
+  .content{
+    grid-template-columns: auto;
+    padding-top: 32px;
+  }
 }

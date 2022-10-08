@@ -8,8 +8,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 72px;
   border-right: 1px solid var(--color-line);
+  grid-area: header;
 }
 
 .header .link{
@@ -40,7 +40,7 @@
 
 @media (max-width: 768px){
   .header {
-    height: 65px;
+    height: var(--header-mobile-height);
     padding: 0 12px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -52,7 +52,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 9999;
     background-color: var(--color-dark);
   }
   
