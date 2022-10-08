@@ -7,23 +7,22 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  overflow:hidden;
   gap: 8px;
 }
 
-.image{
+.errorPage .image{
   position: relative;
   width: 320px;
-  height: 380px;
-  top: -42px;
 }
 
-.text{
+.errorPage .text{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 420px;
-  gap: 18px
+  gap: 18px;
 }
 
 .errorPage h2{
@@ -49,11 +48,12 @@
   }
 }
 
-@media(max-width: 680px){
+@media(max-width: 795px){
   .errorPage{
-    padding: 0 15px;
+    padding: 0 16px;
     gap: 16px;
     flex-direction: column;
+    height: calc(100vh - var(--header-mobile-height));
   }
 
   .errorPage h2{
@@ -67,7 +67,7 @@
   
   .image{
     position: relative;
-    width: 200px;
-    height: 180px;
+    width: 300px;
+    height: auto;
   }
 }

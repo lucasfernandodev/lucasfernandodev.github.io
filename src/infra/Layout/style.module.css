@@ -7,7 +7,9 @@
 
 @media (max-width: 795px){
   .content{
-    grid-template-columns: auto;
-    padding-top: 32px;
+    padding-top: var(--header-mobile-height);
+    grid-template-columns: unset;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'header' 'content';
   }
 }

@@ -113,16 +113,22 @@
 }
 
 /* Add margin 0 ao h2 para centralizar */
-@media (max-width: 768px){
+@media (max-width: 795px){
   .text h2{
     margin: 32px auto;
   }
+
   .projects{
-    padding: 65px 12px;
+    padding: 65px 16px;
+    padding-top: 0px;
   }
+  
   .projects .content{
     margin-top: 0;
     margin-bottom: 24px;
+  }
+  .projects .icon{
+    display: none;
   }
 }
 
