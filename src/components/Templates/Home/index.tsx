@@ -14,7 +14,7 @@ const HomeTemplate: React.FunctionComponent = () => {
           <h2>Meu nome é Lucas Fernando.</h2>
           <p className={home.description}>Desenvolvedor frontend.</p>
 
-          <Button icon="send" to="/contact" type="Icon">Vamos conversar</Button>
+          <Button icon="send" to="/contact" type="Icon" theme="outline" height="sl">Vamos conversar</Button>
         </div>
 
         <div className={home.image}>

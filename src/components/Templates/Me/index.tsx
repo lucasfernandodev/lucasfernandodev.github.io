@@ -16,14 +16,13 @@ const MeTemplate = () => {
           <div className={style.content} id='mainContent'>
             <Title>Sobre mim</Title>
             <Paragraph>
-              Olá meu nome é Lucas Fernando, tenho 21 anos, estou morando em
-              Goiás e sou apaixonando por tecnologia.
+              Olá meu nome é Lucas Fernando, tenho 21 anos, eu moro em
+              Goiás e sou apaixonado por tecnologia.
             </Paragraph>
 
             <Paragraph>
-              Sou desenvolvedor Front-end, realmente apaixonado por essa área
-              por isso sempre procurei me desenvolver e melhorar, estudando e
-              constantemente resolvendo problemas com programação.
+              Sou desenvolvedor Front-end, apaixonado por tecnologia, 
+              sempre explorando novas tecnologias, buscando aprender e evoluir. 
             </Paragraph>
             <Paragraph>Tecnologias que estou usando</Paragraph>
 

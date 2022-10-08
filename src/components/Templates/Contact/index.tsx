@@ -29,22 +29,22 @@ const ContactTemplate = () => {
           <div>
             <ul>
               <li>
-                <Button type="All" to="https://github.com/lucasfernandodev">
+                <Button type="All" height="md" to="https://github.com/lucasfernandodev">
                   <Icon icon="github" /> | <span>Github</span>
                 </Button>
               </li>
               <li>
-                <Button type="All" to="https://www.linkedin.com/in/frontlucasfernandodev/">
+                <Button type="All" height="md" to="https://www.linkedin.com/in/frontlucasfernandodev/">
                   <Icon icon="linkedin" /> | <span>LinkedIn</span>
                 </Button>
               </li>
               <li>
-                <Button type="All" to="https://www.instagram.com/lucasfernandodev/">
+                <Button type="All" height="md" to="https://www.instagram.com/lucasfernandodev/">
                   <Icon icon="instagram" /> | <span>Instagram</span>
                 </Button>
               </li>
               <li>
-                <Button type="All" to="https://codepen.io/lucasfernandodev">
+                <Button type="All" height="md" to="https://codepen.io/lucasfernandodev">
                   <Icon icon="codepen" /> | <span>Code Pen</span>
                 </Button>
               </li>

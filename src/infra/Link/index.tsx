@@ -6,7 +6,7 @@ type LinkProps = {
   as?: string;
   passHref?: boolean;
   className?: string | undefined;
-  target?: string | undefined;
+  target?: '_blank' | '_self' | '_parent' | '_top' | 'framename';
 };
 
 const Link: React.FC<LinkProps> = ({
@@ -14,7 +14,7 @@ const Link: React.FC<LinkProps> = ({
   as,
   children,
   passHref,
-  target,
+  target = '_self',
   ...arg
 }) => {
   const { asPath } = useRouter();

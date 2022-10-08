@@ -1,25 +1,32 @@
 .card{
-    width: 328px;
-    border-radius: 8px;
+    width: calc((100% / 3) - 32px);
+    min-width: 375px;
     padding-bottom: 8px;
-    background: var(--color-bg-card);
+
+    border-radius: 4px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.12)
 }
 
 .card-header{
     width: 100%;
     position: relative;
-    border-radius: 8px 8px 0px 0px;
     overflow: hidden;
-
+    border-radius: 4px 4px 0px 0px;
     overflow: hidden;
 }
 
 .card-header{
-    width: 328px;
-    height: 184px;
-
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
 }
 
+.card-header img{
+    width: 100%;
+    height: 100%;
+}
 
 .card-main{
     width: 100%;
@@ -28,37 +35,47 @@
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 16px;
+    color: var(--color-text);
+    background: var(--color-bg-card);
     padding: 16px;
+    padding-bottom: 32px;
 }
 
 .card-description{
-    opacity: 0.5;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
+    color: var(--color-text);
     letter-spacing: 0.04em;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
 }
 
-.card-main h3 *{
+.card-main h3{
     font-size: 20px;
     color: var(--color-title);
+    text-transform: lowercase;
 }
 
-.card .card-main button{
-    width: 100%;
-    max-width: unset;
-    height: 42px;
-    background: var(--color-primary);
-    letter-spacing: 0.04em;
+.card-main h3::first-letter{
+    text-transform: uppercase;
 }
 
 @media (max-width: 960px){
     .card-header{
-        height: unset;
+        height: 240px;
     }
 }
 
 @media (max-width: 550px){
     .card{
+        min-width: 340px;
         margin-bottom: 24px;
+    }
+
+    .card-header{
+        height: 180px;
     }
 }

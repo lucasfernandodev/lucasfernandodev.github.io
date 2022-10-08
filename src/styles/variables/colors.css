@@ -16,10 +16,11 @@
 
   --color-toAction: #1ca7ec;
 
-  --color-title: #efefff;
+  --color-title: #dfdfff;
   --color-text: #efefffaa;
 
   --color-link-accessibility: #F50057;
 
   --color-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  --color-gradient-2: linear-gradient(to right, var(--color-secondary), var(--color-toAction));
 }

@@ -3,7 +3,8 @@
   min-height: 100px;
   width: 540px;
   border-radius: 8px;
-  background: var(--color-secondary);
+  background: transparent;
+
   padding: 24px 16px;
   transition: 0.2s linear;
   display: flex;
@@ -18,7 +19,7 @@
   width: 64px;
   min-height: 100px;
   padding-top: 4px;
-  color: var(--color-dark);
+  color: var(--color-title);
 }
 
 .card-wrapper {
@@ -29,7 +30,7 @@
 }
 
 .card-content{
-  color: var(--color-dark);
+  color: var(--color-text);
   letter-spacing: 0.02rem;
   font-size: 15px;
   line-height: 1.5rem;
@@ -37,6 +38,7 @@
 
 .card:hover {
   transform: translateY(-5px);
+  cursor: default;
 }
 
 
@@ -46,7 +48,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 6px;
-  color: var(--color-dark);
+  color: var(--color-title);
 }
 
 

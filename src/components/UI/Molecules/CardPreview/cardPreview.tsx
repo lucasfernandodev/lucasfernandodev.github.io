@@ -16,10 +16,8 @@ const cardPreview = ({ link, image, title, description , ...args }: cardType) =>
       <div className={style["card-header"]}>
         <Image
           src={image}
-          width={328}
-          height={184}
           alt={title}
-          layout="fixed"
+          layout="fill"
           className={style["card-image"]}
           quality={99}
         />
@@ -32,7 +30,7 @@ const cardPreview = ({ link, image, title, description , ...args }: cardType) =>
         <div className={style[`card-description`]}>
           {description}
         </div>
-        <Button to={link} height="sm">Visitar</Button>
+        <Button target="_blank" to={link} height="lg" theme="primary">Visitar</Button>
       </div>
     </div>
   );

@@ -57,14 +57,15 @@
 .projects__cards{
   width: calc(100% + 42px);
   min-height: 100vh;
-  background: var(--color-secondary);
+
+  background: var(--color-dark-paper);
   display: flex;
   margin-left: -42px;
   padding: 82px 24px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 54px;
   justify-content: center;
 }
 

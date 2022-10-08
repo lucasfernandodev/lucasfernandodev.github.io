@@ -2,8 +2,6 @@
   border: unset;
   cursor: pointer;
   width: 100%;
-  max-width: 250px;
-  min-width: 200px;
   height: 52px;
   border: 0;
   font-weight: bold;
@@ -13,24 +11,7 @@
   font-size: 15px;
   position: relative;
   overflow: hidden;
-}
-
-.Button:hover::before{
-  content: "";
   width: 100%;
-  height: 100%;
-  background: var(--color-primary);
-  position: absolute;
-  top: 0px;
-  left: -100%;
-  animation: SlideIn 250ms linear forwards;
-  z-index: 2;
-}
-
-@keyframes SlideIn {
-  100%{
-    left: 0px;
-  }
 }
 
 .Button, .Button .link[href]{
@@ -38,11 +19,9 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  background: transparent;
+  color: currentColor;
 }
-
-/* .Button:hover{
-  filter: brightness(0.7);
-} */
 
 .Button .link{
   width: 100%;
@@ -55,14 +34,10 @@
   height: 38px
 }
 
-
-
 /* Button Types */
 
 .Text{
   justify-content: center;
-  color: var(--color-dark-paper);
-  background: var(--color-primary);
 }
 
 .Text .link{
@@ -72,7 +47,6 @@
 
 .All{
   align-items: center;
-  background: var(--color-secondary);
   padding-left: 16px;
 }
 
@@ -90,9 +64,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-primary);
-  background: transparent;
-  border: 2px solid var(--color-primary);
   width: 100%;
   gap: 8px;
 }
@@ -102,7 +73,6 @@
   min-width: auto;
   width: auto;
   height: auto;
-  color: var(--color-primary);
 }
 
 .Icon svg{
@@ -110,7 +80,76 @@
   z-index: 2;
 }
 
-.Icon:hover,
-.Icon:hover .link{
-  color: var(--color-dark-paper);
+/* Button Colors */
+
+.primary{
+  background: var(--color-gradient);
+  color: #fff;
+}
+
+.primary:hover{
+  animation: transitionGradient 550ms ease-in-out forwards;
+}
+
+@keyframes transitionGradient {
+  0%{
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  }
+  100%{
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary));
+  }
+}
+
+.outline{
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.outline:hover::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  animation: SlideIn 250ms linear forwards;
+  z-index: 2;
+  background: var(--color-primary);
+}
+
+@keyframes SlideIn {
+  100%{
+    left: 0px;
+  }
+}
+
+.outline:hover{
+  color: var(--color-title);
+}
+
+
+
+
+
+/* Sizes */
+
+.sm{
+  height: 34px;
+  max-width: 140px;
+}
+
+.md{
+  height: 38px;
+  max-width: 210px;
+}
+
+.lg{
+  height: 44px;
+  max-width: 375px;
+}
+
+.sl{
+  height: 52px;
+  max-width: 310px;
 }
