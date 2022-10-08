@@ -12,6 +12,8 @@
   --color-primary: #1ca7ec;
   --color-secondary: #7bd5f5;
 
+  --color-loading: hsla(196, 46%, 72%, 0.5);
+
   --color-toAction: #1ca7ec;
 
   --color-title: #efefff;
