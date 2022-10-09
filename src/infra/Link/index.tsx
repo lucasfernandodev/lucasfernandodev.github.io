@@ -26,7 +26,7 @@ const Link: React.FC<LinkProps> = ({
       <a
         target={target !== undefined ? target : '_self'}
         {...arg}
-        data-display={isActive}
+        data-active={isActive}
       >
         {children}
       </a>

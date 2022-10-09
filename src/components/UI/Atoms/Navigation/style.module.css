@@ -52,7 +52,7 @@
 }
 
 
-.navigation ul li a[data-display="true"] svg{
+.navigation ul li a[data-active="true"] svg{
   opacity: 1;
   position: relative;
   z-index: 10;
@@ -97,11 +97,11 @@
     width: auto;
   }
 
-  .navigation ul li a[data-display="true"]{
+  .navigation ul li a[data-active="true"]{
     opacity: 1;
   }
 
-  .navigation ul li a[data-display="true"]::before{
+  .navigation ul li a[data-active="true"]::before{
     content: "";
     width: 5px;
     height: 5px;
@@ -123,7 +123,7 @@
     font-weight: bold;
   }
 
-  .navigation ul li a[data-display="true"]:after{
+  .navigation ul li a[data-active="true"]:after{
     opacity: 1;
   }
 
