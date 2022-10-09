@@ -22,7 +22,7 @@
 .avatar::before {
   content: '';
   height: calc(100% - 24px);
-  background-color: var(--color-toAction);
+  background-color: var(--color-primary);
   position: absolute;
   top: -64px;
   width: 100%;

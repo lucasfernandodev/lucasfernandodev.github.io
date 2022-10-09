@@ -88,7 +88,7 @@
 }
 
 .primary:hover{
-  animation: transitionGradient 550ms ease-in-out forwards;
+  animation: transitionGradient 350ms linear forwards;
 }
 
 @keyframes transitionGradient {
@@ -96,7 +96,7 @@
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   }
   100%{
-    background: linear-gradient(to right, var(--color-primary), var(--color-primary));
+    background: linear-gradient(to right, #8c7ae6, var(--color-primary));
   }
 }
 
