@@ -5,8 +5,6 @@ import style from './style.module.css';
 
 const Error404Template: React.FC = () => {
   return (
-    <>
-    <a href="#mainContent" className="skip-to-content-link" tabIndex={1}>Pular direto para conteúdo</a>
     <Layout>
       <section className={style.errorPage}>
         <div className={style.image}>
@@ -20,7 +18,6 @@ const Error404Template: React.FC = () => {
         </div>
       </section>
     </Layout>
-    </>
   );
 }
 

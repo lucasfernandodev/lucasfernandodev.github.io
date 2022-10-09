@@ -17,9 +17,7 @@ export default function Header() {
   }
 
   return (
-    <header className={styles.header}>
-     
-
+    <header className={styles.header} tabIndex={2}>
       <Brand />
 
       <button

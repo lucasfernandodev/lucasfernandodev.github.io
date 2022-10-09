@@ -37,14 +37,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  transition: 300ms linear;
+  transition: 350ms linear;
   font-size: 13px;
   color: var(--color-text);
 }
 
 .navigation ul li a svg{
   stroke-width: 1.45;
-  transition: 300ms linear;
+  transition: 350ms linear;
 }
 
 .navigation ul li a:hover svg{
@@ -65,23 +65,27 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -100%;
     transform: unset;
+    opacity: 1;
+    width: 280px;
+    background: var(--color-dark-paper);
+    overflow: hidden;
+    display: flex;
+    padding-top: 65px;
   }
-
-  /* Menu aberto */
+  
+  /* Menu visible */
   .navigation[data-show="true"]{
     position: fixed;
     left: 0px;
     top: 0;
     bottom: 0;
-    width: 340px;
+    width: 280px;
     background: var(--color-dark-paper);
     z-index: 5000; 
     display: flex;
     padding-top: 65px;
   }
-
 
   .navigation ul{
     flex-direction: column;
@@ -93,41 +97,61 @@
     padding-left: 12px;
   }
 
-  .navigation ul li,.navigation ul li a{
+  .navigation ul li,.navigation ul li a[href]{
     width: auto;
+    text-decoration: none;
+    transition: 350ms linear;
   }
 
   .navigation ul li a[data-active="true"]{
     opacity: 1;
   }
 
-  .navigation ul li a[data-active="true"]::before{
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: var(--color-gradient);
-    position: absolute;
-    top: 50%;
-    left: -6px;
-    transform: translate(-50%);
-    border-radius: 50%;
-  }
-
-  /* Add o nome do ícone ao menu */
+  /* show label in menu */
   .navigation ul li a::after{
     content: attr(aria-label);
-    color: var(--color-title);
+    color: var(--color-text);
     padding-left: 12px;
-    opacity: 0.5;
     letter-spacing: 0.12rem;
     font-weight: bold;
+    opacity: 0.4;
+
   }
 
   .navigation ul li a[data-active="true"]:after{
     opacity: 1;
   }
 
-  .navigation ul li a:hover{
-    background: transparent;
+  .navigation ul li a:hover::after{
+    opacity: 1;
   }
+
+
+/* Transitions */
+@keyframes slideIn {
+  0%{
+    left: -200%
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+@keyframes slideOut {
+  0%{
+    left: 0px;
+  }
+  100%{
+    left: -100%;
+    opacity: 1;
+  }
+}
+
+.navigation[data-show="false"]{
+  animation: slideOut 350ms ease-out forwards;
+}
+
+.navigation[data-show="true"]{
+  animation: slideIn 350ms linear forwards;
+}
 }

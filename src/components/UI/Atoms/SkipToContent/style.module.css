@@ -1,0 +1,24 @@
+.skipToContent[href] {
+  background: var(--color-primary);
+  height: 56px;
+  transition: 0.3s;
+  width: 230px;
+  display: block;
+  z-index: 10000;
+  position: fixed;
+  top: -1000000px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dark-paper);
+  text-decoration: none;
+}
+
+.skipToContent:focus{
+  outline: dashed 2px var(--color-dark-paper);
+  top: 15px;
+}

@@ -16,9 +16,8 @@ const buttonHeight = {
   sm: 'sm',
   md: 'md',
   lg: 'lg',
-  sl: 'sl'
+  sl: 'sl',
 } as const;
-
 
 interface buttonProps {
   to?: string;
@@ -27,10 +26,8 @@ interface buttonProps {
   icon?: iconProviderTypes;
   onClick?: () => void;
   theme?: 'primary' | 'black' | 'outline';
-  target?: '_blank' | '_self' | '_parent' | '_top' | 'framename'
+  target?: '_blank' | '_self' | '_parent' | '_top' | 'framename';
 }
-
-
 
 const Button: React.FunctionComponent<buttonProps> = ({
   to,
@@ -42,8 +39,6 @@ const Button: React.FunctionComponent<buttonProps> = ({
   target = '_self',
   ...attributes
 }) => {
-
-
   const refButton = useRef<HTMLButtonElement>(null);
   const router = useRouter();
 
@@ -53,6 +48,7 @@ const Button: React.FunctionComponent<buttonProps> = ({
     style[`${buttonHeight[height]}`],
     style[`${theme}`],
   ].join(' ');
+
 
   function handleBtnKeyPress(event: React.KeyboardEvent<HTMLElement>) {
     if (event.key === 'Enter' || event.key === ' ') {
@@ -73,8 +69,7 @@ const Button: React.FunctionComponent<buttonProps> = ({
       {icon && <Icon icon={icon} />}
       {to && (
         <Link target={target} className={style.link} href={to}>
-          {' '}
-          {children}{' '}
+          {children}
         </Link>
       )}
       {!to && children}

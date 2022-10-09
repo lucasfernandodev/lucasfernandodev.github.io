@@ -28,7 +28,7 @@ export default function Main({ children }: { children: React.ReactNode }) {
   }, [loadingCount]);
 
   return (
-    <main className={classes}>
+    <main className={classes} tabIndex={3}>
       {loading ? <Loading completed={loadingCount}/> : children}
     </main>
   );

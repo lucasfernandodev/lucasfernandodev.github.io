@@ -4,7 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 16px;
+  position: relative;
+  z-index: 8000;
 }
 
 .brand a{

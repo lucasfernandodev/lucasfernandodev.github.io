@@ -67,16 +67,24 @@
   flex-wrap: wrap;
   gap: 16px;
   list-style: none;
+  width: 100%;
   color: var(--color-dark-paper);
+}
+
+.projects ul li{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px){
   .section{
     flex-direction: column;
     padding: 75px 0;
+    padding-top: 0px;
   }
   .section .presentation, .section .projects{
-    width: 100%;
+    width: calc(100% - 32px);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -103,6 +111,7 @@
 @media (max-width: 550px){
   .section{
     padding: 65px 0;
+    padding-top: 0px;
   }
 
   .section .presentation h2{
