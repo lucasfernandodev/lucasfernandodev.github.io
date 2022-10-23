@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,15 +19,37 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/infra/*": ["src/infra/*"],
-      "@/components/*": ["src/components/*"],
-      "@/Atoms/*": ["src/components/UI/Atoms/*"],
-      "@/Molecules/*": ["src/components/UI/Molecules/*"],
-      "@/Organisms/*": ["src/components/UI/Atoms/Organisms/*"],
-      "@/Templates/*": ["src/components/UI/Atoms/Templates/*"],
-      "@/Utils/*": ["src/components/Utils/*"],
-    }
+      "@/infra/*": [
+        "src/infra/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/Atoms/*": [
+        "src/components/UI/Atoms/*"
+      ],
+      "@/Molecules/*": [
+        "src/components/UI/Molecules/*"
+      ],
+      "@/Organisms/*": [
+        "src/components/UI/Atoms/Organisms/*"
+      ],
+      "@/Templates/*": [
+        "src/components/UI/Atoms/Templates/*"
+      ],
+      "@/Utils/*": [
+        "src/components/Utils/*"
+      ]
+    },
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next-seo.config.js"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next-seo.config.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
