@@ -32,7 +32,7 @@
 .welcome .text p:first-child::before{
   content: "";
   width: 42px;
-  background: var(--color-gradient);
+  background: var(--line-gradient);
   height: 2px;
   display: block;
   margin-right: 6px;

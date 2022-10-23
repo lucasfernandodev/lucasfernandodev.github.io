@@ -17,6 +17,10 @@
 }
 
 
-.theme-dark{
+body[data-theme="dark"]{
   --bg-color: var(--black-800);
+  --color-text: var(--gray-400);
+  --color-title: var(--gray-200);
+
+  --line-gradient: linear-gradient(to right, #22222B, #151519)
 }

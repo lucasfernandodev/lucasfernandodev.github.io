@@ -1,10 +1,16 @@
 import style from './style.module.css';
 
-const Title: React.FC =  ({children}) => {
+interface TitleProps {
+  apparence?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+}
+
+const Title: React.FC<TitleProps> =  ({children, apparence = 'h2'}) => {
+  const Tag = apparence;
+
   return (
-    <h2 className={style.title}>
+    <Tag className={style.title}>
       {children}
-    </h2>
+    </Tag>
   )
 };
 

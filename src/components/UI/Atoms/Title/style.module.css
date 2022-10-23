@@ -1,8 +1,16 @@
 .title{
-  font-size: 2rem;
-  display: block;
-  max-width: 420px;
-  word-wrap: break-word;
   font-weight: bold;
-  letter-spacing: 0.07rem;
+  color: var(--color-title);
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+h1.title{
+  font-family: 'Open sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: 60px;
+  line-height: 56px;
+}
+
+h2.title{
+  line-height: normal;
+  font-size: 40px;
 }
