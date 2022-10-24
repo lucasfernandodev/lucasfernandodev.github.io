@@ -17,7 +17,7 @@ const HomeTemplate: React.FunctionComponent = () => {
         </div>
 
         <div className={style.image}>
-         <img src="imagens/baloes.svg" alt="ilustation" />
+         <img src="imagens/hot-air-balloon.svg" alt="Ilustração de um balão de ar quente voando" />
         </div>
       
       </section>
