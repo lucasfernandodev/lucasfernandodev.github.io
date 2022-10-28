@@ -11,7 +11,7 @@ const HomeTemplate: React.FunctionComponent = () => {
       <section className={style.welcome}>
         <div id="mainContent" className={style.text}>
           <p>Olá,</p>
-          <Title apparence="h1">Meu nome é Lucas Fernando.</Title>
+          <Title appearance="h1">Meu nome é Lucas Fernando.</Title>
           <p className={style.description}>Desenvolvedor frontend.</p>
 
           <Button.Root size="lg">

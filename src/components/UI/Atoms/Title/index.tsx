@@ -1,11 +1,11 @@
 import style from './style.module.css';
 
 interface TitleProps {
-  apparence?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+  appearance?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-const Title: React.FC<TitleProps> =  ({children, apparence = 'h2'}) => {
-  const Tag = apparence;
+const Title: React.FC<TitleProps> =  ({children, appearance: appearance = 'h2'}) => {
+  const Tag = appearance;
 
   return (
     <Tag className={style.title}>
