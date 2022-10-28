@@ -10,7 +10,6 @@ const Avatar = () => {
           width={340}
           height={350}
           alt="Imagem mostrando o rosto de Lucas Fernando"
-         
         />
       </div>
     </div>
