@@ -8,7 +8,7 @@ const Error404Template: React.FC = () => {
     <Layout>
       <section className={style.errorPage}>
         <div className={style.image}>
-        <Image src="/imagens/errorIllustration.svg" alt="Error" width={440} height={500} layout="responsive"/>
+        <Image src="/imagens/errorIllustration.svg" alt="Error" width={440} height={500} />
         </div>
         <div className={style.text}>
           <h2>

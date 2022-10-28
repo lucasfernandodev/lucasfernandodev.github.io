@@ -17,9 +17,10 @@ const cardPreview = ({ link, image, title, description , ...args }: cardType) =>
         <Image
           src={image}
           alt={title}
-          layout="fill"
           className={style["card-image"]}
           quality={99}
+          width={550}
+          height={1024}
         />
       </div>
 

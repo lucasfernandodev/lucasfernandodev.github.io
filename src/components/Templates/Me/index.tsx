@@ -29,7 +29,6 @@ const MeTemplate = () => {
                 alt='html5'
                 width={100}
                 height={40}
-                layout='responsive'
               />
             </div>
             <div
@@ -42,7 +41,6 @@ const MeTemplate = () => {
                 alt='Javascript'
                 width={100}
                 height={40}
-                layout='responsive'
               />
             </div>
             <div className={style.card_tech} tabIndex={3} aria-label='CSS3'>
@@ -51,7 +49,6 @@ const MeTemplate = () => {
                 alt='css3'
                 width={100}
                 height={40}
-                layout='responsive'
               />
             </div>
             <div className={style.card_tech} tabIndex={4} aria-label='Nextjs'>
@@ -60,7 +57,6 @@ const MeTemplate = () => {
                 alt='Nextjs'
                 width={100}
                 height={40}
-                layout='responsive'
               />
             </div>
           </div>

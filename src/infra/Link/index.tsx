@@ -22,15 +22,17 @@ const Link: React.FC<LinkProps> = ({
   const isActive = asPath === href || asPath === as ? true : false;
 
   return (
-    <NextLink href={href} as={as} passHref={passHref}>
-      <a
-        target={target !== undefined ? target : '_self'}
-        {...arg}
-        data-active={isActive}
-      >
-        {children}
-      </a>
-    </NextLink>
+    (<NextLink
+      href={href}
+      as={as}
+      passHref={passHref}
+      target={target !== undefined ? target : '_self'}
+      {...arg}
+      data-active={isActive}>
+
+      {children}
+
+    </NextLink>)
   );
 };
 
