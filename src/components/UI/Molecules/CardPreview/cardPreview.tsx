@@ -1,7 +1,7 @@
 import Link from "@/infra/Link";
 import Image from "next/image";
 import style from "./style.module.css";
-import Button from "../../Atoms/Button";
+import Button from "../../Atoms/Button/root";
 
 type cardType = {
   link: string;

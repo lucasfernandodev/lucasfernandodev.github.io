@@ -1,7 +1,8 @@
 import style from "./style.module.css";
-import Button from "@/components/UI/Atoms/Button";
+import {Button} from "@/components/UI/Atoms/Button";
 import Layout from "@/infra/Layout";
 import Title from "@/components/UI/Atoms/Title";
+import { SendInclined } from "umbrella-icons-library";
 
 
 const HomeTemplate: React.FunctionComponent = () => {
@@ -13,7 +14,12 @@ const HomeTemplate: React.FunctionComponent = () => {
           <Title apparence="h1">Meu nome é Lucas Fernando.</Title>
           <p className={style.description}>Desenvolvedor frontend.</p>
 
-          <Button icon="send" to="/contact" type="Icon" theme="outline" height="sl">Vamos conversar</Button>
+          <Button.Root size="lg">
+            <Button.Icon>
+              <SendInclined />
+            </Button.Icon>
+            Vamos conversar
+            </Button.Root>
         </div>
 
         <div className={style.image}>

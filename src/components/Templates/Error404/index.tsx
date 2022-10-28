@@ -1,4 +1,4 @@
-import Button from '@/components/UI/Atoms/Button';
+import Button from '@/components/UI/Atoms/Button/root';
 import Layout from '@/infra/Layout';
 import Image from 'next/image';
 import style from './style.module.css';

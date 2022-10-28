@@ -1,0 +1,157 @@
+.button{
+  --width: 64px;
+  --background: var(--blue-300);
+  --color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+
+  min-width: 64px;
+  min-height:24px;
+  cursor: pointer;
+  width: var(--width);
+  background: var(--background);
+  color: var(--color);
+  border: none;
+  border-radius: 4px;
+  transition: background 500ms linear;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+@keyframes tbg{
+  0%{
+    --background: linear-gradient(to right, var(--blue-500), var(--blue-300));
+  }
+  100%{
+    --background: linear-gradient(to right, var(--blue-300), var(--blue-300));
+  }
+}
+
+.button.size-sm{
+  --width: 164px;
+  height: 34px;
+}
+
+.button.size-md{
+  --width: 172px;
+  height: 39px;
+}
+
+.button.size-lg{
+  --width: 264px;
+  height: 48px;
+}
+
+.button.size-2xl{
+  --width: 364px;
+  height: 54px
+}
+
+.button[data-width='full']{
+  --width: 100%;
+}
+
+/* NORMAL <===> PRIMARY*/
+
+.button.normal.primary{
+  --background: linear-gradient(to right, var(--blue-500), var(--blue-400));
+}
+
+.button.normal.primary:hover{
+  --background: linear-gradient(to right, var(--blue-400), var(--blue-400));
+}
+
+.button.normal.primary:active,
+.button.normal.primary:focus{
+  --background: linear-gradient(to right, var(--blue-500), var(--blue-400));
+  outline: 3px solid var(--blue-400);
+  outline-offset: 3px;
+}
+
+.button.normal.primary:disabled{
+  background: var(--blue-200);
+  color: var(--color-200);
+  cursor: default;
+}
+
+.button.normal.primary:disabled:focus,
+.button.normal.primary:disabled:active{
+  outline: unset;
+}
+
+
+
+
+/* NORMAL <===> DARK */
+
+.button.normal.dark{
+  --background: var(--black-500)
+}
+
+.button.normal.dark:hover{
+  --background: var(--black-600)
+}
+
+.button.normal.dark:active{
+  --background: var(--black-700);
+  outline: 3px solid #22222B55;
+  outline-offset: 3px;
+}
+
+.button.normal.dark:focus{
+  --background: var(--black-500);
+  outline: 3px solid #22222B55;
+  outline-offset: 3px;
+}
+
+.button.normal.dark:disabled{
+  background: var(--gray-300);
+  color: var(--color-200);
+  cursor: default;
+}
+
+.button.normal.dark:disabled:focus,
+.button.normal.dark:disabled:active{
+  outline: unset;
+}
+
+
+
+/* OUTLINE <===> DARK */
+
+.button.outline.dark{
+  background: transparent;
+  border: 2px solid var(--black-600)
+}
+
+.button.outline.dark:hover{
+  background: var(--black-600)
+}
+
+.button.outline.dark:active{
+  background: var(--black-700);
+  outline: 3px solid #22222B55;
+  outline-offset: 3px;
+}
+
+.button.outline.dark:focus{
+  background: var(--black-600);
+  outline: 3px solid #22222B55;
+  outline-offset: 3px;
+}
+
+.button.outline.dark:disabled{
+  background: transparent;
+  border: 2px solid var(--black-600);
+  --color: var(--black-600);
+  cursor: default;
+}
+
+.button.outline.dark:disabled:focus,
+.button.outline.dark:disabled:active{
+  outline: unset;
+}

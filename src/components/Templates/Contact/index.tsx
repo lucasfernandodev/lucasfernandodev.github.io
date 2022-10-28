@@ -3,7 +3,7 @@ import Link from '@/infra/Link';
 import Icon from 'src/components/Utils/Icon';
 import Paragraph from 'src/components/UI/Atoms/Paragraph';
 import Title from '../../UI/Atoms/Title';
-import Button from '../../UI/Atoms/Button';
+import Button from '../../UI/Atoms/Button/root';
 import Layout from '@/infra/Layout';
 
 const ContactTemplate = () => {
