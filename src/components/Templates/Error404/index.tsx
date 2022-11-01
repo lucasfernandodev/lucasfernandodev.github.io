@@ -1,5 +1,6 @@
-import Button from '@/components/UI/Atoms/Button/root';
+import {ButtonRoot} from '@/components/UI/Atoms/Button/root';
 import Layout from '@/infra/Layout';
+import Link from '@/infra/Link';
 import Image from 'next/image';
 import style from './style.module.css';
 
@@ -14,7 +15,11 @@ const Error404Template: React.FC = () => {
           <h2>
             Infelizmente, a pagina não foi encontrada.
           </h2>
-          <Button to='/home'>Retornar ao Inicio</Button>
+          <ButtonRoot>
+            <Link href='/'>
+              Retornar ao Inicio
+            </Link>
+          </ButtonRoot>
         </div>
       </section>
     </Layout>

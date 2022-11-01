@@ -1,7 +1,7 @@
 import Link from "@/infra/Link";
 import Image from "next/image";
 import style from "./style.module.css";
-import Button from "../../Atoms/Button/root";
+import {ButtonRoot} from "../../Atoms/Button/root";
 
 type cardType = {
   link: string;
@@ -31,7 +31,11 @@ const cardPreview = ({ link, image, title, description , ...args }: cardType) =>
         <div className={style[`card-description`]}>
           {description}
         </div>
-        <Button target="_blank" to={link} height="lg" theme="primary">Visitar</Button>
+        <ButtonRoot theme="normal" appearance="dark">
+          <Link href={link} target="_blank">
+          Visitar
+          </Link>
+        </ButtonRoot>
       </div>
     </div>
   );
