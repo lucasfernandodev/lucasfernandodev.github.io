@@ -15,7 +15,7 @@ const Error404Template: React.FC = () => {
           <h2>
             Infelizmente, a pagina não foi encontrada.
           </h2>
-          <ButtonRoot>
+          <ButtonRoot asChild>
             <Link href='/'>
               Retornar ao Inicio
             </Link>

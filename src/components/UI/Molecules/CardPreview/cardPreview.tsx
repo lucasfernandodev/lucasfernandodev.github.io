@@ -31,7 +31,7 @@ const cardPreview = ({ link, image, title, description , ...args }: cardType) =>
         <div className={style[`card-description`]}>
           {description}
         </div>
-        <ButtonRoot theme="normal" appearance="dark">
+        <ButtonRoot theme="normal" appearance="dark" asChild>
           <Link href={link} target="_blank">
           Visitar
           </Link>
