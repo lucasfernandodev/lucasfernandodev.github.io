@@ -1,9 +1,9 @@
 import Icon from '@/components/Utils/Icon';
-import Link from '@/infra/Link';
 import { useState } from 'react';
 import Brand from '../../Atoms/Brand';
 import Navigation from '../../Atoms/Navigation';
 import styles from './style.module.css';
+import { ButtonThemeSwitch } from '../../Molecules/ButtonThemeSwitch';
 
 export default function Header() {
   const [showMenuNavigation, setShowMenuNavigation] = useState<boolean>(false);
@@ -20,6 +20,7 @@ export default function Header() {
     <header className={styles.header} tabIndex={2}>
       <Brand />
 
+    {/* Button Toggle => Menu Mobile */}
       <button
         className={styles.buttonNavigation}
         data-show={showMenuNavigation}
@@ -30,6 +31,8 @@ export default function Header() {
       </button>
 
       <Navigation visibility={showMenuNavigation} />
+
+      <ButtonThemeSwitch state='dark'/>
     </header>
   );
 }

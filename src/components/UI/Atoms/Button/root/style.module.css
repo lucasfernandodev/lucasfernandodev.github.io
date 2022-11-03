@@ -56,6 +56,29 @@
   --width: 100%;
 }
 
+.button.float{
+  border-radius: 50%;
+  min-width: 32px;
+}
+
+.button.float.size-sm{
+  --width: 34px;
+  height: 34px;
+}
+.button.float.size-md{
+  --width: 39px;
+  height: 39px;
+}
+.button.float.size-lg{
+  --width: 48px;
+  height: 48px;
+}
+.button.float.size-2xl{
+  --width: 54px;
+  height: 54px
+}
+
+
 /* NORMAL <===> PRIMARY*/
 
 .button.normal.primary{
