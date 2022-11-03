@@ -22,5 +22,7 @@ body[data-theme="dark"]{
   --color-text: var(--gray-400);
   --color-title: var(--gray-200);
 
+  --color-border: var(--black-700);
+
   --line-gradient: linear-gradient(to right, #22222B, #151519)
 }
