@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  padding-left: 42px;
+  padding-left: 32px;
   min-height: 100vh;
   overflow: auto;
   grid-area: content;

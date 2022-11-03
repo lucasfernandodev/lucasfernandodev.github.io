@@ -1,4 +1,4 @@
-import Error404Template from "@/components/Templates/Error404";
+import Error404Template from "@/components/UI/Templates/Error404";
 import Head from "@/infra/meta";
 import { NextPage } from "next";
 

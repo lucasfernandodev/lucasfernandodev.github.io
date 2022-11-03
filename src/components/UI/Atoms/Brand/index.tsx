@@ -5,7 +5,7 @@ const Brand = () => {
   return (
     <h1 className={style.brand}>
       <Link href='/'>
-        <img src='/imagens/logo.svg' alt='Logo - Portifolio' />
+        <img src='/imagens/logo.svg' alt='Logo - Portifolio Lucas Fernando' />
       </Link>
     </h1>
   );

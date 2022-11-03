@@ -1,15 +1,4 @@
 .navigation{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.navigation svg{
-  width: 26px;
-  height: 26px;
-  opacity: 0.5;
-}
-
-.navigation{
   width: 100%;
 }
 
@@ -24,15 +13,14 @@
 
 .navigation ul li{
   width: 100%;
+  display: flex;
+  justify-content: center;
   height: 64px;
 }
 
 .navigation ul li a{
-  width: 100%;
-  height: 100%;
   cursor: pointer;
   text-decoration: none;
-  color: var(--color-title);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,28 +28,33 @@
   transition: 350ms linear;
   font-size: 13px;
   color: var(--color-text);
+
+  width: 56px;
+  height: 46px;
+  border-radius: 4px;
 }
 
-.navigation .icon{
+.navigation ul li a .icon{
   width: 18px;
   height: 18px;
-}
 
-.navigation ul li a svg{
-  stroke-width: 1.45;
   transition: 350ms linear;
 }
 
-.navigation ul li a:hover svg{
+.navigation ul li a:hover .icon{
   opacity: 1;
+  color: var(--white);
 }
 
+.navigation ul li a[data-active="true"]{
+  background: var(--black-400);
+  color: var(--white)
+}
 
-.navigation ul li a[data-active="true"] svg{
+.navigation ul li a[data-active="true"] .icon{
   opacity: 1;
   position: relative;
   z-index: 10;
-  stroke: var(--color-secondary);
 }
 
 

@@ -3,7 +3,7 @@ import Paragraph from "src/components/UI/Atoms/Paragraph";
 import CardPreview from "src/components/UI/Molecules/CardPreview/cardPreview";
 import CardFeatured from "src/components/UI/Molecules/CardFeatured/cardFeatured";
 import List from 'src/infra/Store/websites/list';
-import Title from "../../UI/Atoms/Title";
+import Title from "@/Atoms/Title";
 import Layout from "@/infra/Layout";
 import Icon from "@/components/Utils/Icon";
 

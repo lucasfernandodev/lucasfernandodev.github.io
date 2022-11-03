@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import ProjectsTemplate from "../components/Templates/Projects";
+import ProjectsTemplate from "@/components/UI/Templates/Projects";
 import Head from "@/infra/meta";
 const Projects: NextPage = () => {
   return (
