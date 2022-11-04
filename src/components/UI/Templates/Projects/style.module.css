@@ -67,14 +67,9 @@
   justify-content: flex-start;
 }
 
-.projects__cards h2{
+.projects__cards .header{
   width: 100%;
-  text-align: right;
-}
-
-.projects__cards p.description{
-  text-align: right;
-  width: 100%;
+  text-align: right
 }
 
 /* Add padding e aumenta o height do .projects em dispositivos landscape com telas menores */

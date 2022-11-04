@@ -1,7 +1,5 @@
 import style from "./style.module.css";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
-import CardPreview from "src/components/UI/Molecules/CardPreview/cardPreview";
-import CardFeatured from "src/components/UI/Molecules/CardFeatured/cardFeatured";
 import List from 'src/infra/Store/websites/list';
 import Title from "@/Atoms/Title";
 import Layout from "@/infra/Layout";
@@ -56,9 +54,10 @@ const ProjectsTemplate = () => {
       <div className={style.header}>
       <Title>Algumas coisas que Construí</Title>
         <p className={style.description}>
-      </div>
-        Esses são alguns dos meus projetos desenvolvidos recentemente.
+           Esses são alguns dos meus projetos desenvolvidos recentemente.
         </p>
+      </div>
+       
         {
         List.map((item: cardType) => {
           return <Painel 

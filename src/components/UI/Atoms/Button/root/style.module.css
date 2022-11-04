@@ -111,6 +111,15 @@
 
 
 /* NORMAL <===> DARK */
+.button.float.outline.dark{
+  color: var(--gray-400);
+}
+
+.button.float.outline.dark:hover,
+.button.float.outline.dark:focus,
+.button.float.outline.dark:active{
+  color: var(--white);
+}
 
 .button.normal.dark{
   --background: var(--black-500)
