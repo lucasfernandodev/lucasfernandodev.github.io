@@ -1,4 +1,4 @@
-import projects from "./style.module.css";
+import style from "./style.module.css";
 import Paragraph from "src/components/UI/Atoms/Paragraph";
 import CardPreview from "src/components/UI/Molecules/CardPreview/cardPreview";
 import CardFeatured from "src/components/UI/Molecules/CardFeatured/cardFeatured";
@@ -6,6 +6,10 @@ import List from 'src/infra/Store/websites/list';
 import Title from "@/Atoms/Title";
 import Layout from "@/infra/Layout";
 import Icon from "@/components/Utils/Icon";
+import Image from "next/image";
+import { Button } from "../../Atoms/Button";
+import { Linkedin } from "umbrella-icons-library";
+import { Painel } from "../../Organisms/Painel";
 
 interface cardType {
   link: string;
@@ -18,51 +22,53 @@ interface cardType {
 const ProjectsTemplate = () => {
   return (
      <Layout>
-      <section className={projects.projects}>
-        <div className={projects.text} id="mainContent">
-          <Title>O que eu faço?</Title>
-          <div className={projects.content}>
+      <section className={style.projects}>
+        <div className={style.text} id="mainContent">
+          <Title>Habilidades</Title>
+          <div className={style.content}>
             <Paragraph>
-              Como desenvolvedor front-end trabalho codando o design,
-              transformando o em sites e aplicações, com foco em trazer a melhor experiência para o usuário.
+            Trabalho como desenvolvedor front-end oferecendo soluções completas para sua aplicação.
             </Paragraph>
             <Paragraph>
-              Sempre desenvolvo sites
-              fiéis ao design focando em integrar qualidade e velocidade gerando uma melhor experiência para o usuário.
+            Crio sites responsivos, sempre utilizando as melhores práticas. Meu foco é no desenvolvimento, utilizando HTML, CSS, JS ou framework com React.js ou Next.js.
             </Paragraph>
+            <Button.Root size="lg">
+              <Button.Icon>
+                <Linkedin />
+              </Button.Icon>
+            Ver mais detalhes
+            </Button.Root>
           </div>
         </div>
 
-        <div className={projects.static}>
+        <div className={style.static}>
 
-          <CardFeatured
-            icon="rocket"
-            title="Velocidade"
-            content="Procuro sempre desenvolver um site otimizado utilizando as principais práticas do mercado."
-          />
-
-          <CardFeatured
-            icon="quality"
-            title="Qualidade"
-            content="Para garantir a qualidade da aplicação, desenvolvo sempre com foco no código limpo e semântico."
-          />
-
-          <CardFeatured
-            icon="frontendMentor"
-            title="Experiência"
-            content="Maximizar a experiência do usuário é sempre importante se um site deseja se manter e crescer, por isso foco sempre em desenvolver sites simples, fluidos e intuitivos."
-          />
+          <Image width={570} height={300} src="/imagens/Ability - Image.svg" alt="Ability image" />
 
         </div>
-        <div className={projects.icon}>
+        <div className={style.icon}>
           <Icon icon="arrowDown"/>
         </div>
       </section>
 
 
-      <section className={projects.projects__cards}>{
+      <section className={style.projects__cards}>
+      <div className={style.header}>
+      <Title>Algumas coisas que Construí</Title>
+        <p className={style.description}>
+      </div>
+        Esses são alguns dos meus projetos desenvolvidos recentemente.
+        </p>
+        {
         List.map((item: cardType) => {
-          return <CardPreview key={item.title} description={item.description} image={item.image} link={item.link} title={item.title} />
+          return <Painel 
+            key={item.title} 
+            description={item.description} 
+            imageSource={item.image} 
+            preview={item.link} 
+            repository=''
+            title={item.title} 
+          />
         })
       }</section>
 

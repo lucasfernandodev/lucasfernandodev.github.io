@@ -179,3 +179,19 @@
 .button.outline.dark:disabled:active{
   outline: unset;
 }
+
+.button.link{
+  background-color: transparent;
+  border: transparent;
+  text-decoration: underline;
+  width: auto;
+  padding: 2px 6px;
+  font-weight: 400;
+  min-width: 120px;
+  color: var(--gray-400);
+  transition: 350ms linear;
+}
+
+.button.link:hover{
+  color: var(--white);
+}
