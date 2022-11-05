@@ -1,5 +1,6 @@
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
+import { Ref } from 'react';
 
 type LinkProps = {
   href: string;
@@ -7,6 +8,7 @@ type LinkProps = {
   passHref?: boolean;
   className?: string | undefined;
   target?: '_blank' | '_self' | '_parent' | '_top' | 'framename';
+  ref?: Ref<HTMLAnchorElement> | undefined
 };
 
 const Link: React.FC<LinkProps> = ({
@@ -15,6 +17,7 @@ const Link: React.FC<LinkProps> = ({
   children,
   passHref,
   target = '_self',
+  ref,
   ...arg
 }) => {
   const { asPath } = useRouter();
@@ -28,6 +31,7 @@ const Link: React.FC<LinkProps> = ({
       passHref={passHref}
       target={target !== undefined ? target : '_self'}
       {...arg}
+      ref={ref}
       data-active={isActive}>
 
       {children}
