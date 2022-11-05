@@ -1,14 +1,18 @@
 ::-webkit-scrollbar              { 
-    background: var(--color-dark);
+    background: var(--bg-color);
     width: 10px;
+    border-left: 1px solid var(--black-400);
 }
 
 ::-webkit-scrollbar-track-piece  {
-    background: var(--color-dark);
 }
 
 ::-webkit-scrollbar-thumb        { 
-    background: var(--color-scrollbar-thumb);
+    background: var(--blue-200);
     width: 8px;
-    border: 2px solid var(--color-dark);
+    border: 2px solid var(--bg-color);
+}
+
+::-webkit-scrollbar-corner {
+    height: 0px;
 }

@@ -3,6 +3,7 @@
   max-width: 1100px;
   height: 100%;
   max-height: 580px;
+  min-height: 580px;
   background: var(--black-400);
   position: relative;
   display: flex;
@@ -32,7 +33,7 @@
   font-family: 'Playfair Display', serif;
   color: var(--white);
   line-height: 42.1px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .painel .painel-details .content .groupButtons{

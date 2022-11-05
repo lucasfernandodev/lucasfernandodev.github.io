@@ -6,6 +6,7 @@
   align-items: center;
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 .icon{
@@ -54,22 +55,63 @@
 }
 
 .projects__cards{
-  width: calc(100% + 42px);
-  min-height: 100vh;
-
   background: var(--color-dark-paper);
-  display: flex;
-  padding: 82px 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 54px;
-  justify-content: flex-start;
+  padding-top: 160px;
+  width: 100%;
 }
 
 .projects__cards .header{
   width: 100%;
-  text-align: right
+  text-align: right;
+  margin-bottom: 120px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.projects__cards .header *{
+  max-width: 482.84px;
+}
+
+.projects__cards .groupPanels{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+  gap: 54px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.projects__cards .footer{
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 216px;
+  margin-top: 112px;
+}
+
+.projects__cards .footer h2{
+  color: var(--white);
+  font-size: 36px;
+}
+.projects__cards .footer p{
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.projects__cards .footer a{
+  color: var(--blue-300);
+  /* opacity: 0.7; */
+  transition: 350ms linear;
+}
+
+.projects__cards .footer a:hover{
+  opacity: 1;
 }
 
 /* Add padding e aumenta o height do .projects em dispositivos landscape com telas menores */

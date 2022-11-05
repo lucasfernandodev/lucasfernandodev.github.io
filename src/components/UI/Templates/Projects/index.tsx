@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Button } from "../../Atoms/Button";
 import { Linkedin } from "umbrella-icons-library";
 import { Painel } from "../../Organisms/Painel";
+import Link from "@/infra/Link";
 
 interface cardType {
   link: string;
@@ -51,25 +52,36 @@ const ProjectsTemplate = () => {
 
 
       <section className={style.projects__cards}>
-      <div className={style.header}>
-      <Title>Algumas coisas que Construí</Title>
-        <p className={style.description}>
-           Esses são alguns dos meus projetos desenvolvidos recentemente.
-        </p>
-      </div>
+        <div className={style.header}>
+          <Title>Algumas coisas que Construí</Title>
+          <p className={style.description}>
+            Esses são alguns dos meus projetos desenvolvidos recentemente.
+          </p>
+        </div>
        
+        <div className={style.groupPanels}>
         {
-        List.map((item: cardType) => {
-          return <Painel 
-            key={item.title} 
-            description={item.description} 
-            imageSource={item.image} 
-            preview={item.link} 
-            repository=''
-            title={item.title} 
-          />
-        })
-      }</section>
+          List.map((item: cardType) => {
+            return <Painel 
+              key={item.title} 
+              description={item.description} 
+              imageSource={item.image} 
+              preview={item.link} 
+              repository=''
+              title={item.title} 
+            />})
+        }
+        </div>
+
+        <div className={style.footer}>
+          <h2 className={style.title}>
+          Vamos conversar?
+          </h2>
+          <p className={style.description}>
+            Quer entrar em contato ou falar sobre um projeto? Sinta-se à vontade para entrar em contato comigo através do e-mail <Link href="maito:lucasfernando.dev@gmail.com">lucasfernando.dev@gmail.com</Link>.
+          </p>
+        </div>
+      </section>
 
     </Layout>
   );
