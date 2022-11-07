@@ -6,3 +6,9 @@
 .button:hover{
   color: var(--gray-200);
 }
+
+@media (max-width: 795px){
+  .button{
+    display: none;
+  }
+}

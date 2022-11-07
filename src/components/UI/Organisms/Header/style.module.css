@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   border-right: 1px solid var(--color-border);
+  background: var(--bg-color);
   grid-area: header;
 }
 
@@ -28,7 +29,7 @@
   color: var(--color-secondary);
 }
 
-.buttonNavigation{
+.btnToggle{
   display: none;
 }
 
@@ -53,13 +54,15 @@
     left: 0;
     right: 0;
     z-index: 9999;
-    background-color: var(--color-dark);
   }
   
+  .btnToggle{
+    display: block;
+  }
   .buttonNavigation{
     display: block;
-    height: 36px;
-    width: 36px ;
+    height: 32px;
+    width: 32px ;
     border: unset;
     cursor: pointer;
     position: relative;
@@ -67,6 +70,7 @@
     background: transparent;
     opacity: 0.8;
     transition: 300ms linear;
+    border: none;
   }
 
   .buttonNavigation:hover,
@@ -75,9 +79,8 @@
   }
 
   .buttonNavigation svg{
-    width: 100%;
-    max-width: 16px;
-    height: auto;
+    width: 16px;
+    height: 16px;
   }
 
   .buttonNavigation[data-show="true"] svg{

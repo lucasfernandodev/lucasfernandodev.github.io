@@ -21,10 +21,25 @@
   height: 24px;
 }
 
-@media (max-width: 550px){
+@media (max-width: 795px){
   .brand{
+    width: auto;
     margin-top: 0px;
-    width: 36px;
-    height: 36px;
+  }
+
+  .brand a{
+    text-decoration: none;
+  }
+
+  .brand a::after{
+    content: "Lucas Fernando";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-title);
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .brand a img{
+    display: none;
   }
 }

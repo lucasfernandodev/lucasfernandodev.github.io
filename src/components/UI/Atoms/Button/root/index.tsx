@@ -26,14 +26,15 @@ export const ButtonRoot: React.FunctionComponent<buttonProps> = ({
   ...props
 }) => {
   const Tag = asChild ? Slot : "button";
+
   const _className = [
+    className,
     style.button,
     style[`${float ? 'float' : ' '}`],
     style[`${square ? 'square' : ' '}`],
     style[`size-${size}`],
     style[`${theme}`],
     style[`${appearance}`],
-    className,
   ].join(" ");
 
   return (
