@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 795px){
   .header {
     height: var(--header-mobile-height);
     padding: 0 16px;
@@ -47,7 +47,7 @@
     width: 100%;
     align-items: center;
     border-right: unset;
-    border-bottom: 1px solid var(--color-dark-paper);
+    border-bottom: 1px solid var(--color-border);
     position: fixed;
     top: 0;
     left: 0;

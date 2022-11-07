@@ -9,7 +9,7 @@ interface Layout{
 
 const Layout: React.FC<Layout> = ({ children,skipToContentId }) => {
   return (
-    <div className={styles.content}>
+    <div className={styles.layout}>
       <Header />
       <SkipToContent contentId={skipToContentId} />
       <Main>

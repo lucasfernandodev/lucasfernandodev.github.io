@@ -1,12 +1,19 @@
-.content{
+.layout{
   --header-mobile-height: 72px;
   display: grid;
   grid-template-columns: 72px 1fr;
   grid-template-areas: 'header content';
 }
 
+@media (max-width: 1000px){
+  .layout{
+    --header-mobile-height: 64px;
+    grid-template-columns: 64px 1fr;
+  }
+}
+
 @media (max-width: 795px){
-  .content{
+  .layout{
     padding-top: var(--header-mobile-height);
     grid-template-columns: unset;
     grid-template-rows: auto auto;
