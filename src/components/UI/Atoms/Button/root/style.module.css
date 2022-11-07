@@ -60,20 +60,27 @@
   border-radius: 50%;
   min-width: 32px;
 }
-
-.button.float.size-sm{
+.button.square{
+  min-width: 16px;
+}
+.button.float.size-sm,
+.button.square.size-sm{
   --width: 34px;
   height: 34px;
 }
-.button.float.size-md{
+
+.button.float.size-md,
+.button.square.size-md{
   --width: 39px;
   height: 39px;
 }
-.button.float.size-lg{
+.button.float.size-lg,
+.button.square.size-lg{
   --width: 48px;
   height: 48px;
 }
-.button.float.size-2xl{
+.button.float.size-2xl,
+.button.square.size-2xl{
   --width: 54px;
   height: 54px
 }

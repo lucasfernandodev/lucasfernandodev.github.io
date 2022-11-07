@@ -59,13 +59,25 @@
   .buttonNavigation{
     display: block;
     height: 36px;
-    width: 36px;
+    width: 36px ;
     border: unset;
     cursor: pointer;
     position: relative;
     z-index: 8000;
     background: transparent;
-    stroke: var(--color-title);
+    opacity: 0.8;
+    transition: 300ms linear;
+  }
+
+  .buttonNavigation:hover,
+  .buttonNavigation:active{
+    opacity: 1;
+  }
+
+  .buttonNavigation svg{
+    width: 100%;
+    max-width: 16px;
+    height: auto;
   }
 
   .buttonNavigation[data-show="true"] svg{

@@ -9,7 +9,8 @@ interface buttonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   appearance?: "primary" | "dark";
   size?: "sm" | "md" | "lg" | "2xl";
   width?: "content" | "full";
-  float?: boolean
+  float?: boolean,
+  square?: boolean
 }
 
 export const ButtonRoot: React.FunctionComponent<buttonProps> = ({
@@ -21,12 +22,14 @@ export const ButtonRoot: React.FunctionComponent<buttonProps> = ({
   width = "content",
   size = "md",
   float = false,
+  square = false,
   ...props
 }) => {
   const Tag = asChild ? Slot : "button";
   const _className = [
     style.button,
     style[`${float ? 'float' : ' '}`],
+    style[`${square ? 'square' : ' '}`],
     style[`size-${size}`],
     style[`${theme}`],
     style[`${appearance}`],
