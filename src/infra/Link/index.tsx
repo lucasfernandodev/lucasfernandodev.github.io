@@ -1,5 +1,4 @@
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
 import { Ref } from 'react';
 
 type LinkProps = {
@@ -20,20 +19,17 @@ const Link: React.FC<LinkProps> = ({
   ref,
   ...arg
 }) => {
-  const { asPath } = useRouter();
-
-  const isActive = asPath === href || asPath === as ? true : false;
+  
 
   return (
     (<NextLink
       href={href}
       as={as}
       passHref={passHref}
-      target={target !== undefined ? target : '_self'}
-      {...arg}
+      target={target}
       ref={ref}
-      data-active={isActive}>
-
+      {...arg}
+      >
       {children}
 
     </NextLink>)
