@@ -2,14 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-template-areas: 'content image';
+  grid-template-areas: "content image";
 
   width: 100%;
   overflow-x: hidden;
   position: relative;
 }
 
-.content{
+.content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -17,7 +17,7 @@
   grid-area: content;
 }
 
-.content .tech{
+.content .tech {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,31 +29,30 @@
   align-items: center;
 }
 
-.content .tech svg{
+.content .tech svg {
   max-width: 32px;
   height: auto;
 }
 
-.content .tech svg:last-child{
+.content .tech svg:last-child {
   max-width: 64px;
 }
 
-
-.image{
+.image {
   display: flex;
   justify-content: center;
   grid-area: image;
   position: relative;
 }
 
-.image .user{
+.image .user {
   position: relative;
   width: auto;
   height: auto;
   z-index: 1;
 }
 
-.image .user::before{
+.image .user::before {
   content: "";
   position: absolute;
   width: 340px;
@@ -64,7 +63,7 @@
   right: -40%;
 }
 
-.image .user img{
+.image .user img {
   width: 280px;
   height: 280px;
   border: 14px solid var(--black-400);
@@ -74,29 +73,53 @@
   transform: translateY(-32px);
 }
 
-@media (max-width: 795px){
-  .section{
+@media (max-width: 990px) {
+  .section {
+    padding: 100px 24px;
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 795px) {
+  .section {
     grid-template-columns: none;
     grid-template-rows: auto auto;
-    grid-template-areas: 'image' 'content';
+    grid-template-areas: "image" "content";
     margin-top: 16px;
     padding-left: 0px;
+    justify-content: center;
+  }
+
+  .image .user::before {
+    width: 319px;
+    height: 250px;
   }
 }
 
-@media (max-width: 990px){
-  .section{
-    padding: 75px 24px;
-  }
-}
-
-
-@media (max-width: 550px){
-  .section{
+@media (max-width: 550px) {
+  .section {
     padding: 65px 0;
+    padding-top: 125px;
   }
 
-  .content{
+  .image {
+    height: 250px;
+  }
+  .image .user::before {
+    top: -50%;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100% 0px 0px 0px;
+  }
+
+  .image .user img {
+    width: 250px;
+    height: 250px;
+    transform: unset;
+  }
+
+  .content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -104,10 +127,10 @@
     align-items: center;
   }
 
-  .content h2{
+  .content h2 {
     margin: 32px 0;
   }
-  .content p{
+  .content p {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -115,7 +138,33 @@
     text-align: center;
   }
 
-  .content .card_tech{
+  .content .card_tech {
     max-width: 90px;
+  }
+}
+
+@media (max-width: 410px) {
+  .section {
+    padding-top: 105px;
+  }
+  .image {
+    height: 170px;
+  }
+
+  .image .user::before {
+    padding: 0px;
+    top: -50%;
+    right: 0;
+    left: 50%;
+    width: 250px;
+    height: 200px;
+    transform: translateX(-50%);
+    border-radius: 100% 0px 0px 0px;
+  }
+
+  .image .user img {
+    width: 180px;
+    height: 180px;
+    transform: unset;
   }
 }
