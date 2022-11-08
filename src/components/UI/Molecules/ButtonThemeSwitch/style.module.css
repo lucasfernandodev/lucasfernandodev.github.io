@@ -7,6 +7,10 @@
   color: var(--gray-200);
 }
 
+.button.label{
+  font-weight: 400;
+}
+
 @media (max-width: 795px){
   .button{
     display: none;

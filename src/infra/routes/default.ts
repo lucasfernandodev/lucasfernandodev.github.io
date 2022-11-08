@@ -10,7 +10,7 @@ export interface RouteProps{
 export const Route: Record<routes, RouteProps> = {
   home: {
     path: '/',
-    displayName: 'Home',
+    displayName: 'Inicio',
     icon: Home
   },
   me: {
