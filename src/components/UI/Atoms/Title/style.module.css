@@ -14,3 +14,24 @@ h2.title{
   line-height: normal;
   font-size: 36px;
 }
+
+@media (max-width: 755px){
+  h1.title{
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 610px){
+  h1.title{
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+
+@media (max-width: 410px){
+  h1.title{
+    font-size: 38px;
+    line-height: 42px;
+  }
+}

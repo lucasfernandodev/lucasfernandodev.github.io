@@ -47,7 +47,7 @@ export const ButtonThemeSwitch: React.FC<ButtonThemeSwitchProps> = ({
       size='md'
       theme='outline' 
       appearance='dark' 
-      
+      float={!label ? true: false}
       className={[style.button, label ? style.label : ''].join(" ")}
       onMouseLeave={handleLeave}
     >

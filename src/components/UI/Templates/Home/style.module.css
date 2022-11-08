@@ -125,15 +125,15 @@
 
 
 /* Mobile */
-@media (max-width: 768px){
+@media (max-width: 796px){
   .welcome{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100vw;
     max-width: 100vw;
     padding-bottom: 42px;
-    padding-top: 0px !important;
     min-height: calc(100vh - var(--header-mobile-height));
   }
 
@@ -146,7 +146,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
     height: auto;
     padding: 0 12px;
   }
@@ -202,7 +204,8 @@
 @media (max-width: 550px){
   .welcome{
     padding: 65px 16px;
-    padding-bottom: 0;
+    height: 100%;
+    max-height: unset;
   }
   .welcome .text{
     padding: 0;
@@ -211,14 +214,13 @@
     font-size: 2.3rem;
   }
   .welcome .image{
-    height: auto;
     padding-top: 24px;
     padding-bottom: 32px;
   }
 
   .welcome .image svg{
-    max-width: 50%;
-    max-height: 30vh;
+    max-width: 338px;
+    height: auto;
   }
 }
 
