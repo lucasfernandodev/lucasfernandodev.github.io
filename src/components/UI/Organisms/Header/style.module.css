@@ -75,6 +75,7 @@
   .buttonNavigation{
     display: block;
     height: 32px;
+    max-height: 32px;
     width: 32px ;
     border: unset;
     cursor: pointer;

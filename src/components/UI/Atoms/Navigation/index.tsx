@@ -10,7 +10,6 @@ type NavigationProps = {
 const Navigation: React.FC<NavigationProps> = ({ visibility }) => {
   const { asPath } = useRouter();
 
-
   return (
     <nav className={style.navigation} data-show={visibility}>
       <ul>

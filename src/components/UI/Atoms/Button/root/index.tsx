@@ -1,5 +1,5 @@
 import { Slot } from "@radix-ui/react-slot";
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, Ref } from "react";
 import style from "./style.module.css";
 
 interface buttonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -10,7 +10,8 @@ interface buttonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "sm" | "md" | "lg" | "2xl";
   width?: "content" | "full";
   float?: boolean,
-  square?: boolean
+  square?: boolean,
+  passRef?: Ref<HTMLButtonElement>
 }
 
 export const ButtonRoot: React.FunctionComponent<buttonProps> = ({
@@ -23,22 +24,23 @@ export const ButtonRoot: React.FunctionComponent<buttonProps> = ({
   size = "md",
   float = false,
   square = false,
+  passRef = null,
   ...props
 }) => {
   const Tag = asChild ? Slot : "button";
 
   const _className = [
-    className,
     style.button,
     style[`${float ? 'float' : ' '}`],
     style[`${square ? 'square' : ' '}`],
     style[`size-${size}`],
     style[`${theme}`],
     style[`${appearance}`],
+    className,
   ].join(" ");
 
   return (
-    <Tag data-width={width} className={_className} {...props}>
+    <Tag data-width={width} ref={passRef} className={_className} {...props}>
       {children}
     </Tag>
   );
