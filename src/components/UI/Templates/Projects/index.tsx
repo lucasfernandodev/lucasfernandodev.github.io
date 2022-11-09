@@ -40,11 +40,13 @@ const ProjectsTemplate = () => {
           </div>
         </div>
 
-        <div className={style.static}>
+        <div className={style.illustration}>
 
           <Image width={570} height={300} src="/imagens/Ability - Image.svg" alt="Ability image" />
 
         </div>
+
+
         <div className={style.icon}>
           <Icon icon="arrowDown"/>
         </div>
