@@ -8,7 +8,6 @@ import Image from "next/image";
 import { Button } from "../../Atoms/Button";
 import { Linkedin } from "umbrella-icons-library";
 
-import Link from "@/infra/Link";
 import { ProjectTemplate } from "../Projects";
 
 export const SkillsTemplate = () => {

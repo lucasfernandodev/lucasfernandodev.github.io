@@ -18,6 +18,7 @@
 @media (max-width: 550px) {
   .groupPanels {
     padding: 0px 16px;
+    padding-top: 150px;
     gap: 150px;
   }
 }

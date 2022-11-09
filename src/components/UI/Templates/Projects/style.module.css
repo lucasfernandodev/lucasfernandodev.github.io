@@ -40,6 +40,11 @@
 @media (max-width: 550px) {
   .projects {
     width: 100%;
+    padding-top: 64px;
+  }
+
+  .projects .header{
+    margin-bottom: 0px;
   }
 
   .projects .footer{
