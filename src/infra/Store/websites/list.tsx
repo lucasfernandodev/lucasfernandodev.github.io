@@ -1,11 +1,11 @@
-interface cardType {
+export interface projectsListItemType {
     link: string;
     image: string;
     title: string;
     description: string;
 }
 
-const List: Array<cardType> = [
+export const projectsList: Array<projectsListItemType> = [
     {
         title: "E-commerce product page",
         image: "/websites/sneakears.netlify.app_.png",
@@ -37,5 +37,3 @@ const List: Array<cardType> = [
         description: "Uma pagina para se cadastrar em um serviço",
     },
 ];
-
-export default List;

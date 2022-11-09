@@ -191,6 +191,10 @@
     min-height: 340px;
   }
 
+  .painel .painel-details .content .title{
+    font-size: 26px;
+  }
+
   .painel .painel-preview{
     max-width: calc(100% - 24px);
     max-height: 220px;

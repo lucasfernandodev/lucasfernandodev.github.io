@@ -1,0 +1,23 @@
+.groupPanels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 54px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (max-width: 995px) {
+  .groupPanels {
+    gap: 250px;
+    padding-top: 250px;
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 550px) {
+  .groupPanels {
+    padding: 0px 16px;
+    gap: 150px;
+  }
+}

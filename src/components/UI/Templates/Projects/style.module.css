@@ -1,66 +1,10 @@
-.projects{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 100%;
-  position: relative;
-  overflow-x: hidden;
-}
-
-.icon{
-  position: absolute;
-  left: 0px;
-  bottom: 10px;
-  color: var(--color-toAction);
-  border-radius: 3px;
-  animation: arrowAnimation 1300ms infinite;
-}
-
-.icon svg{
-  width: 32px;
-  height: 32px;
-}
-
-@keyframes arrowAnimation {
-  0%{
-    bottom: 10px;
-  }
-  50%{
-    bottom: 18px
-  }
-  100%{
-    bottom: 10px
-  }
-}
-
-.projects .illustration, .projects .text{
-  width: 50%;
-}
-
-.projects .content{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-top: 24px;
-}
-
-.projects .illustration{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.projects__cards{
+.projects {
   background: var(--color-dark-paper);
   padding-top: 160px;
   width: 100%;
 }
 
-.projects__cards .header{
+.projects .header {
   width: 100%;
   text-align: right;
   margin-bottom: 120px;
@@ -68,32 +12,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 30px;
+  gap: 16px;
 }
 
-.projects__cards .header *{
+.projects .header * {
   max-width: 482.84px;
 }
 
-.projects__cards .groupPanels{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap ;
-  gap: 54px;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-@media (max-width: 995px){
-  .projects__cards .groupPanels{
-    gap: 250px;
-    padding-top: 250px;
-    padding-left: 24px;
-  }
-}
-
-.projects__cards .footer{
-  max-width: 540px;
+.projects .footer {
+  max-width: 435px;
   margin: 0 auto;
   text-align: center;
   gap: 16px;
@@ -101,126 +28,21 @@
   flex-direction: column;
   padding-bottom: 216px;
   margin-top: 112px;
+  align-items: center;
 }
 
-.projects__cards .footer h2{
-  color: var(--white);
-  font-size: 36px;
-}
-.projects__cards .footer p{
-  font-size: 16px;
-  line-height: 27px;
-}
-
-.projects__cards .footer a{
-  color: var(--blue-300);
-  /* opacity: 0.7; */
-  transition: 350ms linear;
-}
-
-.projects__cards .footer a:hover{
-  opacity: 1;
-}
-
-/* Add padding e aumenta o height do .projects em dispositivos landscape com telas menores */
-@media (max-height: 589px) and (min-width: 769px) and (max-width: 1199px){
-  .projects{
-    height: auto;
-  }
-  .projects .illustration{
-    padding: 65px 0;
-  }
-}
-
-@media (max-width: 1200px){
-  .projects .illustration{
-    padding-right: 14px;
-  }
-}
-
-@media (max-width: 960px){
-  .projects{
-    flex-direction: column;
-    padding: 65px 24px;
-    height: auto;
-    width: 100%;
-  }
-
-  .projects .illustration, .projects .text{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .projects .illustration{
-    padding-right: 0;
-  }
-
-  .text h2{
-    max-width: calc(100% - 12px);
-  }
-
-  .projects__cards{
+@media (max-width: 960px) {
+  .projects {
     margin-left: 0;
   }
 }
 
-/* Add margin 0 ao h2 para centralizar */
-@media (max-width: 795px){
-  .text h2{
-    margin: 32px auto;
-  }
-
-  .projects{
-    padding: 65px 16px;
-    padding-top: 0px;
-  }
-  
-  .projects .text{
-    order: 2;
-  }
-
-  .projects .illustration{
-    order: 1;
-  }
-
-  .projects .content{
-    margin-top: 0;
-    margin-bottom: 24px;
-  }
-  .projects .icon{
-    display: none;
-  }
-}
-
-
-@media (max-width: 550px){
-
-  .projects .text h2{
-    margin: 32px auto;
-  }
-
-  .projects .text p{
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 0;
-    text-align: center;
-  }
-
-  .projects__cards .groupPanels{
-    padding:0px 16px;
-    gap: 150px;
-  }
-
-  .projects__cards{
+@media (max-width: 550px) {
+  .projects {
     width: 100%;
   }
-}
 
-@media (max-width: 375px){
-  .projects .text p{
-    padding: 0;
+  .projects .footer{
+    padding-bottom: 116px;
   }
 }

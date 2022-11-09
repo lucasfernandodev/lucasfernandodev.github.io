@@ -1,11 +1,11 @@
 import { NextPage } from "next";
-import ProjectsTemplate from "@/components/UI/Templates/Projects";
+import {SkillsTemplate} from "@/components/UI/Templates/skills";
 import Head from "@/infra/meta";
 const Projects: NextPage = () => {
   return (
     <>
       <Head title="Projetos | Lucas Fernando · Desenvolvedor frontend" />
-      <ProjectsTemplate />
+      <SkillsTemplate />
     </>
   );
 };

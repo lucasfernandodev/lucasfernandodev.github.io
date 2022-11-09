@@ -10,9 +10,8 @@
 
 .paragraph a{
   text-decoration: none;
-  color: var(--color-secondary);
+  color: var(--blue-300);
   font-weight: 500;
-  letter-spacing: 0.08rem;
 }
 
 .paragraph a:hover{

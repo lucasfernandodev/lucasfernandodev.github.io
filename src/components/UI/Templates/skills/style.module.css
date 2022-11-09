@@ -1,0 +1,140 @@
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.skillsMoreContent {
+  composes: arrowAnimated from './composes/animation.css';
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  color: var(--color-toAction);
+  border-radius: 3px;
+}
+
+.skillsMoreContent svg {
+  width: 32px;
+  height: 32px;
+}
+
+
+.skills .illustration,
+.skills .text {
+  width: 50%;
+}
+
+.skills .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.skills .illustration {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+/* Add padding e aumenta o height do .skills em dispositivos landscape com telas menores */
+@media (max-height: 589px) and (min-width: 769px) and (max-width: 1199px) {
+  .skills {
+    height: auto;
+  }
+  .skills .illustration {
+    padding: 65px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .skills .illustration {
+    padding-right: 14px;
+  }
+}
+
+@media (max-width: 960px) {
+  .skills {
+    flex-direction: column;
+    padding: 65px 24px;
+    height: auto;
+    width: 100%;
+  }
+
+  .skills .illustration,
+  .skills .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .skills .illustration {
+    padding-right: 0;
+  }
+
+  .text h2 {
+    max-width: calc(100% - 12px);
+  }
+}
+
+/* Add margin 0 ao h2 para centralizar */
+@media (max-width: 795px) {
+  .text h2 {
+    margin: 32px auto;
+  }
+
+  .skills {
+    padding: 65px 16px;
+    padding-top: 0px;
+  }
+
+  .skills .text {
+    order: 2;
+  }
+
+  .skills .illustration {
+    order: 1;
+  }
+
+  .skills .content {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .skills .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .skills .text .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills .text h2 {
+    margin: 32px auto;
+  }
+
+  .skills .text p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .skills .text p {
+    padding: 0;
+  }
+}
