@@ -183,3 +183,17 @@
   }
 
 }
+
+@media (max-width: 410px){
+  .painel{
+    max-width: 100%;
+    padding-top: 115px;
+    min-height: 340px;
+  }
+
+  .painel .painel-preview{
+    max-width: calc(100% - 24px);
+    max-height: 220px;
+    top: -25%;
+  }
+}
