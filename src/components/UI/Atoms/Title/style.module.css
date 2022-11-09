@@ -34,4 +34,8 @@ h2.title{
     font-size: 38px;
     line-height: 42px;
   }
+  h2.title{
+    line-height: normal;
+    font-size: 32px;
+  }
 }
