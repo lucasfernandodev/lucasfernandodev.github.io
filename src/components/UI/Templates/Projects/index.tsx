@@ -4,12 +4,13 @@ import {projectsList} from "src/infra/Store/websites/list";
 import Link from "@/infra/Link";
 import { PanelsGroup } from "../../Organisms/PainelsGroup";
 import Paragraph from "../../Atoms/Paragraph";
+import { Ref } from "react";
 
 
-export function ProjectTemplate() {
+export function ProjectTemplate({innerRef}: {innerRef?: Ref<HTMLHeadingElement>}) {
   return (
     <section className={style.projects}>
-      <header className={style.header}>
+      <header className={style.header} ref={innerRef}>
         <Title>Algumas coisas que Construí</Title>
         <Paragraph className={style.description}>
         Esses são alguns dos meus projetos desenvolvidos recentemente.

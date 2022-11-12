@@ -1,9 +1,9 @@
 import style from "./style.module.css";
-import {Button} from "@/components/UI/Atoms/Button";
+import { Button } from "@/components/UI/Atoms/Button";
 import Layout from "@/infra/Layout";
 import Title from "@/components/UI/Atoms/Title";
 import { SendInclined } from "umbrella-icons-library";
-
+import Link from "@/infra/Link";
 
 const HomeTemplate: React.FunctionComponent = () => {
   return (
@@ -14,18 +14,22 @@ const HomeTemplate: React.FunctionComponent = () => {
           <Title appearance="h1">Meu nome é Lucas Fernando.</Title>
           <p className={style.description}>Desenvolvedor frontend.</p>
 
-          <Button.Root size="lg">
+          <Button.Root size="lg" asChild>
+           <Link href="/contact">
             <Button.Icon>
-              <SendInclined />
-            </Button.Icon>
-            Vamos conversar
-            </Button.Root>
+                <SendInclined />
+              </Button.Icon>
+              Vamos conversar
+            </Link>
+          </Button.Root>
         </div>
 
         <div className={style.image}>
-         <img src="imagens/hot-air-balloon.svg" alt="Ilustração de um balão de ar quente voando" />
+          <img
+            src="imagens/hot-air-balloon.svg"
+            alt="Ilustração de um balão de ar quente voando"
+          />
         </div>
-      
       </section>
     </Layout>
   );

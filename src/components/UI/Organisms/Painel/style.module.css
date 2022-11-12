@@ -29,11 +29,18 @@
 }
 
 .painel .painel-details .content .title {
-  font-size: 36px;
-  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-family: "Roboto", serif;
   color: var(--white);
   line-height: 42.1px;
   margin-bottom: 14px;
+}
+
+.painel .painel-details .content p{
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  font-weight: 300;
 }
 
 .painel .painel-details .content .groupButtons {
@@ -187,13 +194,35 @@
 @media (max-width: 410px){
   .painel{
     max-width: 100%;
-    padding-top: 115px;
-    min-height: 340px;
+    padding-top: 149px; /* 24px a partir da posição do card-preview */
+    min-height: 350px;
+  }
+  
+
+  .painel .painel-details{
+    padding: 0px 8px;
+    padding-bottom: 32px;
+  }
+
+  .painel .painel-details .content{
+    max-width: unset;
   }
 
   .painel .painel-details .content .title{
     font-size: 26px;
+    line-height: 32px;
   }
+
+  .painel .painel-details .content p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    word-break: keep-all;
+    hyphens:auto;
+  }
+
+
 
   .painel .painel-preview{
     max-width: calc(100% - 24px);

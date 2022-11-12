@@ -2,10 +2,10 @@
   margin: 0;
   color: var(--color-text);
   font-size: 16px;
-  line-height: 28px;
+  line-height: 30px;
   width: 100%;
-  font-weight: 400;
-  max-width: 450px;
+  font-weight: 300;
+  max-width: 440px;
 }
 
 .paragraph a{
@@ -16,4 +16,13 @@
 
 .paragraph a:hover{
   text-decoration: underline;
+}
+
+@media (max-width: 550px){
+  .paragraph{
+    font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+  }
 }

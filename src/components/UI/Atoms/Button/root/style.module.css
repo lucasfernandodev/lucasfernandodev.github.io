@@ -1,7 +1,7 @@
 .button{
   --width: 64px;
   --background: var(--blue-300);
-  --color: var(--white);
+  --color: var(--gray-300);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -21,6 +21,7 @@
   justify-content: center;
   gap: 8px;
   text-decoration: none;
+  transition: 300ms linear;
 }
 
 @keyframes tbg{
@@ -208,6 +209,9 @@
   transition: 350ms linear;
 }
 
+.button:hover{
+  --color: var(--white)
+}
 .button.link:hover{
   color: var(--white);
 }

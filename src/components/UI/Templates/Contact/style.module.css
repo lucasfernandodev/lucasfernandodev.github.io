@@ -44,3 +44,36 @@
   align-items: center;
   padding-right: 24px;
 } 
+
+@media (max-width: 550px){
+  .section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 64px;
+  }
+
+  .section .presentation, .section .contactImage{
+    width: 100%;
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section .contactImage{
+    order: 1;
+  }
+
+  .section .contactImage img{
+    max-width: 235px;
+    max-height: 358px;
+  }
+
+  .section .presentation{
+    order: 2;
+  }
+
+}

@@ -15,10 +15,6 @@
   gap: 16px;
 }
 
-.projects .header * {
-  max-width: 482.84px;
-}
-
 .projects .footer {
   max-width: 435px;
   margin: 0 auto;
@@ -41,10 +37,13 @@
   .projects {
     width: 100%;
     padding-top: 64px;
+    padding-right: 8px;
   }
 
   .projects .header{
     margin-bottom: 0px;
+    padding-right: 8px;
+    gap: 24px;
   }
 
   .projects .footer{

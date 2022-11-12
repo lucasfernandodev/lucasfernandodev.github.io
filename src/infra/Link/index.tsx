@@ -1,39 +1,42 @@
-import NextLink from 'next/link';
-import { Ref } from 'react';
+import NextLink from "next/link";
+import React, { forwardRef, HTMLProps, Ref, RefObject } from "react";
 
-type LinkProps = {
+interface LinkProps extends HTMLProps<HTMLAnchorElement> {
   href: string;
   as?: string;
   passHref?: boolean;
   className?: string | undefined;
-  target?: '_blank' | '_self' | '_parent' | '_top' | 'framename';
-  ref?: Ref<HTMLAnchorElement> | undefined
-};
+  target?: "_blank" | "_self" | "_parent" | "_top" | "framename";
+  passRef?: Ref<HTMLAnchorElement>;
+}
 
-const Link: React.FC<LinkProps> = ({
+const Component: React.FC<LinkProps> = ({
   href,
   as,
-  children,
   passHref,
-  target = '_self',
-  ref,
+  target = "_self",
+  passRef,
+  children,
   ...arg
 }) => {
-  
-
   return (
-    (<NextLink
-      href={href}
-      as={as}
-      passHref={passHref}
-      target={target}
-      ref={ref}
+    <NextLink 
+      href={href} 
+      as={as} 
+      ref={passRef as any} 
+      passHref={passHref} 
+      target={target} 
       {...arg}
-      >
+    >
       {children}
-
-    </NextLink>)
+    </NextLink>
   );
 };
+
+const Link = React.forwardRef(
+  ({ children, ...args }: LinkProps, ref?: Ref<HTMLAnchorElement>) => (
+    <Component passRef={ref} {...args}>{children}</Component>
+  )
+);
 
 export default Link;

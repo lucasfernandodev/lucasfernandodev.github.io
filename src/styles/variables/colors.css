@@ -19,7 +19,7 @@
 
 body[data-theme="dark"]{
   --bg-color: var(--black-800);
-  --color-text: var(--gray-400);
+  --color-text: hsla(240, 7.7%, 56.7%, 1);
   --color-title: var(--gray-200);
 
   --color-border: var(--black-700);
