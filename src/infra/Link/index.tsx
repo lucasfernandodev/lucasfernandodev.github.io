@@ -6,7 +6,6 @@ interface LinkProps extends HTMLProps<HTMLAnchorElement> {
   as?: string;
   passHref?: boolean;
   className?: string | undefined;
-  target?: "_blank" | "_self" | "_parent" | "_top" | "framename";
   passRef?: Ref<HTMLAnchorElement>;
 }
 
