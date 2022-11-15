@@ -1,12 +1,15 @@
 import NextLink from "next/link";
 import React, { forwardRef, HTMLProps, Ref, RefObject } from "react";
 
+type target ='_blank'|'_self'|'_parent'|'_top'|'framename'
+
 interface LinkProps extends HTMLProps<HTMLAnchorElement> {
   href: string;
   as?: string;
   passHref?: boolean;
   className?: string | undefined;
   passRef?: Ref<HTMLAnchorElement>;
+  target?: target
 }
 
 const Component: React.FC<LinkProps> = ({

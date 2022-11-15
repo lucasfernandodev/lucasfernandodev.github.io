@@ -17,7 +17,7 @@ const ContactTemplate = () => {
           <Paragraph>
             Quer entrar em contato ou falar sobre um projeto? Sinta-se à vontade
             para entrar em contato comigo através do e-mail{" "}
-            <Link href="mailto:lucasfernando.dev@gmail.com">
+            <Link target="_blank" href="mailto:lucasfernando.dev@gmail.com">
               lucasfernando.dev@gmail.com
             </Link>
             .
@@ -31,7 +31,7 @@ const ContactTemplate = () => {
               appearance="dark"
               asChild
             >
-              <Link passHref href="https://github.com/lucasfernandodev">
+              <Link passHref target="_blank" href="https://github.com/lucasfernandodev">
                 <Button.Icon>
                   <Github />
                 </Button.Icon>
@@ -39,7 +39,7 @@ const ContactTemplate = () => {
             </Button.Root>
 
             <Button.Root float size="2xl" theme="outline" appearance="dark" asChild>
-              <Link passHref href="https://www.linkedin.com/in/frontlucasfernandodev/">
+              <Link passHref target="_blank" href="https://www.linkedin.com/in/frontlucasfernandodev/">
                 <Button.Icon>
                   <Linkedin />
                 </Button.Icon>
@@ -47,7 +47,7 @@ const ContactTemplate = () => {
             </Button.Root>
 
             <Button.Root float size="2xl" theme="outline" appearance="dark" asChild>
-              <Link passHref href="https://www.instagram.com/lucasfernando.dev/">
+              <Link passHref target="_blank" href="https://www.instagram.com/lucasfernando.dev/">
                 <Button.Icon>
                   <Instagram />
                 </Button.Icon>
@@ -55,7 +55,7 @@ const ContactTemplate = () => {
             </Button.Root>
 
             <Button.Root float size="2xl" theme="outline" appearance="dark" asChild>
-              <Link passHref href="https://codepen.io/lucasfernandodev">
+              <Link passHref target="_blank" href="https://codepen.io/lucasfernandodev">
                 <Button.Icon>
                   <Codepen />
                 </Button.Icon>

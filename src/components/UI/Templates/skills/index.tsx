@@ -10,6 +10,7 @@ import { ArrowDown, Linkedin } from "umbrella-icons-library";
 
 import { ProjectTemplate } from "../Projects";
 import { useEffect, useRef, useState } from "react";
+import Link from "@/infra/Link";
 
 export const SkillsTemplate = () => {
 
@@ -54,11 +55,13 @@ export const SkillsTemplate = () => {
               Meu foco é no desenvolvimento, utilizando HTML, CSS, JS ou
               framework com React.js ou Next.js.
             </Paragraph>
-            <Button.Root size="lg">
+            <Button.Root size="lg" asChild>
+              <Link target="_blank" href="https://www.linkedin.com/in/frontlucasfernandodev/">
               <Button.Icon>
                 <Linkedin />
               </Button.Icon>
               Ver mais detalhes
+              </Link>
             </Button.Root>
           </div>
         </div>
