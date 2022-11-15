@@ -14,14 +14,13 @@
   color: var(--color);
   border: none;
   border-radius: 4px;
-  transition: background 500ms linear;
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   text-decoration: none;
-  transition: 300ms linear;
+  transition: background 300ms linear;
 }
 
 @keyframes tbg{
@@ -206,7 +205,7 @@
   font-weight: 400;
   min-width: 120px;
   color: var(--gray-400);
-  transition: 350ms linear;
+  transition: background 350ms linear;
 }
 
 .button:hover{

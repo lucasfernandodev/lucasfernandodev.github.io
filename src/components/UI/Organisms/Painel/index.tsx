@@ -42,7 +42,7 @@ export const Painel: React.FC<PainelProps> = ({
             </Button.Root>
 
             <Button.Root asChild theme='link'>
-              <Link href={preview}>
+              <Link href={preview} target="_blank">
               Espiar
               <Button.Icon>
                 <ExternalLink />
