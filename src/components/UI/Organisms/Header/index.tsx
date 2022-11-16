@@ -50,7 +50,7 @@ export default function Header() {
 
       <Navigation visibility={showMenuNavigation} />
 
-      <ButtonThemeSwitch state="dark" />
+      <ButtonThemeSwitch className={style.btnTheme}/>
     </header>
   );
 }

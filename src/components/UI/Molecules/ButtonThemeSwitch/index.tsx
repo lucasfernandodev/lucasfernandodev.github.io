@@ -1,60 +1,42 @@
-import React, { ButtonHTMLAttributes, useState } from 'react';
+import React, { ButtonHTMLAttributes, useEffect, useState } from 'react';
 import { Sun,Moon } from 'umbrella-icons-library';
-import { Button } from '../../Atoms/Button';
 import style from './style.module.css';
 
 interface ButtonThemeSwitchProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  state: 'dark' | 'light',
-  label?: boolean
+  label?: boolean,
+  className?: string;
 }
 
 export const ButtonThemeSwitch: React.FC<ButtonThemeSwitchProps> = ({
-  state = 'dark',
-  label = false
+  label = false,
+  className,
+  ...args
 }) => {
 
-  const [isState, setIsState] = useState<string>(state)
+  const [isDark, setIsDark] = useState<boolean>(true)
 
-
-  function handlerToggleState() {
-    const newState = (isState === 'dark') ? 'light' : 'dark'
-    setIsState(newState)
-    toggleTheme(newState)
-  }
-
-  function handleLeave(e: React.MouseEvent<HTMLButtonElement, MouseEvent>){
-    let timer: any = null;
-
-    timer = setTimeout(() => {
-      const el = e.target as HTMLButtonElement
-      el.blur()
-      clearTimeout(timer)
-    }, 100)
-  }
-
+  useEffect(() => {
+    const theme = document.body.dataset.theme;
+    setIsDark(theme == 'dark' ? true : false);
+  }, [])
+  
   function toggleTheme(theme: string){
     document.body.dataset.theme = theme;
   }
 
-  const labelText: Record<string, string> = {
-    dark: 'Dark mode',
-    light: 'Light mode'
+  function handlerToggleState(){
+    setIsDark(!isDark);
+    toggleTheme(!isDark ? 'light' : 'dark');
   }
 
   return (
-    <Button.Root onClick={handlerToggleState}
-      width='content' 
-      size='md'
-      theme='outline' 
-      appearance='dark' 
-      float={!label ? true: false}
-      className={[style.button, label ? style.label : ''].join(" ")}
-      onMouseLeave={handleLeave}
+    <button 
+      aria-label={!isDark ? 'Dark mode' : 'Light mode'} 
+      className={[style.button, className].join(" ")} 
+      {...args}
+      onClick={handlerToggleState}
     >
-      <Button.Icon>
-      {isState ==='dark'? <Sun/> : <Moon />}
-      </Button.Icon>
-      {label ? labelText[isState] : ''}
-    </Button.Root>
+      {!isDark ? <Moon /> : <Sun />}
+    </button>
   )
 };

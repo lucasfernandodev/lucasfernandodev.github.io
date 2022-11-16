@@ -24,18 +24,30 @@ body[data-theme="dark"]{
 
   --color-border: var(--black-700);
 
-  --line-gradient: linear-gradient(to right, #22222B, #151519)
+  --line-gradient: linear-gradient(to right, #22222B, #151519);
 
+  --color-tab-active: var(--white);
   --bg-color-tab-active: var(--black-400);
+  --bg-color-loading: var(--black-400);
 
-  --profile-image-border: var(--black-400)
+  --profile-image-border: var(--black-400);
+  --bg-painel: var(--black-400);
+  --bg-color-navigation: var(--black-400);
 }
 
 body[data-theme="light"]{
+  --bg-color: var(--white);
   --color-title: var(--black-500);
   --color-border: var(--gray-300);
 
+  --bg-color-loading: var(--gray-400);
   --bg-color-tab-active: var(--gray-300);
+  --color-tab-active: var(--black-800);
 
   --profile-image-border: var(--gray-400);
+  --bg-painel: var(--blue-300);
+  --color-text: var(--black-400);
+
+  --navigation-label: hsla(231, 77.9%, 84.1%, 0.6);
+  --bg-color-navigation: var(--blue-300);
 }

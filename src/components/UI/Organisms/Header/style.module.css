@@ -63,7 +63,7 @@
     position: absolute;
     left: 0px;
     bottom: 1px;
-    border-bottom: 1px solid var(--black-400);
+    border-bottom: 1px solid var(--color-border);
     z-index: 999999;
     
   }
@@ -99,5 +99,9 @@
 
   .buttonNavigation[data-show="true"] svg{
     stroke: var(--color-title);
+  }
+
+  .btnTheme{
+    display: none;
   }
 }

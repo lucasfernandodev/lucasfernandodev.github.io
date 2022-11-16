@@ -4,7 +4,7 @@
   height: 100%;
   max-height: 580px;
   min-height: 580px;
-  background: var(--black-400);
+  background: var(--bg-painel);
   position: relative;
   display: flex;
   border-radius: 6px;
@@ -41,6 +41,14 @@
   line-height: 28px;
   text-align: left;
   font-weight: 300;
+}
+
+body[data-theme="light"] .painel .painel-details .content .description{
+  color: var(--gray-200);
+}
+
+body[data-theme="light"] .painel .painel-details .content a{
+  color: var(--gray-200);
 }
 
 .painel .painel-details .content .groupButtons {

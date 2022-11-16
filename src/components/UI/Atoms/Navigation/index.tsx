@@ -32,10 +32,7 @@ const Navigation: React.FC<NavigationProps> = ({ visibility }) => {
           );
         })}
       </ul>
-      <ButtonThemeSwitch state="dark" label style={{
-        position: "static"
-      }}/>
-    
+    <ButtonThemeSwitch />
     </nav>
   );
 };

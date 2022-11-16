@@ -12,7 +12,7 @@
   overflow: hidden;
   z-index: 9000;
 
-  background-color: var(--black-400);
+  background-color: var(--bg-color-loading);
 }
 
 .loading .indicator {
@@ -20,7 +20,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: var(--black-400);
+  background-color: var(--bg-color-loading);
   background-image: linear-gradient(to right, var(--gray-400), var(--blue-200));
   animation-name: loadingAnimation;
   animation-duration: calc(var(--duration) - var(--delay));

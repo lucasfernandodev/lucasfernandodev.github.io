@@ -1,24 +1,32 @@
 .button{
-  stroke: var(--color-title);
-  transition: 250ms;
-  border: none !important;
-
-}
-
-.button svg{
-  stroke-width: 1px;
+  height: 24px;
+  width: auto;
+  background: unset;
+  border: unset;
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .button:hover{
-  stroke: var(--blue-200);
+  opacity: 1;
 }
 
-.button.label{
-  font-weight: 400;
+.button svg{
+  height: 24px;
+  width: 24px;
 }
 
 @media (max-width: 795px){
-  .button{
-    display: none;
+  body[data-theme="light"] .button{
+    color: var(--gray-200);
+  }
+
+  .button::after{
+    content: attr(aria-label);
+    height: 24px;
+    line-height: 24px;
+    margin-left: 10px;
   }
 }
+
