@@ -85,6 +85,7 @@
     opacity: 0.8;
     transition: 300ms linear;
     border: none;
+    color: var(--color-text);
   }
 
   .buttonNavigation:hover,

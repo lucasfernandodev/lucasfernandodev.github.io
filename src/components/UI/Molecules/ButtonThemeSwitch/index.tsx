@@ -25,8 +25,9 @@ export const ButtonThemeSwitch: React.FC<ButtonThemeSwitchProps> = ({
   }
 
   function handlerToggleState(){
-    setIsDark(!isDark);
-    toggleTheme(!isDark ? 'light' : 'dark');
+    const theme = !isDark
+    setIsDark(theme);
+    toggleTheme(theme === false ? 'light' : 'dark');
   }
 
   return (

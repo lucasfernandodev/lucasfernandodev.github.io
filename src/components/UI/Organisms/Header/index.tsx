@@ -31,21 +31,15 @@ export default function Header() {
       <Brand />
 
       <div className={style.btnToggle}>
-      <Button.Root
-        theme="outline"
-        appearance="dark"
+      <button
         className={style.buttonNavigation}
         data-show={showMenuNavigation}
         onClick={() => setShowMenuNavigation(!showMenuNavigation)}
         aria-label="Abrir Menu"
-        square
-        style={{
-          border: 'none'
-        }}
-        passRef={buttonRef}
+        ref={buttonRef}
       >
         {showMenuNavigation !== false ? <Close style={{width: '12px', height: '12px'}}/> : <Menu />}
-      </Button.Root>
+      </button>
       </div>
 
       <Navigation visibility={showMenuNavigation} />
