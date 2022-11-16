@@ -4,10 +4,11 @@ import {projectsList} from "src/infra/Store/websites/list";
 import Link from "@/infra/Link";
 import { PanelsGroup } from "../../Organisms/PainelsGroup";
 import Paragraph from "../../Atoms/Paragraph";
-import { Ref } from "react";
+import { Ref, useEffect } from "react";
 
 
 export function ProjectTemplate({innerRef}: {innerRef?: Ref<HTMLHeadingElement>}) {
+
   return (
     <section className={style.projects}>
       <header className={style.header}>

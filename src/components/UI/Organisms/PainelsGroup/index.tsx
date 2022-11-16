@@ -16,7 +16,7 @@ export function PanelsGroup({list}: PanelsGroupProps){
           description={item.description}
           imageSource={item.image}
           preview={item.link}
-          repository=""
+          repository={item.repo}
           title={item.title}
         />
       );

@@ -39,7 +39,6 @@ export const SkillsTemplate = () => {
     }
   }, [refObserver, options])
 
-
   return (
     <Layout>
       <section className={style.skills}>
