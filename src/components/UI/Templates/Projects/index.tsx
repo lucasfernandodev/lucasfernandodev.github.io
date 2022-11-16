@@ -10,8 +10,10 @@ import { Ref } from "react";
 export function ProjectTemplate({innerRef}: {innerRef?: Ref<HTMLHeadingElement>}) {
   return (
     <section className={style.projects}>
-      <header className={style.header} ref={innerRef}>
-        <Title>Algumas coisas que Construí</Title>
+      <header className={style.header}>
+        <Title asChild>
+          <h2 ref={innerRef}>Algumas coisas que Construí</h2>
+        </Title>
         <Paragraph className={style.description}>
         Esses são alguns dos meus projetos desenvolvidos recentemente.
         </Paragraph>

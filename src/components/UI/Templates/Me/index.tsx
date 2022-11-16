@@ -10,7 +10,7 @@ const MeTemplate = () => {
     <Layout>
       <section className={style.section}>
         <div className={style.content} id="mainContent">
-          <Title appearance="h2">Sobre mim</Title>
+          <Title>Sobre mim</Title>
           <Paragraph>
             Olá meu nome é Lucas Fernando, tenho 21 anos, eu moro em Goiás e sou
             apaixonado por tecnologia.

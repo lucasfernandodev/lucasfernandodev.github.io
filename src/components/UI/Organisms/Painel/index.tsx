@@ -2,6 +2,7 @@ import Link from '@/infra/Link';
 import Image from 'next/image';
 import { Github, ExternalLink } from 'umbrella-icons-library';
 import { Button } from '../../Atoms/Button';
+import Title from '../../Atoms/Title';
 import style from './style.module.css';
 
 interface PainelProps{
@@ -23,9 +24,12 @@ export const Painel: React.FC<PainelProps> = ({
     <div className={style.painel}>
       <div className={style['painel-details']}>
         <div className={style.content}>
-          <h3 className={style.title}>
-            {title}
-          </h3>
+          <Title className={style.title} asChild>
+            <h3 >
+              {title}
+            </h3>
+          </Title>
+         
           <p className={style.description}>
             {
               description

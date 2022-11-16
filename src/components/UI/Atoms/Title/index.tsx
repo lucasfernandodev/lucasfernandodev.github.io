@@ -1,18 +1,19 @@
+import { Slot } from '@radix-ui/react-slot';
 import style from './style.module.css';
 
 interface TitleProps {
-  appearance?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
-  className?: string
+  className?: string,
+  asChild?: boolean
 }
 
-const Title: React.FC<TitleProps> =  ({children, className ,appearance = 'h2'}) => {
-  const Tag = appearance;
+const Title: React.FC<TitleProps> =  ({children, className, asChild, ...args}) => {
+  const Tag = asChild ? Slot : 'h2';
 
   return (
-    <Tag className={[style.title, className].join(" ")}>
+    <Tag className={[style.title, className].join(" ")} {...args}>
       {children}
     </Tag>
   )
 };
 
-export default Title;
+export default Title

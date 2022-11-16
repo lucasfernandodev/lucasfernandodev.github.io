@@ -57,10 +57,10 @@ export const SkillsTemplate = () => {
             </Paragraph>
             <Button.Root size="lg" asChild>
               <Link target="_blank" href="https://www.linkedin.com/in/frontlucasfernandodev/">
-              <Button.Icon>
-                <Linkedin />
-              </Button.Icon>
-              Ver mais detalhes
+                <Button.Icon>
+                  <Linkedin />
+                </Button.Icon>
+                Ver mais detalhes
               </Link>
             </Button.Root>
           </div>
