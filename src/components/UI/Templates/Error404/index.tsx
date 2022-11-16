@@ -8,16 +8,15 @@ const Error404Template: React.FC = () => {
   return (
     <Layout>
       <section className={style.errorPage}>
-        <div className={style.image}>
-        <Image src="/imagens/errorIllustration.svg" alt="Error" width={440} height={500} />
-        </div>
         <div className={style.text}>
+          <span>Oops..</span>
           <h2>
-            Infelizmente, a pagina não foi encontrada.
+          404
           </h2>
-          <ButtonRoot asChild>
+          <span>Pagina não encontrada!</span>
+          <ButtonRoot asChild className={style.button}>
             <Link href='/'>
-              Retornar ao Inicio
+              Voltar para home
             </Link>
           </ButtonRoot>
         </div>
