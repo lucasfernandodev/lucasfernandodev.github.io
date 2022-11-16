@@ -1,10 +1,16 @@
 .button{
-  color: var(--gray-400);
+  stroke: var(--color-title);
   transition: 250ms;
+  border: none !important;
+
+}
+
+.button svg{
+  stroke-width: 1px;
 }
 
 .button:hover{
-  color: var(--gray-200);
+  stroke: var(--blue-200);
 }
 
 .button.label{

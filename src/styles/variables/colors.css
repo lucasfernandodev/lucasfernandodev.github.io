@@ -25,4 +25,17 @@ body[data-theme="dark"]{
   --color-border: var(--black-700);
 
   --line-gradient: linear-gradient(to right, #22222B, #151519)
+
+  --bg-color-tab-active: var(--black-400);
+
+  --profile-image-border: var(--black-400)
+}
+
+body[data-theme="light"]{
+  --color-title: var(--black-500);
+  --color-border: var(--gray-300);
+
+  --bg-color-tab-active: var(--gray-300);
+
+  --profile-image-border: var(--gray-400);
 }

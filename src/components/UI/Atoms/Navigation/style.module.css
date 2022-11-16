@@ -43,11 +43,11 @@
 
 .navigation ul li a:hover .icon {
   opacity: 1;
-  color: var(--white);
+  color: var(--title);
 }
 
 .navigation ul li a[data-active="true"] {
-  background: var(--black-400);
+  background: var(--bg-color-tab-active);
   color: var(--white);
 }
 
