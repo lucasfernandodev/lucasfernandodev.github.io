@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.brand a img{
+.brand a svg{
   width: 24px;
   height: 24px;
 }
@@ -39,7 +39,7 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  .brand a img{
+  .brand a svg{
     display: none;
   }
 }

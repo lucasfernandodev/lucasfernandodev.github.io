@@ -1,11 +1,12 @@
 import Link from '@/infra/Link';
+import Logo from 'src/assets/images/logo';
 import style from './style.module.css';
 
 const Brand = () => {
   return (
     <h1 className={style.brand}>
       <Link href='/'>
-        <img src='/imagens/logo.svg' alt='Logo - Portfolio Lucas Fernando' />
+        <Logo stroke='var(--brand-color)'/>
       </Link>
     </h1>
   );

@@ -18,6 +18,7 @@
 
 
 body[data-theme="dark"]{
+  --brand-color: var(--white);
   --bg-color: var(--black-800);
   --color-text: hsla(240, 7.7%, 56.7%, 1);
   --color-title: var(--gray-200);
@@ -36,8 +37,9 @@ body[data-theme="dark"]{
 }
 
 body[data-theme="light"]{
+  --brand-color: var(--black-800);
   --bg-color: var(--white);
-  --color-title: var(--black-500);
+  --color-title: var(--black-400);
   --color-border: var(--gray-300);
 
   --bg-color-loading: var(--gray-400);
@@ -50,4 +52,6 @@ body[data-theme="light"]{
 
   --navigation-label: hsla(231, 77.9%, 84.1%, 0.6);
   --bg-color-navigation: var(--blue-300);
+
+  --line-gradient: linear-gradient(to right, var(--white), var(--blue-200));
 }

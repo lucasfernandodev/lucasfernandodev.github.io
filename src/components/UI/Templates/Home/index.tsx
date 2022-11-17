@@ -4,8 +4,16 @@ import Layout from "@/infra/Layout";
 import Title from "@/components/UI/Atoms/Title";
 import { SendInclined } from "umbrella-icons-library";
 import Link from "@/infra/Link";
+import { useEffect, useState } from "react";
 
 const HomeTemplate: React.FunctionComponent = () => {
+
+  const [pathIntro, setPathIntro] = useState('imagens/hot-air-balloon.svg');
+
+  useEffect(() => {
+    document.body.dataset.theme !== 'dark' ? setPathIntro('imagens/hot-air-balloon-light.svg') : setPathIntro('imagens/hot-air-balloon.svg')
+  }, [])
+
   return (
     <Layout>
       <section className={style.welcome}>
@@ -28,7 +36,7 @@ const HomeTemplate: React.FunctionComponent = () => {
 
         <div className={style.image}>
           <img
-            src="imagens/hot-air-balloon.svg"
+            src={pathIntro}
             alt="Ilustração de um balão de ar quente voando"
           />
         </div>

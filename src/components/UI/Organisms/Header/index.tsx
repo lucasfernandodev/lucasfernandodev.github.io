@@ -2,7 +2,6 @@ import { ButtonHTMLAttributes, useEffect, useRef, useState } from "react";
 import Brand from "../../Atoms/Brand";
 import Navigation from "../../Atoms/Navigation";
 import style from "./style.module.css";
-import { ButtonThemeSwitch } from "../../Molecules/ButtonThemeSwitch";
 import { Button } from "../../Atoms/Button";
 import { Close, Menu } from "umbrella-icons-library";
 
@@ -43,8 +42,7 @@ export default function Header() {
       </div>
 
       <Navigation visibility={showMenuNavigation} />
-
-      <ButtonThemeSwitch className={style.btnTheme}/>
+      <div className={style.btnTheme}/>
     </header>
   );
 }

@@ -6,9 +6,16 @@ import Layout from "@/infra/Layout";
 import { Codepen, Github, Instagram, Linkedin } from "umbrella-icons-library";
 import Image from "next/image";
 import Link from "@/infra/Link";
+import { useEffect, useState } from "react";
 
 const ContactTemplate = () => {
   
+  const [pathMessage, setPathMessage] = useState('/imagens/message.svg');
+
+  useEffect(() => {
+    document.body.dataset.theme !== 'dark' ? setPathMessage('/imagens/message_light.svg') : setPathMessage('/imagens/message.svg')
+  }, [])
+
   return (
     <Layout>
       <section className={style.section}>
@@ -68,7 +75,7 @@ const ContactTemplate = () => {
           <Image
             width={311}
             height={400}
-            src="/imagens/message.svg"
+            src={pathMessage}
             alt="Ilustração mensagem"
           />
         </div>

@@ -2,7 +2,6 @@ import style from "./style.module.css";
 import Link from "@/infra/Link";
 import { Route, RouteProps } from "@/infra/routes/default";
 import { useRouter } from "next/router";
-import { ButtonThemeSwitch } from "../../Molecules/ButtonThemeSwitch";
 
 type NavigationProps = {
   visibility?: boolean;
@@ -32,7 +31,6 @@ const Navigation: React.FC<NavigationProps> = ({ visibility }) => {
           );
         })}
       </ul>
-    <ButtonThemeSwitch />
     </nav>
   );
 };
