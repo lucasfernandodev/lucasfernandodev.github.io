@@ -12,7 +12,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
   const path = router.asPath !== "/" ? router.asPath : null;
 
   
-  const description = "Olá, meu nome é Lucas Fernando, e sou desenvolvedor web voltado para o front-end, e esse é meu portfolio.";
+  const description = "Olá, meu nome é Lucas Fernando, e sou desenvolvedor web.";
 
   return (
     <>
@@ -40,7 +40,7 @@ const Head: React.FC<HeadProps> = ({ title }) => {
         <link rel="shortcut icon" href="imagens/logo.svg" type="image/svg" />
         <meta
           name="keywords"
-          content="Desenvolvedor, frontend, front-end, HTML, CSS, JavaScript,React.js,typescript, Lucas Fernando, Portfolio, dev front-end, dev Lucas Fernando, Lucas Fernando dev, next.js"
+          content="Desenvolvedor, frontend, front-end, HTML, CSS, Lucas Fernando, Portfolio, dev front-end"
         ></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="author" content="Lucas Fernando" />
