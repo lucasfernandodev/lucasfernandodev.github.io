@@ -6,30 +6,19 @@ export default function Main({ children }: { children: React.ReactNode }) {
   let timer: any = null;
   const classeLoading =  [style.main, style.fadeIn].join(' ');
   
-  const [loadingCount, seLoadingcount] = useState(0);
+  const duration = 2300; // Tempo em ms
   const [loading, setLoading] = useState(true);
   const [classes, setClasses] = useState<string>(classeLoading);
 
-  useEffect(() => {
-    timer = setInterval(() => {
-      if (loadingCount === 100) {
-        clearInterval(timer);
-        setLoading(false);
-        setClasses(style.main);
-      } else {
-        const LoadingSize = loadingCount + 1;
-        seLoadingcount(LoadingSize);
-      }
-    }, 35);
 
-    return () => {
-      clearInterval(timer);
-    };
-  }, [loadingCount]);
+  timer = setTimeout(() => {
+    setLoading(false)
+    setClasses(style.main)
+  }, duration)
 
   return (
     <main className={classes} tabIndex={3}>
-      {loading ? <Loading completed={loadingCount}/> : children}
+      {loading ? <Loading duration={duration}/> : children}
     </main>
   );
 }

@@ -1,0 +1,79 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+
+.section .presentation {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.section .presentation .groupButtons{
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.presentation p {
+  font-size: 16px;
+  color: var(--color-text);
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
+}
+
+.presentation h2 + p{
+  margin: 18px 0;
+  color: var(--color-text);
+  opacity: 0.9;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 445px;
+}
+
+.section .contactImage{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 24px;
+} 
+
+@media (max-width: 550px){
+  .section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 64px;
+  }
+
+  .section .presentation, .section .contactImage{
+    width: 100%;
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section .contactImage{
+    order: 1;
+  }
+
+  .section .contactImage img{
+    max-width: 235px;
+    max-height: 358px;
+  }
+
+  .section .presentation{
+    order: 2;
+  }
+
+}

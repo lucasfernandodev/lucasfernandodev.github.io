@@ -32,10 +32,10 @@
         "src/components/UI/Molecules/*"
       ],
       "@/Organisms/*": [
-        "src/components/UI/Atoms/Organisms/*"
+        "src/components/UI/Organisms/*"
       ],
       "@/Templates/*": [
-        "src/components/UI/Atoms/Templates/*"
+        "src/components/UI/Templates/*"
       ],
       "@/Utils/*": [
         "src/components/Utils/*"

@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Head from "@/infra/meta";
-import MeTemplate from "@/components/Templates/Me";
+import MeTemplate from "@/components/UI/Templates/Me";
 const Me: NextPage = () => {
   return (
     <>

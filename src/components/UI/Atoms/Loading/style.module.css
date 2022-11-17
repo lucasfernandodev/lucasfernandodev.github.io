@@ -1,4 +1,6 @@
 .loading {
+  --duration: 1s;
+  --delay: 150ms;
   width: 250px;
   height: 4px;
   border-radius: 2px;
@@ -10,7 +12,7 @@
   overflow: hidden;
   z-index: 9000;
 
-  background: var(--color-dark-paper);
+  background-color: var(--bg-color-loading);
 }
 
 .loading .indicator {
@@ -18,5 +20,21 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background: var(--color-gradient);
+  background-color: var(--bg-color-loading);
+  background-image: linear-gradient(to right, var(--gray-400), var(--blue-200));
+  animation-name: loadingAnimation;
+  animation-duration: calc(var(--duration) - var(--delay));
+  animation-fill-mode: backwards;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-delay: 150ms;
+}
+
+@keyframes loadingAnimation{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
 }

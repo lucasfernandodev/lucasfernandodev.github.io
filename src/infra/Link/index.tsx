@@ -1,39 +1,44 @@
-import NextLink from 'next/link';
-import { useRouter } from 'next/router';
+import NextLink from "next/link";
+import React, { forwardRef, HTMLProps, Ref, RefObject } from "react";
 
-type LinkProps = {
+type target ='_blank'|'_self'|'_parent'|'_top'|'framename'
+
+interface LinkProps extends HTMLProps<HTMLAnchorElement> {
   href: string;
   as?: string;
   passHref?: boolean;
   className?: string | undefined;
-  target?: '_blank' | '_self' | '_parent' | '_top' | 'framename';
-};
+  passRef?: Ref<HTMLAnchorElement>;
+  target?: target
+}
 
-const Link: React.FC<LinkProps> = ({
+const Component: React.FC<LinkProps> = ({
   href,
   as,
-  children,
   passHref,
-  target = '_self',
+  target = "_self",
+  passRef,
+  children,
   ...arg
 }) => {
-  const { asPath } = useRouter();
-
-  const isActive = asPath === href || asPath === as ? true : false;
-
   return (
-    (<NextLink
-      href={href}
-      as={as}
-      passHref={passHref}
-      target={target !== undefined ? target : '_self'}
+    <NextLink 
+      href={href} 
+      as={as} 
+      ref={passRef as any} 
+      passHref={passHref} 
+      target={target} 
       {...arg}
-      data-active={isActive}>
-
+    >
       {children}
-
-    </NextLink>)
+    </NextLink>
   );
 };
+
+const Link = React.forwardRef(
+  ({ children, ...args }: LinkProps, ref?: Ref<HTMLAnchorElement>) => (
+    <Component passRef={ref} {...args}>{children}</Component>
+  )
+);
 
 export default Link;

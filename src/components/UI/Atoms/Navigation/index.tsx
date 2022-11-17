@@ -1,38 +1,35 @@
 import style from "./style.module.css";
 import Link from "@/infra/Link";
-import Icon from "src/components/Utils/Icon";
+import { Route, RouteProps } from "@/infra/routes/default";
+import { useRouter } from "next/router";
 
 type NavigationProps = {
   visibility?: boolean;
-}
+};
 
-const Navigation: React.FC<NavigationProps> = ({visibility}) => {
+const Navigation: React.FC<NavigationProps> = ({ visibility }) => {
+  const { asPath } = useRouter();
 
   return (
     <nav className={style.navigation} data-show={visibility}>
+      
       <ul>
-        <li>
-          <Link href="/" aria-label="Home" data-active="false">
-            <Icon icon="home"/>
-          </Link>
-        </li>
+        {Object.values(Route).map((route: RouteProps) => {
+          const Icon = route.icon;
+          const isActive = asPath === route.path ? true : false;
 
-        <li>
-          <Link href="/me" aria-label="Sobre mim" data-active="false">
-            <Icon icon="me"/>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/projects" aria-label="Projetos" data-active="false">
-            <Icon icon="projects" />
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact" aria-label="Contato" data-active="false">
-            <Icon icon="contact" />
-          </Link>
-        </li>
+          return (
+            <li key={route.displayName}>
+              <Link
+                href={route.path}
+                aria-label={route.displayName}
+                data-active={isActive}
+              >
+                <Icon className={style.icon} />
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

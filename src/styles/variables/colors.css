@@ -1,26 +1,57 @@
 :root{
-  --color-bg-scrollbar: #333;
-  --color-scrollbar-thumb: #555555;
 
-  --color-dark:#121215;
-  --color-dark-paper: #17171d;
+  /* Color styles */
+  --white: hsla(240, 100%, 94.9%, 1);
+  --black-800: hsla(240, 7.7%, 7.6%, 1);
+  --black-500: hsla(240, 10.7%, 11%, 1);
+  --black-600: hsla(240, 11.5%, 10.2%, 1);
+  --black-400: hsla(240, 11.7%, 15.1%, 1);
+  --black-700: hsla(240, 8.7%, 9%, 1);
+  --gray-200: hsla(240, 100%, 93.7%, 1);
+  --gray-300: hsla(228, 31.9%, 81.6%, 1);
+  --gray-400: hsla(240, 7.7%, 56.7%, 1);
+  --blue-200: hsla(231, 67.9%, 84.1%, 1);
+  --blue-300: hsla(225, 63.5%, 59.2%, 1);
+  --blue-400: hsla(242, 48%, 51.8%, 1);
+  --blue-500: hsla(242, 66.8%, 39%, 1);
+}
 
-  --color-bg-card: #24242f;
-  --color-line: #19191f;
 
+body[data-theme="dark"]{
+  --brand-color: var(--white);
+  --bg-color: var(--black-800);
+  --color-text: hsla(240, 7.7%, 56.7%, 1);
+  --color-title: var(--gray-200);
 
-  --color-primary: #1ca7ec;
-  --color-secondary: #7bd5f5;
+  --color-border: var(--black-700);
 
-  --color-loading: hsla(196, 46%, 72%, 0.5);
+  --line-gradient: linear-gradient(to right, #22222B, #151519);
 
-  --color-toAction: #8c7ae6;
+  --color-tab-active: var(--white);
+  --bg-color-tab-active: var(--black-400);
+  --bg-color-loading: var(--black-400);
 
-  --color-title: #dfdfff;
-  --color-text: #efefffaa;
+  --profile-image-border: var(--black-400);
+  --bg-painel: var(--black-400);
+  --bg-color-navigation: var(--black-400);
+}
 
-  --color-link-accessibility: #F50057;
+body[data-theme="light"]{
+  --brand-color: var(--black-800);
+  --bg-color: var(--white);
+  --color-title: var(--black-400);
+  --color-border: var(--gray-300);
 
-  --color-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-  --color-gradient-2: linear-gradient(to right, var(--color-secondary), var(--color-toAction));
+  --bg-color-loading: var(--gray-400);
+  --bg-color-tab-active: var(--gray-300);
+  --color-tab-active: var(--black-800);
+
+  --profile-image-border: var(--gray-400);
+  --bg-painel: var(--blue-300);
+  --color-text: var(--black-400);
+
+  --navigation-label: hsla(231, 77.9%, 84.1%, 0.6);
+  --bg-color-navigation: var(--blue-300);
+
+  --line-gradient: linear-gradient(to right, var(--white), var(--blue-200));
 }
