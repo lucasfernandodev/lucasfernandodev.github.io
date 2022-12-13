@@ -9,12 +9,13 @@ import Link from "@/infra/Link";
 import { useEffect, useState } from "react";
 
 const ContactTemplate = () => {
-  
-  const [pathMessage, setPathMessage] = useState('/imagens/message.svg');
+  const [pathMessage, setPathMessage] = useState("/imagens/message.svg");
 
   useEffect(() => {
-    document.body.dataset.theme !== 'dark' ? setPathMessage('/imagens/message_light.svg') : setPathMessage('/imagens/message.svg')
-  }, [])
+    document.body.dataset.theme !== "dark"
+      ? setPathMessage("/imagens/message_light.svg")
+      : setPathMessage("/imagens/message.svg");
+  }, []);
 
   return (
     <Layout>
@@ -38,31 +39,65 @@ const ContactTemplate = () => {
               appearance="dark"
               asChild
             >
-              <Link passHref target="_blank" href="https://github.com/lucasfernandodev">
+              <Link
+                passHref
+                target="_blank"
+                href="https://github.com/lucasfernandodev"
+              >
                 <Button.Icon>
                   <Github />
                 </Button.Icon>
               </Link>
             </Button.Root>
 
-            <Button.Root float size="2xl" theme="outline" appearance="dark" asChild>
-              <Link passHref target="_blank" href="https://www.linkedin.com/in/frontlucasfernandodev/">
+            <Button.Root
+              float
+              size="2xl"
+              theme="outline"
+              appearance="dark"
+              asChild
+            >
+              <Link
+                passHref
+                target="_blank"
+                href="https://www.linkedin.com/in/frontlucasfernandodev/"
+              >
                 <Button.Icon>
                   <Linkedin />
                 </Button.Icon>
               </Link>
             </Button.Root>
 
-            <Button.Root float size="2xl" theme="outline" appearance="dark" asChild>
-              <Link passHref target="_blank" href="https://www.instagram.com/lucasfernando.dev/">
+            <Button.Root
+              float
+              size="2xl"
+              theme="outline"
+              appearance="dark"
+              asChild
+            >
+              <Link
+                passHref
+                target="_blank"
+                href="https://www.instagram.com/lucasfernando.dev/"
+              >
                 <Button.Icon>
                   <Instagram />
                 </Button.Icon>
               </Link>
             </Button.Root>
 
-            <Button.Root float size="2xl" theme="outline" appearance="dark" asChild>
-              <Link passHref target="_blank" href="https://codepen.io/lucasfernandodev">
+            <Button.Root
+              float
+              size="2xl"
+              theme="outline"
+              appearance="dark"
+              asChild
+            >
+              <Link
+                passHref
+                target="_blank"
+                href="https://codepen.io/lucasfernandodev"
+              >
                 <Button.Icon>
                   <Codepen />
                 </Button.Icon>

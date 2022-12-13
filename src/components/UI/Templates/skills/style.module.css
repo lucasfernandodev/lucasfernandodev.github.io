@@ -144,6 +144,10 @@
     max-width: 275px;
     max-height: 358px;
   }
+
+  .skillsMoreContent{
+    display: none !important;
+  }
 }
 
 @media (max-width: 375px) {

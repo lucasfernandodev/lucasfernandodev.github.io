@@ -1,14 +1,16 @@
 import Title from "../../Atoms/Title";
 import style from "./style.module.css";
-import {projectsList} from "src/infra/Store/websites/list";
+import { projectsList } from "src/infra/Store/websites/list";
 import Link from "@/infra/Link";
 import { PanelsGroup } from "../../Organisms/PainelsGroup";
 import Paragraph from "../../Atoms/Paragraph";
-import { Ref, useEffect } from "react";
+import { Ref } from "react";
 
-
-export function ProjectTemplate({innerRef}: {innerRef?: Ref<HTMLHeadingElement>}) {
-
+export function ProjectTemplate({
+  innerRef,
+}: {
+  innerRef?: Ref<HTMLHeadingElement>;
+}) {
   return (
     <section className={style.projects}>
       <header className={style.header}>
@@ -16,11 +18,11 @@ export function ProjectTemplate({innerRef}: {innerRef?: Ref<HTMLHeadingElement>}
           <h2 ref={innerRef}>Algumas coisas que Construí</h2>
         </Title>
         <Paragraph className={style.description}>
-        Esses são alguns dos meus projetos desenvolvidos recentemente.
+          Esses são alguns dos meus projetos desenvolvidos recentemente.
         </Paragraph>
       </header>
 
-     <PanelsGroup list={projectsList}/>
+      <PanelsGroup list={projectsList} />
 
       <footer className={style.footer}>
         <Title className={style.title}>Vamos conversar?</Title>
