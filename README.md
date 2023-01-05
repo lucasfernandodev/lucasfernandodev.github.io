@@ -2,7 +2,7 @@
 
 ![Thumbnail - Portfolio Lucas Fernando](./public/SEO/screenshot-Lucas-Fernando-dev-portfolio.png)
 
-🪐 Meu portfolio pessoal, contendo meus projetos e um pouco da minha historia.
+🪐 Meu portfolio pessoal, com alguns dos meus projetos e um pouco da minha historia.
 
 ## 🌍 Me encontre na web
 
