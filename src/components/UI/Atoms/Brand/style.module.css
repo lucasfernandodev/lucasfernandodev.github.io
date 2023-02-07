@@ -1,4 +1,4 @@
-.brand{
+.brand {
   width: 24px;
   height: 24px;
   display: flex;
@@ -10,36 +10,36 @@
   z-index: 8000;
 }
 
-.brand a{
+.brand a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.brand a svg{
+.brand a svg {
   width: 24px;
   height: 24px;
 }
 
-@media (max-width: 795px){
-  .brand{
+@media (max-width: 795px) {
+  .brand {
     width: auto;
     margin-top: 0px;
   }
 
-  .brand a{
+  .brand a {
     text-decoration: none;
   }
 
-  .brand a::after{
+  .brand a::after {
     content: "Lucas Fernando";
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
     color: var(--color-title);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
-  .brand a svg{
+  .brand a svg {
     display: none;
   }
 }
