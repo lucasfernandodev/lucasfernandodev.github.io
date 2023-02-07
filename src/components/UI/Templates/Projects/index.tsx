@@ -7,37 +7,38 @@ import Paragraph from "../../Atoms/Paragraph";
 import { useEffect, useRef } from "react";
 
 export function ProjectTemplate({
-  toggle
-}: { toggle: (state: boolean) => void }) {
-
+  toggle,
+}: {
+  toggle: (state: boolean) => void;
+}) {
   const refObserver = useRef(null);
 
-  const callbackFunction: IntersectionObserverCallback = (entries: IntersectionObserverEntry[]) => {
+  const callbackFunction: IntersectionObserverCallback = (
+    entries: IntersectionObserverEntry[]
+  ) => {
     const [entry] = entries;
-    toggle(!entry.isIntersecting)
+    toggle(!entry.isIntersecting);
   };
 
   useEffect(() => {
     if (refObserver.current) {
       const options = {
         root: document.documentElement,
-        rootMargin: '0px',
-        threshold: 1.0
-      }
+        rootMargin: "0px",
+        threshold: 1.0,
+      };
 
       const observer = new IntersectionObserver(callbackFunction, options);
-      console.log(observer);
 
       observer.observe(refObserver.current);
     }
-  }, [])
-
+  }, []);
 
   return (
     <section className={style.projects}>
       <header className={style.header}>
-        <Title asChild={true} >
-          <h2 ref={refObserver}>Algumas coisas que Construí</h2>
+        <Title asChild={true}>
+          <h2 ref={refObserver}>Alguns projetos que construí</h2>
         </Title>
         <Paragraph className={style.description}>
           Esses são alguns dos meus projetos desenvolvidos recentemente.
@@ -57,6 +58,6 @@ export function ProjectTemplate({
           .
         </Paragraph>
       </footer>
-    </section >
+    </section>
   );
 }

@@ -40,13 +40,17 @@
     padding-right: 8px;
   }
 
-  .projects .header{
+  .projects .header {
     margin-bottom: 0px;
     padding-right: 8px;
     gap: 24px;
   }
 
-  .projects .footer{
+  .projects .footer {
     padding-bottom: 116px;
+  }
+
+  .projects .footer .description {
+    text-align: center;
   }
 }
