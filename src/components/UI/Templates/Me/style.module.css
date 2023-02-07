@@ -63,16 +63,17 @@
 }
 
 .image .user img {
-  width: 280px;
-  height: 280px;
-  border: 14px solid var(--profile-image-border);
+  box-sizing: content-box;
+  width: 240px;
+  height: 240px;
+  border: 34px solid var(--profile-image-border);
   background: var(--black-600);
   border-radius: 50%;
   z-index: 2;
   transform: translateY(-32px);
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1024px) {
   .section {
     padding: 100px 24px;
     padding-top: 125px;
@@ -93,6 +94,12 @@
     width: 319px;
     height: 250px;
   }
+
+  .image .user img {
+    width: 220px;
+    height: 220px;
+    border-width: 30px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -109,13 +116,15 @@
     top: -50%;
     right: 0;
     left: 50%;
+    width: 380px;
     transform: translateX(-50%);
     border-radius: 0px 0px 0px 0px;
   }
 
   .image .user img {
-    width: 250px;
-    height: 250px;
+    width: 210px;
+    height: 210px;
+    border-width: 28px;
     transform: unset;
   }
 
@@ -145,25 +154,26 @@
 
 @media (max-width: 410px) {
   .section {
-    padding-top: 105px;
+    padding-top: 60px;
   }
   .image {
-    height: 170px;
+    height: auto;
   }
 
   .image .user::before {
     padding: 0px;
-    top: -50%;
+    top: 50%;
     right: 0;
     left: 50%;
-    width: 250px;
-    height: 200px;
-    transform: translateX(-50%);
+    width: 280px;
+    height: 180px;
+    transform: translate(-50%, -90%);
   }
 
   .image .user img {
     width: 180px;
     height: 180px;
+    border-width: 24px;
     transform: unset;
   }
 }
