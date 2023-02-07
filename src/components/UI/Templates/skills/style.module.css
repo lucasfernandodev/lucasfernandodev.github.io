@@ -9,7 +9,7 @@
 }
 
 .skillsMoreContent {
-  composes: arrowAnimated from './composes/animation.css';
+  composes: arrowAnimated from "./composes/animation.css";
   position: absolute;
   left: 0px;
   bottom: 10px;
@@ -21,7 +21,6 @@
   width: 32px;
   height: 32px;
 }
-
 
 .skills .illustration,
 .skills .text {
@@ -42,7 +41,6 @@
   flex-wrap: wrap;
   gap: 12px;
 }
-
 
 /* Add padding e aumenta o height do .skills em dispositivos landscape com telas menores */
 @media (max-height: 589px) and (min-width: 769px) and (max-width: 1199px) {
@@ -110,12 +108,12 @@
 }
 
 @media (max-width: 550px) {
-  .skills{
+  .skills {
     gap: 24px;
     justify-content: flex-start;
   }
 
-  .skills .text .title{
+  .skills .text .title {
     width: fit-content;
     margin-bottom: 24px;
   }
@@ -123,29 +121,28 @@
   .skills .text {
     gap: 0px;
   }
-  
+
   .skills .text p {
     display: block;
     width: 100%;
     max-width: 100%;
     padding: 0px;
-    text-align: center;
-    text-align: justify;
+    text-align: left;
   }
 
-  .skills .illustration{
+  .skills .illustration {
     align-items: center;
     padding: 0px;
     margin: 0px;
     max-height: 190px;
   }
 
-  .skills .illustration img{
+  .skills .illustration img {
     max-width: 275px;
     max-height: 358px;
   }
 
-  .skillsMoreContent{
+  .skillsMoreContent {
     display: none !important;
   }
 }
