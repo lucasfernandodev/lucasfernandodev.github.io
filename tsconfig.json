@@ -1,55 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@/infra/*": [
-        "src/infra/*"
-      ],
-      "@/components/*": [
-        "src/components/*"
-      ],
-      "@/Atoms/*": [
-        "src/components/UI/Atoms/*"
-      ],
-      "@/Molecules/*": [
-        "src/components/UI/Molecules/*"
-      ],
-      "@/Organisms/*": [
-        "src/components/UI/Organisms/*"
-      ],
-      "@/Templates/*": [
-        "src/components/UI/Templates/*"
-      ],
-      "@/Utils/*": [
-        "src/components/Utils/*"
-      ]
-    },
-    "incremental": true
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "next-seo.config.js"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

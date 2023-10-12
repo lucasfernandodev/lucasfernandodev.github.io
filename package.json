@@ -1,28 +1,29 @@
 {
-  "name": "lucasfernandodev",
-  "version": "0.1.0",
+  "name": "p",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start ",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.0.1",
-    "next": "^13.0.0",
-    "next-seo": "^4.26.0",
-    "nookies": "^2.5.2",
-    "react": "^18.0.0-0",
-    "react-dom": "^18.0.0-0",
-    "swr": "^1.0.0",
-    "umbrella-icons-library": "^0.0.7"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
-    "@types/node": "18.11.7",
-    "@types/react": "17.0.19",
-    "eslint": "7.32.0",
-    "eslint-config-next": "^11.1.0",
-    "typescript": "4.4.2"
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
   }
 }

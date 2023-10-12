@@ -1,9 +1,0 @@
-/* Adiciona outline somente durante o foco da navegação pelo teclado */
-
-*:focus-visible{
-  outline: dashed 2px;
-}
-
-*:focus:not(:focus-visible){
-  outline: unset;
-}
