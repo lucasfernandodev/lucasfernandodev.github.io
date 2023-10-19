@@ -1,7 +1,8 @@
+import { Layout } from '../../Components/Layout';
 import style from './style.module.css';
 
 const Homepage = () => {
-  return <h1>Homepage</h1>
+  return <Layout>Homepage</Layout>
 }
 
 export { Homepage }

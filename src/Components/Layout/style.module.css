@@ -3,4 +3,13 @@
   background: var(--gradient-overlay-400, linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%), #121212);
   width: 100%;
   height: 100vh;
-}    
+}
+
+.layout main{
+  position: relative;
+  left:65px;
+  width: calc(100% - 65px);
+  z-index: 10;
+  height: auto;
+  min-height: 100vh;
+}

@@ -1,3 +1,4 @@
+import { Header } from '../Header'
 import style from './style.module.css'
 
 interface ILayout {
@@ -7,7 +8,10 @@ interface ILayout {
 const Layout: React.FC<ILayout> = ({ children }) => {
   return (
     <div className={style.layout}>
-      {children}
+      <Header />
+      <main>
+        {children}
+      </main>
     </div>
   )
 }

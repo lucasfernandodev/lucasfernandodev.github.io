@@ -1,8 +1,7 @@
+import { Layout } from '../../Components/Layout';
 import style from './style.module.css';
 
-const Tech = () => {
-  return <h1>Tech</h1>
+export const Tech = () => {
+  return <Layout>Tech</Layout>
 }
-
-export { Tech }
 

@@ -1,7 +1,8 @@
+import { Layout } from '../../Components/Layout';
 import style from './style.module.css';
 
 const Contact = () => {
-  return <h1>Contact</h1>
+  return <Layout>Contact</Layout>
 }
 
 export { Contact }

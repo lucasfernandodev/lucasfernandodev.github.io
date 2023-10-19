@@ -1,0 +1,45 @@
+.menu{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item{
+  width: 100%;
+}
+
+.Link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--gray-600);
+  background-color: transparent;
+  transition: background 250ms linear
+}
+
+.Link:hover{
+  background-color: rgba(47, 47, 55, 0.75);
+}
+
+.Link:hover svg{
+  stroke: var(--white-100)
+}
+
+.Link[data-active=true]{
+  background-color: rgba(47, 47, 55, 0.75);
+}
+
+.Link[data-active=true] svg{
+  stroke: var(--white-100)
+}
+
+.Link svg{
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.2px;
+}

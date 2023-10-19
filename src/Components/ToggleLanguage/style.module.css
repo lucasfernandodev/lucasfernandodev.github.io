@@ -1,0 +1,6 @@
+.toggleLanguage{
+  background: none;
+  border: none;
+  color: var(--white-100);
+  cursor: pointer;
+}
