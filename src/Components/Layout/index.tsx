@@ -1,15 +1,16 @@
+import { HTMLAttributes } from 'react'
 import { Header } from '../Header'
 import style from './style.module.css'
 
-interface ILayout {
+interface ILayout extends HTMLAttributes<HTMLElement>{
   children: React.ReactNode
 }
 
-const Layout: React.FC<ILayout> = ({ children }) => {
+const Layout: React.FC<ILayout> = ({ children, ...rest }) => {
   return (
     <div className={style.layout}>
       <Header />
-      <main>
+      <main {...rest}>
         {children}
       </main>
     </div>
