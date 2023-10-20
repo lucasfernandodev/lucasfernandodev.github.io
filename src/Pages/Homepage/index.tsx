@@ -4,7 +4,8 @@ import style from './style.module.css';
 const Homepage = () => {
   return (
     <Layout className={style.layout}>
-      Homepage</Layout>
+      Homepage
+    </Layout>
   )
 }
 
