@@ -12,3 +12,7 @@
   padding: 18px 0px;
   border-right: 1px solid rgba(229, 177, 238,0.25);
 }
+
+.header .brand{
+  all: unset;
+}

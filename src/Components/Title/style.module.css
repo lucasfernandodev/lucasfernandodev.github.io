@@ -1,0 +1,9 @@
+.title{
+  font-family: 'Jost', sans-serif;
+}
+
+h1.title{
+  line-height: 120%;
+  color: var(--white-100);
+  font-size: 7.3rem;
+}

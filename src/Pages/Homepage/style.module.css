@@ -1,0 +1,91 @@
+.layout{
+  height: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.description{
+  font-size: 2.0rem;
+  color: var(--gray-400);
+  font-family: 'Inter', sans-serif;
+}
+
+.btn{
+  border: none;
+  background: var(--button-border-gradient, linear-gradient(90deg, #E5B1EE 0%, #25B6FF 109.9%));
+  padding: 14px 32px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--black-700);
+  margin-top: 3.6rem;
+  transition: 150ms linear
+}
+
+.btn svg{
+  position: relative;
+  transition: 300ms linear
+}
+
+.btn:hover{
+  box-shadow: 0px 6px 24px rgba(229, 177, 238,0.25),
+              4px 6px 32px rgba(37, 182, 255, 0.25);
+}
+
+.btn:hover svg{
+  transform: translateX(5px);
+}
+
+
+
+/* SOCIAL */
+
+.social{
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  position: fixed;
+  bottom: 16px;
+  right: 0px;
+}
+
+.social::after{
+  content: "";
+  height: 2px;
+  width: 9.2rem;
+  background-color: rgba(229, 177, 238, 0.1);
+}
+
+.social .item {
+  position: relative;
+  transition: 150ms linear;
+}
+
+.social .item:hover{
+  transform: translateY(-2px);
+}
+
+.social .item .Link{
+  text-decoration: none;
+  color: var(--gray-600);
+}
+
+
+
+.social .item .Link svg{
+  stroke-width: 1.5px;
+}
+
+.social .item:hover .Link{
+  color: #E5B1EE;
+}
