@@ -1,16 +1,18 @@
 .layout {
   position: relative;
-  background: var(--gradient-overlay-400, linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%), #121212);
+  background:  linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%), #121212;
   width: 100%;
   height: 100vh;
 }
 
 .layout main{
+  --header-width: 65px;
+  --padding-size: 62px;
+  --space-of-left: calc(var(--header-width) + var(--header-width));
   position: relative;
-  left:65px;
-  width: calc(100% - 65px);
+  left: var(--space-of-left);
+  width: calc(100% - var(--space-of-left));
   z-index: 10;
   height: auto;
   min-height: 100vh;
-  padding-left: 62px;
 }

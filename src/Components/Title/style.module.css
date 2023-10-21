@@ -6,4 +6,15 @@ h1.title{
   line-height: 120%;
   color: var(--white-100);
   font-size: 7.3rem;
+  letter-spacing: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2.title{
+  font-size: 5.4rem;
+  color: var(--white-200);
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 120%;
 }
