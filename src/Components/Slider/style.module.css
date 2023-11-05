@@ -1,0 +1,12 @@
+.slider{
+  display: flex;
+  flex-direction: row;
+  width: 680px;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  border-radius: 8px;
+}

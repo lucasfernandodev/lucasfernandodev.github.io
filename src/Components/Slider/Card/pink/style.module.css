@@ -1,0 +1,22 @@
+.cardpink {
+  background-color: var(--white-100);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #919191; 
+}
+
+.cardpink>svg {
+  position: absolute;
+  left: 77px;
+  top: 155px;
+  fill: linear-gradient(221deg, rgba(229, 177, 238, 0.54) 29.28%, rgba(217, 217, 217, 0.18) 76.62%);
+  filter: blur(16px);
+}
+
+.cardpink .url {
+  position: relative;
+  z-index: 10;
+  color: var(--black-800);
+  border-color: var(--black-800);
+}

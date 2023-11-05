@@ -1,0 +1,75 @@
+.card{
+  --pos-top: 0px;
+  --pos-left: 0px;
+  flex-shrink: 0;
+  width: 220px;
+  height: 400px;
+  position: absolute;
+  top: var(--pos-top);
+  left: var(--pos-left);
+  transition: left 0.7s ease-out;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.card > div{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 16px 16px 16px;
+  border-radius: 16px;
+}
+
+.card h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: capitalize;
+  width: 100%;
+  color: var(--black-400);
+}
+
+.card p{
+  font-family: "Inter", sans-serif;
+}
+
+.card > div > p:first-child{
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.card > div p:nth-child(3){
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.39px; 
+  line-height: 160%;
+  overflow: hidden; 
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.card a{
+  display: flex;
+  margin: 0 auto;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: 1px solid var(--black-800);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.card a svg{
+  width: 42px;
+  height: 42px;
+  stroke-width: 1.2px;
+}
