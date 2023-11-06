@@ -1,0 +1,74 @@
+.layout {
+  height: 100%;
+  display: flex;
+  flex-direction: flex;
+  max-width: calc(100vw - 65px);
+}
+
+.layout .container {
+  width: 50%;
+  height: 100vh;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.layout h2 {
+  margin-bottom: 5.4rem;
+}
+
+.layout .containerButtons {
+  display: flex;
+  gap: 16px;
+  margin-top: 2.4rem;
+  overflow: visible;
+}
+
+.layout .container:last-child {
+  justify-content: center;
+  align-items: center;
+}
+
+.sociais {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sociais .item {
+  display: flex;
+  width: 400px;
+  height: 70px;
+  padding-left: 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(229, 177, 238, 0.15);
+}
+
+.sociais .item .link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--white-200);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  padding-left: 16px;
+}
+
+.sociais .item .link:hover svg{
+  transform: translate(4px, -4px);
+}
+
+.sociais .item .link svg {
+  width: 52px;
+  height: 52px;
+  stroke-width: 1px;
+  transition: 200ms linear;
+}
