@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
 
-interface useTransitionHookProps{
+interface useTransitionHookProps {
   sliderRef: React.RefObject<HTMLDivElement>
   style: any
 }
 
-export const useTransitionHook: (props: useTransitionHookProps) => {positions: number[]} = ({sliderRef, style}) => {
+type TUseTransitionHook =  (props: useTransitionHookProps) => { positions: number[], isLoading: boolean }
+
+export const useTransitionHook: TUseTransitionHook = ({ sliderRef, style }) => {
   const [positions, setPositions] = useState<number[]>([])
   const [sizeTotal, setSizeTotal] = useState(1)
   const [max, setMax] = useState(0);
   const [min, setMin] = useState(0);
   const [isActive, setIsActive] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   let timer: number | null = null
 
@@ -52,11 +55,11 @@ export const useTransitionHook: (props: useTransitionHookProps) => {positions: n
       for (let i = 0; i < cards.length; i++) {
         const pos = _positions.length === 0 ? withTotal * -1 : (withTotal * i) - withTotal
         _positions[i] = pos
-        if(pos > _max){
+        if (pos > _max) {
           _max = pos
         }
 
-        if(pos < _min){
+        if (pos < _min) {
           _min = pos
         }
       }
@@ -67,6 +70,7 @@ export const useTransitionHook: (props: useTransitionHookProps) => {positions: n
       setSizeTotal(withTotal)
     }
   }, [sliderRef.current])
+
 
 
 
@@ -81,9 +85,9 @@ export const useTransitionHook: (props: useTransitionHookProps) => {positions: n
         ev.deltaY < 0 && changePosition(-1)
       }
 
-      if(!isActive){
+      if (!isActive) {
         clearTimeout(timer as number)
-        timer = setTimeout(_moving, 100)
+        timer = setTimeout(_moving, 500)
       }
     }
 
@@ -92,10 +96,10 @@ export const useTransitionHook: (props: useTransitionHookProps) => {positions: n
       const target = ev.target as HTMLElement;
       target.style.opacity = '1'
       const pos = parseInt(target.dataset.pos as string)
-      if(pos === max || pos === min){
+      if (pos === max || pos === min) {
         target.style.opacity = '0'
       }
-      
+
       isActive !== false && setIsActive(false)
     }
 
@@ -103,20 +107,28 @@ export const useTransitionHook: (props: useTransitionHookProps) => {positions: n
       slider?.classList.add(style.active)
       const target = ev.target as HTMLElement;
       const pos = parseInt(target.dataset.pos as string)
-      if(pos >= max){
+      if (pos >= max) {
         target.style.opacity = '0'
       }
-      if(pos === 0){
+      if (pos === 0) {
         target.style.opacity = '1'
       }
     }
 
 
-    function inTransitionCancel(){
+    function inTransitionCancel(ev: TransitionEvent) {
+      const target = ev.target as HTMLElement;
+      const pos = parseInt(target.dataset.pos as string)
+      if (pos === 0) {
+        target.style.opacity = '1'
+      }
+      if (pos >= max || pos === min) {
+        target.style.opacity = '0'
+      }
       slider?.classList.remove(style.active)
     }
 
-    function onTransitionStarted(){
+    function onTransitionStarted() {
       slider?.classList.add(style.active)
     }
 
@@ -139,8 +151,16 @@ export const useTransitionHook: (props: useTransitionHookProps) => {positions: n
     }
   }, [isActive, min, max])
 
+
+  useEffect(() => {
+    if (min !== 0 && max !== 0 && positions.length !== 0 && sizeTotal !== 1) {
+      isLoading !== false && setIsLoading(false)
+    }
+
+  }, [min, max, positions, sizeTotal])
+
   return {
     positions,
-
+    isLoading
   }
 }

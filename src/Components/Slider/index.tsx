@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Card } from './Card';
 import style from './style.module.css';
 import { useTransitionHook } from '../../Hooks/useTransitionHook';
@@ -19,9 +19,14 @@ export const Slider = () => {
 
   const ref = useRef<HTMLDivElement>(null);
 
-  const { positions } = useTransitionHook({ sliderRef: ref, style })
+  const { positions, isLoading } = useTransitionHook({ sliderRef: ref, style })
 
-
+  useEffect(() => {
+    if(!isLoading && ref.current){
+      ref.current.classList.add(style.transitionOn)
+    }
+  }, [isLoading])
+  
   return (
     <div className={style.slider} ref={ref}>
       {

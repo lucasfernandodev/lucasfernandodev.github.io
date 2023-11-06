@@ -6,7 +6,6 @@
   gap: 10px;
   position: relative;
   height: 400px;
-  scroll-snap-type: x mandatory;
   border-radius: 8px;
   overflow-y: visible;
 }
@@ -14,4 +13,12 @@
 .slider:has(.active) *:hover,
 .slider:has(.active) *{
   transform: unset !important;
+}
+
+.slider.transitionOn *[data-type="card"]{
+  transition: left 0.5s ease-out;
+}
+
+.slider > *:last-child{
+  opacity: 0;
 }
