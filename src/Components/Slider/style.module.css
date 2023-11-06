@@ -6,7 +6,12 @@
   gap: 10px;
   position: relative;
   height: 400px;
-  overflow: hidden;
   scroll-snap-type: x mandatory;
   border-radius: 8px;
+  overflow-y: visible;
+}
+
+.slider:has(.active) *:hover,
+.slider:has(.active) *{
+  transform: unset !important;
 }

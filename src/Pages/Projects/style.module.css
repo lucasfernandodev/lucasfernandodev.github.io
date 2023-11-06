@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  overflow-x: hidden;
 }
 
 .layout .container:nth-child(0){

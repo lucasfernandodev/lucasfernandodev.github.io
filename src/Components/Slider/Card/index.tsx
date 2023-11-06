@@ -5,6 +5,7 @@ import { CardBlue } from './blue';
 import { HTMLAttributes } from 'react';
 
 interface ICardProps extends HTMLAttributes<HTMLElement>{
+  _id: number,
   color: 'black' | 'pink' | 'blue',
   title: string,
   description: string,

@@ -7,7 +7,7 @@
   position: absolute;
   top: var(--pos-top);
   left: var(--pos-left);
-  transition: left 0.7s ease-out;
+  transition: left 0.8s ease-out;
   scroll-snap-align: center;
   flex-shrink: 0;
 }
@@ -18,6 +18,11 @@
   gap: 24px;
   padding: 20px 16px 16px 16px;
   border-radius: 16px;
+  transition: 500ms ease-in;
+}
+
+.card:hover > div{
+  transform: translateY(-10px);
 }
 
 .card h3{
