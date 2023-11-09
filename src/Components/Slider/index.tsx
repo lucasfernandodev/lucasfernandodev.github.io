@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Card } from './Card';
 import style from './style.module.css';
 import { useTransitionHook } from '../../Hooks/useTransitionHook';
@@ -15,7 +15,11 @@ interface ICardProps {
 
 const contents = projects as ICardProps[]
 
-export const Slider = () => {
+interface ISlider{
+  onClick: (id: number) => void
+}
+
+export const Slider: React.FC<ISlider> = ({onClick}) => {
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -26,6 +30,10 @@ export const Slider = () => {
       ref.current.classList.add(style.transitionOn)
     }
   }, [isLoading])
+
+  function handleOnClick(id: number){
+    onClick(id)
+  }
   
   return (
     <div className={style.slider} ref={ref}>
@@ -38,6 +46,7 @@ export const Slider = () => {
             style={{
               left: `${positions.length <= 0 ? 0 : positions[index]}px`,
             }}
+            onClick={() => handleOnClick(content._id)}
           />
         )
       }

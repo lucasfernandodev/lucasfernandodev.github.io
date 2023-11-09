@@ -5,7 +5,7 @@
   height: 100vh;
 }
 
-.layout main{
+.layout > main{
   --header-width: 65px;
   --padding-size: 62px;
   --space-of-left: calc(var(--header-width) + var(--header-width));
