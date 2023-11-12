@@ -25,6 +25,13 @@
 .cardblack .url {
   color: var(--white-100);
   border-color: var(--white-100);
+  transition: 250ms linear;
+}
+
+.cardblack .url:hover{
+  color: #121212;
+  background: var(--white-100);
+  border-color: var(--white-100); 
 }
 
 .cardblack > svg {

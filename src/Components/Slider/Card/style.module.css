@@ -8,6 +8,7 @@
   top: var(--pos-top);
   left: var(--pos-left);
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .card > div{

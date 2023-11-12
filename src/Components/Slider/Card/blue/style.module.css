@@ -20,7 +20,12 @@
   border-color: var(--black-800);
   position: relative;
   z-index: 10;
-}
-.cardblue .url svg{
+  transition: 250ms linear;
   color: var(--black-800)
+}
+
+.cardblue .url:hover{
+  color: var(--white-100);
+  background: var(--black-700);
+  border-color: var(--black-700); 
 }

@@ -96,6 +96,14 @@
   border: 1px solid var(--white-100);
 }
 
+.modal .header button a svg{
+  transition: 250ms linear;
+}
+
+.modal .header button a:hover svg{
+  transform: translate(2px, -2px);
+}
+
 .modal .header button a svg {
   width: 36px;
   height: 36px;

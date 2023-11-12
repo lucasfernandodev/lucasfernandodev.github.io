@@ -19,4 +19,11 @@
   z-index: 10;
   color: var(--black-800);
   border-color: var(--black-800);
+  transition: 250ms linear;
+}
+
+.cardpink .url:hover{
+  color: var(--white-100);
+  background: var(--black-700);
+  border-color: var(--black-700); 
 }
