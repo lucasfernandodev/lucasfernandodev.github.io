@@ -1,6 +1,6 @@
-import React from 'react';
 import style from './style.module.css';
 import { IconArrowUpRight } from '@tabler/icons-react';
+import { Link } from '../../Infra/Link';
 
 interface IModal {
   title: string,
@@ -25,12 +25,12 @@ export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbn
             <p className={style.description}>{description}</p>
           </div>
           <button className={style.btnNext}>
-            <a href={url} className={style.link}><IconArrowUpRight /></a>
+            <Link href={url} className={style.link}><IconArrowUpRight /></Link>
           </button>
         </header>
         <main className={style.main}>
           <img src={thumbnail} alt={title} />
-          <p className={style.message}>Conheça mais desse <a href="#">projeto</a> no github.</p>
+          <p className={style.message}>Conheça mais desse <Link href="#">projeto</Link> no github.</p>
         </main>
         <footer className={style.footer}>
           <button className={style.btn} onClick={_closeModal}>Fechar</button>

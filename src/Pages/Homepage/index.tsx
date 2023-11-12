@@ -1,8 +1,9 @@
+import style from './style.module.css';
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconChevronRight } from '@tabler/icons-react';
 import { Layout } from '../../Components/Layout';
 import { Title } from '../../Components/Title';
-import style from './style.module.css';
 import { IconBrandDribbble } from '@tabler/icons-react';
+import { Link } from '../../Infra/Link';
 
 const Homepage = () => {
   return (
@@ -11,15 +12,19 @@ const Homepage = () => {
       <p className={style.description}>
         Desenvolvedor Front-end
       </p>
-      <button className={style.btn}>
-        Vamos conversar
-        <IconChevronRight />
-      </button>
+
+      <Link href="/contato">
+        <button className={style.btn}>
+          Vamos conversar
+          <IconChevronRight />
+        </button>
+      </Link>
+
       <ul className={style.social}>
-        <li className={style.item}><a href="#" className={style.Link}><IconBrandGithub /></a></li>
-        <li className={style.item}><a href="#" className={style.Link}><IconBrandInstagram /></a></li>
-        <li className={style.item}><a href="#" className={style.Link}><IconBrandLinkedin /></a></li>
-        <li className={style.item}><a href="#" className={style.Link}><IconBrandDribbble/></a></li>
+        <li className={style.item}><Link href="#" className={style.Link}><IconBrandGithub /></Link></li>
+        <li className={style.item}><Link href="#" className={style.Link}><IconBrandInstagram /></Link></li>
+        <li className={style.item}><Link href="#" className={style.Link}><IconBrandLinkedin /></Link></li>
+        <li className={style.item}><Link href="#" className={style.Link}><IconBrandDribbble /></Link></li>
       </ul>
     </Layout>
   )

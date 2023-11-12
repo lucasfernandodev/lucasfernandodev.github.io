@@ -8,6 +8,7 @@ import style from './style.module.css';
 import { Modal } from '../../Components/Modal';
 import { useState } from 'react';
 import projects from '../../projects.json';
+import { Link } from '../../Infra/Link';
 
 interface IModal {
   title: string,
@@ -46,8 +47,8 @@ const Projects = () => {
         <Paragraph>Estou empenhado em aprimorar minhas habilidades e me manter atualizado com as tecnologias mais recentes.</Paragraph>
         <Paragraph>Embora não tenha experiência profissional, estou determinado a adquirir conhecimento e contribuir para projetos web.</Paragraph>
         <div className={style.containerButtons}>
-          <Button>Entrara em contato <IconChevronRight /></Button>
-          <Button type="secondary">Github <IconArrowUpRight /></Button>
+          <Link href="/contato"><Button>Entrara em contato <IconChevronRight /></Button></Link>
+          <Link href="#github"><Button type="secondary">Github <IconArrowUpRight /></Button></Link>
         </div>
       </div>
       <div className={style.container}>

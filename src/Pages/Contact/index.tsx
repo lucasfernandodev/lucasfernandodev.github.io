@@ -1,9 +1,10 @@
+import style from './style.module.css';
 import { IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
 import { Button } from '../../Components/Button';
 import { Layout } from '../../Components/Layout';
 import { Paragraph } from '../../Components/Paragraph';
 import { Title } from '../../Components/Title';
-import style from './style.module.css';
+import { Link } from '../../Infra/Link';
 
 const Contact = () => {
   return <Layout className={style.layout}>
@@ -17,18 +18,26 @@ const Contact = () => {
     </div>
     <div className={style.container}>
       <ul className={style.sociais}>
-        <li className={style.item}><a href="#" className={style.link}>
-          LinkedIn  <IconArrowUpRight />
-        </a></li>
-        <li className={style.item}><a href="#" className={style.link}>
-          Dribbble  <IconArrowUpRight />
-        </a></li>
-        <li className={style.item}><a href="#" className={style.link}>
-          Github  <IconArrowUpRight />
-        </a></li>
-        <li className={style.item}><a href="#" className={style.link}>
-          Instagram <IconArrowUpRight />
-        </a></li>
+        <li className={style.item}>
+          <Link href="#" className={style.link}>
+            LinkedIn  <IconArrowUpRight />
+          </Link>
+        </li>
+        <li className={style.item}>
+          <Link href="#" className={style.link}>
+            Dribbble  <IconArrowUpRight />
+          </Link>
+        </li>
+        <li className={style.item}>
+          <Link href="#" className={style.link}>
+            Github  <IconArrowUpRight />
+          </Link>
+        </li>
+        <li className={style.item}>
+          <Link href="#" className={style.link}>
+            Instagram <IconArrowUpRight />
+          </Link>
+        </li>
       </ul>
     </div>
   </Layout>

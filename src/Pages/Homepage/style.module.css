@@ -23,7 +23,6 @@
   align-items: center;
   gap: 4px;
   font-size: 1.6rem;
-  cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: var(--black-700);

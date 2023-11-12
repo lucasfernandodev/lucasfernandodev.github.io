@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './style.module.css';
 import { IconArrowUpRight } from '@tabler/icons-react';
+import { Link } from '../../../../Infra/Link';
 
 interface ICardProps {
   title: string,
@@ -15,9 +16,9 @@ export const CardPink: React.FC<ICardProps> = ({ title, description, category, u
       <p className={style.category}>{category}</p>
       <h3 className={style.title}>{title}</h3>
       <p className={style.description}>{description}</p>
-      <a href={url} className={style.url}>
+      <Link href={url} className={style.url}>
         <IconArrowUpRight />
-      </a>
+      </Link>
 
       <svg width="175" height="277" viewBox="0 0 175 277" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_551_635)">
