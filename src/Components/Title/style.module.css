@@ -1,8 +1,8 @@
-.title{
+.title {
   font-family: 'Jost', sans-serif;
 }
 
-h1.title{
+h1.title {
   line-height: 120%;
   color: var(--white-100);
   font-size: 7.3rem;
@@ -11,10 +11,32 @@ h1.title{
   text-transform: uppercase;
 }
 
-h2.title{
+h2.title {
   font-size: 5.4rem;
   color: var(--white-200);
   font-weight: 400;
   text-transform: capitalize;
   line-height: 120%;
+}
+
+@media screen and (min-width: 411px) and (max-width:1290px){
+  h1.title {
+    font-size: clamp(2.8rem, 32vw + 1.6rem,5.4rem);
+    letter-spacing: 0.4rem;
+  }
+  h2.title {
+    font-size: calc(3.6rem, 15vw + 0.8rem, 4.2rem)
+  }
+}
+
+@media screen and (max-width: 412px) {
+  h1.title {
+    font-size: 2.8rem;
+    letter-spacing: 0.4rem;
+  }
+  h2.title {
+    font-size: 3.6rem;
+    width: 100%;
+    padding: 0px 16px;
+  }
 }

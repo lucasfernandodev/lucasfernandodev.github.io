@@ -5,15 +5,15 @@ import { ToggleLanguage } from '../ToggleLanguage';
 import { Title } from '../Title';
 
 export const Header = () => {
-  const {pathname} = useLocation()
-  
+  const { pathname } = useLocation()
+
   return (
-    <div className={style.header}>
+    <header className={style.header}>
       <Title tag={pathname === '/' ? 'h2' : 'h1'} className={style.brand}>
-        <Link to="/"><img src="/brand.svg" alt="Brand - Lucas Fernando" /></Link>
+        <Link to="/" title="Lucas Fernando"><img src="/brand.svg" alt="Brand - Lucas Fernando" /></Link>
       </Title>
       <Navbar />
       <ToggleLanguage />
-    </div>
+    </header>
   )
 }

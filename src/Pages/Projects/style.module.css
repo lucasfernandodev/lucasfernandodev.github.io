@@ -1,14 +1,5 @@
-.layout {
-  height: 100%;
-  display: flex;
-  flex-direction: flex;
-  max-width: calc(100vw - 65px);
-}
-
 .layout .container{
-  width: 50%;
-  height: 100vh;
-  min-width: 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,11 +7,8 @@
 }
 
 .layout .container:last-child{
+  height: 100%;
   overflow-x: hidden;
-}
-
-.layout h2 {
-  margin-bottom: 5.4rem;
 }
 
 .layout .containerButtons {
@@ -28,4 +16,10 @@
   gap: 16px;
   margin-top: 4.8rem;
   overflow: visible;
+}
+
+@media screen and (max-width: 412px){
+  .layout .containerButtons {
+    gap: 8px;
+  }
 }

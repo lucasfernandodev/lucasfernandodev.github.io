@@ -1,5 +1,4 @@
 .layout{
-  height: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,12 +78,46 @@
   color: var(--gray-600);
 }
 
-
-
 .social .item .Link svg{
   stroke-width: 1.5px;
 }
 
 .social .item:hover .Link{
   color: #E5B1EE;
+}
+
+@media screen and (max-width: 412px){
+  main#homepage{
+    justify-content: center;
+    align-items: center;
+  }
+
+  #homepage h1{
+    text-align: center;
+    order: 1
+  }
+
+  #homepage p{
+    text-align: center;
+    order: 2;
+    margin-top: 1.6rem;
+  }
+
+  #homepage button{
+    margin: 0 auto;
+    margin-top: 2.6rem;
+  }
+
+  #homepage .social{
+    inset: revert;
+    bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #homepage .social::before{
+    content: "";
+    height: 2px;
+    width: 9.2rem;
+    background-color: rgba(229, 177, 238, 0.1);
+  }
 }

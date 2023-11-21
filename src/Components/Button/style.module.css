@@ -42,6 +42,11 @@
   display: none;
 }
 
+@media screen and (max-width: 412px){
+  .btn[data-type="secondary"]{
+    padding: 12px 20px;
+  }
+}
 .btn[data-type="secondary"]::after{
   display: none;
 }

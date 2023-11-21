@@ -1,15 +1,48 @@
-.menu{
+.menu {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.item{
+.toggleMenu {
+  --is-mobile: false;
+  display: none;
+  width: 32px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.toggleMenu::before,
+.toggleMenu::after {
+  content: "";
+  width: 32px;
+  height: 2px;
+  background-color: var(--white-100);
+  position: absolute;
+}
+.toggleMenu::before{
+  top: 6px;
+}
+.toggleMenu::after {
+  bottom: 6px;
+}
+
+.toggleMenu span {
+  clip-path: (1, 1, 1, 1);
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+
+.item {
   width: 100%;
 }
 
-.Link{
+.Link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,24 +55,99 @@
   transition: background 250ms linear
 }
 
-.Link:hover{
+.Link:hover {
   background-color: rgba(47, 47, 55, 0.75);
 }
 
-.Link:hover svg{
+.Link:hover svg {
   stroke: var(--white-100)
 }
 
-.Link[data-active=true]{
+.Link[data-active=true] {
   background-color: rgba(47, 47, 55, 0.75);
 }
 
-.Link[data-active=true] svg{
+.Link[data-active=true] svg {
   stroke: var(--white-100)
 }
 
-.Link svg{
+.Link svg {
   width: 24px;
   height: 24px;
   stroke-width: 1.2px;
+}
+
+
+@media screen and (max-width: 412px) {
+  .toggleMenu {
+    --is-mobile: true;
+    display: flex;
+    position: relative;
+    z-index: 99999;
+  }
+
+  .toggleMenu[data-isOpen="true"]::before {
+    transform:rotate(45deg) translateY(-50%);
+    top: 50%;
+    width: 24px;
+  }
+
+  .toggleMenu[data-isOpen="true"]::after {
+    top: 50%;
+    bottom: unset;
+    width: 24px;
+    transform:rotate(-45deg) translateY(-50%);
+  }
+
+  .menu[data-visibility] {
+    position: fixed;
+    top: -999999999px;
+    opacity: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99998;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu[data-visibility=true] {
+    top: 0px;
+    left: 0px;
+    gap: 48px;
+  }
+
+  .menu[data-visibility=true] .item {
+    width: auto;
+  }
+
+  .Link {
+    width: 100%;
+    height: auto;
+  }
+
+  .Link::after {
+    content: attr(title);
+    width: 100%;
+    height: auto;
+    font-size: 2.4rem;
+    font-family: "inter", sans-serif;
+    text-transform: capitalize;
+  }
+
+  .Link[data-active=true] {
+   background-color: unset; 
+    color: var(--white-100);
+  }
+
+  .menu a.Link:hover {
+    background-color: unset;
+    color: var(--white-100);
+  }
+
+  .menu[data-visibility=true] svg {
+    display: none
+  }
 }

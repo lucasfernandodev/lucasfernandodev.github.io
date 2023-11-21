@@ -1,22 +1,17 @@
 .layout {
-  height: 100vh;
-  display: flex;
-  flex-direction: flex;
-  max-width: 100vw;
   position: relative;
 }
 
-.layout .container{
-  width: auto;
-  height: 100vh;
-  min-width: 600px;
+.container{
+  width: 100%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.layout .container:nth-child(1){
+.layout > .container:first-child{
   min-width: 720px;
 }
 
@@ -39,10 +34,36 @@
   max-width: 540px;
 }
 
-.layout .container:last-child{
+.container:last-child{
   position: absolute;
-  top: -10px;
-  left: 380px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
   height: auto;
-  min-height: unset;
+  min-height: 0px;
+  max-width: none;
+  width: auto
+}
+
+.layout > .container:last-child img{
+  width: 100%;
+  max-width: 62.22vw;
+  height: auto
+}
+
+@media screen and (max-width: 412px){
+  .layout .container{
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+    min-width: 0px !important;
+    position: static;
+    flex-wrap: wrap;
+    transform: unset;
+  }
+
+  .layout .containerButtons {
+    gap: 8px;
+  }
 }

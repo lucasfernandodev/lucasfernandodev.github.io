@@ -7,7 +7,12 @@
   position: relative;
   height: 400px;
   border-radius: 8px;
-  overflow-y: visible;
+}
+
+@media screen and (max-width: 412px){
+  .slider{
+    width: 100%;
+  }
 }
 
 .slider:has(.active) *:hover,

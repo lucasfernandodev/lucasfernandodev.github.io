@@ -4,6 +4,7 @@ import { Title } from '../../Components/Title';
 import { Paragraph } from '../../Components/Paragraph';
 import { Button } from '../../Components/Button';
 import { IconChevronLeft } from '@tabler/icons-react';
+import { Link } from '../../Infra/Link';
 
 
 const Error404 = () => {
@@ -15,7 +16,7 @@ const Error404 = () => {
         <Paragraph>Infelismente não foi possivel encontrar a pagina que você está procurando.</Paragraph>
         <Paragraph>Volte para a página inicial e continue explorando.</Paragraph>
         <div className={style.containerButtons}>
-          <Button><IconChevronLeft />Voltar para a pagina inicial</Button>
+          <Link href="/"><Button><IconChevronLeft />Voltar para a pagina inicial</Button></Link>
         </div>
       </div>
       <div className={style.container}>

@@ -22,13 +22,13 @@ const Projects = () => {
   const [isModalShow, setIsModalShow] = useState(false);
   const [content, setContent] = useState({} as IModal)
 
-  function selectContent(id: number){
+  function selectContent(id: number) {
     const item = projects.filter(project => project._id === id) as any
     setContent(item[0])
     setIsModalShow(!isModalShow)
   }
 
-  function toggleVisibility(){
+  function toggleVisibility() {
     setIsModalShow(false)
   }
 
@@ -42,8 +42,8 @@ const Projects = () => {
         url_project={content.url_project}
         closeModal={toggleVisibility}
       />}
+      <Title>Projetos</Title>
       <div className={style.container}>
-        <Title>Projetos</Title>
         <Paragraph>Estou empenhado em aprimorar minhas habilidades e me manter atualizado com as tecnologias mais recentes.</Paragraph>
         <Paragraph>Embora não tenha experiência profissional, estou determinado a adquirir conhecimento e contribuir para projetos web.</Paragraph>
         <div className={style.containerButtons}>
@@ -52,7 +52,7 @@ const Projects = () => {
         </div>
       </div>
       <div className={style.container}>
-        <Slider onClick={selectContent}/>
+        <Slider onClick={selectContent} />
       </div>
     </Layout>
   )
