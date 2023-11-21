@@ -28,10 +28,15 @@
 
   .layout .container{
     height: auto;
+    width: calc(100% - 32px);
   }
 
   .layout .containerButtons {
     gap: 8px;
+  }
+
+  .layout > .container:last-child{
+    padding-bottom: 3.2rem;
   }
 }
 

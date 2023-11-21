@@ -22,4 +22,13 @@
   .layout .containerButtons {
     gap: 8px;
   }
+
+  .layout .container:last-child{
+    padding-bottom: 32px;
+  }
+  .layout .container:last-child > *{
+    position: relative;
+    left: -145px;
+
+  }
 }

@@ -74,6 +74,10 @@
     width: 100%;
   }
 
+  .layout > main > h2{
+    flex: 0 1 auto;
+    padding-bottom: 4.8rem;
+  }
 
   .layout > header{
     flex-direction: row;

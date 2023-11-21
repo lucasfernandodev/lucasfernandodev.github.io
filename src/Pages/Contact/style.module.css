@@ -35,6 +35,10 @@
   .layout .containerButtons {
     gap: 8px;
   }
+  .layout > .container:last-child{
+    height: auto;
+    padding-bottom: 3.2rem;
+  }
 }
 
 .sociais .item {
