@@ -11,7 +11,7 @@
   margin-top: 2.4rem;
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
   .paragraph{
     max-width: unset;
   }

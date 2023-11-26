@@ -8,8 +8,9 @@ html{
   font-size: 62.5%;
 }
 
-body{
+body, #root{
   font-size: 1.6rem;
+  min-height: 100vh;
 }
 
 a{
@@ -19,8 +20,4 @@ a{
 
 button{
   cursor: pointer;
-}
-
-:root{
-  --breakpoint-sm: 412px
 }

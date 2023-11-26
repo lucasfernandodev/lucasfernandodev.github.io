@@ -40,7 +40,7 @@ export const Navbar = () => {
         onClick={toggleVisibility}
         ref={refBtn}
         className={style.toggleMenu}
-        data-isOpen={visibility}
+        data-open={visibility}
         >
         <span>toggle nenu</span>
       </button>

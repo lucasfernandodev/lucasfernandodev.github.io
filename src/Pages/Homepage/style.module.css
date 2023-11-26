@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  height: 100vh;
 }
 
 .description{
@@ -35,8 +36,7 @@
 }
 
 .btn:hover{
-  box-shadow: 0px 6px 24px rgba(229, 177, 238,0.25),
-              4px 6px 32px rgba(37, 182, 255, 0.25);
+  box-shadow: 0px 6px 24px rgba(229, 177, 238,0.25), 4px 6px 32px rgba(37, 182, 255, 0.25);
 }
 
 .btn:hover svg{
@@ -52,7 +52,7 @@
   display: flex;
   gap: 1.6rem;
   align-items: center;
-  position: fixed;
+  position: absolute;
   bottom: 16px;
   right: 0px;
 }
@@ -86,7 +86,7 @@
   color: #E5B1EE;
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
   main#homepage{
     justify-content: center;
     align-items: center;

@@ -42,7 +42,7 @@
   display: none;
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
   .btn[data-type="secondary"]{
     padding: 12px 20px;
   }

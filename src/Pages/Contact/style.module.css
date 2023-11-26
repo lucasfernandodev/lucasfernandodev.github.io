@@ -27,7 +27,7 @@
   width: 400px;
 }
 
-@media (max-width: 412px){
+@media (max-width: 480px){
   .sociais{
     width: calc(100% - 16px);
   }

@@ -27,13 +27,16 @@
   order: 3;
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
   .header{
     padding: 0px 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25); background: rgba(242, 243, 247, 0.03);
     backdrop-filter: blur(8px); 
     gap: 12px;
-    max-width: 100vw;
+    width: 100vw;
+    position: fixed;
+    height: 65px;
+    top: 0px;
   }
 
   .header .brand{

@@ -13,20 +13,20 @@ interface IModal {
 
 export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbnail, url }) => {
 
-  function _closeModal(){
+  function _closeModal() {
     closeModal()
   }
   return (
     <div className={style.wrapper}>
       <div className={style.modal}>
         <header className={style.header}>
-          <div className={style.info}>
-            <h3 className={style.title}>{title}</h3>
-            <p className={style.description}>{description}</p>
-          </div>
-          <button className={style.btnNext}>
+          <h3 className={style.title}>{title}</h3>
+          <p className={style.description}>{description}</p>
+         <div className={style.container__button}>
+         <button className={style.btnNext}>
             <Link href={url} className={style.link}><IconArrowUpRight /></Link>
           </button>
+         </div>
         </header>
         <main className={style.main}>
           <img src={thumbnail} alt={title} />

@@ -7,8 +7,7 @@
 }
 
 .layout .container:last-child{
-  height: 100%;
-  overflow-x: hidden;
+  height: auto;
 }
 
 .layout .containerButtons {
@@ -18,17 +17,17 @@
   overflow: visible;
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
   .layout .containerButtons {
     gap: 8px;
   }
 
   .layout .container:last-child{
     padding-bottom: 32px;
+    align-items: flex-start;
   }
   .layout .container:last-child > *{
     position: relative;
-    left: -145px;
-
+    left: -140px
   }
 }

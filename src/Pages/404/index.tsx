@@ -10,9 +10,9 @@ import { Link } from '../../Infra/Link';
 const Error404 = () => {
 
   return (
-    <Layout className={style.layout}>
+    <Layout id={style.pageError}className={style.layout}>
+      <Title>Oops! Página não encontrada.</Title>
       <div className={style.container}>
-        <Title>Oops! Página não encontrada.</Title>
         <Paragraph>Infelismente não foi possivel encontrar a pagina que você está procurando.</Paragraph>
         <Paragraph>Volte para a página inicial e continue explorando.</Paragraph>
         <div className={style.containerButtons}>

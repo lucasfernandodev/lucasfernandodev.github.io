@@ -5,13 +5,14 @@
   flex-wrap: nowrap;
   gap: 10px;
   position: relative;
-  height: 400px;
+  height: calc(400px + 10px);
   border-radius: 8px;
+  overflow-x: hidden;
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
   .slider{
-    width: 100%;
+    width: 680px;
   }
 }
 

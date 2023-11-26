@@ -5,13 +5,11 @@
   position: relative;
   background:  linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%), #121212;
   width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  min-height: 100vh;
   display: grid;
   grid-template-columns: var(--header-width) var(--main-grid);
   grid-column-gap: var(--gap);
   grid-template-areas: "header main";
+  overflow-x: hidden;
 }
 
 .layout > main{
@@ -19,7 +17,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   justify-content: center;
 }
 
@@ -32,20 +31,20 @@
 }
 
 .layout > main > div:nth-child(3){
-  flex: content 0 auto;
+  flex: 0 0 auto;
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
   .layout {
-    grid-template-rows: var(--header-width) 100%;
+    grid-template-rows: var(--header-width) minmax(100vh, 100%);
     grid-template-columns: unset;
     grid-template-areas: "header" "main";
+    padding-top: 65px;
   }
 
   .layout > main{
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 100%;
     align-items: center;
     padding-top: 52px;
     padding-bottom: 48px;

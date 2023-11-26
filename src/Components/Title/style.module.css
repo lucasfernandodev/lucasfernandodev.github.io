@@ -29,7 +29,7 @@ h2.title {
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 480px) {
   h1.title {
     font-size: 2.8rem;
     letter-spacing: 0.4rem;

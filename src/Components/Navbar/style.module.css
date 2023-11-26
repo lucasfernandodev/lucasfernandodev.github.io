@@ -78,7 +78,7 @@
 }
 
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 480px) {
   .toggleMenu {
     --is-mobile: true;
     display: flex;
@@ -86,13 +86,13 @@
     z-index: 99999;
   }
 
-  .toggleMenu[data-isOpen="true"]::before {
+  .toggleMenu[data-open="true"]::before {
     transform:rotate(45deg) translateY(-50%);
     top: 50%;
     width: 24px;
   }
 
-  .toggleMenu[data-isOpen="true"]::after {
+  .toggleMenu[data-open="true"]::after {
     top: 50%;
     bottom: unset;
     width: 24px;

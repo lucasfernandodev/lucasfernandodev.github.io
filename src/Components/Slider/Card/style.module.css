@@ -5,7 +5,7 @@
   width: 220px;
   height: 400px;
   position: absolute;
-  top: var(--pos-top);
+  top: calc(var(--pos-top) + 10px);
   left: var(--pos-left);
   flex-shrink: 0;
   cursor: pointer;
