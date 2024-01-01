@@ -16,8 +16,9 @@ export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbn
   function _closeModal() {
     closeModal()
   }
+
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} data-type="modal">
       <div className={style.modal}>
         <header className={style.header}>
           <h3 className={style.title}>{title}</h3>
