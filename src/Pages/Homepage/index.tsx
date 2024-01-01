@@ -8,17 +8,19 @@ import { Link } from '../../Infra/Link';
 const Homepage = () => {
   return (
     <Layout id={style.homepage} className={style.layout}>
-      <Title tag="h1">Lucas Fernando.</Title>
-      <p className={style.description}>
-        Desenvolvedor Front-end
-      </p>
+      <div className={style.container}>
+        <Title tag="h1">Lucas Fernando.</Title>
+        <p className={style.description}>
+          Desenvolvedor Front-end
+        </p>
 
-      <Link href="/contato">
-        <button className={style.btn}>
-          Vamos conversar
-          <IconChevronRight />
-        </button>
-      </Link>
+        <Link href="/contato">
+          <button className={style.btn}>
+            Vamos conversar
+            <IconChevronRight />
+          </button>
+        </Link>
+      </div>
 
       <ul className={style.social}>
         <li className={style.item}><Link href="#" className={style.Link}><IconBrandGithub /></Link></li>

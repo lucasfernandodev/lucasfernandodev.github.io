@@ -92,6 +92,11 @@
     align-items: center;
   }
 
+  main#homepage .container{
+    position: relative;
+    top: -65px;
+  }
+
   #homepage h1{
     text-align: center;
     order: 1
