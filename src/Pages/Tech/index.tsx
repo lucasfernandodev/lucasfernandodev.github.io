@@ -19,7 +19,7 @@ export const Tech = () => {
           <Link href="#linkedin"><Button type='secondary'>LinkedIn <IconArrowUpRight /></Button></Link>
         </div>
       </div>
-      <div className={style.container}>
+      <div className={[style.container, style.panel].join(" ")}>
         <TechPanel />
       </div>
     </Layout>

@@ -25,6 +25,11 @@
     max-width: unset;
   }
 
+  .panel{
+    flex: revert !important;
+    width: calc(100% - 32px) !important;
+  }
+
   .layout .container{
     height: auto;
     width: calc(100% - 32px);

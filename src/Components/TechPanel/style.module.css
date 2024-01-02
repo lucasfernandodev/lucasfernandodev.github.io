@@ -5,14 +5,10 @@
   flex-wrap: wrap;
   gap: 32px;
   width: calc((var(--card-size) * 3) + (32px * 3));
+  
 }
 
-@media screen and (min-width: 413px) and (max-width: 920px){
-  .container{
-    --card-size: 64px;
-    gap: 28px
-  }
-}
+
 
 @media screen and (max-width: 480px){
   .container{
@@ -30,6 +26,12 @@
   background: linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%);
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 920px){
+  .container{
+    width: auto;
+  }
 }
 
 .card::after {
