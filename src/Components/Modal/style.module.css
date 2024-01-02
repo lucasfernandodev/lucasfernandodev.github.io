@@ -89,7 +89,7 @@
   position: absolute;
   top: 0px;
   display: flex;
-  align-items: center;
+  align-items: start;
   right: 0px;
 }
 

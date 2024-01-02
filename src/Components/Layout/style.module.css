@@ -37,12 +37,11 @@
 
 @media screen and (max-width: 480px){
   .layout {
-    grid-template-rows: var(--header-width) 1fr;
-    grid-template-columns: 100vw;
-    grid-template-areas: "header" "main";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: "main";
     padding-top: 65px;
     height: 100%;
-    min-height: 100vh;
   }
 
   .layout > main{
