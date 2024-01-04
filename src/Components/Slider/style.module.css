@@ -8,6 +8,7 @@
   height: calc(400px + 10px);
   border-radius: 8px;
   overflow-x: hidden;
+  touch-action: pan-y;
 }
 
 @media screen and (max-width: 480px){
