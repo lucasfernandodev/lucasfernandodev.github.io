@@ -5,7 +5,6 @@
   flex-wrap: wrap;
   gap: 32px;
   width: calc((var(--card-size) * 3) + (32px * 3));
-  
 }
 
 
@@ -13,6 +12,19 @@
 @media screen and (max-width: 480px){
   .container{
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 920px){
+  .container{
+    width: auto;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 1080px){
+  .container{
+    width: calc((var(--card-size) * 3) + (32px * 3));
+    align-items: flex-start;
   }
 }
 
@@ -28,11 +40,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 920px){
-  .container{
-    width: auto;
-  }
-}
+
 
 .card::after {
   content: "";

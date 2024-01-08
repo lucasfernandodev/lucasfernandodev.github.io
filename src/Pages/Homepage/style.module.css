@@ -86,7 +86,7 @@
   color: #E5B1EE;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
   main#homepage{
     justify-content: center;
     align-items: center;

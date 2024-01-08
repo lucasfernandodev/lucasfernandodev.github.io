@@ -17,7 +17,8 @@
   overflow: visible;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px),
+(min-width: 810px) and (max-width: 1080px){
   .layout .containerButtons {
     gap: 8px;
   }
@@ -26,8 +27,16 @@
     padding-bottom: 32px;
     align-items: flex-start;
   }
+
+  .layout .container:last-child > *{
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 480px){
   .layout .container:last-child > *{
     position: relative;
-    left: -140px
+    left: -140px;
+    margin: revert;
   }
 }

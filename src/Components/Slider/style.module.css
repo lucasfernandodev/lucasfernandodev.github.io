@@ -11,7 +11,7 @@
   touch-action: pan-y;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
   .slider{
     width: 680px;
   }

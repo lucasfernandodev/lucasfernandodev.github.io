@@ -19,7 +19,7 @@ h2.title {
   line-height: 120%;
 }
 
-@media screen and (min-width: 411px) and (max-width:1290px){
+@media screen and (min-width: 411px) and (max-width:1290px), (min-width: 810px) and (max-width: 1080px){
   h1.title {
     font-size: clamp(2.8rem, 32vw + 1.6rem,5.4rem);
     letter-spacing: 0.4rem;
@@ -29,7 +29,7 @@ h2.title {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px) {
   h1.title {
     font-size: 2.8rem;
     letter-spacing: 0.4rem;
