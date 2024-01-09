@@ -54,7 +54,7 @@
   width: calc(100%);
   height: calc(100%);
   border-radius: 90px 90px 90px 0px; 
-  background: linear-gradient(0deg, rgba(37, 182, 255, 0.15) 0%, rgba(37, 182, 255, 0.15) 100%), url(/public/user.jpg), lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, rgba(37, 182, 255, 0.15) 0%, rgba(37, 182, 255, 0.15) 100%), url(/user.jpg), lightgray 50% / cover no-repeat;
   background-size: cover;
   transition: 350ms linear;
 }
