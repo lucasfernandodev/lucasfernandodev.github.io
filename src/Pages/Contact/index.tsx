@@ -6,6 +6,7 @@ import { Paragraph } from '../../Components/Paragraph';
 import { Title } from '../../Components/Title';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
+import { GroupButton } from '../../Components/GroupButton';
 
 const Contact = () => {
 
@@ -16,10 +17,12 @@ const Contact = () => {
     <div className={style.container}>
       <Paragraph>{t('contact.paragraph_zero')}</Paragraph>
       <Paragraph>{t('contact.paragraph_one')}</Paragraph>
-      <div className={style.containerButtons}>
+      <GroupButton>
         <Button>{t('contact.button_content')}<IconChevronRight /></Button>
-      </div>
+      </GroupButton>
     </div>
+
+
     <div className={style.container}>
       <ul className={style.sociais}>
         <li className={style.item}>

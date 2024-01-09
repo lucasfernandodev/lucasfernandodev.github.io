@@ -7,6 +7,7 @@ import style from './style.module.css';
 import { TechPanel } from '../../Components/TechPanel';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
+import { GroupButton } from '../../Components/GroupButton';
 
 export const Tech = () => {
 
@@ -18,13 +19,13 @@ export const Tech = () => {
       <div className={style.container}>
         <Paragraph>{t('tech.paragraph_zero')}</Paragraph>
         <Paragraph>{t('tech.paragraph_one')}</Paragraph>
-        <div className={style.containerButtons}>
+        <GroupButton>
           <Link href="/projetos">
             <Button>{t('tech.button_content')}<IconChevronRight />
             </Button>
           </Link>
           <Link href="#linkedin"><Button type='secondary'>LinkedIn <IconArrowUpRight /></Button></Link>
-        </div>
+        </GroupButton>
       </div>
       <div className={[style.container, style.panel].join(" ")}>
         <TechPanel />

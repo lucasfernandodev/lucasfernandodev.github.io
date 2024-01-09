@@ -10,6 +10,7 @@ import { useState } from 'react';
 import projects from '../../projects.json';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
+import { GroupButton } from '../../Components/GroupButton';
 
 interface IModal {
   title: string,
@@ -50,15 +51,17 @@ const Projects = () => {
       <div className={style.container}>
         <Paragraph>{t('projects.paragraph_zero')}</Paragraph>
         <Paragraph>{t('projects.paragraph_one')}</Paragraph>
-        <div className={style.containerButtons}>
+        <GroupButton>
           <Link href="/contato">
             <Button>
               {t('projects.button_content')} <IconChevronRight />
             </Button>
           </Link>
           <Link href="#github"><Button type="secondary">Github <IconArrowUpRight /></Button></Link>
-        </div>
+        </GroupButton>
       </div>
+
+
       <div className={style.container}>
         <Slider onClick={selectContent} />
       </div>

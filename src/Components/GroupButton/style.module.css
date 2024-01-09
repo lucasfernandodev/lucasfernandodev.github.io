@@ -1,0 +1,6 @@
+.groupButton {
+  display: flex;
+  gap: 16px;
+  margin-top: 4.8rem;
+  overflow: visible;
+}

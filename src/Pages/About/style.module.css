@@ -14,19 +14,9 @@
   height: 100%;
 }
 
-.layout .containerButtons {
-  display: flex;
-  gap: 16px;
-  margin-top: 4.8rem;
-}
-
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
   .layout .profile{
     padding-bottom: 3.2rem;
-  }
-
-  .layout .containerButtons {
-    gap: 8px;
   }
 }
 

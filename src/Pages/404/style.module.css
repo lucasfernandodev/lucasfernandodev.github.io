@@ -23,16 +23,6 @@
   flex: revert;
 }
 
-.layout .containerButtons {
-  display: flex;
-  gap: 16px;
-  margin-top: 4.8rem;
-}
-
-.layout .containerButtons button{
-  padding-right: 36px;
-}
-
 .layout p {
   max-width: 540px;
 }
@@ -77,12 +67,6 @@
 
   #pageError button{
     margin: 0 auto;
-  }
-
-  .layout .containerButtons {
-    gap: 8px;
-    justify-content: center;
-    width: 100%;
   }
 
   #pageError > *:nth-child(1){

@@ -6,6 +6,7 @@ import { Button } from '../../Components/Button';
 import { IconChevronLeft } from '@tabler/icons-react';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
+import { GroupButton } from '../../Components/GroupButton';
 
 
 const Error404 = () => {
@@ -17,14 +18,15 @@ const Error404 = () => {
       <div className={style.container}>
         <Paragraph>{t('error404.paragraph_zero')}</Paragraph>
         <Paragraph>{t('error404.paragraph_one')}</Paragraph>
-        <div className={style.containerButtons}>
+        <GroupButton>
           <Link href="/">
             <Button>
               <IconChevronLeft />{t('error404.button_content')}
             </Button>
           </Link>
-        </div>
+        </GroupButton>
       </div>
+      
       <div className={style.container}>
         <img src="/404.svg" alt="Astronauta segurando um doginho" />
       </div>

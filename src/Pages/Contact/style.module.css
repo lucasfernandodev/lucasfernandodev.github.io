@@ -6,13 +6,6 @@
   align-items: flex-start;
 }
 
-.layout .containerButtons {
-  display: flex;
-  gap: 16px;
-  margin-top: 2.4rem;
-  overflow: visible;
-}
-
 .layout > .container:last-child {
   justify-content: center;
   align-items: center;
@@ -31,10 +24,7 @@
   .sociais{
     width: calc(100% - 16px);
   }
-
-  .layout .containerButtons {
-    gap: 8px;
-  }
+  
   .layout > .container:last-child{
     height: auto;
     padding-bottom: 3.2rem;
