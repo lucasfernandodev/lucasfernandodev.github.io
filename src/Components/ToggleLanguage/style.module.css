@@ -2,4 +2,6 @@
   background: none;
   border: none;
   color: var(--white-100);
+  font-size: 1.6rem;
+  letter-spacing: 0.017rem;
 }
