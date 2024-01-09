@@ -1,0 +1,41 @@
+{
+  "homepage": {
+    "title": "LUCAS FERNANDO",
+    "subtitle": "Front-end Developer",
+    "button_content": "Let's talk"
+  },
+  "about_me": {
+    "title": "About me",
+    "paragraph_zero": "Hello! I'm Lucas Fernando, an enthusiastic front-end developer from Goiás, aged 21.",
+    "paragraph_one": "I'm constantly seeking learning and growth in the programming field.",
+    "button_content": "Explore technologies"
+  },
+  "tech": {
+    "title": "Technologies",
+    "paragraph_zero": "As a front-end developer, I provide comprehensive solutions for web applications. I have skills in developing responsive websites, following best practices.",
+    "paragraph_one": "I use HTML, CSS, and JavaScript to create attractive and functional interfaces.",
+    "button_content": "Explore projects"
+  },
+  "projects": {
+    "title": "Projects",
+    "paragraph_zero": "I am committed to enhancing my skills and staying up-to-date with the latest technologies.",
+    "paragraph_one": "Although I don't have professional experience, I am determined to acquire knowledge and contribute to web projects.",
+    "button_content": "Get in touch",
+    "slider":{
+      "project_message": "Find out more about this project at ",
+      "button_close_content": "Close"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "paragraph_zero": "If you're looking for a dedicated and motivated front-end developer, contact me at lucasfernando.dev@gmail.com.",
+    "paragraph_one": "I'm excited to collaborate on exciting projects.",
+    "button_content": "Get in touch"
+  },
+  "error404": {
+    "title": "Oops! Page not found.",
+    "paragraph_zero": "Unfortunately, we couldn't find the page you're looking for.",
+    "paragraph_one": "Go back to the homepage and keep exploring.",
+    "button_content": "Back to homepage"
+  }  
+}

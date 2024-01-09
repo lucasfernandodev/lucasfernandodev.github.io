@@ -6,16 +6,23 @@ import { Title } from '../../Components/Title';
 import style from './style.module.css';
 import { TechPanel } from '../../Components/TechPanel';
 import { Link } from '../../Infra/Link';
+import { useTranslation } from 'react-i18next';
 
 export const Tech = () => {
+
+  const { t } = useTranslation()
+
   return (
     <Layout className={style.layout}>
-      <Title className={style.title}>Tecnologias</Title>
+      <Title className={style.title}>{t('tech.title')}</Title>
       <div className={style.container}>
-        <Paragraph>Como desenvolvedor front-end, ofereço soluções completas para aplicações web. Tenho habilidades em desenvolvimento de sites responsivos, seguindo as melhores práticas.</Paragraph>
-        <Paragraph>Utilizo HTML, CSS e JavaScript para criar interfaces atraentes e funcionais.</Paragraph>
+        <Paragraph>{t('tech.paragraph_zero')}</Paragraph>
+        <Paragraph>{t('tech.paragraph_one')}</Paragraph>
         <div className={style.containerButtons}>
-          <Link href="/projetos"><Button>Explorar projetos <IconChevronRight /></Button></Link>
+          <Link href="/projetos">
+            <Button>{t('tech.button_content')}<IconChevronRight />
+            </Button>
+          </Link>
           <Link href="#linkedin"><Button type='secondary'>LinkedIn <IconArrowUpRight /></Button></Link>
         </div>
       </div>

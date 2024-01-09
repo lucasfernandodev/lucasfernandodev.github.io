@@ -9,6 +9,7 @@ import { Modal } from '../../Components/Modal';
 import { useState } from 'react';
 import projects from '../../projects.json';
 import { Link } from '../../Infra/Link';
+import { useTranslation } from 'react-i18next';
 
 interface IModal {
   title: string,
@@ -21,6 +22,8 @@ interface IModal {
 const Projects = () => {
   const [isModalShow, setIsModalShow] = useState(false);
   const [content, setContent] = useState({} as IModal)
+
+  const { t } = useTranslation()
 
   function selectContent(id: number) {
     const item = projects.filter(project => project._id === id) as any
@@ -42,12 +45,17 @@ const Projects = () => {
         url_project={content.url_project}
         closeModal={toggleVisibility}
       />}
-      <Title>Projetos</Title>
+
+      <Title>{t('projects.title')}</Title>
       <div className={style.container}>
-        <Paragraph>Estou empenhado em aprimorar minhas habilidades e me manter atualizado com as tecnologias mais recentes.</Paragraph>
-        <Paragraph>Embora não tenha experiência profissional, estou determinado a adquirir conhecimento e contribuir para projetos web.</Paragraph>
+        <Paragraph>{t('projects.paragraph_zero')}</Paragraph>
+        <Paragraph>{t('projects.paragraph_one')}</Paragraph>
         <div className={style.containerButtons}>
-          <Link href="/contato"><Button>Entrara em contato <IconChevronRight /></Button></Link>
+          <Link href="/contato">
+            <Button>
+              {t('projects.button_content')} <IconChevronRight />
+            </Button>
+          </Link>
           <Link href="#github"><Button type="secondary">Github <IconArrowUpRight /></Button></Link>
         </div>
       </div>

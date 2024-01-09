@@ -1,6 +1,7 @@
 import style from './style.module.css';
 import { IconArrowUpRight } from '@tabler/icons-react';
 import { Link } from '../../Infra/Link';
+import { useTranslation } from 'react-i18next';
 
 interface IModal {
   title: string,
@@ -17,24 +18,28 @@ export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbn
     closeModal()
   }
 
+  const { t } = useTranslation()
+
   return (
     <div className={style.wrapper} data-type="modal">
       <div className={style.modal}>
         <header className={style.header}>
           <h3 className={style.title}>{title}</h3>
           <p className={style.description}>{description}</p>
-         <div className={style.container__button}>
-         <button className={style.btnNext}>
-            <Link href={url} className={style.link}><IconArrowUpRight /></Link>
-          </button>
-         </div>
+          <div className={style.container__button}>
+            <button className={style.btnNext}>
+              <Link href={url} className={style.link}><IconArrowUpRight /></Link>
+            </button>
+          </div>
         </header>
         <main className={style.main}>
           <img src={thumbnail} alt={title} />
-          <p className={style.message}>Conheça mais desse <Link href="#">projeto</Link> no github.</p>
+          <p className={style.message}>{t('projects.slider.project_message')}<Link href="#">github</Link>.</p>
         </main>
         <footer className={style.footer}>
-          <button className={style.btn} onClick={_closeModal}>Fechar</button>
+          <button className={style.btn} onClick={_closeModal}>
+            {t('projects.slider.button_close_content')}
+          </button>
         </footer>
       </div>
     </div>

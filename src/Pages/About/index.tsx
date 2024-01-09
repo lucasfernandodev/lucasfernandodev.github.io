@@ -5,16 +5,24 @@ import { Paragraph } from '../../Components/Paragraph';
 import { Title } from '../../Components/Title';
 import style from './style.module.css';
 import { Link } from '../../Infra/Link';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+
+  const { t } = useTranslation()
+
   return (
     <Layout className={style.layout}>
-      <Title>Sobre mim</Title>
+      <Title>{t('about_me.title')}</Title>
       <div className={style.container}>
-        <Paragraph>Olá! Sou Lucas Fernando, um desenvolvedor front-end entusiasmado de Goiás, com 21 anos. </Paragraph>
-        <Paragraph>Estou constantemente em busca de aprendizado e crescimento na área de programação.</Paragraph>
+        <Paragraph>{t('about_me.paragraph_zero')}</Paragraph>
+        <Paragraph>{t('about_me.paragraph_one')}</Paragraph>
         <div className={style.containerButtons}>
-          <Link href="/tecnologias"><Button>Explorar tecnologias <IconChevronRight /></Button></Link>
+          <Link href="/tecnologias">
+            <Button>
+              {t('about_me.button_content')}<IconChevronRight />
+            </Button>
+          </Link>
           <Link href="#linkedin"><Button type="secondary">LinkedIn <IconArrowUpRight /></Button></Link>
         </div>
       </div>

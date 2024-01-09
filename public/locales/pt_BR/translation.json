@@ -1,0 +1,41 @@
+{
+  "homepage": {
+    "title": "LUCAS FERNANDO",
+    "subtitle": "Desenvolvedor Front-end",
+    "button_content": "Vamos conversar"
+  },
+  "about_me": {
+    "title": "Sobre mim",
+    "paragraph_zero": "Olá! Sou Lucas Fernando, um desenvolvedor front-end entusiasmado de Goiás, com 21 anos.",
+    "paragraph_one": "Estou constantemente em busca de aprendizado e crescimento na área de programação.",
+    "button_content": "Explorar tecnologias"
+  },
+  "tech": {
+    "title": "Tecnologias",
+    "paragraph_zero": "Como desenvolvedor front-end, ofereço soluções completas para aplicações web. Tenho habilidades em desenvolvimento de sites responsivos, seguindo as melhores práticas.",
+    "paragraph_one": "Utilizo HTML, CSS e JavaScript para criar interfaces atraentes e funcionais.",
+    "button_content": "Explorar projetos"
+  },
+  "projects": {
+    "title": "Projetos",
+    "paragraph_zero": "Estou empenhado em aprimorar minhas habilidades e me manter atualizado com as tecnologias mais recentes.",
+    "paragraph_one": "Embora não tenha experiência profissional, estou determinado a adquirir conhecimento e contribuir para projetos web.",
+    "button_content": "Entrar em contato",
+    "slider":{
+      "project_message": "Conheça mais desse projeto no ",
+      "button_close_content": "Fechar"
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "paragraph_zero": "Se você está procurando um desenvolvedor front-end dedicado e motivado, entre em contato comigo pelo e-mail lucasfernando.dev@gmail.com.",
+    "paragraph_one": "Estou animado para colaborar em projetos emocionantes.",
+    "button_content": "Entrar em contato"
+  },
+  "error404": {
+    "title": "Oops! Página não encontrada. ",
+    "paragraph_zero": "Infelismente não foi possivel encontrar a pagina que você está procurando.",
+    "paragraph_one": "Volte para a página inicial e continue explorando.",
+    "button_content": "Voltar para a pagina inicial"
+  }
+}

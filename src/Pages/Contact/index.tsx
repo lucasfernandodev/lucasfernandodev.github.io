@@ -5,15 +5,19 @@ import { Layout } from '../../Components/Layout';
 import { Paragraph } from '../../Components/Paragraph';
 import { Title } from '../../Components/Title';
 import { Link } from '../../Infra/Link';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+
+  const { t } = useTranslation()
+
   return <Layout className={style.layout}>
-    <Title>contato</Title>
+    <Title>{t('contact.title')}</Title>
     <div className={style.container}>
-      <Paragraph>Se você está procurando um desenvolvedor front-end dedicado e motivado, entre em contato comigo pelo e-mail lucasfernando.dev@gmail.com. </Paragraph>
-      <Paragraph>Estou animado para colaborar em projetos emocionantes.</Paragraph>
+      <Paragraph>{t('contact.paragraph_zero')}</Paragraph>
+      <Paragraph>{t('contact.paragraph_one')}</Paragraph>
       <div className={style.containerButtons}>
-        <Button>Entrar em contato <IconChevronRight /></Button>
+        <Button>{t('contact.button_content')}<IconChevronRight /></Button>
       </div>
     </div>
     <div className={style.container}>

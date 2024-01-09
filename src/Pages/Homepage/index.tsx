@@ -4,19 +4,23 @@ import { Layout } from '../../Components/Layout';
 import { Title } from '../../Components/Title';
 import { IconBrandDribbble } from '@tabler/icons-react';
 import { Link } from '../../Infra/Link';
+import { useTranslation } from 'react-i18next';
 
 const Homepage = () => {
+
+  const { t } = useTranslation()
+
   return (
     <Layout id={style.homepage} className={style.layout}>
       <div className={style.container}>
-        <Title tag="h1">Lucas Fernando.</Title>
+        <Title tag="h1">{t('homepage.title')}</Title>
         <p className={style.description}>
-          Desenvolvedor Front-end
+          {t('homepage.subtitle')}
         </p>
 
         <Link href="/contato">
           <button className={style.btn}>
-            Vamos conversar
+            {t('homepage.button_content')}
             <IconChevronRight />
           </button>
         </Link>
