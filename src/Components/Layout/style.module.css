@@ -23,18 +23,6 @@
   justify-content: center;
 }
 
-.layout > main > h2{
-  flex: 0 1 100px;
-}
-
-.layout > main > div:not([data-type="modal"]):nth-last-child(2){
-  flex: 0 1 calc(45% - 100px);
-}
-
-.layout > main > div:not([data-type="modal"]):last-child{
-  flex: 0 0 auto;
-}
-
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
   .layout {
     grid-template-rows: 1fr;

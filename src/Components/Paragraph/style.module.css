@@ -8,7 +8,7 @@
 }
 
 .paragraph + .paragraph{
-  margin-top: 2.4rem;
+  margin-top: 1.6rem;
 }
 
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){

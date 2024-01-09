@@ -13,13 +13,15 @@ const Error404 = () => {
 
   return (
     <Layout id={style.pageError} className={style.layout}>
-      <Title>{t('error404.title')}</Title>
+      <Title className={style.title}>{t('error404.title')}</Title>
       <div className={style.container}>
         <Paragraph>{t('error404.paragraph_zero')}</Paragraph>
         <Paragraph>{t('error404.paragraph_one')}</Paragraph>
         <div className={style.containerButtons}>
-          <Link href="/"><Button><IconChevronLeft />
-            {t('error404.button_content')}</Button>
+          <Link href="/">
+            <Button>
+              <IconChevronLeft />{t('error404.button_content')}
+            </Button>
           </Link>
         </div>
       </div>

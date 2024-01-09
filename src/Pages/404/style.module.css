@@ -16,8 +16,11 @@
 }
 
 .layout h2 {
-  margin-bottom: 5.4rem;
   text-transform: unset;
+}
+
+.layout > h2.title{
+  flex: revert;
 }
 
 .layout .containerButtons {
