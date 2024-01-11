@@ -18,7 +18,6 @@ const About = () => {
       <div className={style.container}>
         <Paragraph>{t('about_me.paragraph_zero')}</Paragraph>
         <Paragraph>{t('about_me.paragraph_one')}</Paragraph>
-
         <GroupButton>
           <Link href="/tecnologias">
             <Button>
@@ -26,12 +25,12 @@ const About = () => {
             </Button>
           </Link>
 
-          <Link href="#linkedin">
+          <Link href="https://www.linkedin.com/in/frontlucasfernandodev">
             <Button type="secondary">LinkedIn <IconArrowUpRight /></Button>
           </Link>
         </GroupButton>
       </div>
-      
+
       <div className={[style.container, style.profile].join(" ")}>
         <div className={style.profile__image}></div>
       </div>

@@ -24,7 +24,9 @@ export const Tech = () => {
             <Button>{t('tech.button_content')}<IconChevronRight />
             </Button>
           </Link>
-          <Link href="#linkedin"><Button type='secondary'>LinkedIn <IconArrowUpRight /></Button></Link>
+          <Link href="https://www.linkedin.com/in/frontlucasfernandodev">
+            <Button type='secondary'>LinkedIn <IconArrowUpRight /></Button>
+          </Link>
         </GroupButton>
       </div>
       <div className={[style.container, style.panel].join(" ")}>

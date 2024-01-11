@@ -27,10 +27,26 @@ const Homepage = () => {
       </div>
 
       <ul className={style.social}>
-        <li className={style.item}><Link href="#" className={style.Link}><IconBrandGithub /></Link></li>
-        <li className={style.item}><Link href="#" className={style.Link}><IconBrandInstagram /></Link></li>
-        <li className={style.item}><Link href="#" className={style.Link}><IconBrandLinkedin /></Link></li>
-        <li className={style.item}><Link href="#" className={style.Link}><IconBrandDribbble /></Link></li>
+        <li className={style.item}>
+          <Link target="_blank" href="https://dribbble.com/lucasfernandodev" className={style.Link}>
+            <IconBrandDribbble />
+          </Link>
+        </li>
+        <li className={style.item}>
+          <Link target="_blank" href="https://github.com/lucasfernandodev" className={style.Link}>
+            <IconBrandGithub />
+          </Link>
+        </li>
+        <li className={style.item}>
+          <Link target="_blank" href="https://www.instagram.com/lucasfernandodev/" className={style.Link}>
+            <IconBrandInstagram />
+          </Link>
+        </li>
+        <li className={style.item}>
+          <Link target="_blank" href="https://www.linkedin.com/in/frontlucasfernandodev" className={style.Link}>
+            <IconBrandLinkedin />
+          </Link>
+        </li>
       </ul>
     </Layout>
   )

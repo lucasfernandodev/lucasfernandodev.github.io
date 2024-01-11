@@ -57,7 +57,9 @@ const Projects = () => {
               {t('projects.button_content')} <IconChevronRight />
             </Button>
           </Link>
-          <Link href="#github"><Button type="secondary">Github <IconArrowUpRight /></Button></Link>
+          <Link href="https://github.com/lucasfernandodev">
+            <Button type="secondary">Github <IconArrowUpRight /></Button>
+          </Link>
         </GroupButton>
       </div>
 
