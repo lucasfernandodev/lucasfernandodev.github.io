@@ -5,11 +5,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 0px;
-  border-right: 1px solid rgba(229, 177, 238,0.25);
   max-height: 100vh;
   position: sticky;
   top: 0;
   z-index: 1000;
+  position: relative;
+}
+
+.header::before{
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 1px;
+  background: linear-gradient(to bottom, #E5B1EE00,rgba(229, 177, 238,0.25), #E5B1EE00);
+  right: 0px;
+  top: 0px;
 }
 
 .header .brand{
@@ -30,13 +40,23 @@
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
   .header{
     padding: 0px 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25); background: rgba(242, 243, 247, 0.03);
+    background: rgba(242, 243, 247, 0.03);
     backdrop-filter: blur(8px); 
     gap: 12px;
     width: 100vw;
     position: fixed;
     height: 65px;
     top: 0px;
+  }
+
+  .header::before{
+    top: unset;
+    right: unset;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(to right, #E5B1EE00,rgba(229, 177, 238,0.25), #E5B1EE00);
+    width: 100%;
+    height: 1px;
   }
 
   .header .brand{
