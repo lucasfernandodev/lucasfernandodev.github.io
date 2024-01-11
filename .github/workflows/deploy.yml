@@ -21,18 +21,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  install:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: [15]
     steps:
     - uses: actions/checkout@v3
     - uses: pnpm/action-setup@v2
@@ -46,7 +42,7 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Build
-      run: pnpm run build
+      run: npm run build
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
@@ -55,5 +51,5 @@ jobs:
         # Upload dist repository
         path: './dist'
     - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v2
+        id: deployment
+        uses: actions/deploy-pages@v2
