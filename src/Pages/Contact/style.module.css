@@ -12,6 +12,33 @@
   height: 100%;
 }
 
+.contact_email{
+  color: var(--pink);
+  line-height: 120%;
+  font-size: 3.2rem;
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  margin-top: 42px;
+  position: relative;
+  display: inline-block;
+  transition: .2s;
+}
+
+.contact_email::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  max-width: 0;
+  color: var(--white-100);
+  content: attr(data-hover);
+  transition: max-width .4s;
+}
+
+.contact_email:hover::before{
+  max-width: 100%;
+}
+
 .sociais {
   display: inline-flex;
   flex-direction: column;

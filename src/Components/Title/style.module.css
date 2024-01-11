@@ -12,15 +12,14 @@ h1.title {
 }
 
 h2.title {
-  font-size: 5.4rem;
+  font-size: 4.2rem;
   color: var(--white-200);
   font-weight: 400;
-  text-transform: capitalize;
   line-height: 120%;
 }
 
 h2.title + div{
-  margin-top: 3.2rem
+  margin-top: 4.2rem
 }
 
 @media screen and (min-width: 411px) and (max-width:1290px), (min-width: 810px) and (max-width: 1080px){

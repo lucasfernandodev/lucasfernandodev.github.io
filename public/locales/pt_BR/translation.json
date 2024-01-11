@@ -1,25 +1,29 @@
 {
   "homepage": {
     "title": "LUCAS FERNANDO",
+    "navTitle": "Pagina inicial",
     "subtitle": "Desenvolvedor Front-end",
     "button_content": "Vamos conversar"
   },
   "about_me": {
     "title": "Sobre mim",
-    "paragraph_zero": "Olá! Sou Lucas Fernando, um desenvolvedor front-end entusiasmado de Goiás, com 21 anos.",
-    "paragraph_one": "Estou constantemente em busca de aprendizado e crescimento na área de programação.",
+    "navTitle": "Sobre mim",
+    "paragraph_zero": "Na minha jornada como desenvolvedor web e designer, a paixão pela programação e design é o combustível que alimenta minha constante busca pela excelência.",
+    "paragraph_one": "A inovação está no cerne do meu trabalho, sempre buscando novas maneiras de aprimorar a interseção entre programação e design.",
     "button_content": "Explorar tecnologias"
   },
   "tech": {
     "title": "Tecnologias",
-    "paragraph_zero": "Como desenvolvedor front-end, ofereço soluções completas para aplicações web. Tenho habilidades em desenvolvimento de sites responsivos, seguindo as melhores práticas.",
-    "paragraph_one": "Utilizo HTML, CSS e JavaScript para criar interfaces atraentes e funcionais.",
+    "navTitle": "Tecnologias",
+    "paragraph_zero": "Na busca de proporcionar a melhor experiência ao usuário, esforço-me no desenvolvimento, tentando incorporar tanto usabilidade quanto estética, para oferecer experiências melhores e mais ousadas.",
+    "paragraph_one": "Utilizo HTML, CSS, Javascript, bem como outras ferramentas e frameworks para maximizar a usabilidade e estética ao criar novas interfaces.",
     "button_content": "Explorar projetos"
   },
   "projects": {
     "title": "Projetos",
-    "paragraph_zero": "Estou empenhado em aprimorar minhas habilidades e me manter atualizado com as tecnologias mais recentes.",
-    "paragraph_one": "Embora não tenha experiência profissional, estou determinado a adquirir conhecimento e contribuir para projetos web.",
+    "navTitle": "Projetos",
+    "paragraph_zero": "Compartilho aqui alguns dos projetos que executei como web developer, enquanto buscava aprimorar minhas habilidades e absorver novas tecnologias.",
+    "paragraph_one": "Embora não possua experiência profissional prévia, estou comprometido em adquirir conhecimentos e contribuir de forma significativa para projetos.",
     "button_content": "Entrar em contato",
     "slider":{
       "project_message": "Conheça mais desse projeto no ",
@@ -27,15 +31,15 @@
     }
   },
   "contact": {
-    "title": "Contato",
-    "paragraph_zero": "Se você está procurando um desenvolvedor front-end dedicado e motivado, entre em contato comigo pelo e-mail lucasfernando.dev@gmail.com.",
-    "paragraph_one": "Estou animado para colaborar em projetos emocionantes.",
-    "button_content": "Entrar em contato"
+    "title": "Vamos conversar",
+    "navTitle": "Contato",
+    "paragraph_zero": "Se você tem um projeto em mente ou simplesmente está interessado em saber mais, entre em contato e vamos dar andamento.",
+    "email": "lucasfernando.dev@gmail.com"
   },
   "error404": {
     "title": "Oops! Página não encontrada. ",
-    "paragraph_zero": "Infelismente não foi possivel encontrar a pagina que você está procurando.",
-    "paragraph_one": "Volte para a página inicial e continue explorando.",
-    "button_content": "Voltar para a pagina inicial"
+    "paragraph_zero": "Infelizmente, a página que você procura não foi encontrada. Para continuar explorando, retorne à página inicial.",
+    "button_content": "Voltar para a pagina inicial",
+    "image_alt": "Ilustração de um astronauta segurando um cachorro, ambos fascinados ao observar a partida de um foguete ao fundo."
   }
 }

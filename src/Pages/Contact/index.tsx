@@ -1,12 +1,10 @@
 import style from './style.module.css';
-import { IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
-import { Button } from '../../Components/Button';
+import { IconArrowUpRight } from '@tabler/icons-react';
 import { Layout } from '../../Components/Layout';
 import { Paragraph } from '../../Components/Paragraph';
 import { Title } from '../../Components/Title';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
-import { GroupButton } from '../../Components/GroupButton';
 
 const Contact = () => {
 
@@ -16,12 +14,15 @@ const Contact = () => {
     <Title>{t('contact.title')}</Title>
     <div className={style.container}>
       <Paragraph>{t('contact.paragraph_zero')}</Paragraph>
-      <Paragraph>{t('contact.paragraph_one')}</Paragraph>
-      <GroupButton>
-        <Button>{t('contact.button_content')}<IconChevronRight /></Button>
-      </GroupButton>
+      <a 
+        target="_blank" 
+        data-hover={t('contact.email')} 
+        className={style.contact_email} 
+        href="mailto:lucasfernando.dev@gmail.com"
+      >
+        {t('contact.email')}
+      </a>
     </div>
-
 
     <div className={style.container}>
       <ul className={style.sociais}>

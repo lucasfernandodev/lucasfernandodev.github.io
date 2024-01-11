@@ -10,7 +10,9 @@ export const Header = () => {
   return (
     <header className={style.header}>
       <Title tag={pathname === '/' ? 'h2' : 'h1'} className={style.brand}>
-        <Link to="/" title="Lucas Fernando"><img src="/brand.svg" alt="Brand - Lucas Fernando" /></Link>
+        <Link to="/" title="Lucas Fernando">
+          <img src="/brand.svg" alt="Lucas Fernando - Portfolio" />
+        </Link>
       </Title>
       <Navbar />
       <ToggleLanguage />

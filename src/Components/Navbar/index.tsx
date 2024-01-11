@@ -3,6 +3,7 @@ import style from './style.module.css';
 import { IconSend } from '@tabler/icons-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
 
@@ -10,6 +11,7 @@ export const Navbar = () => {
   const refBtn = useRef<HTMLButtonElement>(null)
   const [visibility, setVisibility] = useState(false)
   const { pathname } = useLocation()
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (refMenu.current) {
@@ -46,19 +48,19 @@ export const Navbar = () => {
       </button>
       <ul className={style.menu} ref={refMenu} data-visibility={visibility}>
         <li className={style.item}>
-          <Link to="/" title="Pagina inicial" className={style.Link}><IconHome /></Link>
+          <Link to="/" title={t("homepage.navTitle")} className={style.Link}><IconHome /></Link>
         </li>
         <li className={style.item}>
-          <Link to="/sobremim" title="Sobre mim" className={style.Link}><IconUser /></Link>
+          <Link to="/sobremim" title={t("about_me.navTitle")} className={style.Link}><IconUser /></Link>
         </li>
         <li className={style.item}>
-          <Link to="/tecnologias" title="tecnologias" className={style.Link}><IconCode /></Link>
+          <Link to="/tecnologias" title={t("tech.navTitle")} className={style.Link}><IconCode /></Link>
         </li>
         <li className={style.item}>
-          <Link to="/projetos" title="Projetos" className={style.Link}><IconComponents /></Link>
+          <Link to="/projetos" title={t("projects.navTitle")} className={style.Link}><IconComponents /></Link>
         </li>
         <li className={style.item}>
-          <Link to="/contato" title="contato" className={style.Link}><IconSend /></Link>
+          <Link to="/contato" title={t("contact.navTitle")} className={style.Link}><IconSend /></Link>
         </li>
       </ul>
     </nav>

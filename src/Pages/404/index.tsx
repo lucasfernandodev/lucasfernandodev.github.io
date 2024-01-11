@@ -17,7 +17,6 @@ const Error404 = () => {
       <Title className={style.title}>{t('error404.title')}</Title>
       <div className={style.container}>
         <Paragraph>{t('error404.paragraph_zero')}</Paragraph>
-        <Paragraph>{t('error404.paragraph_one')}</Paragraph>
         <GroupButton>
           <Link href="/">
             <Button>
@@ -28,7 +27,7 @@ const Error404 = () => {
       </div>
       
       <div className={style.container}>
-        <img src="/404.svg" alt="Astronauta segurando um doginho" />
+        <img src="/404.svg" alt={t('error404.image_alt')} />
       </div>
     </Layout>
   )

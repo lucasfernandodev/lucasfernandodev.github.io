@@ -1,41 +1,45 @@
 {
   "homepage": {
     "title": "LUCAS FERNANDO",
+    "navTitle": "Home",
     "subtitle": "Front-end Developer",
-    "button_content": "Let's talk"
+    "button_content": "Let’s talk"
   },
   "about_me": {
     "title": "About me",
-    "paragraph_zero": "Hello! I'm Lucas Fernando, an enthusiastic front-end developer from Goiás, aged 21.",
-    "paragraph_one": "I'm constantly seeking learning and growth in the programming field.",
+    "navTitle": "About Me",
+    "paragraph_zero": "In my journey as a web developer and designer, my passion for programming and design is the fuel that drives my constant pursuit of excellence.",
+    "paragraph_one": "Innovation is at the core of my work, always seeking new ways to enhance the intersection between programming and design.",
     "button_content": "Explore technologies"
   },
   "tech": {
     "title": "Technologies",
-    "paragraph_zero": "As a front-end developer, I provide comprehensive solutions for web applications. I have skills in developing responsive websites, following best practices.",
-    "paragraph_one": "I use HTML, CSS, and JavaScript to create attractive and functional interfaces.",
+    "navTitle": "Technologies",
+    "paragraph_zero": "In the quest to provide the best user experience, I strive in development, trying to incorporate both usability and aesthetics to deliver better and bolder experiences.",
+    "paragraph_one": "I use HTML, CSS, Javascript, as well as other tools and frameworks to maximize usability and aesthetics when creating new interfaces.",
     "button_content": "Explore projects"
   },
   "projects": {
     "title": "Projects",
-    "paragraph_zero": "I am committed to enhancing my skills and staying up-to-date with the latest technologies.",
-    "paragraph_one": "Although I don't have professional experience, I am determined to acquire knowledge and contribute to web projects.",
-    "button_content": "Get in touch",
-    "slider":{
-      "project_message": "Find out more about this project at ",
+    "navTitle": "Projects",
+    "paragraph_zero": "Here, I share some of the projects I've executed as a web developer, while seeking to improve my skills and absorb new technologies.",
+    "paragraph_one": "Although I don't have previous professional experience, I am committed to gaining knowledge and contributing significantly to projects.",
+    "button_content": "Contact me",
+    "slider": {
+      "project_message": "Learn more about this project at ",
       "button_close_content": "Close"
     }
   },
   "contact": {
-    "title": "Contact",
-    "paragraph_zero": "If you're looking for a dedicated and motivated front-end developer, contact me at lucasfernando.dev@gmail.com.",
-    "paragraph_one": "I'm excited to collaborate on exciting projects.",
-    "button_content": "Get in touch"
+    "title": "Let’s talk",
+    "navTitle": "Contact",
+    "paragraph_zero": "If you have a project in mind or are simply interested in learning more, get in touch, and let's move forward.",
+    "email": "lucasfernando.dev@gmail.com"
   },
   "error404": {
     "title": "Oops! Page not found.",
-    "paragraph_zero": "Unfortunately, we couldn't find the page you're looking for.",
-    "paragraph_one": "Go back to the homepage and keep exploring.",
-    "button_content": "Back to homepage"
-  }  
+    "paragraph_zero": "Unfortunately, the page you are looking for was not found. To continue exploring, return to the homepage.",
+    "button_content": "Back to the homepage",
+    "image_alt": "Illustration of an astronaut holding a dog, both fascinated while observing the launch of a rocket in the background."
+  }
 }
