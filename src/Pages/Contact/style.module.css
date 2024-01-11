@@ -48,6 +48,9 @@
 }
 
 @media (max-width: 480px){
+  .contact_email{
+    font-size: 2.2rem
+  }
   .sociais{
     width: calc(100% - 16px);
   }
