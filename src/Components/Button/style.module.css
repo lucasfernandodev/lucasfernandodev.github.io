@@ -56,3 +56,21 @@
   background: none;
   color: var(--white-200);
 }
+
+.btn[data-type="secondary"]{
+  letter-spacing: 0.7px;
+}
+
+/* Add Animations for icons */
+.btn:not([data-type="secondary"]) svg,
+.btn[data-type="secondary"] svg{
+  transition: transform 0.35s linear;
+}
+
+.btn[data-type="secondary"]:hover svg{
+  transform: translateY(-2px) translateX(2px);
+}
+
+.btn:not([data-type="secondary"]):hover svg{
+  transform: translateX(2px);
+}
