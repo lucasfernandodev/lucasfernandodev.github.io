@@ -12,6 +12,19 @@
   height: 100%;
 }
 
+.title{
+  padding: 0px 16px !important;
+}
+
+.layout > *:nth-last-child(2){
+  order: 2 !important;
+}
+
+
+.layout > *:last-child{
+  order: 3 !important;
+}
+
 .contact_email{
   color: var(--pink);
   line-height: 120%;
@@ -22,6 +35,7 @@
   position: relative;
   display: inline-block;
   transition: .2s;
+  margin-bottom: 2.4rem;
 }
 
 .contact_email::before{

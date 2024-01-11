@@ -11,7 +11,7 @@ const Contact = () => {
   const { t } = useTranslation()
 
   return <Layout className={style.layout}>
-    <Title>{t('contact.title')}</Title>
+    <Title className={style.title}>{t('contact.title')}</Title>
     <div className={style.container}>
       <Paragraph>{t('contact.paragraph_zero')}</Paragraph>
       <a

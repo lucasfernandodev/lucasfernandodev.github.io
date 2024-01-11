@@ -27,6 +27,7 @@ h2.title + div{
     font-size: clamp(2.8rem, 32vw + 1.6rem,5.4rem);
     letter-spacing: 0.4rem;
   }
+
   h2.title {
     font-size: calc(3.6rem, 15vw + 0.8rem, 4.2rem)
   }
@@ -37,9 +38,14 @@ h2.title + div{
     font-size: 2.8rem;
     letter-spacing: 0.4rem;
   }
+
   h2.title {
     font-size: 3.6rem;
     width: 100%;
     padding: 0px 16px;
   }
+  h2.title + div{
+    margin-top: 2.4rem
+  }
+  
 }
