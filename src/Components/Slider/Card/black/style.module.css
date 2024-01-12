@@ -1,7 +1,7 @@
 .cardblack {
   height: 100%;
   color: var(--white-100);
-  border: 1px solid (--slider-card-border);
+  border: 1px solid var(--slider-card-border);
   overflow: hidden;
   position: relative;
   background: var(--black-900);
