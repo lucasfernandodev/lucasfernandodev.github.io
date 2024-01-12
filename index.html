@@ -12,11 +12,12 @@
     rel="stylesheet">
 
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     .path {
       --stroke-dasharray: 15;
       stroke-dasharray: var(--stroke-dasharray);
@@ -54,6 +55,15 @@
     </div>
   </div>
   <script type="module" src="/src/main.tsx">
+  </script>
+  <script>
+    (() => {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
   </script>
 </body>
 

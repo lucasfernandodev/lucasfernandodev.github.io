@@ -8,6 +8,9 @@ dependencies:
   '@tabler/icons-react':
     specifier: ^2.39.0
     version: 2.39.0(react@18.2.0)
+  '@types/node':
+    specifier: ^20.11.0
+    version: 20.11.0
   i18next:
     specifier: ^23.7.16
     version: 23.7.16
@@ -60,7 +63,7 @@ devDependencies:
     version: 5.2.2
   vite:
     specifier: ^4.4.5
-    version: 4.4.11
+    version: 4.4.11(@types/node@20.11.0)
 
 packages:
 
@@ -498,6 +501,11 @@ packages:
     resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
     dev: true
 
+  /@types/node@20.11.0:
+    resolution: {integrity: sha512-o9bjXmDNcF7GbM4CNQpmi+TutCgap/K3w1JyKgxAjqx41zp9qlIAVFi0IhCNsJcXolEqLWhbFbEeL0PvYm4pcQ==}
+    dependencies:
+      undici-types: 5.26.5
+
   /@types/prop-types@15.7.8:
     resolution: {integrity: sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==}
     dev: true
@@ -661,7 +669,7 @@ packages:
       vite: ^4
     dependencies:
       '@swc/core': 1.3.92
-      vite: 4.4.11
+      vite: 4.4.11(@types/node@20.11.0)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1568,13 +1576,16 @@ packages:
     hasBin: true
     dev: true
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
     dev: true
 
-  /vite@4.4.11:
+  /vite@4.4.11(@types/node@20.11.0):
     resolution: {integrity: sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1602,6 +1613,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.11.0
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
