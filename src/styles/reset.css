@@ -1,24 +1,40 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
-html{
+:root{
+  --font-family-inter: "Inter", sans-serif;
+  --font-family-jost: 'Jost', sans-serif;
+  --font-family-roboto: 'Roboto Condensed', sans-serif;
+}
+
+html {
   font-size: 62.5%;
 }
 
-body, #root{
-  font-size: 1.6rem;
-  min-height: 100vh;
-  background:  linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%), #121212;
+html,
+body{
+  height: 100%;
 }
 
-a{
+body{
+  font-size: 1.6rem;
+  background: var(--background);
+  font-family: var(--font-family-inter);
+}
+
+button{
+  font-family: var(--font-family-inter);
+}
+
+a {
   text-decoration: none;
   color: currentColor;
 }
 
-button{
+button {
   cursor: pointer;
 }
+

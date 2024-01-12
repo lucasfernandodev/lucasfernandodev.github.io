@@ -10,12 +10,11 @@
 .description{
   font-size: 2.0rem;
   color: var(--gray-400);
-  font-family: 'Inter', sans-serif;
 }
 
 .btn{
   border: none;
-  background: var(--button-border-gradient, linear-gradient(90deg, #E5B1EE 0%, #25B6FF 109.9%));
+  background: var(--button-border-gradient, linear-gradient(90deg, var(--pink) 0%, var(--blue) 109.9%));
   padding: 14px 32px;
   border-radius: 32px;
   display: flex;
@@ -24,7 +23,6 @@
   align-items: center;
   gap: 4px;
   font-size: 1.6rem;
-  font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: var(--black-700);
   margin-top: 3.6rem;
@@ -84,7 +82,7 @@
 }
 
 .social .item:hover .Link{
-  color: #E5B1EE;
+  color: var(--pink);
 }
 
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){

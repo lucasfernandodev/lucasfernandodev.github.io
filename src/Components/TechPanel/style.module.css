@@ -54,8 +54,8 @@
   height: var(--card-size);
   background: linear-gradient(#EDF9FF70, #EDF9FF00, #EDF9FF70);
   -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+    linear-gradient(var(--white-100) 0 0) content-box,
+    linear-gradient(var(--white-100) 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   overflow: hidden;

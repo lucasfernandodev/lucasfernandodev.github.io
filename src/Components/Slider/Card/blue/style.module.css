@@ -3,7 +3,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  border: 1px solid #919191; 
+  border: 1px solid var(--slider-card-border); 
 }
 
 .cardblue > svg{

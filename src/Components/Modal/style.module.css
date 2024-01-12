@@ -15,7 +15,7 @@
 .modal {
   border-radius: 16px;
   border: 1px solid rgba(229, 177, 238, 0.24);
-  background: linear-gradient(90deg, rgba(229, 177, 238, 0.01) 0.06%, rgba(37, 182, 255, 0.04) 99.93%), #121212;
+  background: var(--modal-background);
   backdrop-filter: blur(7.5px);
   display: flex;
   padding: 36px 32px;
@@ -67,7 +67,7 @@
 
 .modal .header .title {
   font-size: 3.0rem;
-  font-family: Roboto Condensed;
+  font-family: var(--font-family-roboto);
   font-weight: 500;
   line-height: 120%;
   width: calc(100% - 61px);
@@ -76,7 +76,6 @@
 }
 
 .modal .header .description {
-  font-family: Inter;
   font-weight: 300;
   line-height: 160%;
   width: calc(100% - 61px);
@@ -133,7 +132,7 @@
   height: 250px;
   object-fit: cover;
   border-radius: 4px;
-  background: linear-gradient(90deg, rgba(229, 177, 238, 0.01) 0.06%, rgba(37, 182, 255, 0.04) 99.93%), #121212;
+  background: var(--modal-image-background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,14 +143,13 @@
 }
 
 .modal .main .message {
-  font-family: Inter;
   font-weight: 300;
   line-height: 160%;
 }
 
 .modal .main .message a {
   text-decoration: none;
-  color: #25B6FF;
+  color: var(--blue);
 }
 
 .modal .main .message a:hover {
@@ -165,7 +163,6 @@
 
 .modal .footer button {
   color: var(--white-100);
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;

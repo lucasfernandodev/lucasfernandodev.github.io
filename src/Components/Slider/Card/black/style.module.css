@@ -1,10 +1,10 @@
 .cardblack {
   height: 100%;
   color: var(--white-100);
-  border: 1px solid #919191;
+  border: 1px solid (--slider-card-border);
   overflow: hidden;
   position: relative;
-  background: #121212;
+  background: var(--black-900);
 }
 
 .cardblack::before{
@@ -29,7 +29,7 @@
 }
 
 .cardblack .url:hover{
-  color: #121212;
+  color: var(--black-900);
   background: var(--white-100);
   border-color: var(--white-100); 
 }

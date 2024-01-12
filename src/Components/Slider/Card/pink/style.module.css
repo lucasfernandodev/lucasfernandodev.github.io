@@ -3,7 +3,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  border: 1px solid #919191; 
+  border: 1px solid var(--slider-card-border);
 }
 
 .cardpink>svg {
@@ -22,8 +22,8 @@
   transition: 250ms linear;
 }
 
-.cardpink .url:hover{
+.cardpink .url:hover {
   color: var(--white-100);
   background: var(--black-700);
-  border-color: var(--black-700); 
+  border-color: var(--black-700);
 }

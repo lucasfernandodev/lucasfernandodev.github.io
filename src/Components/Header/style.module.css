@@ -71,7 +71,6 @@
   .header .brand a::after{
     content: attr(title);
     font-weight: bold;
-    font-family: "inter";
     margin-left: 8px;
     line-height: 120%;
     position: absolute;
