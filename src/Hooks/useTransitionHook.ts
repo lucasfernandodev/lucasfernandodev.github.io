@@ -104,7 +104,7 @@ export const useTransitionHook: TUseTransitionHook = ({ sliderRef, style }) => {
 
       if (!isActive) {
         clearTimeout(timer as number)
-        timer = setTimeout(_moving, 500)
+        timer = window.setTimeout(_moving, 500)
       }
     }
 
@@ -120,8 +120,7 @@ export const useTransitionHook: TUseTransitionHook = ({ sliderRef, style }) => {
     function onTouchEnd(ev: TouchEvent) {
       clearTimeout(timer as number)
       touchEl = ev.target;
-      timer = setTimeout(() => {
-
+      timer = window.setTimeout(() => {
         if (isActive && ((new Date()).getTime() - transitionTime) >= 500) {
           setIsActive(false)
         }
