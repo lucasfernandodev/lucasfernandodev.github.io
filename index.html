@@ -10,11 +10,51 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Jost:wght@400;500&family=Roboto+Condensed:wght@500&display=swap"
     rel="stylesheet">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .path {
+      --stroke-dasharray: 15;
+      stroke-dasharray: var(--stroke-dasharray);
+      stroke: #ffffff;
+      animation: dash 5s linear infinite;
+      animation-delay: -1s;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 200;
+      }
+    }
+
+    .loading {
+      display: grid;
+      place-items: center;
+      background: #121212;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      z-index: 10;
+      transform-origin: center;
+      transition: 350ms ease-out;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+  <div id="root">
+    <div class="loading">
+      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="path" d="M14.3564 0L28.2128 24H0.5L14.3564 0Z" />
+      </svg>
+    </div>
+  </div>
+  <script type="module" src="/src/main.tsx">
+  </script>
 </body>
 
 </html>

@@ -3,7 +3,6 @@
   --gap: clamp(16px, 1.5vw + 2rem, 65px);
   --main-grid: calc(100vw - (var(--header-width) + var(--gap)));
   position: relative;
-  background:  linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%), #121212;
   width: 100%;
   display: grid;
   grid-template-columns: var(--header-width) var(--main-grid);
@@ -12,6 +11,18 @@
   overflow: hidden;
   height: 100vh;
 }
+
+.layout > *:not(header){
+  opacity: 0;
+  animation: onload 1s linear forwards;
+}
+
+@keyframes onload{
+  to{
+    opacity: 1;
+  }
+}
+
 
 .layout > main{
   grid-area: "main";
