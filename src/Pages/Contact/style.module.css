@@ -12,10 +12,6 @@
   height: 100%;
 }
 
-.title{
-  padding: 0px 16px !important;
-}
-
 .layout > *:nth-last-child(2){
   order: 2 !important;
 }
@@ -62,6 +58,9 @@
 }
 
 @media (max-width: 480px){
+  .title{
+    padding: 0px 16px !important;
+  }
   .contact_email{
     font-size: 2.2rem
   }
@@ -73,6 +72,7 @@
     height: auto;
     padding-bottom: 3.2rem;
   }
+  
 }
 
 .sociais .item {
