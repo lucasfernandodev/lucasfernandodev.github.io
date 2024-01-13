@@ -27,7 +27,8 @@
     "button_content": "Contact me",
     "slider": {
       "project_message": "Learn more about this project at ",
-      "button_close_content": "Close"
+      "button_close_content": "Close",
+      "card_title": "Project"
     }
   },
   "contact": {

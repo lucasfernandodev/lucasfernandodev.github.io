@@ -27,7 +27,8 @@
     "button_content": "Entrar em contato",
     "slider":{
       "project_message": "Conheça mais desse projeto no ",
-      "button_close_content": "Fechar"
+      "button_close_content": "Fechar",
+      "card_title": "Projeto"
     }
   },
   "contact": {
