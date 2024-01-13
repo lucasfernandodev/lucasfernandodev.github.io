@@ -44,6 +44,10 @@
   height: auto
 }
 
+.layout > .container > div{
+  margin-inline: auto;
+}
+
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
   .layout .container{
     width: calc(100% - 32px);
