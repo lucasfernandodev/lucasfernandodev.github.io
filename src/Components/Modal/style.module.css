@@ -201,6 +201,7 @@
     max-width: unset;
     padding: 24px 16px;
     gap: 24px;
+    top: calc(var(--header-width) + 24px);
   }
 
   .modal .header {
