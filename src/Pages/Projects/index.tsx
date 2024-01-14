@@ -7,7 +7,6 @@ import { Title } from '../../Components/Title';
 import style from './style.module.css';
 import { Modal } from '../../Components/Modal';
 import { useState } from 'react';
-import projects from '../../projects.json';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
 import { GroupButton } from '../../Components/GroupButton';
@@ -15,9 +14,9 @@ import { GroupButton } from '../../Components/GroupButton';
 interface IModal {
   title: string,
   description: string,
-  thumbnail: string,
-  url: string,
-  url_project: string,
+  preview_url: string;
+  github_url: string;
+  thumbnail: string
 }
 
 const Projects = () => {
@@ -27,8 +26,14 @@ const Projects = () => {
   const { t } = useTranslation()
 
   function selectContent(id: number) {
-    const item = projects.filter(project => project._id === id) as any
-    setContent(item[0])
+    const content = {
+      title: t(`projects:${id}.title`),
+      description: t(`projects:${id}.description`),
+      preview_url: t(`projects:${id}.preview_url`),
+      github_url: t(`projects:${id}.github_url`),
+      thumbnail: t(`projects:${id}.image_url`),
+    }
+    setContent(content)
     setIsModalShow(!isModalShow)
   }
 
@@ -42,8 +47,8 @@ const Projects = () => {
         title={content.title}
         description={content.description}
         thumbnail={content.thumbnail}
-        url={content.url}
-        url_project={content.url_project}
+        github_url={content.github_url}
+        preview_url={content.preview_url}
         closeModal={toggleVisibility}
       />}
 

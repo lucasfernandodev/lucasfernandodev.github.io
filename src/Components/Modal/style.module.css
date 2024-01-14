@@ -29,6 +29,7 @@
   transform: translateX(-50%);
   overflow: hidden;
   animation: showing 340ms ease-in-out;
+  overflow-y: scroll;
 }
 
 .modal::before {
@@ -78,8 +79,13 @@
 .modal .header .description {
   font-weight: 300;
   line-height: 160%;
-  width: calc(100% - 61px);
-  max-width: 420px;
+  width: 100%;
+  word-break: break-all;
+}
+
+.modal .header .description:nth-child(2){
+  width: calc(100% - 72px);
+  word-break: normal;
 }
 
 .container__button {
@@ -210,11 +216,19 @@
     position: relative;
   }
 
+  .modal::before{
+    max-height: 100%;
+  }
+
   .modal .header .title {
     width: calc(100% - 51px);
     min-height: 51px;
     align-items: center;
     display: flex;
+  }
+
+  .modal .header .description:nth-child(2){
+    width: 100%;
   }
 
   .modal .header .description {
