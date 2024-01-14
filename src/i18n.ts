@@ -10,4 +10,6 @@ i18n
     debug: true,
     fallbackLng: 'pt_BR',
   });
+  i18n.loadNamespaces("projects")
+
 export default i18n;

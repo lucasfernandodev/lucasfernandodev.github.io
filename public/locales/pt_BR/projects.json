@@ -1,0 +1,50 @@
+{
+  "1": {
+    "title": "Encrypt",
+    "description": "Encrypt é um site de criptografia que possibilita cifrar e decifrar textos. | Ele foi desenvolvido como parte de um curso da Alura, com o objetivo de testar os conhecimentos adquiridos durante o curso",
+    "preview_url": "https://lucasfernandodev.github.io/encrypt/",
+    "github_url": "https://github.com/lucasfernandodev/encrypt",
+    "image_url": "/images/projects/encrypt.webp",
+    "color": "blue"
+  },
+  "2": {
+    "title": "Spacetravel",
+    "description": "O SpaceTravel é um site desenvolvido seguindo o design do Front-end Mentor para um site de viagens espaciais. Este é um dos primeiros sites que desenvolvi utilizando React e Typescript",
+    "preview_url": "https://lucasfernandodev.github.io/spacetravel/",
+    "github_url": "https://github.com/lucasfernandodev/spacetravel",
+    "image_url": "/images/projects/spacetravel.webp",
+    "color": "black"
+  },
+  "3": {
+    "title": "Manage Landing page",
+    "description": "Esta é uma landing page desenvolvida seguindo o design do Front-end Mentor. | Foi criada utilizando HTML, CSS e JavaScript, buscando implementar o design da melhor maneira possível. As dificuldades deste projeto estão relacionadas à responsividade e à animação do carrossel.",
+    "preview_url": "https://lucasfernandodev.github.io/frontendmentor/challenges/manage-landing-page-master/",
+    "github_url": "https://github.com/lucasfernandodev/frontendmentor/tree/main/challenges/manage-landing-page-master",
+    "image_url": "/images/projects/manage-ladingpage.webp",
+    "color": "pink"
+  },
+  "4": {
+    "title": "Countries search",
+    "description": "Countries search é uma aplicação web que ajuda o usuário a encontrar informações sobre seu país, como população, língua ou a moeda corrente. | O site é desenvolvido com Next.js e TypeScript, integrando-se a uma API externa.",
+    "preview_url": "https://countries-search-now.netlify.app/",
+    "github_url": "https://github.com/lucasfernandodev/countries-search",
+    "image_url": "/images/projects/countries-search.webp",
+    "color": "black"
+  },
+  "5": {
+    "title": "E-commerce product page",
+    "description": "Este é um site de uma página para produtos de e-commerce. O design também é do Front-end Mentor. | Por menor que seja essa aplicação, ela tem muitos recursos a serem implementados, como galeria, adição ou remoção de itens do carrinho, responsividade e cálculo do valor final do carrinho.",
+    "preview_url": "https://sneakears.netlify.app/",
+    "github_url": "https://github.com/lucasfernandodev/frontendmentor/tree/main/challenges/ecommerce-product-page-main",
+    "image_url": "/images/projects/e-commerce-product-page.webp",
+    "color": "pink"
+  },
+  "6": {
+    "title": "Simple Booking",
+    "description": "Esta é uma página com um design simples criado pelo Front-end Mentor. | Apesar de sua simplicidade, ela oferece desafios intrigantes que contribuem para o aprimoramento das habilidades no CSS. | O projeto envolve o desenvolvimento do design de uma ilustração de chat e a manutenção da responsividade exclusivamente com CSS.",
+    "preview_url": "https://lucasfernandodev.github.io/frontendmentor/challenges/chat-app-css-illustration-master/",
+    "github_url": "https://lucasfernandodev.github.io/frontendmentor/challenges/chat-app-css-illustration-master/",
+    "image_url": "/images/projects/simple-booking.webp",
+    "color": "black"
+  }
+}
