@@ -10,7 +10,7 @@ interface ICardProps {
   github_url: string;
 }
 
-export const CardBlue: React.FC<ICardProps> = ({ title, description, category, preview_url, github_url }) => {
+export const CardBlue: React.FC<ICardProps> = ({ title, description, category, preview_url }) => {
   return (
     <div className={style.cardblue}>
       <p className={style.category}>{category}</p>

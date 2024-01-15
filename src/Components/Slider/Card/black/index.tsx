@@ -10,7 +10,7 @@ interface ICardProps {
   github_url: string;
 }
 
-export const CardBlack: React.FC<ICardProps> = ({ title, description, category,preview_url, github_url}) => {
+export const CardBlack: React.FC<ICardProps> = ({ title, description, category, preview_url }) => {
   return (
     <div className={style.cardblack}>
       <p className={style.category}>{category}</p>
@@ -21,21 +21,21 @@ export const CardBlack: React.FC<ICardProps> = ({ title, description, category,p
       </Link>
 
       <svg className={style.svgOne} width="142" height="297" viewBox="0 0 142 297" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g filter="url(#filter0_f_551_621)">
-    <circle cx="-12.5" cy="142.5" r="122.5" fill="url(#paint0_linear_551_621)"/>
-  </g>
-  <defs>
-    <filter id="filter0_f_551_621" x="-167" y="-12" width="309" height="309" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_621"/>
-    </filter>
-    <linearGradient id="paint0_linear_551_621" x1="95.5" y1="142" x2="-12.5" y2="265" gradientUnits="userSpaceOnUse">
-      <stop stopColor="#25B6FF" stopOpacity="0.1"/>
-      <stop offset="1" stopColor="#D9D9D9" stopOpacity="0"/>
-    </linearGradient>
-  </defs>
-</svg>
+        <g filter="url(#filter0_f_551_621)">
+          <circle cx="-12.5" cy="142.5" r="122.5" fill="url(#paint0_linear_551_621)" />
+        </g>
+        <defs>
+          <filter id="filter0_f_551_621" x="-167" y="-12" width="309" height="309" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_621" />
+          </filter>
+          <linearGradient id="paint0_linear_551_621" x1="95.5" y1="142" x2="-12.5" y2="265" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#25B6FF" stopOpacity="0.1" />
+            <stop offset="1" stopColor="#D9D9D9" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
 
       <svg className={style.svgTwo} width="155" height="277" viewBox="0 0 155 277" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_551_622)">
