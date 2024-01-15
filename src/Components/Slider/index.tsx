@@ -4,28 +4,33 @@ import style from './style.module.css';
 import { useTransitionHook } from '../../Hooks/useTransitionHook';
 import { useTranslation } from 'react-i18next';
 
-interface ISlider{
+interface ISlider {
   onClick: (id: number) => void
 }
 
-export const Slider: React.FC<ISlider> = ({onClick}) => {
+export const Slider: React.FC<ISlider> = ({ onClick }) => {
 
   const ref = useRef<HTMLDivElement>(null);
 
   const { positions, isLoading } = useTransitionHook({ sliderRef: ref, style })
-  const {t} = useTranslation(["translation", "projects"])
-  const ids = [1,2,3,4,5,6]
+  const { t } = useTranslation(["translation", "projects"])
+  const ids = [1, 2, 3, 4, 5, 6]
 
   useEffect(() => {
-    if(!isLoading && ref.current){
+    if (!isLoading && ref.current) {
       ref.current.classList.add(style.transitionOn)
     }
   }, [isLoading])
 
-  function handleOnClick(id: number){
-    onClick(id)
+  function handleOnClick(event: React.MouseEvent<HTMLElement, MouseEvent>, id: number) {
+    event.stopPropagation()
+    const target = event.target as HTMLAnchorElement;
+    console.log(target.tagName)
+    if(target.tagName !== 'svg' && target.closest('a') || target.tagName !== 'svg'){
+      onClick(id)
+    }
   }
-  
+
   return (
     <div className={style.slider} ref={ref}>
       {
@@ -41,7 +46,7 @@ export const Slider: React.FC<ISlider> = ({onClick}) => {
             style={{
               left: `${positions.length <= 0 ? 0 : positions[index]}px`,
             }}
-            onClick={() => handleOnClick(_id)}
+            onClick={(event) => handleOnClick(event, _id)}
           />
         )
       }
