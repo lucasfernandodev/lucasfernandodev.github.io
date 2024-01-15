@@ -12,7 +12,7 @@ interface IModal {
   closeModal: () => void
 }
 
-export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbnail,github_url, preview_url }) => {
+export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbnail, github_url, preview_url }) => {
 
   function _closeModal() {
     closeModal()
@@ -25,7 +25,9 @@ export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbn
       <div className={style.modal}>
         <header className={style.header}>
           <h3 className={style.title}>{title}</h3>
-          {description.split("|").map(content => <p className={style.description}>{content}</p>)}
+          {description.split("|").map(
+            (content, id) => <p key={id} className={style.description}>{content}</p>
+          )}
           <div className={style.container__button}>
             <button className={style.btnNext}>
               <Link href={preview_url} className={style.link}><IconArrowUpRight /></Link>
@@ -35,7 +37,7 @@ export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbn
         <main className={style.main}>
           <img src={thumbnail} alt={title} />
           <p className={style.message}>{t('projects.slider.project_message')}
-          <Link href={github_url}>github</Link>.</p>
+            <Link href={github_url}>github</Link>.</p>
         </main>
         <footer className={style.footer}>
           <button className={style.btn} onClick={_closeModal}>
