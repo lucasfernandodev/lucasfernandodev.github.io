@@ -12,7 +12,7 @@ export const Slider: React.FC<ISlider> = ({ onClick }) => {
 
   const ref = useRef<HTMLDivElement>(null);
 
-  const { positions, isLoading } = useTransitionHook({ sliderRef: ref, style })
+  const { isLoading } = useTransitionHook({ sliderRef: ref })
   const { t } = useTranslation(["translation", "projects"])
   const ids = [1, 2, 3, 4, 5, 6]
 
@@ -41,10 +41,7 @@ export const Slider: React.FC<ISlider> = ({ onClick }) => {
             description={t(`projects:${_id}.description`)}
             preview_url={t(`projects:${_id}.preview_url`)}
             github_url={t(`projects:${_id}.github_url`)}
-            data-pos={positions[index]}
-            style={{
-              left: `${positions.length <= 0 ? 0 : positions[index]}px`,
-            }}
+            data-pos={0}
             onClick={(event) => handleOnClick(event, _id)}
           />
         )

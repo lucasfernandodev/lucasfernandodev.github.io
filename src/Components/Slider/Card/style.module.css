@@ -1,13 +1,14 @@
 .card{
+  --card-position: 0;
   --pos-top: 0px;
-  --pos-left: 0px;
   flex-shrink: 0;
   width: 220px;
   height: 400px;
   position: absolute;
   top: calc(var(--pos-top) + 10px);
-  left: var(--pos-left);
+  left: var(--card-position);
   flex-shrink: 0;
+  scroll-snap-align: center;
   cursor: pointer;
 }
 
@@ -18,10 +19,6 @@
   padding: 20px 16px 16px 16px;
   border-radius: 16px;
   transition: transform 500ms ease-in;
-}
-
-.card:hover > div{
-  transform: translateY(-10px);
 }
 
 .card h3{

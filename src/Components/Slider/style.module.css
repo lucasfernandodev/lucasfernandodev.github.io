@@ -9,6 +9,8 @@
   border-radius: 8px;
   overflow-x: hidden;
   touch-action: pan-y;
+  scroll-snap-type: y mandatory;
+
 }
 
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
@@ -23,9 +25,5 @@
 }
 
 .slider.transitionOn *[data-type="card"]{
-  transition: left 0.5s ease-out;
-}
-
-.slider > *:last-child{
-  opacity: 0;
+  transition: left 300ms  linear;
 }
