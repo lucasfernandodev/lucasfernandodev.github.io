@@ -12,15 +12,9 @@ export const Slider: React.FC<ISlider> = ({ onClick }) => {
 
   const ref = useRef<HTMLDivElement>(null);
 
-  const { isLoading } = useTransitionHook({ sliderRef: ref })
+  useTransitionHook({ sliderRef: ref })
   const { t } = useTranslation(["translation", "projects"])
   const ids = [1, 2, 3, 4, 5, 6]
-
-  useEffect(() => {
-    if (!isLoading && ref.current) {
-      ref.current.classList.add(style.transitionOn)
-    }
-  }, [isLoading])
 
   function handleOnClick(event: React.MouseEvent<HTMLElement, MouseEvent>, id: number) {
     event.stopPropagation()

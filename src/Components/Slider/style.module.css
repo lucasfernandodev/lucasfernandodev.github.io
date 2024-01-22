@@ -24,6 +24,6 @@
   transform: unset !important;
 }
 
-.slider.transitionOn *[data-type="card"]{
+.slider > div[data-type="card"]{
   transition: left 300ms  linear;
 }
