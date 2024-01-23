@@ -1,4 +1,4 @@
-.slider{
+.carroucel{
   display: flex;
   flex-direction: row;
   width: 680px;
@@ -14,16 +14,16 @@
 }
 
 @media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
-  .slider{
+  .carroucel{
     width: 680px;
   }
 }
 
-.slider:has(.active) *:hover,
-.slider:has(.active) *{
+.carroucel:has(.active) *:hover,
+.carroucel:has(.active) *{
   transform: unset !important;
 }
 
-.slider > div[data-type="card"]{
+.carroucel > div[data-type="card"]{
   transition: left 300ms  linear;
 }

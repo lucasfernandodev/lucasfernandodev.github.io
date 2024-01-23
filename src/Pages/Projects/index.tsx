@@ -2,7 +2,7 @@ import { IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
 import { Button } from '../../Components/Button';
 import { Layout } from '../../Components/Layout';
 import { Paragraph } from '../../Components/Paragraph';
-import { Slider } from '../../Components/Slider';
+import { Carousel } from '../../Components/Carousel';
 import { Title } from '../../Components/Title';
 import style from './style.module.css';
 import { Modal } from '../../Components/Modal';
@@ -70,7 +70,7 @@ const Projects = () => {
 
 
       <div className={style.container}>
-        <Slider onClick={selectContent} />
+        <Carousel onClick={selectContent} />
       </div>
     </Layout>
   )

@@ -14,7 +14,7 @@
   --pink: #E5B1EE;
   --blue: #25B6FF;
 
-  --slider-card-border: var(--black-100);
+  --carousel-card-border: var(--black-100);
 
   --background: linear-gradient(90deg, rgba(229, 177, 238, 0.08) 0%, rgba(37, 182, 255, 0.10) 100%), #121212;
   --modal-background: linear-gradient(90deg, rgba(229, 177, 238, 0.01) 0.06%, rgba(37, 182, 255, 0.04) 99.93%), #121212;

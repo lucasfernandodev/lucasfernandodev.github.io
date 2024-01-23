@@ -22,7 +22,7 @@ export const Card: React.FC<ICardProps> = ({
   ...rest }) => {
   
   const { t } = useTranslation()
-  const category = t('projects.slider.card_title');
+  const category = t('projects.carousel.card_title');
   const cardProps = { title, description, color, category, preview_url, github_url }
 
   return (

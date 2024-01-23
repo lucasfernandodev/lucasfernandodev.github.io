@@ -36,12 +36,12 @@ export const Modal: React.FC<IModal> = ({ closeModal, title, description, thumbn
         </header>
         <main className={style.main}>
           <img src={thumbnail} alt={title} />
-          <p className={style.message}>{t('projects.slider.project_message')}
+          <p className={style.message}>{t('projects.carousel.project_message')}
             <Link href={github_url}>github</Link>.</p>
         </main>
         <footer className={style.footer}>
           <button className={style.btn} onClick={_closeModal}>
-            {t('projects.slider.button_close_content')}
+            {t('projects.carousel.button_close_content')}
           </button>
         </footer>
       </div>

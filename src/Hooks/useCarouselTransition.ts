@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { cardPositionsCssVariable } from "../utils/cardPositionsCssVariable";
 
 interface Iprops {
-  sliderRef: React.RefObject<HTMLDivElement>
+  carouselRef: React.RefObject<HTMLDivElement>
 }
 
-const useTransitionHook = ({ sliderRef }: Iprops): void => {
+const useCarouselTransition = ({ carouselRef }: Iprops): void => {
 
   let transitionTimeout: string | number | NodeJS.Timeout | undefined;
   let debounceTimeout: string | number | NodeJS.Timeout | undefined;
@@ -13,16 +13,14 @@ const useTransitionHook = ({ sliderRef }: Iprops): void => {
   const cardSize = 220 + 15;
   const startCardPosition = cardSize * -1
 
-  const [touchDirectionMoving ,setTouchDirectionMoving] = useState<number>(0)
-
   let touchStart: number,touchEnded: number = 0
   let isTouch = false;
 
   useEffect(() => {
-    if (!sliderRef.current) new Error('SliderRef do not exist')
+    if (!carouselRef.current) new Error('O elemento carousel não existe!')
 
-    const slider = sliderRef.current as HTMLDivElement;
-    const cards = Array.from(slider.childNodes) as HTMLElement[]
+    const carousel = carouselRef.current as HTMLDivElement;
+    const cards = Array.from(carousel.childNodes) as HTMLElement[]
     const max_itens = cards.length
 
     const lastCardPosition = startCardPosition + (max_itens - 1) * cardSize
@@ -99,17 +97,17 @@ const useTransitionHook = ({ sliderRef }: Iprops): void => {
     cardPositionsCssVariable.set('--card-position', cards, positions)
 
     // Starting events
-    slider.addEventListener('wheel', handleWheel, false)
-    slider.addEventListener('transitionend', handleTransitioned, false)
-    slider.addEventListener('touchstart', handleTouchStart, false)
-    slider.addEventListener('touchmove', handleTouchMoving, false)
+    carousel.addEventListener('wheel', handleWheel, false)
+    carousel.addEventListener('transitionend', handleTransitioned, false)
+    carousel.addEventListener('touchstart', handleTouchStart, false)
+    carousel.addEventListener('touchmove', handleTouchMoving, false)
 
     return () => {
-      slider.removeEventListener('wheel', handleWheel, false)
-      slider.removeEventListener('transitionend', handleTransitioned, false)
+      carousel.removeEventListener('wheel', handleWheel, false)
+      carousel.removeEventListener('transitionend', handleTransitioned, false)
       clearTimeout(transitionTimeout)
     }
   }, [])
 }
 
-export { useTransitionHook }
+export { useCarouselTransition }
