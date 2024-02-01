@@ -4,25 +4,13 @@ import { Card } from './Card';
 import { useTranslation } from 'react-i18next';
 import { useCarouselTransition } from '../../Hooks/useCarouselTransition';
 
-interface ICarouselProps {
-  onClick: (id: number) => void
-}
-
-const Carousel: React.FC<ICarouselProps> = ({ onClick }) => {
+const Carousel: React.FC = () => {
 
   const ref = useRef<HTMLDivElement>(null);
 
   useCarouselTransition({ carouselRef: ref })
   const { t } = useTranslation(["translation", "projects"])
   const ids = [1, 2, 3, 4, 5, 6]
-
-  function handleOnClick(event: React.MouseEvent<HTMLElement, MouseEvent>, id: number) {
-    event.stopPropagation()
-    const target = event.target as HTMLAnchorElement;
-    if (target.tagName !== 'svg' && target.closest('a') || target.tagName !== 'svg') {
-      onClick(id)
-    }
-  }
 
   return (
     <div className={style.carroucel} ref={ref}>
@@ -36,7 +24,6 @@ const Carousel: React.FC<ICarouselProps> = ({ onClick }) => {
             preview_url={t(`projects:${_id}.preview_url`)}
             github_url={t(`projects:${_id}.github_url`)}
             data-pos={0}
-            onClick={(event) => handleOnClick(event, _id)}
           />
         )
       }
