@@ -14,7 +14,26 @@
   height: 100%;
 }
 
-@media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
+@media screen and (max-width: 480px),  (max-width: 1080px){
+  main.layout{
+    padding-left: 0px;
+  }
+
+  .layout > *:is(div, h1,nav,ul){
+    flex: 0 1 auto;
+    min-width: unset !important;
+    max-width: unset !important;
+    width: calc(100% - 32px);
+  }
+
+  .layout > *:nth-last-child(2){
+    order: 3;
+  }
+  
+  .layout > *:last-child{
+    order: 2;
+  }
+
   .layout .profile{
     padding-bottom: 3.2rem;
   }

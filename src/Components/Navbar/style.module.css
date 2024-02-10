@@ -78,8 +78,7 @@
 }
 
 
-@media screen and (max-width: 480px),
-(min-width: 810px) and (max-width: 1080px) {
+@media screen and (max-width: 480px),  (max-width: 1080px) {
   .toggleMenu {
     --is-mobile: true;
     display: flex;

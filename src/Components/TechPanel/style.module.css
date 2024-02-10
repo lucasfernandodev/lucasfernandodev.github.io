@@ -21,7 +21,7 @@
   }
 }
 
-@media (min-width: 810px) and (max-width: 1080px){
+@media  (max-width: 1080px){
   .container{
     width: calc((var(--card-size) * 3) + (32px * 3));
     align-items: flex-start;

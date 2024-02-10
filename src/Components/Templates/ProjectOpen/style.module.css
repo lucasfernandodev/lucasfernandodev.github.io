@@ -1,0 +1,125 @@
+main.layout{
+  height: auto;
+  overflow: auto;
+  overflow-y: scroll;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 48px;
+  padding-bottom: 48px
+}
+
+.thumbnail, .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnail{
+  height: 368px;
+  background: #0A1019;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.thumbnail h2{
+  font-size: 42px;
+  text-transform: capitalize;
+}
+
+.container .col{
+  width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 560px;
+}
+
+@media (max-width: 480px){
+  .container .col:last-child{
+    display: none;
+  }
+}
+
+.container > .col:first-child{
+  padding-left: var(--gap);
+  color: #fff;
+}
+
+.container .col:first-child h3{
+  font-family: var(--font-family-roboto);
+  padding-bottom: 16px;
+  font-size: 2rem;
+}
+
+.container .col:first-child > div + div:not(:last-child){
+  margin-top: 54px;
+}
+
+.container .col:first-child > div:last-child{
+  margin-top: 32px;
+}
+
+.container .col:first-child p{
+  line-height: 160%;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  letter-spacing: 3%;
+}
+
+.container .col__thumbnail{
+  max-width: min(671px,100%);
+  height: auto;
+  border-radius: 8px 0px 0px 8px;
+  display: block;
+  min-height: 484px;
+  background-size: cover;
+  background-color: var(--black-800);
+}
+
+.footer{
+  color: var(--white-100);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer a{
+  display:flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer a span{
+  text-decoration: underline;
+}
+
+.footer a svg{
+  transition: linear 250ms;
+}
+
+.footer a:hover svg{
+  transform: translateX(-3px);
+}
+
+@media (max-width: 480px){
+  main.layout .container > .col:first-child{
+    padding-left: 0px;
+  }
+  .layout > *:is(div, h1,nav,ul):not(.thumbnail){
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+  .thumbnail{
+    height: 240px;
+  }
+  .container .col{
+    width: 100%;
+  }
+}

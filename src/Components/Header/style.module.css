@@ -37,7 +37,7 @@
   order: 3;
 }
 
-@media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
+@media screen and (max-width: 480px), (max-width: 1080px){
   .header{
     padding: 0px 16px;
     background: rgba(242, 243, 247, 0.03);

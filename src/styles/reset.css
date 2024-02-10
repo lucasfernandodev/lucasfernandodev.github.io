@@ -11,7 +11,7 @@
 
   --header-width: 65px;
   --gap: clamp(16px, 1.5vw + 2rem, 65px);
-  --main-grid: calc(100vw - (var(--header-width) + var(--gap)));
+  --main-grid: calc(100vw - (var(--header-width)));
 }
 
 html {

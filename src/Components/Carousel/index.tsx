@@ -18,6 +18,7 @@ const Carousel: React.FC = () => {
         ids.map((_id) =>
           <Card
             key={_id}
+            index_id={_id}
             color={t(`projects:${_id}.color`)}
             title={t(`projects:${_id}.title`)}
             description={t(`projects:${_id}.description`)}

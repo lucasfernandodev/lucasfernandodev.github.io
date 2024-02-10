@@ -85,7 +85,7 @@
   color: var(--pink);
 }
 
-@media screen and (max-width: 480px), (min-width: 810px) and (max-width: 1080px){
+@media screen and (max-width: 480px),  (max-width: 1080px){
   main#homepage{
     justify-content: center;
     align-items: center;

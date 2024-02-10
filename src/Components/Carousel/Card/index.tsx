@@ -12,9 +12,11 @@ interface ICardProps extends HTMLAttributes<HTMLElement> {
   description: string,
   preview_url: string;
   github_url: string;
+  index_id: number
 }
 
 export const Card: React.FC<ICardProps> = ({
+  index_id,
   color,
   title,
   description,
@@ -30,7 +32,7 @@ export const Card: React.FC<ICardProps> = ({
 
   function navigateTo(){
     console.log('navigate')
-    navigate(`/projetos?id=${title.replace(/\s/g,"-").toLocaleLowerCase()}`)
+    navigate(`/projetos?id=${index_id}`)
   }
 
   return (
