@@ -20,16 +20,46 @@ main.layout{
 
 .thumbnail{
   height: 368px;
-  background: #0A1019;
+  background: var(--project-thumbnail);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--white-100);
+  background-position: top left;
+  background-size: cover;
+  position: relative;
 }
+
+.thumbnail::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: hsla(216, 43%, 7%, 65%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 
 .thumbnail h2{
   font-size: 42px;
   text-transform: capitalize;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 720px){
+  .thumbnail h2{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 510px){
+  .thumbnail h2{
+    font-size: 3.2rem;
+    padding: 0 16px;
+  }
 }
 
 .container .col{
@@ -41,6 +71,10 @@ main.layout{
   max-width: 560px;
 }
 
+.container .col p{
+  padding-right: 16px;
+}
+
 @media (max-width: 480px){
   .container .col:last-child{
     display: none;
@@ -49,7 +83,7 @@ main.layout{
 
 .container > .col:first-child{
   padding-left: var(--gap);
-  color: #fff;
+  color: var(--white-100);
 }
 
 .container .col:first-child h3{
@@ -88,6 +122,7 @@ main.layout{
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 64px;
 }
 
 .footer a{
@@ -112,10 +147,12 @@ main.layout{
   main.layout .container > .col:first-child{
     padding-left: 0px;
   }
+
   .layout > *:is(div, h1,nav,ul):not(.thumbnail){
     width: calc(100% - 32px);
     margin: 0 auto;
   }
+
   .thumbnail{
     height: 240px;
   }

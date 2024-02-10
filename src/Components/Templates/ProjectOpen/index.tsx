@@ -5,6 +5,7 @@ import { Link } from '../../../Infra/Link';
 import { Button } from '../../Button';
 import { IconArrowNarrowLeft, IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 interface IProjectOpenTemplateProps {
   id: string
@@ -13,8 +14,28 @@ interface IProjectOpenTemplateProps {
 export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id }) => {
 
   const { t } = useTranslation()
-
   const backgroundImage = t(`projects:${id}.image_url`);
+
+
+  const [isMobile, seIsMobile] = useState(
+    window.matchMedia("(max-width: 510px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(max-width: 510px)")
+    .addEventListener('change', e => seIsMobile( e.matches ));
+  }, []);
+
+  useEffect(()=>{
+    if(isMobile){
+      document.documentElement.style.setProperty("--project-thumbnail", `url(${backgroundImage})`);
+    }
+
+  }, [isMobile])
+
+
+
   return (
     <Layout className={style.layout}>
       <div className={style.thumbnail}>

@@ -1,78 +1,27 @@
-import { IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
-import { Button } from '../../Components/Button';
-import { Layout } from '../../Components/Layout';
-import { Paragraph } from '../../Components/Paragraph';
-import { Carousel } from '../../Components/Carousel';
-import { Title } from '../../Components/Title';
-import style from './style.module.css';
-import { Modal } from '../../Components/Modal';
-import { useState } from 'react';
-import { Link } from '../../Infra/Link';
-import { useTranslation } from 'react-i18next';
-import { GroupButton } from '../../Components/GroupButton';
+import { useEffect, useMemo, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { ProjectTemplate } from '../../Components/Templates/Project';
+import { ProjectOpenTemplate } from '../../Components/Templates/ProjectOpen';
 
-interface IModal {
-  title: string,
-  description: string,
-  preview_url: string;
-  github_url: string;
-  thumbnail: string
-}
 
 const Projects = () => {
-  const [isModalShow, setIsModalShow] = useState(false);
-  const [content, setContent] = useState({} as IModal)
 
-  const { t } = useTranslation()
+  const [id, setId] = useState<string | null>(null);
 
-  function selectContent(id: number) {
-    const content = {
-      title: t(`projects:${id}.title`),
-      description: t(`projects:${id}.description`),
-      preview_url: t(`projects:${id}.preview_url`),
-      github_url: t(`projects:${id}.github_url`),
-      thumbnail: t(`projects:${id}.image_url`),
-    }
-    setContent(content)
-    setIsModalShow(!isModalShow)
+  function useQuery() {
+    const { search } = useLocation();
+    return useMemo(() => new URLSearchParams(search), [search]);
   }
 
-  function toggleVisibility() {
-    setIsModalShow(false)
-  }
+  const query = useQuery()
+
+  useEffect(() => {
+    const value = query.get("id")
+    setId(value)
+  }, [query])
 
   return (
-    <Layout className={style.layout}>
-      {isModalShow && <Modal
-        title={content.title}
-        description={content.description}
-        thumbnail={content.thumbnail}
-        github_url={content.github_url}
-        preview_url={content.preview_url}
-        closeModal={toggleVisibility}
-      />}
-
-      <Title>{t('projects.title')}</Title>
-      <div className={style.container}>
-        <Paragraph>{t('projects.paragraph_zero')}</Paragraph>
-        <Paragraph>{t('projects.paragraph_one')}</Paragraph>
-        <GroupButton>
-          <Link href="/contato">
-            <Button>
-              {t('projects.button_content')} <IconChevronRight />
-            </Button>
-          </Link>
-          <Link href="https://github.com/lucasfernandodev">
-            <Button type="secondary">Github <IconArrowUpRight /></Button>
-          </Link>
-        </GroupButton>
-      </div>
-
-
-      <div className={style.container}>
-        <Carousel onClick={selectContent} />
-      </div>
-    </Layout>
+    <>{id === null ? <ProjectTemplate /> : <ProjectOpenTemplate id={id}/>}</>
   )
 }
 
