@@ -1,7 +1,15 @@
 {
   "1": {
     "title": "Encrypt",
-    "description": "Encrypt is a cryptography website that allows encrypting and decrypting texts. | It was developed as part of an Alura course with the aim of testing the knowledge acquired during the course.",
+    "process": [
+      "I developed Encrypt, a website dedicated to text encryption and decryption. I implemented an algorithm in JavaScript to perform these operations in a simple and efficient way.",
+      "In addition, I focused on the responsive development of the website, ensuring its accessibility on a variety of devices."
+    ],
+    "context": [
+      "This application was developed as part of my study in HTML, CSS, and JavaScript, with the aim of consolidating my knowledge in these languages. I used tools like Figma to access the site's layout, allowing for a more precise and effective approach in development.",
+      "Encrypt served as a practical project to apply the concepts learned and expand my skills in building functional and responsive web interfaces."
+    ],
+    "description": "Encrypt is a cryptography website that enables text encryption and decryption. | It was developed as part of an Alura course, with the aim of testing the knowledge acquired during the course",
     "preview_url": "https://lucasfernandodev.github.io/encrypt/",
     "github_url": "https://github.com/lucasfernandodev/encrypt",
     "image_url": "/images/projects/encrypt.webp",
@@ -9,7 +17,15 @@
   },
   "2": {
     "title": "Spacetravel",
-    "description": "SpaceTravel is a website developed following the design from Frontend Mentor for a space travel site. This is one of the first sites I developed using React and Typescript.",
+    "process": [
+      "I developed spaceTravel, a website dedicated to space tourism. I used Typescript, Vite, and React.js as the main technologies for its construction.",
+      "I implemented a multi-page website with animations and smooth navigation, ensuring a consistent experience on both desktops and tablets and mobile devices."
+    ],
+    "context": [
+      "This project was undertaken as a challenge proposed by Frontend Mentor, with the aim of enhancing my development skills and expanding my portfolio. By taking on this challenge, I aimed to explore new technologies and techniques, consolidating my knowledge in Typescript, Vite, and React.js.",
+      "The completion of this project significantly contributed to my learning journey in front-end development, allowing me to gain practical experience in building dynamic and responsive websites."
+    ],
+    "description": "SpaceTravel is a website developed following the Frontend Mentor design for a space travel site. This is one of the first sites I developed using React and Typescript",
     "preview_url": "https://lucasfernandodev.github.io/spacetravel/",
     "github_url": "https://github.com/lucasfernandodev/spacetravel",
     "image_url": "/images/projects/spacetravel.webp",
@@ -17,7 +33,15 @@
   },
   "3": {
     "title": "Manage Landing page",
-    "description": "This is a landing page developed following the design from Frontend Mentor. | It was created using HTML, CSS, and JavaScript, aiming to implement the design in the best possible way. The challenges of this project are related to responsiveness and carousel animation.",
+    "process": [
+      "I developed Manage, a landing page for a task management site. I used HTML, CSS, and JavaScript as the main technologies in development. I was responsible for creating a complex landing page, containing a variety of elements that needed to function responsively on different devices.",
+      "In addition, I implemented a simple carousel using only CSS."
+    ],
+    "context": [
+      "This project was a challenge proposed by Frontend Mentor, designed to enhance my development skills and expand my portfolio. By taking on this challenge, I aimed to apply my knowledge in HTML, CSS, and JavaScript to create a functional and visually appealing landing page.",
+      "The completion of this project significantly contributed to my learning journey, allowing me to practice advanced techniques in responsive design and improve my front-end development skills."
+    ],
+    "description": "This is a landing page developed following the Frontend Mentor design. It was created using HTML, CSS, and JavaScript, aiming to implement the design in the best possible way. The challenges of this project are related to responsiveness and carousel animation.",
     "preview_url": "https://lucasfernandodev.github.io/frontendmentor/challenges/manage-landing-page-master/",
     "github_url": "https://github.com/lucasfernandodev/frontendmentor/tree/main/challenges/manage-landing-page-master",
     "image_url": "/images/projects/manage-ladingpage.webp",
@@ -25,7 +49,17 @@
   },
   "4": {
     "title": "Countries search",
-    "description": "Countries search is a web application that helps the user find information about their country, such as population, language, or the current currency. | The site is developed with Next.js and TypeScript, integrating with an external API.",
+    "process": [
+      "I developed Search Countries, an application focused on obtaining information about countries.",
+      "I used Typescript and Next.js as the main technologies in development. I integrated with a third-party website for dynamic display of information.",
+      "In addition, I was responsible for implementing the design, ensuring that the application was visually appealing in both dark and light versions."
+    ],
+    "context": [
+      "This project was undertaken as part of my studies and practices to improve my front-end development skills.",
+      "It is part of a series of challenges proposed by Frontend Mentor, aimed at expanding my knowledge in Typescript, Next.js, and integration of external APIs.",
+      "The completion of this challenge significantly contributed to my learning journey, allowing me to explore new techniques and strengthen my skillset in web development."
+    ],
+    "description": "Countries search is a web application that helps the user find information about their country, such as population, language, or currency. | The site is developed with Next.js and TypeScript, integrating with an external API.",
     "preview_url": "https://countries-search-now.netlify.app/",
     "github_url": "https://github.com/lucasfernandodev/countries-search",
     "image_url": "/images/projects/countries-search.webp",
@@ -33,18 +67,37 @@
   },
   "5": {
     "title": "E-commerce product page",
-    "description": "This is a single-page website for e-commerce products. The design is also from Frontend Mentor. | Despite being a small application, it has many features to be implemented, such as a gallery, adding or removing items from the cart, responsiveness, and calculating the final cart value.",
+    "process": [
+      "I developed a product page for an e-commerce, including full features like gallery for image viewing, functionalities for adding/removing items from the cart, and calculation of product values.",
+      "I used Typescript, React, and Vite as the main technologies in development. I prioritized the responsiveness of the site, ensuring its accessibility on various devices."
+    ],
+    "context": [
+      "This project was a challenge proposed by Frontend Mentor, aimed at enhancing my development skills and expanding my portfolio.",
+      "By taking on this challenge, I aimed to consolidate my knowledge in Typescript, React, and Vite, while exploring the creation of complex and functional interfaces for web applications.",
+      "The completion of this project significantly contributed to my learning journey, allowing me to gain practical experience in building e-commerce pages and improve my skills as a front-end developer."
+    ],
+    "description": "This is a single-page website for e-commerce products. The design is also from Frontend Mentor. | Despite being a small application, it has many features to be implemented, such as gallery, adding or removing items from the cart, responsiveness, and calculation of the final cart value.",
     "preview_url": "https://sneakears.netlify.app/",
     "github_url": "https://github.com/lucasfernandodev/frontendmentor/tree/main/challenges/ecommerce-product-page-main",
     "image_url": "/images/projects/e-commerce-product-page.webp",
     "color": "pink"
   },
   "6": {
-    "title": "Simple Booking",
-    "description": "This is a page with a simple design created by Front-end Mentor. | Despite its simplicity, it presents intriguing challenges that contribute to improving CSS skills. | The project involves developing the design of a chat illustration and maintaining responsiveness solely with CSS.",
-    "preview_url": "https://lucasfernandodev.github.io/frontendmentor/challenges/chat-app-css-illustration-master/",
-    "github_url": "https://lucasfernandodev.github.io/frontendmentor/challenges/chat-app-css-illustration-master/",
-    "image_url": "/images/projects/simple-booking.webp",
+    "title": "Feedback Widget",
+    "process": [
+      "I developed a widget intended for website administrators, allowing them to integrate it into their sites to open a feedback portal to users.",
+      "In the widget, users can send feedback on their navigation, share opinions, or suggest ideas for the site. I used Vite, Tailwind, and React.js as the main technologies in development.",
+      "In addition to the feedback by message option, I implemented the functionality to capture screenshots of the site so that users can send them along with the feedback."
+    ],
+    "context": [
+      "This project was developed during the Next Level Week (NLW) from Rocketseat, with the aim of learning Tailwind and enhancing my skills with React.js. ",
+      "Participating in this intensive development week provided a valuable opportunity to explore new technologies and deepen my knowledge in React.js.",
+      "The feedback widget project not only allowed me to practice the concepts learned but also challenged me to think of creative solutions to improve interaction between users and websites."
+    ],
+    "description": "I developed a widget intended for website administrators, allowing them to integrate it into their sites to open a feedback portal to users.",
+    "preview_url": "https://feedback-widget-nlw.netlify.app",
+    "github_url": "https://github.com/lucasfernandodev/nlw-impulse",
+    "image_url": "/images/projects/widget.png",
     "color": "black"
   }
 }

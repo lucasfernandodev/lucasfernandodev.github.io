@@ -31,6 +31,12 @@
       "card_title": "Project"
     }
   },
+  "projects_open": {
+    "what_was_done": "What was done?",
+    "context": "Context",
+    "button_back": "Back to projects",
+    "button_preview": "Preview"
+  },
   "contact": {
     "title": "Let’s talk",
     "navTitle": "Contact",

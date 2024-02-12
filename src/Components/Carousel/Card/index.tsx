@@ -31,7 +31,6 @@ export const Card: React.FC<ICardProps> = ({
   const navigate = useNavigate()
 
   function navigateTo(){
-    console.log('navigate')
     navigate(`/projetos?id=${index_id}`)
   }
 

@@ -23,18 +23,19 @@ export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id })
 
   useEffect(() => {
     window
-    .matchMedia("(max-width: 510px)")
-    .addEventListener('change', e => seIsMobile( e.matches ));
+      .matchMedia("(max-width: 510px)")
+      .addEventListener('change', e => seIsMobile(e.matches));
   }, []);
 
-  useEffect(()=>{
-    if(isMobile){
+  useEffect(() => {
+    if (isMobile) {
       document.documentElement.style.setProperty("--project-thumbnail", `url(${backgroundImage})`);
     }
 
   }, [isMobile])
 
-
+  const textProcess = t(`projects:${id}.process`, { returnObjects: true }) as string[]
+  const textContext = t(`projects:${id}.context`, { returnObjects: true }) as string[]
 
   return (
     <Layout className={style.layout}>
@@ -44,23 +45,21 @@ export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id })
       <div className={style.container}>
         <div className={style.col}>
           <div>
-            <h3>O que foi feito</h3>
-            <p>O SpaceTravel é um site desenvolvido usando react e typescript buscando implementar responsividade, animações e claro acessibilidate.</p>
+            <h3>{t('projects_open.what_was_done')}</h3>
+           {textProcess.map((p, index) => <p key={index}>{p}</p>)}
           </div>
           <div>
-            <h3>Contexto</h3>
-            <p>
-              Esse é um desafio front-end mentor para desenvolver uma site multi-paginas.
-            </p>
+            <h3>{t('projects_open.context')}</h3>
+            {textContext.map((p, index) => <p key={index}>{p}</p>)}
           </div>
           <GroupButton>
-            <Link href="https://github.com/lucasfernandodev">
+            <Link href={t(`projects:${id}.preview_url`)}>
               <Button>
-                Dar um olhada
+              {t('projects_open.button_preview')}
                 <IconChevronRight />
               </Button>
             </Link>
-            <Link href="https://github.com/lucasfernandodev">
+            <Link href={t(`projects:${id}.github_url`)}>
               <Button type="secondary">Github <IconArrowUpRight /></Button>
             </Link>
           </GroupButton>
@@ -68,16 +67,16 @@ export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id })
 
         <div className={style.col}>
           <div className={style.col__thumbnail}
-          style={{backgroundImage: `url(${backgroundImage})`}}
+            style={{ backgroundImage: `url(${backgroundImage})` }}
           ></div>
         </div>
       </div>
       <div className={style.footer}>
         <Link href="/projetos">
           <IconArrowNarrowLeft />
-          <span>Dê volta para projetos</span>
+          <span>{t('projects_open.button_back')}</span>
         </Link>
-    </div>
+      </div>
     </Layout>
   )
 }

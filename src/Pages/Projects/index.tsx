@@ -21,7 +21,7 @@ const Projects = () => {
   }, [query])
 
   return (
-    <>{id === null ? <ProjectTemplate /> : <ProjectOpenTemplate id={id}/>}</>
+    <>{id === null ? <ProjectTemplate /> : <ProjectOpenTemplate id={id} />}</>
   )
 }
 
