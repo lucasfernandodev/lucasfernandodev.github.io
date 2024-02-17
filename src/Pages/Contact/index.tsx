@@ -32,7 +32,7 @@ const Contact = () => {
           </Link>
         </li>
         <li className={style.item}>
-          <Link href="https://dribbble.com/lucasfernandodev" className={style.link}>
+          <Link href="https://github.com/lucasfernandodev" className={style.link}>
             Github  <IconArrowUpRight />
           </Link>
         </li>
