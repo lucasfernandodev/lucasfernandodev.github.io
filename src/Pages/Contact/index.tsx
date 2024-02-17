@@ -16,6 +16,7 @@ const Contact = () => {
       <Paragraph>{t('contact.paragraph_zero')}</Paragraph>
       <a
         target="_blank"
+        rel="noreferrer"
         data-hover={t('contact.email')}
         className={style.contact_email}
         href="mailto:lucasfernando.dev@gmail.com"

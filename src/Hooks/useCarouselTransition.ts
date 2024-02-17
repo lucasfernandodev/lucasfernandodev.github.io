@@ -24,7 +24,7 @@ const useCarouselTransition = ({ carouselRef }: Iprops): void => {
     const max_itens = cards.length
 
     const lastCardPosition = startCardPosition + (max_itens - 1) * cardSize
-    let positions: number[] = cards.map((_, i) => startCardPosition + i * cardSize)
+    const positions: number[] = cards.map((_, i) => startCardPosition + i * cardSize)
     let countTransition = max_itens;
 
 
