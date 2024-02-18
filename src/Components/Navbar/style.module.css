@@ -26,6 +26,7 @@
 .toggleMenu::before{
   top: 6px;
 }
+
 .toggleMenu::after {
   bottom: 6px;
 }
@@ -53,10 +54,6 @@
   color: var(--gray-600);
   background-color: transparent;
   transition: background 250ms linear
-}
-
-.Link:hover {
-  background-color: rgba(47, 47, 55, 0.75);
 }
 
 .Link:hover svg {

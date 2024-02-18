@@ -1,7 +1,7 @@
 .carroucel{
   display: flex;
   flex-direction: row;
-  width: 680px;
+  width: 0px;
   flex-wrap: nowrap;
   gap: 10px;
   position: relative;
@@ -10,18 +10,21 @@
   overflow-x: hidden;
   touch-action: pan-y;
   scroll-snap-type: y mandatory;
+  animation: carouselShowIn 250ms linear forwards;
+  animation-delay: 250ms;
+  transform-origin: right;
+}
 
+@keyframes carouselShowIn{
+  to{
+    width: 680px;
+  }
 }
 
 @media screen and (max-width: 480px),  (max-width: 1080px){
   .carroucel{
     width: 680px;
   }
-}
-
-.carroucel:has(.active) *:hover,
-.carroucel:has(.active) *{
-  transform: unset !important;
 }
 
 .carroucel > div[data-type="card"]{

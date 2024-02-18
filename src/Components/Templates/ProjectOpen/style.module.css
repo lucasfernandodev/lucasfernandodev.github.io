@@ -90,6 +90,7 @@ main.layout{
   font-family: var(--font-family-roboto);
   padding-bottom: 16px;
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .container .col:first-child > div + div:not(:last-child){
