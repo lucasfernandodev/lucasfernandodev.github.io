@@ -1,9 +1,9 @@
+import style from './style.module.css';
 import { IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
 import { Button } from '../../Components/Button';
 import { Layout } from '../../Components/Layout';
 import { Paragraph } from '../../Components/Paragraph';
 import { Title } from '../../Components/Title';
-import style from './style.module.css';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
 import { GroupButton } from '../../Components/GroupButton';
