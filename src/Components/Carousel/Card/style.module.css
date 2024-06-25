@@ -14,7 +14,7 @@
 }
 
 .card:hover{
-  transform: translateY(-5px)
+  margin-top: -5px;
 }
 
 .card > div{

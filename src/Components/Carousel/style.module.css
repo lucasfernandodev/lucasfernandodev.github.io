@@ -28,5 +28,6 @@
 }
 
 .carroucel > div[data-type="card"]{
-  transition: left 300ms  linear;
+  /* left: suaviza a transição do scroll; margin: suaviza a transição durante o hover */
+  transition: left 300ms linear, margin 250ms linear;
 }
