@@ -1,4 +1,4 @@
-.layout{
+.layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,15 +6,17 @@
   height: 100vh;
 }
 
-
-.description{
-  font-size: 2.0rem;
+.description {
+  font-size: 2rem;
   color: var(--gray-400);
 }
 
-.btn{
+.btn {
   border: none;
-  background: var(--button-border-gradient, linear-gradient(90deg, var(--pink) 0%, var(--blue) 109.9%));
+  background: var(
+    --button-border-gradient,
+    linear-gradient(90deg, var(--pink) 0%, var(--blue) 109.9%)
+  );
   padding: 14px 32px;
   border-radius: 32px;
   display: flex;
@@ -26,27 +28,26 @@
   font-weight: 600;
   color: var(--black-700);
   margin-top: 3.6rem;
-  transition: 150ms linear
+  transition: 150ms linear;
 }
 
-.btn svg{
+.btn svg {
   position: relative;
-  transition: 300ms linear
+  transition: 300ms linear;
 }
 
-.btn:hover{
-  box-shadow: 0px 6px 24px rgba(229, 177, 238,0.25), 4px 6px 32px rgba(37, 182, 255, 0.25);
+.btn:hover {
+  box-shadow: 0px 6px 24px rgba(229, 177, 238, 0.25),
+    4px 6px 32px rgba(37, 182, 255, 0.25);
 }
 
-.btn:hover svg{
+.btn:hover svg {
   transform: translateX(5px);
 }
 
-
-
 /* SOCIAL */
 
-.social{
+.social {
   list-style: none;
   display: flex;
   gap: 1.6rem;
@@ -56,7 +57,7 @@
   right: 0px;
 }
 
-.social::after{
+.social::after {
   content: "";
   height: 2px;
   width: 9.2rem;
@@ -68,62 +69,69 @@
   transition: 150ms linear;
 }
 
-.social .item:hover{
+.social .item:hover {
   transform: translateY(-2px);
 }
 
-.social .item .Link{
+.social .item .Link {
   text-decoration: none;
   color: var(--gray-600);
 }
 
-.social .item .Link svg{
+.social .item .Link svg {
   stroke-width: 1.5px;
 }
 
-.social .item:hover .Link{
+.social .item:hover .Link {
   color: var(--pink);
 }
 
-@media screen and (max-width: 480px),  (max-width: 1080px){
-  main#homepage{
+@media screen and (max-width: 480px), (max-width: 1080px) {
+  main#homepage {
     justify-content: center;
     align-items: center;
   }
 
-  main#homepage .container{
+  main#homepage .container {
     position: relative;
     top: -65px;
   }
 
-  #homepage h1{
+  #homepage h1 {
     text-align: center;
-    order: 1
+    order: 1;
   }
 
-  #homepage p{
+  #homepage p {
     text-align: center;
     order: 2;
     margin-top: 1.6rem;
   }
 
-  #homepage button{
+  #homepage button {
     margin: 0 auto;
     margin-top: 2.6rem;
   }
 
-  #homepage .social{
+  #homepage .social {
     inset: revert;
-    bottom: 64px;
+    bottom: calc((var(--header-width) + 16px) * 2);
     left: 50%;
     transform: translateX(-50%);
     width: unset;
   }
 
-  #homepage .social::before{
+  #homepage .social::before {
     content: "";
     height: 2px;
     width: 9.2rem;
     background-color: rgba(229, 177, 238, 0.1);
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 667px) {
+  /* Fixa o menu social, em dispositivos moveis com altura pequena. */
+  #homepage .social {
+    bottom: calc(var(--header-width) + (16px * 2));
   }
 }
