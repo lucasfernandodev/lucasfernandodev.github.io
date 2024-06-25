@@ -6,6 +6,7 @@
   gap: 10px;
   position: relative;
   height: calc(400px + 10px);
+  
   border-radius: 8px;
   overflow-x: hidden;
   touch-action: pan-y;

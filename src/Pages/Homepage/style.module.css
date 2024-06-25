@@ -11,6 +11,11 @@
   color: var(--gray-400);
 }
 
+#homepage a{
+  width: fit-content;
+  display: inline-block;
+}
+
 .btn {
   border: none;
   background: var(
