@@ -50,6 +50,7 @@
     z-index: 9999;
   }
 
+  .header > h1 a,
   .header > h2 a, 
   .header > button{
     z-index: 5000;
