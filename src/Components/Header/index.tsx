@@ -1,19 +1,19 @@
 import style from './style.module.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Navbar } from '../Navbar';
 import { ToggleLanguage } from '../ToggleLanguage';
-import { Title } from '../Title';
+import { useMemo } from 'react';
 
 export const Header = () => {
-  const { pathname } = useLocation()
-
+  const Brand = useMemo(() => (
+    <Link to="/" title="Lucas Fernando" className={style.brand}>
+      <img src="/brand.svg" alt="Lucas Fernando - Portfolio" />
+      <span>Lucas Fernando</span>
+    </Link>
+  ), [])
   return (
     <header className={style.header}>
-      <Title tag={pathname === '/' ? 'h2' : 'h1'} className={style.brand}>
-        <Link to="/" title="Lucas Fernando">
-          <img src="/brand.svg" alt="Lucas Fernando - Portfolio" />
-        </Link>
-      </Title>
+      {Brand}
       <Navbar />
       <ToggleLanguage />
     </header>

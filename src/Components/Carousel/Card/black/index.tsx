@@ -31,7 +31,7 @@ export const CardBlack: React.FC<ICardProps> = ({ title, description, category, 
             <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_621" />
           </filter>
           <linearGradient id="paint0_linear_551_621" x1="95.5" y1="142" x2="-12.5" y2="265" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#25B6FF" stopOpacity="0.1" />
+            <stop stopColor="#F2D750" stopOpacity="0.1" />
             <stop offset="1" stopColor="#D9D9D9" stopOpacity="0" />
           </linearGradient>
         </defs>
@@ -48,7 +48,7 @@ export const CardBlack: React.FC<ICardProps> = ({ title, description, category, 
             <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_622" />
           </filter>
           <linearGradient id="paint0_linear_551_622" x1="262.5" y1="154" x2="154.5" y2="277" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#E5B1EE" stopOpacity="0.05" />
+            <stop stopColor="#F2D750" stopOpacity="0.05" />
             <stop offset="1" stopColor="#D9D9D9" stopOpacity="0" />
           </linearGradient>
         </defs>
@@ -65,7 +65,7 @@ export const CardBlack: React.FC<ICardProps> = ({ title, description, category, 
             <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_623" />
           </filter>
           <linearGradient id="paint0_linear_551_623" x1="205.5" y1="154" x2="97.5" y2="277" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#121212" stopOpacity="0.05" />
+            <stop stopColor="#F2D750" stopOpacity="0.05" />
             <stop offset="1" stopColor="#D9D9D9" stopOpacity="0" />
           </linearGradient>
         </defs>
@@ -82,7 +82,7 @@ export const CardBlack: React.FC<ICardProps> = ({ title, description, category, 
             <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_624" />
           </filter>
           <linearGradient id="paint0_linear_551_624" x1="169.5" y1="154" x2="61.5" y2="277" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#121212" stopOpacity="0.1" />
+            <stop stopColor="#F2D750" stopOpacity="0.1" />
             <stop offset="1" stopColor="#D9D9D9" stopOpacity="0" />
           </linearGradient>
         </defs>

@@ -8,7 +8,7 @@
 
 .description {
   font-size: 2rem;
-  color: var(--gray-400);
+  color: var(--white-200);
 }
 
 #homepage a{
@@ -20,7 +20,7 @@
   border: none;
   background: var(
     --button-border-gradient,
-    linear-gradient(90deg, var(--pink) 0%, var(--blue) 109.9%)
+    linear-gradient(90deg, var(--orange-200) 0%, var(--orange-600) 109.9%)
   );
   padding: 14px 32px;
   border-radius: 32px;
@@ -31,7 +31,7 @@
   gap: 4px;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--black-700);
+  color: var(--black-400);
   margin-top: 3.6rem;
   transition: 150ms linear;
 }
@@ -39,11 +39,6 @@
 .btn svg {
   position: relative;
   transition: 300ms linear;
-}
-
-.btn:hover {
-  box-shadow: 0px 6px 24px rgba(229, 177, 238, 0.25),
-    4px 6px 32px rgba(37, 182, 255, 0.25);
 }
 
 .btn:hover svg {
@@ -80,7 +75,7 @@
 
 .social .item .Link {
   text-decoration: none;
-  color: var(--gray-600);
+  color: var(--white-300);
 }
 
 .social .item .Link svg {
@@ -88,10 +83,54 @@
 }
 
 .social .item:hover .Link {
-  color: var(--pink);
+  color: var(--orange-200);
 }
 
-@media screen and (max-width: 480px), (max-width: 1080px) {
+@media screen and (max-width: 780px){
+  main#homepage {
+    justify-content: center;
+    align-items: center;
+  }
+
+  main#homepage .container {
+    position: relative;
+    top: -65px;
+    text-align: center;
+  }
+
+  #homepage h1 {
+    text-align: center;
+    order: 1;
+  }
+
+  #homepage p {
+    text-align: center;
+    order: 2;
+    margin-top: 1.6rem;
+  }
+
+  #homepage button {
+    margin: 0 auto;
+    margin-top: 2.6rem;
+  }
+
+  #homepage .social {
+    inset: revert;
+    bottom: calc((var(--header-width) + 16px) * 2);
+    left: 50%;
+    transform: translateX(-50%);
+    width: unset;
+  }
+
+  #homepage .social::before {
+    content: "";
+    height: 2px;
+    width: 9.2rem;
+    background-color: rgba(229, 177, 238, 0.1);
+  }
+}
+
+@media screen and (max-width: 480px) {
   main#homepage {
     justify-content: center;
     align-items: center;

@@ -1,9 +1,10 @@
 .cardblue{
-  background-color: var(--white-100);
+  background-color: linear-gradient(to right bottom,#171716, #1B1B1A);
   height: 100%;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--carousel-card-border); 
+  border: 1px solid #1B1B1A; 
+  color: var(--white-100);
 }
 
 .cardblue > svg{
@@ -14,18 +15,21 @@
   width: 245px;
   height: 245px;
   flex-shrink: 0;
+  opacity: 0.8;
+  filter: blur(150px);
 }
 
 .cardblue .url{
-  border-color: var(--black-800);
+ 
   position: relative;
   z-index: 10;
   transition: 250ms linear;
-  color: var(--black-800)
+  color: var(--white-100);
+  border-color: var(--white-100);
 }
 
 .cardblue .url:hover{
-  color: var(--white-100);
-  background: var(--black-700);
-  border-color: var(--black-700); 
+  color: var(--black-400);
+  background: var(--white-100);
+  border-color: var(--white-100); 
 }

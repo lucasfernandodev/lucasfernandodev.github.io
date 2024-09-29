@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 import style from './style.module.css';
 
-interface IGroupButton {
+interface IGroupButton extends ComponentProps<'div'>{
   children: React.ReactNode
 }
 
-export const GroupButton: React.FC<IGroupButton> = ({ children }) => {
+export const GroupButton: React.FC<IGroupButton> = ({ children, ...rest }) => {
   return (
-    <div className={style.groupButton}>
+    <div {...rest} className={[style.groupButton, rest.className].join(" ")}>
       {children}
     </div>
   )

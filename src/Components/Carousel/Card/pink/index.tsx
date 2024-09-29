@@ -32,7 +32,7 @@ export const CardPink: React.FC<ICardProps> = ({ title, description, category, p
             <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_635" />
           </filter>
           <linearGradient id="paint0_linear_551_635" x1="262.5" y1="154" x2="154.5" y2="277" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#E5B1EE" stopOpacity="0.54" />
+            <stop stopColor="#F2D750" stopOpacity="0.54" />
             <stop offset="1" stopColor="#D9D9D9" stopOpacity="0.18" />
           </linearGradient>
         </defs>

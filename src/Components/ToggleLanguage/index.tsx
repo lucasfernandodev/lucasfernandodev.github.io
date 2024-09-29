@@ -4,29 +4,23 @@ import { useEffect, useState } from "react"
 
 export const ToggleLanguage = () => {
 
-  const isPersistemLanguage = localStorage.getItem('locale_settled')
+  const { i18n } = useTranslation();
 
-  const [lang, setLang] = useState<'PT' | 'EN'>(isPersistemLanguage !== null ? (isPersistemLanguage as "PT") : 'PT');
+  const isStorageLng = localStorage.getItem('i18nextLng')
+  const [lang, setLang] = useState<string>(isStorageLng || 'pt_BR');
 
-  const {i18n} = useTranslation();
 
   function toggleLanguage() {
-    setLang(lang === 'PT' ? 'EN' : 'PT')
+    setLang(lang === 'pt_BR' ? 'en' : 'pt_BR')
   }
 
   useEffect(() => {
-    if(lang === "PT") {
-      i18n.changeLanguage('pt_BR')
-      localStorage.setItem('locale_settled', 'PT')
-    }
-    if(lang === "EN") {
-      i18n.changeLanguage('en')
-      localStorage.setItem('locale_settled', 'EN')}
+    i18n.changeLanguage(lang)
   }, [lang])
 
   return (
     <button className={style.toggleLanguage} onClick={toggleLanguage}>
-      {lang}
+      {lang === 'pt_BR' ? 'PT' : lang.toUpperCase()}
     </button>
   )
 }

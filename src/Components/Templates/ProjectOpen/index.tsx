@@ -5,13 +5,14 @@ import { Link } from '../../../Infra/Link';
 import { Button } from '../../Button';
 import { IconArrowNarrowLeft, IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'; 
 
 interface IProjectOpenTemplateProps {
   id: string
 }
 
-export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id }) => {
+const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id }) => {
+  
 
   const { t } = useTranslation()
   const backgroundImage = t(`projects:${id}.image_url`);
@@ -46,7 +47,7 @@ export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id })
         <div className={style.col}>
           <div>
             <h3>{t('projects_open.what_was_done')}</h3>
-           {textProcess.map((p, index) => <p key={index}>{p}</p>)}
+            {textProcess.map((p, index) => <p key={index}>{p}</p>)}
           </div>
           <div>
             <h3>{t('projects_open.context')}</h3>
@@ -55,7 +56,7 @@ export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id })
           <GroupButton>
             <Link href={t(`projects:${id}.preview_url`)}>
               <Button>
-              {t('projects_open.button_preview')}
+                {t('projects_open.button_preview')}
                 <IconChevronRight />
               </Button>
             </Link>
@@ -80,3 +81,5 @@ export const ProjectOpenTemplate: React.FC<IProjectOpenTemplateProps> = ({ id })
     </Layout>
   )
 }
+
+export default ProjectOpenTemplate

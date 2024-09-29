@@ -10,7 +10,7 @@ const Layout: React.FC<ILayout> = ({ children, ...rest }) => {
   return (
     <div className={style.layout}>
       <Header />
-      <main {...rest}>
+      <main {...rest} className={[style.main, rest.className].join(" ")}>
         {children}
       </main>
     </div>

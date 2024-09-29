@@ -34,8 +34,8 @@
   "projects_open": {
     "what_was_done": "O que foi feito?",
     "context": "Contexto",
-    "button_back": "Dê volta para projetos",
-    "button_preview": "Dar um olhada"
+    "button_back": "Voltar",
+    "button_preview": "Dar uma olhada"
   },
   "contact": {
     "title": "Vamos conversar",

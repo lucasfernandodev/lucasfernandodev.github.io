@@ -48,6 +48,15 @@
   margin-inline: auto;
 }
 
+.layout > .container div.groupButtons{
+  margin: 0px;
+  margin-top: 4.2rem;
+}
+
+.button{
+  min-height: 48px;
+}
+
 @media screen and (max-width: 480px),  (max-width: 1080px){
   .layout .container{
     width: calc(100% - 32px);

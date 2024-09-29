@@ -2,8 +2,7 @@ import style from './style.module.css';
 import { Layout } from '../../Components/Layout';
 import { Title } from '../../Components/Title';
 import { Paragraph } from '../../Components/Paragraph';
-import { Button } from '../../Components/Button';
-import { IconChevronLeft } from '@tabler/icons-react';
+import { Button } from '../../Components/Button'; 
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
 import { GroupButton } from '../../Components/GroupButton';
@@ -17,10 +16,10 @@ const Error404 = () => {
       <Title className={style.title}>{t('error404.title')}</Title>
       <div className={style.container}>
         <Paragraph>{t('error404.paragraph_zero')}</Paragraph>
-        <GroupButton>
+        <GroupButton className={style.groupButtons}>
           <Link href="/">
-            <Button>
-              <IconChevronLeft />{t('error404.button_content')}
+            <Button className={style.button}>
+              {t('error404.button_content')}
             </Button>
           </Link>
         </GroupButton>

@@ -26,29 +26,17 @@ export const Navbar = () => {
     }
   }, []);
 
-  function toggleVisibility(ev: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+  useEffect(() => {
     const body = document.querySelector("body") as HTMLElement;
-    const button = ev.target as HTMLButtonElement;
-
-    function showMenu(){
-      button.classList.remove(style.btnStartTransition);
-      setVisibility(!visibility);
+    if(visibility){
       body.style.overflow = "hidden";
+    }else{
+      body.style.overflow = "auto";
     }
+  }, [visibility])
 
-    function closeMenu(){
-      button.classList.remove(style.btnStartTransitionOut);
-      setVisibility(!visibility);
-         body.style.overflow = "auto";
-    }
-
-    if (!visibility === true) {
-      button.classList.add(style.btnStartTransition);
-      setTimeout(showMenu, 300);
-    } else {
-      button.classList.add(style.btnStartTransitionOut);
-      setTimeout(closeMenu, 300);
-    }
+  function toggleVisibility() {
+    setVisibility(prev => !prev)
   }
 
   return (
@@ -64,7 +52,7 @@ export const Navbar = () => {
       <ul className={style.menu} ref={refMenu} data-visibility={visibility}>
         <li className={style.item}>
           <Link to="/" title={t("homepage.navTitle")} className={style.Link}>
-            <IconHome />
+            <IconHome/>
           </Link>
         </li>
         <li className={style.item}>

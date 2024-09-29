@@ -1,29 +1,31 @@
 .cardpink {
-  background-color: var(--white-100);
+  background-color: linear-gradient(to right bottom,#171716, #1B1B1A);
   height: 100%;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--carousel-card-border);
+  border: 1px solid #1B1B1A;
+  color: var(--white-100);
 }
 
 .cardpink>svg {
   position: absolute;
   left: 77px;
   top: 155px;
-  fill: linear-gradient(221deg, rgba(229, 177, 238, 0.54) 29.28%, rgba(217, 217, 217, 0.18) 76.62%);
-  filter: blur(16px);
+  fill: linear-gradient(221deg, #171716 29.28%, #1B1B1A 76.62%);
+  filter: blur(150px);
+  opacity: 0.8;
 }
 
 .cardpink .url {
   position: relative;
   z-index: 10;
-  color: var(--black-800);
-  border-color: var(--black-800);
+  color: var(--white-100);
+  border-color: var(--white-100);
   transition: 250ms linear;
 }
 
 .cardpink .url:hover {
-  color: var(--white-100);
-  background: var(--black-700);
-  border-color: var(--black-700);
+  color: var(--black-400);
+  background: var(--white-100);
+  border-color: var(--white-100); 
 }

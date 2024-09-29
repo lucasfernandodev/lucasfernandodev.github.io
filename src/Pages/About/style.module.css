@@ -14,7 +14,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 480px),  (max-width: 1080px){
+@media screen and (max-width: 480px){
   main.layout{
     padding-left: 0px;
   }
@@ -48,11 +48,11 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  position: relative;
-  border-radius: 100px 100px 100px 0px; 
-  border-left: 10px solid rgba(37, 182, 255, 0.25); 
-  border-right: 10px solid rgba(229, 177, 238, 0.15);
+  position: relative; 
+  opacity: 0.5;
   z-index: 1;
+  border: 12px solid #1B1B1A;
+  border-radius: 16´x;
 }
 
 .layout .profile__image::after{
@@ -62,9 +62,9 @@
   left: 0px;
   width: calc(100%);
   height: calc(100%);
-  border-radius: 90px 90px 90px 0px; 
-  background: linear-gradient(0deg, rgba(37, 182, 255, 0.15) 0%, rgba(37, 182, 255, 0.15) 100%), url(/profile.jpg), lightgray 50% / cover no-repeat;
+  background-image: url(/public/profile.jpg);
   background-position: bottom;
+  border-radius: 8px;
   background-size: cover;
   transition: 350ms linear;
 }

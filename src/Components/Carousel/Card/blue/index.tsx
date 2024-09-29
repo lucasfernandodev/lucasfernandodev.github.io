@@ -31,7 +31,7 @@ export const CardBlue: React.FC<ICardProps> = ({ title, description, category, p
             <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_551_607" />
           </filter>
           <linearGradient id="paint0_linear_551_607" x1="107.5" y1="154" x2="-0.499996" y2="277" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#25B6FF" stopOpacity="0.45" />
+            <stop stopColor="#D99E30" stopOpacity="0.45" />
             <stop offset="1" stopColor="#D9D9D9" stopOpacity="0.12" />
           </linearGradient>
         </defs>

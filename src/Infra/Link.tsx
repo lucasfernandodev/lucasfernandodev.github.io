@@ -7,7 +7,8 @@ interface Link extends HTMLAttributes<HTMLAnchorElement>{
 
 export const Link = ({...rest}) => {
   return <RLink 
-  rel='noreferrer' {...rest} 
+  rel='noreferrer' 
+  {...rest} 
   target={rest.href[0] === "/" ||  rest.href[0] === "#"? '_self' : '_blank'}
   to={rest.href} 
   >

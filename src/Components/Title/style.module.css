@@ -13,7 +13,7 @@ h1.title {
 
 h2.title {
   font-size: 4.2rem;
-  color: var(--white-200);
+  color: var(--white-100);
   font-weight: 400;
   line-height: 120%;
 }
@@ -22,7 +22,7 @@ h2.title + div{
   margin-top: 4.2rem
 }
 
-@media screen and (min-width: 411px) and (max-width:1290px),  (max-width: 1080px){
+@media screen and (min-width: 411px) and (max-width:1290px){
   h1.title {
     font-size: clamp(2.8rem, 32vw + 1.6rem,5.4rem);
     letter-spacing: 0.4rem;
@@ -31,9 +31,13 @@ h2.title + div{
   h2.title {
     font-size: calc(3.6rem, 15vw + 0.8rem, 4.2rem)
   }
+
+  h2.title + div{
+    margin-top: 2.4rem;
+  }
 }
 
-@media screen and (max-width: 480px),  (max-width: 1080px) {
+@media screen and (max-width: 480px) {
   h1.title {
     font-size: 2.8rem;
     letter-spacing: 0.4rem;

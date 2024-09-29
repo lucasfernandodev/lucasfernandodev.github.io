@@ -5,8 +5,9 @@ import { Tech } from './Pages/Tech';
 import { Projects } from './Pages/Projects'
 import { Contact } from './Pages/Contact'
 import { Error404 } from "./Pages/404";
-import './styles/colors.css';
-import './styles/reset.css';
+import { Suspense } from "react";
+import { LoadingTemplate } from "./Components/Templates/Loading";
+import './i18n.ts';
 
 const router = createBrowserRouter([
   { path: "/", element: <Homepage />, errorElement: <Error404 /> },
@@ -16,8 +17,10 @@ const router = createBrowserRouter([
   { path: "/contato", element: <Contact /> }
 ])
 
-const App = () => {
-  return <RouterProvider router={router} />
-}
+const App = () => (
+  <Suspense fallback={<LoadingTemplate />}>
+    <RouterProvider router={router} />
+  </Suspense>
+)
 
 export { App };

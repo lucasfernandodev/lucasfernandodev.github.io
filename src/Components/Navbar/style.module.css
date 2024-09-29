@@ -22,7 +22,7 @@
   height: 48px;
   border-radius: 16px;
   text-decoration: none;
-  color: var(--gray-600);
+  color: var(--white-300);
   background-color: transparent;
   transition: background 250ms linear;
 }
@@ -32,11 +32,11 @@
 }
 
 .Link[data-active="true"] {
-  background-color: rgba(47, 47, 55, 0.75);
+  background-color: #1B1B1A;
 }
 
 .Link[data-active="true"] svg {
-  stroke: var(--white-100);
+  stroke: #F2D750af;
 }
 
 .Link svg {
@@ -47,7 +47,7 @@
 
 
 
-@media screen and (max-width: 480px), (max-width: 1080px) {
+@media screen and (max-width: 480px), (max-width: 780px){
   /* 
   * Button toggle menu visibility
   */
@@ -72,65 +72,39 @@
     position: absolute;
     opacity: 0;
   }
+ 
+  .toggleMenu{
+    &::before,
+    &::after{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--white-300);
+      display: block;
+      position: absolute;
+      transform-origin: center;
+      transition: 0.15ms ease
+    }
 
-  .toggleMenu::before,
-  .toggleMenu::after {
-    content: "";
-    width: 32px;
-    height: 2px;
-    background-color: var(--white-100);
-    position: absolute;
+    &::before{
+      transform: translateY(-4px);
+    }
+
+    &::after{
+      transform: translateY(4px);
+    }
+
+    &[data-open="true"]{
+      &::before{
+        transform: rotate(45deg);
+      }
+  
+      &::after{
+        transform: rotate(-45deg);
+      }
+    }
   }
-
-  /* Show hamburger menu*/
-  .toggleMenu::before {
-    top: 6px;
-    animation: hamburger-icon-row-top-show 350ms linear forwards;
-  }
-
-  .toggleMenu::after {
-    bottom: 6px;
-    animation: hamburger-icon-row-bottom-show 350ms linear forwards;
-  }
-
-  /* hide the hamburger icon lines before the menu appears */
-  .btnStartTransition::before {
-    animation: hamburger-icon-row-top-hidden 600ms linear forwards;
-  }
-
-  .btnStartTransition::after {
-    animation: hamburger-icon-row-bottom-hidden 600ms linear forwards;
-  }
-
-  /* Show close Icon */
-  .toggleMenu[data-open="true"]::before {
-    top: unset;
-    width: 32px;
-
-    transform: translate(-100px, -100px) rotate(45deg);
-    animation: close-icon-row-top-show 350ms linear forwards;
-  }
-
-  .toggleMenu[data-open="true"]::after {
-    top: unset;
-    bottom: unset;
-    width: 32px;
-
-    transform: translate(-100px, 100px) rotate(-45deg);
-    animation: close-icon-row-bottom-show 350ms linear forwards;
-    animation-delay: 50ms;
-  }
-
-  /* hide the close icon lines before the menu close  */
-  .btnStartTransitionOut::before {
-    opacity: 1;
-    animation: close-icon-row-top-hidden 600ms linear forwards !important;
-  }
-
-  .btnStartTransitionOut::after {
-    opacity: 1;
-    animation: close-icon-row-bottom-hidden 600ms linear forwards !important;
-  }
+ 
 
   /* 
   * Menu
@@ -194,83 +168,6 @@
 
 
 
-
-/* Animation to transform the lines again in the icon menu */
-@keyframes hamburger-icon-row-top-show {
-  0% {
-    transform: translateX(-100px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-/* Animation to transform the lines again in the icon menu */
-@keyframes hamburger-icon-row-bottom-show  {
-  0% {
-    transform: translateX(100px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-
-/* Animation to make the line disappear before open the menu */
-@keyframes hamburger-icon-row-top-hidden {
-  100% {
-    transform: translateX(-100px);
-  }
-}
-/* Animation to make the line disappear before open the menu */
-@keyframes hamburger-icon-row-bottom-hidden {
-  100% {
-    transform: translateX(100px);
-  }
-}
-
-
-/* Animation to turn the lines into an x ​​shape and slide into the button when the menu appears */
-@keyframes close-icon-row-top-show {
-  0% {
-    opacity: 0;
-    transform: translate(-100px, -100px) rotate(45deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(45deg) translate(0px, 0px);
-  }
-}
-/* Animation to turn the lines into an x ​​shape and slide into the button when the menu appears */
-@keyframes close-icon-row-bottom-show {
-  0% {
-    opacity: 0;
-    transform: translate(-100px, 100px) rotate(-45deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0px, 0px);
-  }
-}
-
-
-/* Animation to make the line disappear before closing the menu: to left-top */
-@keyframes close-icon-row-top-hidden {
-  0% {
-    transform: rotate(45deg) translate(0px, 0px);
-  }
-  100% {
-    transform: translate(-100px, -100px) rotate(45deg);
-  }
-}
-/* Animation to make the line disappear before closing the menu: to right-top */
-@keyframes close-icon-row-bottom-hidden {
-  0% {
-    transform: rotate(-45deg) translate(0px, 0px);
-  }
-  100% {
-    transform: translate(100px, -100px) rotate(-45deg);
-  }
-}
 
 
 

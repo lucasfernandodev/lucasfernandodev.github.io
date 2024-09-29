@@ -18,26 +18,17 @@ main.layout{
   justify-content: space-between;
 }
 
+
 .thumbnail{
-  height: 368px;
-  background: var(--project-thumbnail);
+  height: 368px !important;
+  background: #1B1B1A;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--white-100);
   background-position: top left;
   background-size: cover;
-  position: relative;
-}
-
-.thumbnail::before{
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: hsla(216, 43%, 7%, 65%);
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: relative; 
 }
 
 
@@ -48,7 +39,7 @@ main.layout{
   z-index: 10;
 }
 
-@media (max-width: 720px){
+@media (max-width: 780px){
   .thumbnail h2{
     width: 100%;
     text-align: center;
@@ -60,6 +51,10 @@ main.layout{
     font-size: 3.2rem;
     padding: 0 16px;
   }
+}
+
+.container h3{
+  color: var(--white-100)
 }
 
 .container .col{
@@ -83,13 +78,13 @@ main.layout{
 
 .container > .col:first-child{
   padding-left: var(--gap);
-  color: var(--white-100);
+  color: var(--white-200);
 }
 
 .container .col:first-child h3{
   font-family: var(--font-family-roboto);
   padding-bottom: 16px;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
@@ -102,11 +97,12 @@ main.layout{
 }
 
 .container .col:first-child p{
-  line-height: 160%;
+  line-height: 2.8rem;
   font-family: var(--font-family-inter);
   font-weight: 300;
   letter-spacing: 3%;
   margin-bottom: 16px;
+  font-size: 1.7rem
 }
 
 .container .col__thumbnail{
@@ -116,7 +112,7 @@ main.layout{
   display: block;
   min-height: 484px;
   background-size: cover;
-  background-color: var(--black-800);
+  background-color: var(--black-400);
 }
 
 .footer{
@@ -158,9 +154,41 @@ main.layout{
   }
 
   .thumbnail{
-    height: 240px;
+    height: 240px !important;
+    background-image: var(--project-thumbnail);
+
+    & h2{
+      display: none;
+    }
   }
   .container .col{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .container{
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+  
+  .container .col{
+    width: 100%;
+    max-width: unset;
+  }
+
+  .container .col{
+    &:nth-child(1){
+      order: 2
+    }
+  }
+
+  .container .col__thumbnail{
+    margin: 0 auto;
+    width: calc(100% - 32px);
+    border-radius: 8px;
+    min-width: 1px;
+    max-width: unset;
   }
 }

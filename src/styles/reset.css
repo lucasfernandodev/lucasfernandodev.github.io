@@ -15,6 +15,25 @@
   --project-thumbnail: #0A1019;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #171716;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(60, 2%, 25%);
+  border-radius: 20px;
+  border: 3px solid #171716;
+}
+
+
+*{
+  scrollbar-width: thin;
+  scrollbar-color: hsl(60, 2%, 25%) #171716;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -28,6 +47,7 @@ body{
   font-size: 1.6rem;
   background: var(--background);
   font-family: var(--font-family-inter);
+
 }
 
 button{
