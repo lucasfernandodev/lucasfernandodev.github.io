@@ -6,7 +6,7 @@ import { HTMLAttributes } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-interface ICardProps extends HTMLAttributes<HTMLElement> {
+export interface ICardProps extends HTMLAttributes<HTMLElement> {
   color: 'black' | 'pink' | 'blue',
   title: string,
   description: string,

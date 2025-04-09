@@ -1,6 +1,6 @@
 import style from './style.module.css';
 import React, { useRef } from 'react';
-import { Card } from './Card';
+import { Card, ICardProps } from './Card';
 import { useTranslation } from 'react-i18next';
 import { useCarouselTransition } from '../../Hooks/useCarouselTransition';
 
@@ -19,7 +19,7 @@ const Carousel: React.FC = () => {
           <Card
             key={_id}
             index_id={_id}
-            color={t(`projects:${_id}.color`)}
+            color={t(`projects:${_id}.color`) as ICardProps['color']}
             title={t(`projects:${_id}.title`)}
             description={t(`projects:${_id}.description`)}
             preview_url={t(`projects:${_id}.preview_url`)}
