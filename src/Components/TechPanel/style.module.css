@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   gap: 32px;
   width: calc((var(--card-size) * 3) + (32px * 3));
+
+
 }
 
 @media screen and (max-width: 920px){
@@ -13,7 +15,7 @@
   }
 }
 
-@media  (max-width: 780px){
+@media  (max-width: 820px){
   .container{
     --card-size: 83px;
     align-items: flex-start;
@@ -40,6 +42,12 @@
   background: linear-gradient(90deg, #1B1B1A 0%, hsl(60, 2%, 15%) 100%);
   position: relative;
   overflow: hidden;
+
+  & img[data-main="true"]{
+    width: 48px;
+    height: 48px;
+    filter: grayscale(1);
+  }
 }
 
 

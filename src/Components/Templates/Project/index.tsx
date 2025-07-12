@@ -11,28 +11,31 @@ import { Link } from '../../../Infra/Link';
 
 export const ProjectTemplate = () => {
   return (
-    <Layout className={style.layout}>
+    <Layout>
+      <div className={style.layout}>
+        <Title>{t('projects.title')}</Title>
+        <div className={style.wrapper}>
+          <div className={style.container}>
+            <Paragraph>{t('projects.paragraph_zero')}</Paragraph>
+            <Paragraph>{t('projects.paragraph_one')}</Paragraph>
+            <GroupButton>
+              <Link href="/contato">
+                <Button>
+                  {t('projects.button_content')} <IconChevronRight />
+                </Button>
+              </Link>
+              <Link href="https://github.com/lucasfernandodev">
+                <Button type="secondary">Github <IconArrowUpRight /></Button>
+              </Link>
+            </GroupButton>
+          </div>
 
-      <Title>{t('projects.title')}</Title>
-      <div className={style.container}>
-        <Paragraph>{t('projects.paragraph_zero')}</Paragraph>
-        <Paragraph>{t('projects.paragraph_one')}</Paragraph>
-        <GroupButton>
-          <Link href="/contato">
-            <Button>
-              {t('projects.button_content')} <IconChevronRight />
-            </Button>
-          </Link>
-          <Link href="https://github.com/lucasfernandodev">
-            <Button type="secondary">Github <IconArrowUpRight /></Button>
-          </Link>
-        </GroupButton>
+          <div className={style.container}>
+            <Carousel />
+          </div>
+        </div>
       </div>
 
-
-      <div className={style.container}>
-        <Carousel />
-      </div>
     </Layout>
   )
 }

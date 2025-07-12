@@ -1,4 +1,5 @@
 .header {
+  flex-shrink: 0;
   grid-area: "header";
   display: flex;
   flex-direction: column;
@@ -8,8 +9,7 @@
   max-height: 100vh;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  position: relative;
+  z-index: 1000; 
 }
 
 .header::before {
@@ -24,10 +24,16 @@
 
 .header .brand {
   all: unset;
-  min-height: 30px;
+  width: 42px;
+  height: 42px;
   color: var(--white-100);
   position: relative;
   z-index: 99999;
+
+  & img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .header .brand span {
@@ -52,7 +58,7 @@
   order: 3;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 825px) {
   .header {
     width: 100vw;
     position: fixed;
@@ -85,6 +91,10 @@
     align-items: center;
     gap: 8px;
 
+    & img {
+      width: 42px;
+    }
+
     & span{
       display: flex;
     }
@@ -100,13 +110,12 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 825px) {
   .header {
     padding: 0px 16px;
     background: #1B1B1Aaf;
     backdrop-filter: blur(8px);
-    gap: 12px;
-
+    gap: 12px; 
   }
 
   .header>h1 a,

@@ -7,8 +7,7 @@ const ProjectOpenTemplate = lazy(() => import('../../Components/Templates/Projec
 
 const Projects = () => {
   const navigate = useNavigate()
-
-
+  
   const [id, setId] = useState<string | null>(null);
 
   function useQuery() {

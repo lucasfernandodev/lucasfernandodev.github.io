@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 480px),  (max-width: 1080px){
   .carroucel{
-    width: 680px;
+    width: fit-content;
   }
 }
 

@@ -1,63 +1,56 @@
-.container{
-  max-width: 50%;
-}
-
-.layout .container:last-child{
+.layout {
+  width: 100%;
   height: 100%;
-  width: calc(100% - 32px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
+  padding-left: 16px;
 
-@media screen and (max-width: 780px){
-  .layout .container.panel{
-    width: 313px;
-    align-items: unset;
-    justify-content: unset;
+  @media screen and (max-width: 825px) {
+    padding: 16px;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 480px){
-  main.layout{
-    max-height: unset;
-    justify-content: unset;
-    padding-left: 0px;
+.layout .wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  width: 100%;
+
+  @media screen and (max-width: 825px) {
+    gap: 32px;
+    flex-wrap: wrap;
   }
 
-  .layout > *:nth-last-child(2){
-    order: 3;
-  }
-  
-  .layout > *:last-child{
-    order: 2;
+
+  &>.container:first-child {
+    max-width: 50%;
+
+    @media screen and (max-width: 825px) {
+      max-width: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      order: 2;
+    }
   }
 
-  .layout > *:is(div, h1,nav,ul){
-    flex: 0 1 auto;
-    min-width: unset !important;
-    width: calc(100% - 32px);
-  }
+  &>.container:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50%;
 
-  .layout .container, .title,
-  .layout > .container:last-child{
-    width: 100%;
-    min-width: unset;
-    max-width: unset;
-  }
+    @media screen and (max-width: 825px) {
+      order: 1;
+      margin: 0 auto;
+    }
 
-  .panel{
-    flex: revert !important;
-    width: calc(100% - 32px) !important;
-  }
-
-  .layout .container{
-    height: auto;
-    width: calc(100% - 32px);
-  }
-
-  .layout > .container:last-child{
-    padding-bottom: 3.2rem;
+    &>div {
+      max-width: 400px;
+      justify-content: center;
+    }
   }
 }
-

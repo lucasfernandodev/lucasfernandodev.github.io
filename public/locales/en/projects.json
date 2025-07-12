@@ -13,7 +13,7 @@
     "preview_url": "https://lucasfernandodev.github.io/encrypt/",
     "github_url": "https://github.com/lucasfernandodev/encrypt",
     "image_url": "/images/projects/encrypt.webp",
-    "color": "blue"
+    "color": "orange"
   },
   "2": {
     "title": "Spacetravel",
@@ -45,7 +45,7 @@
     "preview_url": "https://lucasfernandodev.github.io/frontendmentor/challenges/manage-landing-page-master/",
     "github_url": "https://github.com/lucasfernandodev/frontendmentor/tree/main/challenges/manage-landing-page-master",
     "image_url": "/images/projects/manage-ladingpage.webp",
-    "color": "pink"
+    "color": "orange"
   },
   "4": {
     "title": "Countries search",
@@ -80,7 +80,7 @@
     "preview_url": "https://sneakears.netlify.app/",
     "github_url": "https://github.com/lucasfernandodev/frontendmentor/tree/main/challenges/ecommerce-product-page-main",
     "image_url": "/images/projects/e-commerce-product-page.webp",
-    "color": "pink"
+    "color": "orange"
   },
   "6": {
     "title": "Feedback Widget",

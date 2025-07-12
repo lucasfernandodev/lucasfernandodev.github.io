@@ -16,7 +16,7 @@ export const TechPanel = () => {
         <img src="/tech/html.svg" alt="HTML5" className={style.icon} />
       </div>
       <div className={style.card}>
-        <img src="/brand.svg" alt="Lucas Fernando - Portfolio" className={style.icon} />
+        <img data-main="true" src="/brand.svg" alt="Lucas Fernando - Portfolio" className={style.icon} />
       </div>
       <div className={style.card}>
         <img src="/tech/github.svg" alt="Github" className={style.icon} />

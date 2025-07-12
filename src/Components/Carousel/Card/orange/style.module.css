@@ -1,13 +1,13 @@
-.cardpink {
-  background-color: linear-gradient(to right bottom,#171716, #1B1B1A);
+.card_orange {
+  background: linear-gradient(to right bottom,#171716, #1B1B1A);
   height: 100%;
   position: relative;
   overflow: hidden;
-  border: 1px solid #1B1B1A;
+  border: 1px solid hsl(60, 2%, 15%);
   color: var(--white-100);
 }
 
-.cardpink>svg {
+.card_orange>svg {
   position: absolute;
   left: 77px;
   top: 155px;
@@ -16,7 +16,7 @@
   opacity: 0.8;
 }
 
-.cardpink .url {
+.card_orange .url {
   position: relative;
   z-index: 10;
   color: var(--white-100);
@@ -24,7 +24,7 @@
   transition: 250ms linear;
 }
 
-.cardpink .url:hover {
+.card_orange .url:hover {
   color: var(--black-400);
   background: var(--white-100);
   border-color: var(--white-100); 

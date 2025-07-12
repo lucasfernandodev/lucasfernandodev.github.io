@@ -4,14 +4,13 @@
   color: var(--white-200);
   line-height: 160%;
   font-weight: 300;
+
+  @media screen and (max-width: 825px) {
+    text-align: center;
+    max-width: unset;
+  }
 }
 
 .paragraph + .paragraph{
   margin-top: 1.6rem;
-}
-
-@media screen and (max-width: 480px),  (max-width: 1080px){
-  .paragraph{
-    max-width: unset;
-  }
 }

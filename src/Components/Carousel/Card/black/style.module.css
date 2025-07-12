@@ -1,10 +1,14 @@
 .cardblack {
   height: 100%;
-  color: var(--white-100);
+  color: #1B1B1A;
   border: 1px solid #1B1B1A;
   overflow: hidden;
   position: relative;
-  background-color: #1B1B1A;
+  background: var(--orange-600);
+
+  & h3 {
+    color: #1B1B1A;
+  }
 }
 
 .cardblack::before{

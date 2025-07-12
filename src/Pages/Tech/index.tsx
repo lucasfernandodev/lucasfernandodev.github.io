@@ -14,23 +14,27 @@ export const Tech = () => {
   const { t } = useTranslation()
 
   return (
-    <Layout className={style.layout}>
-      <Title className={style.title}>{t('tech.title')}</Title>
-      <div className={style.container}>
-        <Paragraph>{t('tech.paragraph_zero')}</Paragraph>
-        <Paragraph>{t('tech.paragraph_one')}</Paragraph>
-        <GroupButton>
-          <Link href="/projetos">
-            <Button>{t('tech.button_content')}<IconChevronRight />
-            </Button>
-          </Link>
-          <Link href="https://www.linkedin.com/in/frontlucasfernandodev">
-            <Button type='secondary'>LinkedIn <IconArrowUpRight /></Button>
-          </Link>
-        </GroupButton>
-      </div>
-      <div className={[style.container, style.panel].join(" ")}>
-        <TechPanel />
+    <Layout >
+      <div className={style.layout}>
+        <Title className={style.title}>{t('tech.title')}</Title>
+        <div className={style.wrapper}>
+          <div className={style.container}>
+            <Paragraph>{t('tech.paragraph_zero')}</Paragraph>
+            <Paragraph>{t('tech.paragraph_one')}</Paragraph>
+            <GroupButton>
+              <Link href="/projetos">
+                <Button>{t('tech.button_content')}<IconChevronRight />
+                </Button>
+              </Link>
+              <Link href="https://www.linkedin.com/in/frontlucasfernandodev">
+                <Button type='secondary'>LinkedIn <IconArrowUpRight /></Button>
+              </Link>
+            </GroupButton>
+          </div>
+          <div className={[style.container, style.panel].join(" ")}>
+            <TechPanel />
+          </div>
+        </div>
       </div>
     </Layout>
   )
