@@ -5,6 +5,7 @@ import { Paragraph } from '../../Components/Molecules/Paragraph';
 import { Title } from '../../Components/Molecules/Title';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
+import { socialLinks } from '../../social-links';
 
 const Contact = () => {
 
@@ -31,22 +32,22 @@ const Contact = () => {
           <div className={style.container}>
             <ul className={style.sociais}>
               <li className={style.item}>
-                <Link href="https://dribbble.com/lucasfernandodev" className={style.link}>
+                <Link href={socialLinks.dribbble} className={style.link}>
                   Dribbble  <IconArrowUpRight />
                 </Link>
               </li>
               <li className={style.item}>
-                <Link href="https://github.com/lucasfernandodev" className={style.link}>
+                <Link href={socialLinks.github} className={style.link}>
                   Github  <IconArrowUpRight />
                 </Link>
               </li>
               <li className={style.item}>
-                <Link href="https://www.instagram.com/lucasfernandodev/" className={style.link}>
+                <Link href={socialLinks.instagram} className={style.link}>
                   Instagram <IconArrowUpRight />
                 </Link>
               </li>
               <li className={style.item}>
-                <Link href="https://www.linkedin.com/in/frontlucasfernandodev" className={style.link}>
+                <Link href={socialLinks.linkedin} className={style.link}>
                   LinkedIn  <IconArrowUpRight />
                 </Link>
               </li>

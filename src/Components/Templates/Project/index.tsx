@@ -8,6 +8,7 @@ import { Title } from '../../Molecules/Title';
 import style from './style.module.css';
 import { Link } from '../../../Infra/Link';
 import { Carousel } from '../../Organisms/Carousel';
+import { socialLinks } from '../../../social-links';
 
 export const ProjectTemplate = () => {
   return (
@@ -24,7 +25,7 @@ export const ProjectTemplate = () => {
                   {t('projects.button_content')} <IconChevronRight />
                 </Button>
               </Link>
-              <Link href="https://github.com/lucasfernandodev">
+              <Link href={socialLinks.github}>
                 <Button type="secondary">Github <IconArrowUpRight /></Button>
               </Link>
             </GroupButton>

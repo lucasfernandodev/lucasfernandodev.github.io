@@ -7,6 +7,7 @@ import { Title } from '../../Components/Molecules/Title';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
 import { GroupButton } from '../../Components/Molecules/GroupButton';
+import { socialLinks } from '../../social-links';
 
 const About = () => {
 
@@ -27,7 +28,7 @@ const About = () => {
                 </Button>
               </Link>
 
-              <Link href="https://www.linkedin.com/in/frontlucasfernandodev">
+              <Link href={socialLinks.linkedin}>
                 <Button type="secondary">LinkedIn <IconArrowUpRight /></Button>
               </Link>
             </GroupButton>

@@ -13,7 +13,7 @@ const useCarouselTransition = ({ carouselRef }: Iprops): void => {
   const cardSize = 220 + 15;
   const startCardPosition = cardSize * -1
 
-  let touchStart: number,touchEnded: number = 0
+  let touchStart: number, touchEnded: number = 0
   let isTouch = false;
 
   useEffect(() => {
@@ -66,24 +66,24 @@ const useCarouselTransition = ({ carouselRef }: Iprops): void => {
       countTransition = countTransition++
     }
 
-    function handleTouchStart(event: TouchEvent){
+    function handleTouchStart(event: TouchEvent) {
       isTouch = true;
       touchStart = event.changedTouches[0].clientX
     }
 
-    function handleTouchMoving(event: TouchEvent){
+    function handleTouchMoving(event: TouchEvent) {
       touchEnded = event.changedTouches[0].clientX
 
-      if(touchEnded > touchStart && isTouch !== false) {
-        if(touchEnded - touchStart > 100){
+      if (touchEnded > touchStart && isTouch !== false) {
+        if (touchEnded - touchStart > 100) {
           isTouch = false;
           touchStart = 0
           updatePosition(cards, -1)
         }
       }
 
-      if(touchEnded < touchStart && isTouch !== false) {
-        if(touchEnded - touchStart > -100){
+      if (touchEnded < touchStart && isTouch !== false) {
+        if (touchEnded - touchStart > -100) {
           isTouch = false;
           touchStart = 0
           updatePosition(cards, 1)
