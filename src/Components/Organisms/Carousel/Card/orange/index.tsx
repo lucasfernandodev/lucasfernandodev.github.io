@@ -1,6 +1,7 @@
-import { IconArrowUpRight } from '@tabler/icons-react';
+import React from 'react';
 import style from './style.module.css';
-import { Link } from '../../../../Infra/Link';
+import { IconArrowUpRight } from '@tabler/icons-react'; 
+import { Link } from '../../../../../Infra/Link';
 
 interface ICardProps {
   title: string,
@@ -10,9 +11,9 @@ interface ICardProps {
   github_url: string;
 }
 
-export const CardBlack: React.FC<ICardProps> = ({ title, description, category, preview_url }) => {
+export const CardOrange: React.FC<ICardProps> = ({ title, description, category, preview_url }) => {
   return (
-    <div className={style.cardblack}>
+    <div className={style.card_orange}>
       <p className={style.category}>{category}</p>
       <h3 className={style.title}>{title}</h3>
       <p className={style.description}>{description}</p>

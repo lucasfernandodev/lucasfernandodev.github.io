@@ -1,13 +1,13 @@
 import { IconChevronRight, IconArrowUpRight } from '@tabler/icons-react';
 import { t } from 'i18next';
-import { Button } from '../../Button';
-import { Carousel } from '../../Carousel';
-import { GroupButton } from '../../GroupButton';
-import { Layout } from '../../Layout';
-import { Paragraph } from '../../Paragraph';
-import { Title } from '../../Title';
+import { Button } from '../../Atoms/Button';
+import { GroupButton } from '../../Molecules/GroupButton';
+import { Layout } from '../Layout';
+import { Paragraph } from '../../Molecules/Paragraph';
+import { Title } from '../../Molecules/Title';
 import style from './style.module.css';
 import { Link } from '../../../Infra/Link';
+import { Carousel } from '../../Organisms/Carousel';
 
 export const ProjectTemplate = () => {
   return (

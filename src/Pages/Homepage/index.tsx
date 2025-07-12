@@ -1,7 +1,7 @@
 import style from './style.module.css';
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconChevronRight } from '@tabler/icons-react';
-import { Layout } from '../../Components/Layout';
-import { Title } from '../../Components/Title';
+import { Layout } from '../../Components/Templates/Layout';
+import { Title } from '../../Components/Molecules/Title';
 import { IconBrandDribbble } from '@tabler/icons-react';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';

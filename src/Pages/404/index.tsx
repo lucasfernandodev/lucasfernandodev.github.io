@@ -1,11 +1,11 @@
 import style from './style.module.css';
-import { Layout } from '../../Components/Layout';
-import { Title } from '../../Components/Title';
-import { Paragraph } from '../../Components/Paragraph';
-import { Button } from '../../Components/Button';
+import { Layout } from '../../Components/Templates/Layout';
+import { Title } from '../../Components/Molecules/Title';
+import { Paragraph } from '../../Components/Molecules/Paragraph';
+import { Button } from '../../Components/Atoms/Button';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
-import { GroupButton } from '../../Components/GroupButton';
+import { GroupButton } from '../../Components/Molecules/GroupButton';
 
 
 const Error404 = () => {

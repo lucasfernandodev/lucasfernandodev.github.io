@@ -1,8 +1,8 @@
 import style from './style.module.css';
-import { Layout } from "../../Layout"
-import { GroupButton } from '../../GroupButton';
+import { Layout } from "../Layout"
+import { GroupButton } from '../../Molecules/GroupButton';
 import { Link } from '../../../Infra/Link';
-import { Button } from '../../Button';
+import { Button } from '../../Atoms/Button';
 import { IconArrowNarrowLeft, IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';

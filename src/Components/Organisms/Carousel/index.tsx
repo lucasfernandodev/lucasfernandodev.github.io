@@ -1,8 +1,8 @@
 import style from './style.module.css';
 import React, { useRef } from 'react';
 import { Card, ICardProps } from './Card';
-import { useTranslation } from 'react-i18next';
-import { useCarouselTransition } from '../../Hooks/useCarouselTransition';
+import { useTranslation } from 'react-i18next'; 
+import { useCarouselTransition } from '../../../Hooks/useCarouselTransition';
 
 const Carousel: React.FC = () => {
 

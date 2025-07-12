@@ -1,8 +1,8 @@
 import style from './style.module.css';
-import { Link } from 'react-router-dom';
-import { Navbar } from '../Navbar';
-import { ToggleLanguage } from '../ToggleLanguage';
+import { Link } from 'react-router-dom'; 
 import { useMemo } from 'react';
+import { Navbar } from '../Navbar';
+import { ToggleLanguage } from '../../Molecules/ToggleLanguage';
 
 export const Header = () => {
   const Brand = useMemo(() => (

@@ -1,6 +1,6 @@
 import { HTMLAttributes } from 'react'
-import { Header } from '../Header'
 import style from './style.module.css'
+import { Header } from '../../Organisms/Header'
 
 interface ILayout extends HTMLAttributes<HTMLElement> {
   children: React.ReactNode

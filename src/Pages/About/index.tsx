@@ -1,12 +1,12 @@
 import style from './style.module.css';
 import { IconArrowUpRight, IconChevronRight } from '@tabler/icons-react';
-import { Button } from '../../Components/Button';
-import { Layout } from '../../Components/Layout';
-import { Paragraph } from '../../Components/Paragraph';
-import { Title } from '../../Components/Title';
+import { Button } from '../../Components/Atoms/Button';
+import { Layout } from '../../Components/Templates/Layout';
+import { Paragraph } from '../../Components/Molecules/Paragraph';
+import { Title } from '../../Components/Molecules/Title';
 import { Link } from '../../Infra/Link';
 import { useTranslation } from 'react-i18next';
-import { GroupButton } from '../../Components/GroupButton';
+import { GroupButton } from '../../Components/Molecules/GroupButton';
 
 const About = () => {
 
